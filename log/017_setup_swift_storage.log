@@ -1,0 +1,113 @@
+Success. Node compute in mgmt: 10.0.0.31.
+IP address of this node's interface in management network: 10.0.0.31.
+Installing Swift and other packages required for Object Storage..
+Last metadata expiration check: 1:16:30 ago on Tue 29 Dec 2020 03:37:17 AM EST.
+Package openstack-swift-account-2.26.0-2.el8.noarch is already installed.
+Package openstack-swift-container-2.26.0-2.el8.noarch is already installed.
+Package openstack-swift-object-2.26.0-2.el8.noarch is already installed.
+Package xfsprogs-5.0.0-4.el8.x86_64 is already installed.
+Package rsync-3.1.3-9.el8.x86_64 is already installed.
+Package openssh-clients-8.0p1-5.el8.x86_64 is already installed.
+Dependencies resolved.
+================================================================================
+ Package              Architecture   Version               Repository      Size
+================================================================================
+Installing:
+ rsync-daemon         noarch         3.1.3-9.el8           baseos          43 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 43 k
+Installed size: 17 k
+Downloading Packages:
+rsync-daemon-3.1.3-9.el8.noarch.rpm             218 kB/s |  43 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                            60 kB/s |  43 kB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : rsync-daemon-3.1.3-9.el8.noarch                        1/1 
+  Running scriptlet: rsync-daemon-3.1.3-9.el8.noarch                        1/1 
+  Verifying        : rsync-daemon-3.1.3-9.el8.noarch                        1/1 
+
+Installed:
+  rsync-daemon-3.1.3-9.el8.noarch                                               
+
+Complete!
+Configuring Disks for swift Object Storage.
+meta-data=/dev/sdb               isize=512    agcount=4, agsize=524288 blks
+         =                       sectsz=512   attr=2, projid32bit=1
+         =                       crc=1        finobt=1, sparse=1, rmapbt=0
+         =                       reflink=1
+data     =                       bsize=4096   blocks=2097152, imaxpct=25
+         =                       sunit=0      swidth=0 blks
+naming   =version 2              bsize=4096   ascii-ci=0, ftype=1
+log      =internal log           bsize=4096   blocks=2560, version=2
+         =                       sectsz=512   sunit=0 blks, lazy-count=1
+realtime =none                   extsz=4096   blocks=0, rtextents=0
+meta-data=/dev/sdc               isize=512    agcount=4, agsize=524288 blks
+         =                       sectsz=512   attr=2, projid32bit=1
+         =                       crc=1        finobt=1, sparse=1, rmapbt=0
+         =                       reflink=1
+data     =                       bsize=4096   blocks=2097152, imaxpct=25
+         =                       sunit=0      swidth=0 blks
+naming   =version 2              bsize=4096   ascii-ci=0, ftype=1
+log      =internal log           bsize=4096   blocks=2560, version=2
+         =                       sectsz=512   sunit=0 blks, lazy-count=1
+realtime =none                   extsz=4096   blocks=0, rtextents=0
+Making Entries into /ets/fstab to make the devices available on reboot
+/dev/sdb /srv/node/sdb xfs noatime,nodiratime,nobarrier,logbufs=8 0 2
+/dev/sdc /srv/node/sdc xfs noatime,nodiratime,nobarrier,logbufs=8 0 2
+'/etc/rsyncd.conf' -> '/tmp/107_etc_rsyncd.conf.iniset'
+'/etc/rsyncd.conf' -> '/tmp/108_etc_rsyncd.conf.iniset'
+'/etc/rsyncd.conf' -> '/tmp/109_etc_rsyncd.conf.iniset'
+'/etc/rsyncd.conf' -> '/tmp/110_etc_rsyncd.conf.iniset'
+'/etc/rsyncd.conf' -> '/tmp/111_etc_rsyncd.conf.iniset'
+'/etc/rsyncd.conf' -> '/tmp/112_etc_rsyncd.conf.iniset'
+iniset /tmp/112_etc_rsyncd.conf.iniset account max connections 2
+'/etc/rsyncd.conf' -> '/tmp/113_etc_rsyncd.conf.iniset'
+iniset /tmp/113_etc_rsyncd.conf.iniset account path /srv/node/
+'/etc/rsyncd.conf' -> '/tmp/114_etc_rsyncd.conf.iniset'
+iniset /tmp/114_etc_rsyncd.conf.iniset account read only False
+'/etc/rsyncd.conf' -> '/tmp/115_etc_rsyncd.conf.iniset'
+iniset /tmp/115_etc_rsyncd.conf.iniset account lock file /var/lock/account.lock
+'/etc/rsyncd.conf' -> '/tmp/116_etc_rsyncd.conf.iniset'
+iniset /tmp/116_etc_rsyncd.conf.iniset container max connections 2
+'/etc/rsyncd.conf' -> '/tmp/117_etc_rsyncd.conf.iniset'
+iniset /tmp/117_etc_rsyncd.conf.iniset container path /srv/node/
+'/etc/rsyncd.conf' -> '/tmp/118_etc_rsyncd.conf.iniset'
+iniset /tmp/118_etc_rsyncd.conf.iniset container read only False
+'/etc/rsyncd.conf' -> '/tmp/119_etc_rsyncd.conf.iniset'
+iniset /tmp/119_etc_rsyncd.conf.iniset container lock file /var/lock/container.lock
+'/etc/rsyncd.conf' -> '/tmp/120_etc_rsyncd.conf.iniset'
+iniset /tmp/120_etc_rsyncd.conf.iniset object max connections 2
+'/etc/rsyncd.conf' -> '/tmp/121_etc_rsyncd.conf.iniset'
+iniset /tmp/121_etc_rsyncd.conf.iniset object path /srv/node/
+'/etc/rsyncd.conf' -> '/tmp/122_etc_rsyncd.conf.iniset'
+iniset /tmp/122_etc_rsyncd.conf.iniset object read only False
+'/etc/rsyncd.conf' -> '/tmp/123_etc_rsyncd.conf.iniset'
+iniset /tmp/123_etc_rsyncd.conf.iniset object lock file /var/lock/object.lock
+'/etc/default/rsync' -> '/tmp/124_etc_default_rsync.iniset'
+start the rsync service.
+Created symlink /etc/systemd/system/multi-user.target.wants/rsyncd.service → /usr/lib/systemd/system/rsyncd.service.
+● rsyncd.service - fast remote file copy program daemon
+   Loaded: loaded (/usr/lib/systemd/system/rsyncd.service; enabled; vendor preset: disabled)
+   Active: active (running) since Tue 2020-12-29 04:53:50 EST; 14ms ago
+ Main PID: 14117 ((rsync))
+    Tasks: 1 (limit: 17859)
+   Memory: 152.0K
+   CGroup: /system.slice/rsyncd.service
+           └─14117 (rsync)
+
+Dec 29 04:53:50 compute systemd[1]: Started fast remote file copy program daemon.
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0Warning: Failed to create the file /etc/swift/account-server.conf: No such 
+Warning: file or directory
+  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0
+curl: (23) Failed writing body (0 != 2048)

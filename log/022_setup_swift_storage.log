@@ -1,0 +1,146 @@
+Success. Node compute in mgmt: 10.0.0.31.
+IP address of this node's interface in management network: 10.0.0.31.
+Installing Swift and other packages required for Object Storage..
+Last metadata expiration check: 1:03:27 ago on Thu 31 Dec 2020 04:23:03 AM EST.
+Package openstack-swift-account-2.26.0-2.el8.noarch is already installed.
+Package openstack-swift-container-2.26.0-2.el8.noarch is already installed.
+Package openstack-swift-object-2.26.0-2.el8.noarch is already installed.
+Package xfsprogs-5.0.0-4.el8.x86_64 is already installed.
+Package rsync-3.1.3-9.el8.x86_64 is already installed.
+Package rsync-daemon-3.1.3-9.el8.noarch is already installed.
+Package openssh-clients-8.0p1-5.el8.x86_64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Configuring Disks for swift Object Storage.
+meta-data=/dev/sdb               isize=512    agcount=4, agsize=524288 blks
+         =                       sectsz=512   attr=2, projid32bit=1
+         =                       crc=1        finobt=1, sparse=1, rmapbt=0
+         =                       reflink=1
+data     =                       bsize=4096   blocks=2097152, imaxpct=25
+         =                       sunit=0      swidth=0 blks
+naming   =version 2              bsize=4096   ascii-ci=0, ftype=1
+log      =internal log           bsize=4096   blocks=2560, version=2
+         =                       sectsz=512   sunit=0 blks, lazy-count=1
+realtime =none                   extsz=4096   blocks=0, rtextents=0
+meta-data=/dev/sdc               isize=512    agcount=4, agsize=524288 blks
+         =                       sectsz=512   attr=2, projid32bit=1
+         =                       crc=1        finobt=1, sparse=1, rmapbt=0
+         =                       reflink=1
+data     =                       bsize=4096   blocks=2097152, imaxpct=25
+         =                       sunit=0      swidth=0 blks
+naming   =version 2              bsize=4096   ascii-ci=0, ftype=1
+log      =internal log           bsize=4096   blocks=2560, version=2
+         =                       sectsz=512   sunit=0 blks, lazy-count=1
+realtime =none                   extsz=4096   blocks=0, rtextents=0
+Making Entries into /ets/fstab to make the devices available on reboot
+/dev/sdb /srv/node/sdb xfs noatime 0 2
+/dev/sdc /srv/node/sdc xfs noatime 0 2
+'/etc/rsyncd.conf' -> '/tmp/224_etc_rsyncd.conf.iniset'
+'/etc/rsyncd.conf' -> '/tmp/225_etc_rsyncd.conf.iniset'
+'/etc/rsyncd.conf' -> '/tmp/226_etc_rsyncd.conf.iniset'
+'/etc/rsyncd.conf' -> '/tmp/227_etc_rsyncd.conf.iniset'
+'/etc/rsyncd.conf' -> '/tmp/228_etc_rsyncd.conf.iniset'
+'/etc/rsyncd.conf' -> '/tmp/229_etc_rsyncd.conf.iniset'
+iniset /tmp/229_etc_rsyncd.conf.iniset account max connections 2
+'/etc/rsyncd.conf' -> '/tmp/230_etc_rsyncd.conf.iniset'
+iniset /tmp/230_etc_rsyncd.conf.iniset account path /srv/node/
+'/etc/rsyncd.conf' -> '/tmp/231_etc_rsyncd.conf.iniset'
+iniset /tmp/231_etc_rsyncd.conf.iniset account read only False
+'/etc/rsyncd.conf' -> '/tmp/232_etc_rsyncd.conf.iniset'
+iniset /tmp/232_etc_rsyncd.conf.iniset account lock file /var/lock/account.lock
+'/etc/rsyncd.conf' -> '/tmp/233_etc_rsyncd.conf.iniset'
+iniset /tmp/233_etc_rsyncd.conf.iniset container max connections 2
+'/etc/rsyncd.conf' -> '/tmp/234_etc_rsyncd.conf.iniset'
+iniset /tmp/234_etc_rsyncd.conf.iniset container path /srv/node/
+'/etc/rsyncd.conf' -> '/tmp/235_etc_rsyncd.conf.iniset'
+iniset /tmp/235_etc_rsyncd.conf.iniset container read only False
+'/etc/rsyncd.conf' -> '/tmp/236_etc_rsyncd.conf.iniset'
+iniset /tmp/236_etc_rsyncd.conf.iniset container lock file /var/lock/container.lock
+'/etc/rsyncd.conf' -> '/tmp/237_etc_rsyncd.conf.iniset'
+iniset /tmp/237_etc_rsyncd.conf.iniset object max connections 2
+'/etc/rsyncd.conf' -> '/tmp/238_etc_rsyncd.conf.iniset'
+iniset /tmp/238_etc_rsyncd.conf.iniset object path /srv/node/
+'/etc/rsyncd.conf' -> '/tmp/239_etc_rsyncd.conf.iniset'
+iniset /tmp/239_etc_rsyncd.conf.iniset object read only False
+'/etc/rsyncd.conf' -> '/tmp/240_etc_rsyncd.conf.iniset'
+iniset /tmp/240_etc_rsyncd.conf.iniset object lock file /var/lock/object.lock
+'/etc/default/rsync' -> '/tmp/241_etc_default_rsync.iniset'
+start the rsync service.
+● rsyncd.service - fast remote file copy program daemon
+   Loaded: loaded (/usr/lib/systemd/system/rsyncd.service; enabled; vendor preset: disabled)
+   Active: active (running) since Thu 2020-12-31 01:13:30 EST; 4h 13min ago
+ Main PID: 1449 (rsync)
+    Tasks: 1 (limit: 17859)
+   Memory: 848.0K
+   CGroup: /system.slice/rsyncd.service
+           └─1449 /usr/bin/rsync --daemon --no-detach
+
+Dec 31 01:13:30 compute systemd[1]: Started fast remote file copy program daemon.
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0100 11752    0 11752    0     0   3956      0 --:--:--  0:00:02 --:--:--  3955
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 10240    0 10240    0     0   5772      0 --:--:--  0:00:01 --:--:--  5769100 18462    0 18462    0     0   9217      0 --:--:--  0:00:02 --:--:--  9217
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 18940    0 18940    0     0  13423      0 --:--:--  0:00:01 --:--:-- 13423
+'/etc/swift/account-server.conf' -> '/tmp/242_etc_swift_account-server.conf.iniset'
+iniset /tmp/242_etc_swift_account-server.conf.iniset DEFAULT bind_ip 10.0.0.31
+'/etc/swift/account-server.conf' -> '/tmp/243_etc_swift_account-server.conf.iniset'
+iniset /tmp/243_etc_swift_account-server.conf.iniset DEFAULT bind_port 6202
+'/etc/swift/account-server.conf' -> '/tmp/244_etc_swift_account-server.conf.iniset'
+iniset /tmp/244_etc_swift_account-server.conf.iniset DEFAULT user swift
+'/etc/swift/account-server.conf' -> '/tmp/245_etc_swift_account-server.conf.iniset'
+iniset /tmp/245_etc_swift_account-server.conf.iniset DEFAULT swift_dir /etc/swift
+'/etc/swift/account-server.conf' -> '/tmp/246_etc_swift_account-server.conf.iniset'
+iniset /tmp/246_etc_swift_account-server.conf.iniset DEFAULT devices /srv/node
+'/etc/swift/account-server.conf' -> '/tmp/247_etc_swift_account-server.conf.iniset'
+iniset /tmp/247_etc_swift_account-server.conf.iniset DEFAULT mount_check True
+'/etc/swift/account-server.conf' -> '/tmp/248_etc_swift_account-server.conf.iniset'
+iniset /tmp/248_etc_swift_account-server.conf.iniset pipeline:main pipeline healthcheck recon account-server
+'/etc/swift/account-server.conf' -> '/tmp/249_etc_swift_account-server.conf.iniset'
+iniset /tmp/249_etc_swift_account-server.conf.iniset filter:recon use egg:swift#recon
+'/etc/swift/account-server.conf' -> '/tmp/250_etc_swift_account-server.conf.iniset'
+iniset /tmp/250_etc_swift_account-server.conf.iniset filter:recon recon_cache_path /var/cache/swift
+'/etc/swift/container-server.conf' -> '/tmp/251_etc_swift_container-server.conf.iniset'
+iniset /tmp/251_etc_swift_container-server.conf.iniset DEFAULT bind_ip 10.0.0.31
+'/etc/swift/container-server.conf' -> '/tmp/252_etc_swift_container-server.conf.iniset'
+iniset /tmp/252_etc_swift_container-server.conf.iniset DEFAULT bind_port 6201
+'/etc/swift/container-server.conf' -> '/tmp/253_etc_swift_container-server.conf.iniset'
+iniset /tmp/253_etc_swift_container-server.conf.iniset DEFAULT user swift
+'/etc/swift/container-server.conf' -> '/tmp/254_etc_swift_container-server.conf.iniset'
+iniset /tmp/254_etc_swift_container-server.conf.iniset DEFAULT swift_dir /etc/swift
+'/etc/swift/container-server.conf' -> '/tmp/255_etc_swift_container-server.conf.iniset'
+iniset /tmp/255_etc_swift_container-server.conf.iniset DEFAULT devices /srv/node
+'/etc/swift/container-server.conf' -> '/tmp/256_etc_swift_container-server.conf.iniset'
+iniset /tmp/256_etc_swift_container-server.conf.iniset DEFAULT mount_check True
+'/etc/swift/container-server.conf' -> '/tmp/257_etc_swift_container-server.conf.iniset'
+iniset /tmp/257_etc_swift_container-server.conf.iniset pipeline:main pipeline healthcheck recon container-server
+'/etc/swift/container-server.conf' -> '/tmp/258_etc_swift_container-server.conf.iniset'
+iniset /tmp/258_etc_swift_container-server.conf.iniset filter:recon use egg:swift#recon
+'/etc/swift/container-server.conf' -> '/tmp/259_etc_swift_container-server.conf.iniset'
+iniset /tmp/259_etc_swift_container-server.conf.iniset filter:recon recon_cache_path /var/cache/swift
+'/etc/swift/object-server.conf' -> '/tmp/260_etc_swift_object-server.conf.iniset'
+iniset /tmp/260_etc_swift_object-server.conf.iniset DEFAULT bind_ip 10.0.0.31
+'/etc/swift/object-server.conf' -> '/tmp/261_etc_swift_object-server.conf.iniset'
+iniset /tmp/261_etc_swift_object-server.conf.iniset DEFAULT bind_port 6200
+'/etc/swift/object-server.conf' -> '/tmp/262_etc_swift_object-server.conf.iniset'
+iniset /tmp/262_etc_swift_object-server.conf.iniset DEFAULT user swift
+'/etc/swift/object-server.conf' -> '/tmp/263_etc_swift_object-server.conf.iniset'
+iniset /tmp/263_etc_swift_object-server.conf.iniset DEFAULT swift_dir /etc/swift
+'/etc/swift/object-server.conf' -> '/tmp/264_etc_swift_object-server.conf.iniset'
+iniset /tmp/264_etc_swift_object-server.conf.iniset DEFAULT devices /srv/node
+'/etc/swift/object-server.conf' -> '/tmp/265_etc_swift_object-server.conf.iniset'
+iniset /tmp/265_etc_swift_object-server.conf.iniset DEFAULT mount_check True
+'/etc/swift/object-server.conf' -> '/tmp/266_etc_swift_object-server.conf.iniset'
+iniset /tmp/266_etc_swift_object-server.conf.iniset pipeline:main pipeline healthcheck recon object-server
+'/etc/swift/object-server.conf' -> '/tmp/267_etc_swift_object-server.conf.iniset'
+iniset /tmp/267_etc_swift_object-server.conf.iniset filter:recon use egg:swift#recon
+'/etc/swift/object-server.conf' -> '/tmp/268_etc_swift_object-server.conf.iniset'
+iniset /tmp/268_etc_swift_object-server.conf.iniset filter:recon recon_cache_path /var/cache/swift
+'/etc/swift/object-server.conf' -> '/tmp/269_etc_swift_object-server.conf.iniset'
+iniset /tmp/269_etc_swift_object-server.conf.iniset filter:recon recon_lock_path /var/lock
+success
+success

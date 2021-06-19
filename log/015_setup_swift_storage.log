@@ -1,0 +1,40 @@
+Success. Node compute in mgmt: 10.0.0.31.
+IP address of this node's interface in management network: 10.0.0.31.
+Installing Swift and other packages required for Object Storage..
+Last metadata expiration check: 1:12:18 ago on Tue 29 Dec 2020 03:37:17 AM EST.
+Package openstack-swift-account-2.26.0-2.el8.noarch is already installed.
+Package openstack-swift-container-2.26.0-2.el8.noarch is already installed.
+Package openstack-swift-object-2.26.0-2.el8.noarch is already installed.
+Package xfsprogs-5.0.0-4.el8.x86_64 is already installed.
+Package rsync-3.1.3-9.el8.x86_64 is already installed.
+Package openssh-clients-8.0p1-5.el8.x86_64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Configuring Disks for swift Object Storage.
+mkfs.xfs: /dev/sdb contains a mounted filesystem
+Usage: mkfs.xfs
+/* blocksize */		[-b size=num]
+/* metadata */		[-m crc=0|1,finobt=0|1,uuid=xxx,rmapbt=0|1,reflink=0|1]
+/* data subvol */	[-d agcount=n,agsize=n,file,name=xxx,size=num,
+			    (sunit=value,swidth=value|su=num,sw=num|noalign),
+			    sectsize=num
+/* force overwrite */	[-f]
+/* inode size */	[-i log=n|perblock=n|size=num,maxpct=n,attr=0|1|2,
+			    projid32bit=0|1,sparse=0|1]
+/* no discard */	[-K]
+/* log subvol */	[-l agnum=n,internal,size=num,logdev=xxx,version=n
+			    sunit=value|su=num,sectsize=num,lazy-count=0|1]
+/* label */		[-L label (maximum 12 characters)]
+/* naming */		[-n size=num,version=2|ci,ftype=0|1]
+/* no-op info only */	[-N]
+/* prototype file */	[-p fname]
+/* quiet */		[-q]
+/* realtime subvol */	[-r extsize=num,size=num,rtdev=xxx]
+/* sectorsize */	[-s size=num]
+/* version */		[-V]
+			devicename
+<devicename> is required unless -d name=xxx is given.
+<num> is xxx (bytes), xxxs (sectors), xxxb (fs blocks), xxxk (xxx KiB),
+      xxxm (xxx MiB), xxxg (xxx GiB), xxxt (xxx TiB) or xxxp (xxx PiB).
+<value> is xxx (512 byte blocks).

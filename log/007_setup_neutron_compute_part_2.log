@@ -1,0 +1,65 @@
+Configuring Compute to use Networking.
+'/etc/nova/nova.conf' -> '/tmp/041_etc_nova_nova.conf.iniset'
+iniset /tmp/041_etc_nova_nova.conf.iniset neutron auth_url http://controller:5000
+'/etc/nova/nova.conf' -> '/tmp/042_etc_nova_nova.conf.iniset'
+iniset /tmp/042_etc_nova_nova.conf.iniset neutron auth_type password
+'/etc/nova/nova.conf' -> '/tmp/043_etc_nova_nova.conf.iniset'
+iniset /tmp/043_etc_nova_nova.conf.iniset neutron project_domain_name default
+'/etc/nova/nova.conf' -> '/tmp/044_etc_nova_nova.conf.iniset'
+iniset /tmp/044_etc_nova_nova.conf.iniset neutron user_domain_name default
+'/etc/nova/nova.conf' -> '/tmp/045_etc_nova_nova.conf.iniset'
+iniset /tmp/045_etc_nova_nova.conf.iniset neutron region_name RegionOne
+'/etc/nova/nova.conf' -> '/tmp/046_etc_nova_nova.conf.iniset'
+iniset /tmp/046_etc_nova_nova.conf.iniset neutron project_name service
+'/etc/nova/nova.conf' -> '/tmp/047_etc_nova_nova.conf.iniset'
+iniset /tmp/047_etc_nova_nova.conf.iniset neutron username neutron
+'/etc/nova/nova.conf' -> '/tmp/048_etc_nova_nova.conf.iniset'
+iniset /tmp/048_etc_nova_nova.conf.iniset neutron password neutronPass
+Restarting the Compute service.
+Restarting neutron-linuxbridge-agent.
+Created symlink /etc/systemd/system/multi-user.target.wants/neutron-linuxbridge-agent.service → /usr/lib/systemd/system/neutron-linuxbridge-agent.service.
+● neutron-linuxbridge-agent.service - OpenStack Neutron Linux Bridge Agent
+   Loaded: loaded (/usr/lib/systemd/system/neutron-linuxbridge-agent.service; enabled; vendor preset: disabled)
+   Active: active (running) since Mon 2020-12-28 01:51:56 EST; 139ms ago
+ Main PID: 6836 (neutron-linuxbr)
+    Tasks: 1 (limit: 17859)
+   Memory: 13.3M
+   CGroup: /system.slice/neutron-linuxbridge-agent.service
+           └─6836 /usr/bin/python3 /usr/bin/neutron-linuxbridge-agent --config-file /usr/share/neutron/neutron-dist.conf --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/linuxbridge_agent.ini --config-dir /etc/neutron/conf.d/common --config-dir /etc/neutron/conf.d/neutron-linuxbridge-agent --log-file /var/log/neutron/linuxbridge-agent.log
+
+Dec 28 01:51:55 compute systemd[1]: Starting OpenStack Neutron Linux Bridge Agent...
+Dec 28 01:51:56 compute neutron-enable-bridge-firewall.sh[6806]: net.bridge.bridge-nf-call-iptables = 1
+Dec 28 01:51:56 compute neutron-enable-bridge-firewall.sh[6806]: net.bridge.bridge-nf-call-ip6tables = 1
+Dec 28 01:51:56 compute systemd[1]: Started OpenStack Neutron Linux Bridge Agent.
+success
+success
+
+module linuxbridgectl 1.0;
+
+require {
+        type neutron_t;
+        type neutron_exec_t;
+        type neutron_t;
+        type dnsmasq_t;
+        class file execute_no_trans;
+        class capability { dac_override sys_rawio };
+}
+
+#============= neutron_t ==============
+allow neutron_t self:capability { dac_override sys_rawio };
+allow neutron_t neutron_exec_t:file execute_no_trans;
+
+#============= dnsmasq_t ==============
+allow dnsmasq_t self:capability dac_override;
+
+Sourcing the admin credentials.
+Listing agents to verify successful launch of the neutron agents.
+openstack network agent list
++--------------------------------------+--------------------+------------+-------------------+-------+-------+---------------------------+
+| ID                                   | Agent Type         | Host       | Availability Zone | Alive | State | Binary                    |
++--------------------------------------+--------------------+------------+-------------------+-------+-------+---------------------------+
+| 34375543-a24f-433b-bd8f-a42d0b118244 | Linux bridge agent | controller | None              | :-)   | UP    | neutron-linuxbridge-agent |
+| 4fcb57b3-188d-41bb-9bea-a79bee567e9e | L3 agent           | controller | nova              | :-)   | UP    | neutron-l3-agent          |
+| 6a9496b9-0d22-4ec0-8815-d426a7a0400a | DHCP agent         | controller | nova              | :-)   | UP    | neutron-dhcp-agent        |
+| d0f1ac5c-ffbe-4d42-80ca-7d6bb914ac9c | Metadata agent     | controller | None              | :-)   | UP    | neutron-metadata-agent    |
++--------------------------------------+--------------------+------------+-------------------+-------+-------+---------------------------+
