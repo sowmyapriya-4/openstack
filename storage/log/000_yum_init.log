@@ -1,0 +1,29 @@
+Last metadata expiration check: 11:58:55 ago on Mon 07 Mar 2022 10:51:49 PM EST.
+rdo-release-wallaby-2.el8.noarch.rpm            9.4 kB/s |  16 kB     00:01    
+Dependencies resolved.
+================================================================================
+ Package           Architecture Version                Repository          Size
+================================================================================
+Installing:
+ rdo-release       noarch       wallaby-2.el8          @commandline        16 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total size: 16 k
+Installed size: 12 k
+Downloading Packages:
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : rdo-release-wallaby-2.el8.noarch                       1/1 
+  Verifying        : rdo-release-wallaby-2.el8.noarch                       1/1 
+
+Installed:
+  rdo-release-wallaby-2.el8.noarch                                              
+
+Complete!

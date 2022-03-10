@@ -1,0 +1,176 @@
+Setting up placement database.
+Waiting for database server to come up.
+mysql cmd: CREATE DATABASE placement.
+mysql cmd: GRANT ALL ON placement.* TO 'placement'@'%' IDENTIFIED BY 'placementDBPass';.
+mysql cmd: GRANT ALL ON placement.* TO 'placement'@'localhost' IDENTIFIED BY 'placementDBPass';.
+Sourcing the admin credentials.
+Waiting for keystone to come up.
+Creating placement user and giving it the admin role.
++---------------------+----------------------------------+
+| Field               | Value                            |
++---------------------+----------------------------------+
+| domain_id           | default                          |
+| enabled             | True                             |
+| id                  | 898ccc4a4175424dbfb8cb08f8488997 |
+| name                | placement                        |
+| options             | {}                               |
+| password_expires_at | None                             |
++---------------------+----------------------------------+
+Creating the Placement API entry in the service catalog.
++-------------+----------------------------------+
+| Field       | Value                            |
++-------------+----------------------------------+
+| description | Placement API                    |
+| enabled     | True                             |
+| id          | 8a47336d21be41c38a1d32bc69640726 |
+| name        | placement                        |
+| type        | placement                        |
++-------------+----------------------------------+
+Creating placement endpoints.
++--------------+----------------------------------+
+| Field        | Value                            |
++--------------+----------------------------------+
+| enabled      | True                             |
+| id           | 33e541516f9e415ca85f1ff3d6456c4d |
+| interface    | public                           |
+| region       | RegionOne                        |
+| region_id    | RegionOne                        |
+| service_id   | 8a47336d21be41c38a1d32bc69640726 |
+| service_name | placement                        |
+| service_type | placement                        |
+| url          | http://controller:8778           |
++--------------+----------------------------------+
++--------------+----------------------------------+
+| Field        | Value                            |
++--------------+----------------------------------+
+| enabled      | True                             |
+| id           | da2a463781fa4bcaad5f31ac0c2f509c |
+| interface    | internal                         |
+| region       | RegionOne                        |
+| region_id    | RegionOne                        |
+| service_id   | 8a47336d21be41c38a1d32bc69640726 |
+| service_name | placement                        |
+| service_type | placement                        |
+| url          | http://controller:8778           |
++--------------+----------------------------------+
++--------------+----------------------------------+
+| Field        | Value                            |
++--------------+----------------------------------+
+| enabled      | True                             |
+| id           | ebc749d74b0045dfb6548184b99fd0c2 |
+| interface    | admin                            |
+| region       | RegionOne                        |
+| region_id    | RegionOne                        |
+| service_id   | 8a47336d21be41c38a1d32bc69640726 |
+| service_name | placement                        |
+| service_type | placement                        |
+| url          | http://controller:8778           |
++--------------+----------------------------------+
+Installing placement-api for controller node.
+Last metadata expiration check: 0:07:53 ago on Tue 08 Mar 2022 10:18:56 AM EST.
+Dependencies resolved.
+================================================================================
+ Package                       Arch     Version       Repository           Size
+================================================================================
+Installing:
+ openstack-placement-api       noarch   5.0.1-1.el8   openstack-wallaby    12 k
+Installing dependencies:
+ openstack-placement-common    noarch   5.0.1-1.el8   openstack-wallaby    25 k
+ python3-microversion-parse    noarch   1.0.1-1.el8   openstack-wallaby    32 k
+ python3-os-resource-classes   noarch   1.0.0-1.el8   openstack-wallaby    17 k
+ python3-os-traits             noarch   2.5.0-1.el8   openstack-wallaby    43 k
+ python3-placement             noarch   5.0.1-1.el8   openstack-wallaby   252 k
+
+Transaction Summary
+================================================================================
+Install  6 Packages
+
+Total download size: 382 k
+Installed size: 1.2 M
+Downloading Packages:
+(1/6): openstack-placement-api-5.0.1-1.el8.noar 290 kB/s |  12 kB     00:00    
+(2/6): python3-microversion-parse-1.0.1-1.el8.n 680 kB/s |  32 kB     00:00    
+(3/6): openstack-placement-common-5.0.1-1.el8.n 500 kB/s |  25 kB     00:00    
+(4/6): python3-os-resource-classes-1.0.0-1.el8. 813 kB/s |  17 kB     00:00    
+(5/6): python3-os-traits-2.5.0-1.el8.noarch.rpm 1.5 MB/s |  43 kB     00:00    
+(6/6): python3-placement-5.0.1-1.el8.noarch.rpm 3.9 MB/s | 252 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           395 kB/s | 382 kB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : python3-os-traits-2.5.0-1.el8.noarch                   1/6 
+  Installing       : python3-os-resource-classes-1.0.0-1.el8.noarch         2/6 
+  Installing       : python3-microversion-parse-1.0.1-1.el8.noarch          3/6 
+  Installing       : python3-placement-5.0.1-1.el8.noarch                   4/6 
+  Running scriptlet: openstack-placement-common-5.0.1-1.el8.noarch          5/6 
+  Installing       : openstack-placement-common-5.0.1-1.el8.noarch          5/6 
+  Installing       : openstack-placement-api-5.0.1-1.el8.noarch             6/6 
+  Running scriptlet: openstack-placement-api-5.0.1-1.el8.noarch             6/6 
+  Verifying        : openstack-placement-api-5.0.1-1.el8.noarch             1/6 
+  Verifying        : openstack-placement-common-5.0.1-1.el8.noarch          2/6 
+  Verifying        : python3-microversion-parse-1.0.1-1.el8.noarch          3/6 
+  Verifying        : python3-os-resource-classes-1.0.0-1.el8.noarch         4/6 
+  Verifying        : python3-os-traits-2.5.0-1.el8.noarch                   5/6 
+  Verifying        : python3-placement-5.0.1-1.el8.noarch                   6/6 
+
+Installed:
+  openstack-placement-api-5.0.1-1.el8.noarch                                    
+  openstack-placement-common-5.0.1-1.el8.noarch                                 
+  python3-microversion-parse-1.0.1-1.el8.noarch                                 
+  python3-os-resource-classes-1.0.0-1.el8.noarch                                
+  python3-os-traits-2.5.0-1.el8.noarch                                          
+  python3-placement-5.0.1-1.el8.noarch                                          
+
+Complete!
+httpd server settings for Placement Service. 
+Setting placement database connection: mysql+pymysql://placement:placementDBPass@controller/placement.
+'/etc/placement/placement.conf' -> '/tmp/022_etc_placement_placement.conf.iniset'
+iniset /tmp/022_etc_placement_placement.conf.iniset placement_database connection mysql+pymysql://placement:placementDBPass@controller/placement
+'/etc/placement/placement.conf' -> '/tmp/023_etc_placement_placement.conf.iniset'
+iniset /tmp/023_etc_placement_placement.conf.iniset api auth_strategy keystone
+Configuring Placement services.
+'/etc/placement/placement.conf' -> '/tmp/024_etc_placement_placement.conf.iniset'
+iniset /tmp/024_etc_placement_placement.conf.iniset keystone_authtoken auth_url http://controller:5000/v3
+'/etc/placement/placement.conf' -> '/tmp/025_etc_placement_placement.conf.iniset'
+iniset /tmp/025_etc_placement_placement.conf.iniset keystone_authtoken memcached_servers controller:11211
+'/etc/placement/placement.conf' -> '/tmp/026_etc_placement_placement.conf.iniset'
+iniset /tmp/026_etc_placement_placement.conf.iniset keystone_authtoken auth_type password
+'/etc/placement/placement.conf' -> '/tmp/027_etc_placement_placement.conf.iniset'
+iniset /tmp/027_etc_placement_placement.conf.iniset keystone_authtoken project_domain_name Default
+'/etc/placement/placement.conf' -> '/tmp/028_etc_placement_placement.conf.iniset'
+iniset /tmp/028_etc_placement_placement.conf.iniset keystone_authtoken user_domain_name Default
+'/etc/placement/placement.conf' -> '/tmp/029_etc_placement_placement.conf.iniset'
+iniset /tmp/029_etc_placement_placement.conf.iniset keystone_authtoken project_name service
+'/etc/placement/placement.conf' -> '/tmp/030_etc_placement_placement.conf.iniset'
+iniset /tmp/030_etc_placement_placement.conf.iniset keystone_authtoken username placement
+'/etc/placement/placement.conf' -> '/tmp/031_etc_placement_placement.conf.iniset'
+iniset /tmp/031_etc_placement_placement.conf.iniset keystone_authtoken password placementPass
+Populating the placement database.
+Restarting httpd server.
+Sourcing the admin credentials.
+Waiting for keystone to come up.
+Performing status check.
++----------------------------------------------------------------------+
+| Upgrade Check Results                                                |
++----------------------------------------------------------------------+
+| Check: Missing Root Provider IDs                                     |
+| Result: Success                                                      |
+| Details: None                                                        |
++----------------------------------------------------------------------+
+| Check: Incomplete Consumers                                          |
+| Result: Success                                                      |
+| Details: None                                                        |
++----------------------------------------------------------------------+
+| Check: Policy File JSON to YAML Migration                            |
+| Result: Failure                                                      |
+| Details: Your policy file is JSON-formatted which is deprecated. You |
+|   need to switch to YAML-formatted file. Use the                     |
+|   ``oslopolicy-convert-json-to-yaml`` tool to convert the            |
+|   existing JSON-formatted files to YAML in a backwards-              |
+|   compatible manner: https://docs.openstack.org/oslo.policy/         |
+|   latest/cli/oslopolicy-convert-json-to-yaml.html.                   |
++----------------------------------------------------------------------+

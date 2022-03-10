@@ -1,0 +1,192 @@
+SUM --- BEGIN
+neutron CLI is deprecated and will be removed in the future. Use openstack CLI instead.
+Running on host: controller
+Checking network connection to compute node.
+PING compute (10.0.0.31) 56(84) bytes of data.
+64 bytes from compute (10.0.0.31): icmp_seq=1 ttl=64 time=0.445 ms
+
+--- compute ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 0.445/0.445/0.445/0.000 ms
+
+Checking services on controller node.
+Node controller, service neutron-l3-agent: up
+Node controller, service neutron-dhcp-agent: up
+Node controller, service neutron-metadata-agent: up
+
+Checking services on compute node.
+Node compute, service openstack-nova-compute: up
+
+Checking for nova services in openstack compute service list.
+  nova-scheduler
+  nova-conductor
+  openstack-nova-compute  Waiting for openstack-nova-compute service in state 'up'.
+  Service is up, waiting (may take a few minutes).
+
+
+SUM wait for nova services: 20
+All services are ready:
++----+----------------+------------+----------+---------+-------+----------------------------+
+| ID | Binary         | Host       | Zone     | Status  | State | Updated At                 |
++----+----------------+------------+----------+---------+-------+----------------------------+
+|  3 | nova-scheduler | controller | internal | enabled | up    | 2022-03-10T13:16:08.000000 |
+|  4 | nova-conductor | controller | internal | enabled | up    | 2022-03-10T13:16:16.000000 |
+|  5 | nova-compute   | compute    | nova     | enabled | up    | 2022-03-10T13:16:13.000000 |
++----+----------------+------------+----------+---------+-------+----------------------------+
+
+Waiting for agents in openstack network agent list.
+| 61d3a7ca-25d6-41df-8c98-f866c9699136 | Metadata agent     | controller | None              | :-)   | UP    | neutron-metadata-agent    |
+| 64f85f4e-b3f1-400e-922b-2e7ffdfbdd36 | Linux bridge agent | controller | None              | :-)   | UP    | neutron-linuxbridge-agent |
+| 663c9f02-566e-429c-8001-0113f02fa4cd | Linux bridge agent | compute    | None              | :-)   | UP    | neutron-linuxbridge-agent |
+| 7e77ae67-eb85-4b56-bdd0-3f531462319e | DHCP agent         | controller | nova              | :-)   | UP    | neutron-dhcp-agent        |
+| d0ff0318-0f8a-4d71-a096-2004d299ddd1 | L3 agent           | controller | nova              | :-)   | UP    | neutron-l3-agent          |
+
+All agents are ready.
++--------------------------------------+--------------------+------------+-------------------+-------+-------+---------------------------+
+| ID                                   | Agent Type         | Host       | Availability Zone | Alive | State | Binary                    |
++--------------------------------------+--------------------+------------+-------------------+-------+-------+---------------------------+
+| 61d3a7ca-25d6-41df-8c98-f866c9699136 | Metadata agent     | controller | None              | :-)   | UP    | neutron-metadata-agent    |
+| 64f85f4e-b3f1-400e-922b-2e7ffdfbdd36 | Linux bridge agent | controller | None              | :-)   | UP    | neutron-linuxbridge-agent |
+| 663c9f02-566e-429c-8001-0113f02fa4cd | Linux bridge agent | compute    | None              | :-)   | UP    | neutron-linuxbridge-agent |
+| 7e77ae67-eb85-4b56-bdd0-3f531462319e | DHCP agent         | controller | nova              | :-)   | UP    | neutron-dhcp-agent        |
+| d0ff0318-0f8a-4d71-a096-2004d299ddd1 | L3 agent           | controller | nova              | :-)   | UP    | neutron-l3-agent          |
++--------------------------------------+--------------------+------------+-------------------+-------+-------+---------------------------+
+
+SUM wait for neutron agents: 10
+
+Check if m1.nano flavor is existing or else, create the flavor.
+Current flavors:
+
+Creating m1.nano flavor which is just big enough for CirrOS.
++----------------------------+---------+
+| Field                      | Value   |
++----------------------------+---------+
+| OS-FLV-DISABLED:disabled   | False   |
+| OS-FLV-EXT-DATA:ephemeral  | 0       |
+| description                | None    |
+| disk                       | 1       |
+| id                         | 0       |
+| name                       | m1.nano |
+| os-flavor-access:is_public | True    |
+| properties                 |         |
+| ram                        | 64      |
+| rxtx_factor                | 1.0     |
+| swap                       |         |
+| vcpus                      | 1       |
++----------------------------+---------+
+
+Checking if 'mykey' is already in our OpenStack environment: no.
+Adding the public key to our OpenStack environment.
++-------------+-------------------------------------------------+
+| Field       | Value                                           |
++-------------+-------------------------------------------------+
+| created_at  | None                                            |
+| fingerprint | 82:73:49:bd:45:11:7f:55:38:73:a3:f6:4a:3f:45:0f |
+| id          | mykey                                           |
+| is_deleted  | None                                            |
+| name        | mykey                                           |
+| type        | ssh                                             |
+| user_id     | 2451f8f6db9b4b029b5e9fd201e8d38a                |
++-------------+-------------------------------------------------+
+Verifying addition of the public key.
++-------+-------------------------------------------------+------+
+| Name  | Fingerprint                                     | Type |
++-------+-------------------------------------------------+------+
+| mykey | 82:73:49:bd:45:11:7f:55:38:73:a3:f6:4a:3f:45:0f | ssh  |
++-------+-------------------------------------------------+------+
+
+Permitting ICMP (ping) to our instances.
++-------------------------+--------------------------------------+
+| Field                   | Value                                |
++-------------------------+--------------------------------------+
+| created_at              | 2022-03-10T13:16:43Z                 |
+| description             |                                      |
+| direction               | ingress                              |
+| ether_type              | IPv4                                 |
+| id                      | 9702f73a-fbd2-49ff-90fe-4fb9f14762e7 |
+| name                    | None                                 |
+| port_range_max          | None                                 |
+| port_range_min          | None                                 |
+| project_id              | 96fe9ce8299e4531bdf2245402499120     |
+| protocol                | icmp                                 |
+| remote_address_group_id | None                                 |
+| remote_group_id         | None                                 |
+| remote_ip_prefix        | 0.0.0.0/0                            |
+| revision_number         | 0                                    |
+| security_group_id       | 761d6cdc-66cf-47a2-9d16-59b4a5c057e5 |
+| tags                    | []                                   |
+| updated_at              | 2022-03-10T13:16:43Z                 |
++-------------------------+--------------------------------------+
+
+Permitting secure shell (SSH) access to our instances.
++-------------------------+--------------------------------------+
+| Field                   | Value                                |
++-------------------------+--------------------------------------+
+| created_at              | 2022-03-10T13:16:45Z                 |
+| description             |                                      |
+| direction               | ingress                              |
+| ether_type              | IPv4                                 |
+| id                      | c4264a4e-4b38-4eec-a4d6-13d475a72fc2 |
+| name                    | None                                 |
+| port_range_max          | 22                                   |
+| port_range_min          | 22                                   |
+| project_id              | 96fe9ce8299e4531bdf2245402499120     |
+| protocol                | tcp                                  |
+| remote_address_group_id | None                                 |
+| remote_group_id         | None                                 |
+| remote_ip_prefix        | 0.0.0.0/0                            |
+| revision_number         | 0                                    |
+| security_group_id       | 761d6cdc-66cf-47a2-9d16-59b4a5c057e5 |
+| tags                    | []                                   |
+| updated_at              | 2022-03-10T13:16:45Z                 |
++-------------------------+--------------------------------------+
+
+Verifying security group rules.
++--------------------------------------+---------+------------------------+----------------------------------+------+
+| ID                                   | Name    | Description            | Project                          | Tags |
++--------------------------------------+---------+------------------------+----------------------------------+------+
+| 761d6cdc-66cf-47a2-9d16-59b4a5c057e5 | default | Default security group | 96fe9ce8299e4531bdf2245402499120 | []   |
++--------------------------------------+---------+------------------------+----------------------------------+------+
++-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Field           | Value                                                                                                                                                                                                                                                                                             |
++-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| created_at      | 2022-03-10T13:16:42Z                                                                                                                                                                                                                                                                              |
+| description     | Default security group                                                                                                                                                                                                                                                                            |
+| id              | 761d6cdc-66cf-47a2-9d16-59b4a5c057e5                                                                                                                                                                                                                                                              |
+| name            | default                                                                                                                                                                                                                                                                                           |
+| project_id      | 96fe9ce8299e4531bdf2245402499120                                                                                                                                                                                                                                                                  |
+| revision_number | 3                                                                                                                                                                                                                                                                                                 |
+| rules           | created_at='2022-03-10T13:16:43Z', direction='ingress', ethertype='IPv4', id='9702f73a-fbd2-49ff-90fe-4fb9f14762e7', normalized_cidr='0.0.0.0/0', protocol='icmp', remote_ip_prefix='0.0.0.0/0', standard_attr_id='6', updated_at='2022-03-10T13:16:43Z'                                          |
+|                 | created_at='2022-03-10T13:16:42Z', direction='ingress', ethertype='IPv4', id='c3109356-afee-416f-aafa-3a7ce35433d5', remote_group_id='761d6cdc-66cf-47a2-9d16-59b4a5c057e5', standard_attr_id='2', updated_at='2022-03-10T13:16:42Z'                                                              |
+|                 | created_at='2022-03-10T13:16:45Z', direction='ingress', ethertype='IPv4', id='c4264a4e-4b38-4eec-a4d6-13d475a72fc2', normalized_cidr='0.0.0.0/0', port_range_max='22', port_range_min='22', protocol='tcp', remote_ip_prefix='0.0.0.0/0', standard_attr_id='7', updated_at='2022-03-10T13:16:45Z' |
+|                 | created_at='2022-03-10T13:16:43Z', direction='egress', ethertype='IPv6', id='e105ba8e-2c6a-4a6b-a514-29e33f4552e4', standard_attr_id='5', updated_at='2022-03-10T13:16:43Z'                                                                                                                       |
+|                 | created_at='2022-03-10T13:16:43Z', direction='ingress', ethertype='IPv6', id='e478502c-d179-4d30-9ecb-1925c65ed1f4', remote_group_id='761d6cdc-66cf-47a2-9d16-59b4a5c057e5', standard_attr_id='4', updated_at='2022-03-10T13:16:43Z'                                                              |
+|                 | created_at='2022-03-10T13:16:43Z', direction='egress', ethertype='IPv4', id='f87b0c41-15ea-4988-b255-3dadc3b3ed11', standard_attr_id='3', updated_at='2022-03-10T13:16:43Z'                                                                                                                       |
+| stateful        | True                                                                                                                                                                                                                                                                                              |
+| tags            | []                                                                                                                                                                                                                                                                                                |
+| updated_at      | 2022-03-10T13:16:45Z                                                                                                                                                                                                                                                                              |
++-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Listing available flavors.
++----+---------+-----+------+-----------+-------+-----------+
+| ID | Name    | RAM | Disk | Ephemeral | VCPUs | Is Public |
++----+---------+-----+------+-----------+-------+-----------+
+| 0  | m1.nano |  64 |    1 |         0 |     1 | True      |
++----+---------+-----+------+-----------+-------+-----------+
+Listing available images.
++--------------------------------------+--------+--------+
+| ID                                   | Name   | Status |
++--------------------------------------+--------+--------+
+| 97e8955d-3112-4fe8-8428-8308cf6e0372 | cirros | active |
++--------------------------------------+--------+--------+
+Waiting for neutron to come up.
+Listing available networks.
+
+ID for demo-net tenant network: 
+Listing available security groups.
++--------------------------------------+---------+------------------------+----------------------------------+------+
+| ID                                   | Name    | Description            | Project                          | Tags |
++--------------------------------------+---------+------------------------+----------------------------------+------+
+| 761d6cdc-66cf-47a2-9d16-59b4a5c057e5 | default | Default security group | 96fe9ce8299e4531bdf2245402499120 | []   |
++--------------------------------------+---------+------------------------+----------------------------------+------+
+Settings for selfservice:
+No Subnet found for selfservice

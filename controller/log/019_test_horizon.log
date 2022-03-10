@@ -1,0 +1,5 @@
+Testing horizon.
+Clean previous files and clear variables before starting.
+Testing availability of wget or curl.
+Found wget.
+Retrieving the cookie from http://10.0.0.11/horizon/auth/login/.

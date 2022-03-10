@@ -1,0 +1,9 @@
++--------------------------------------+--------------------+------------+-------------------+-------+-------+---------------------------+
++--------------------------------------+--------------------+------------+-------------------+-------+-------+---------------------------+
++--------------------------------------+--------------------+------------+-------------------+-------+-------+---------------------------+
+| 61d3a7ca-25d6-41df-8c98-f866c9699136 | Metadata agent     | controller | None              | :-)   | UP    | neutron-metadata-agent    |
+| 64f85f4e-b3f1-400e-922b-2e7ffdfbdd36 | Linux bridge agent | controller | None              | :-)   | UP    | neutron-linuxbridge-agent |
+| 663c9f02-566e-429c-8001-0113f02fa4cd | Linux bridge agent | compute    | None              | :-)   | UP    | neutron-linuxbridge-agent |
+| 7e77ae67-eb85-4b56-bdd0-3f531462319e | DHCP agent         | controller | nova              | :-)   | UP    | neutron-dhcp-agent        |
+| d0ff0318-0f8a-4d71-a096-2004d299ddd1 | L3 agent           | controller | nova              | :-)   | UP    | neutron-l3-agent          |
+| ID                                   | Agent Type         | Host       | Availability Zone | Alive | State | Binary                    |

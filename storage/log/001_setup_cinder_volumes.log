@@ -1,0 +1,1686 @@
+Success. Node storage in mgmt: 10.0.0.41.
+IP address of this node's interface in management network: 10.0.0.41.
+Installing qemu support package for non-raw image types.
+CentOS Stream 8 - PowerTools                    1.4 kB/s | 4.4 kB     00:03    
+Package qemu-kvm-15:6.2.0-5.module_el8.6.0+1087+b42c8331.x86_64 is already installed.
+Package lvm2-8:2.03.14-3.el8.x86_64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Configuring LVM physical and logical volumes.
+  Physical volume "/dev/sdd" successfully created.
+  Volume group "cinder-volumes" successfully created
+Setting LVM filter line in /etc/lvm/lvm.conf to only allow /dev/sdd.
+Verifying LVM filter.
+	filter = [ "a/sdd/", "r/.*/"]
+	filter = [ "a/sdd/", "r/.*/"]
+Installing cinder.
+Last metadata expiration check: 0:00:02 ago on Tue 08 Mar 2022 10:55:10 AM EST.
+Package targetcli-2.1.53-2.el8.noarch is already installed.
+Dependencies resolved.
+=============================================================================================================
+ Package                                Arch    Version                              Repository          Size
+=============================================================================================================
+Installing:
+ openstack-cinder                       noarch  1:18.1.0-1.el8                       openstack-wallaby   62 k
+Installing dependencies:
+ adobe-mappings-cmap                    noarch  20171205-3.el8                       appstream          2.1 M
+ adobe-mappings-cmap-deprecated         noarch  20171205-3.el8                       appstream          119 k
+ adobe-mappings-pdf                     noarch  20180407-1.el8                       appstream          707 k
+ atk                                    x86_64  2.28.1-1.el8                         appstream          272 k
+ avahi-libs                             x86_64  0.7-20.el8                           baseos              62 k
+ blosc                                  x86_64  1.20.1-1.el8                         openstack-wallaby   62 k
+ cryptsetup                             x86_64  2.3.7-2.el8                          baseos             198 k
+ cups-libs                              x86_64  1:2.2.6-44.el8                       baseos             434 k
+ desktop-file-utils                     x86_64  0.23-8.el8                           appstream           80 k
+ device-mapper-multipath                x86_64  0.8.4-22.el8                         baseos             200 k
+ gd                                     x86_64  2.2.5-7.el8                          appstream          144 k
+ gdk-pixbuf2                            x86_64  2.36.12-5.el8                        baseos             467 k
+ gdk-pixbuf2-modules                    x86_64  2.36.12-5.el8                        appstream          109 k
+ google-droid-sans-fonts                noarch  20120715-13.el8                      appstream          2.5 M
+ graphviz                               x86_64  2.40.1-43.el8                        appstream          1.7 M
+ gssproxy                               x86_64  0.8.0-20.el8                         baseos             119 k
+ gtk-update-icon-cache                  x86_64  3.22.30-10.el8                       appstream           33 k
+ gtk2                                   x86_64  2.24.32-5.el8                        appstream          3.4 M
+ hdf5                                   x86_64  1.10.5-5.el8                         openstack-wallaby  2.1 M
+ hicolor-icon-theme                     noarch  0.17-2.el8                           appstream           49 k
+ iscsi-initiator-utils                  x86_64  6.2.1.4-4.git095f59c.el8             baseos             378 k
+ iscsi-initiator-utils-iscsiuio         x86_64  6.2.1.4-4.git095f59c.el8             baseos             100 k
+ isns-utils-libs                        x86_64  0.99-1.el8                           baseos             105 k
+ jasper-libs                            x86_64  2.0.14-5.el8                         appstream          167 k
+ jbig2dec-libs                          x86_64  0.16-1.el8                           appstream           71 k
+ jbigkit-libs                           x86_64  2.1-14.el8                           appstream           55 k
+ keyutils                               x86_64  1.5.10-9.el8                         baseos              66 k
+ lcms2                                  x86_64  2.9-2.el8                            appstream          165 k
+ libICE                                 x86_64  1.0.9-15.el8                         appstream           74 k
+ libSM                                  x86_64  1.2.3-1.el8                          appstream           48 k
+ libXaw                                 x86_64  1.0.13-10.el8                        appstream          194 k
+ libXcomposite                          x86_64  0.4.4-14.el8                         appstream           28 k
+ libXcursor                             x86_64  1.1.15-3.el8                         appstream           36 k
+ libXdamage                             x86_64  1.1.4-14.el8                         appstream           27 k
+ libXi                                  x86_64  1.7.10-1.el8                         appstream           49 k
+ libXinerama                            x86_64  1.1.4-1.el8                          appstream           16 k
+ libXmu                                 x86_64  1.1.3-1.el8                          appstream           75 k
+ libXpm                                 x86_64  3.5.12-8.el8                         appstream           58 k
+ libXrandr                              x86_64  1.5.2-1.el8                          appstream           34 k
+ libXt                                  x86_64  1.1.5-12.el8                         appstream          186 k
+ libXxf86misc                           x86_64  1.0.4-1.el8                          appstream           23 k
+ libaec                                 x86_64  1.0.2-3.el8                          powertools          39 k
+ libcgroup                              x86_64  0.41-19.el8                          baseos              70 k
+ libcgroup-tools                        x86_64  0.41-19.el8                          baseos              93 k
+ libfontenc                             x86_64  1.1.3-8.el8                          appstream           37 k
+ libgfortran                            x86_64  8.5.0-10.el8                         baseos             643 k
+ libgs                                  x86_64  9.27-1.el8                           appstream          3.1 M
+ libidn                                 x86_64  1.34-5.el8                           appstream          239 k
+ libijs                                 x86_64  0.35-5.el8                           appstream           30 k
+ libmcpp                                x86_64  2.7.2-20.el8                         appstream           81 k
+ libpaper                               x86_64  1.1.24-22.el8                        appstream           45 k
+ libpkgconf                             x86_64  1.4.2-1.el8                          baseos              35 k
+ libqhull                               x86_64  1:7.2.1-2.el8                        openstack-wallaby  168 k
+ libquadmath                            x86_64  8.5.0-10.el8                         baseos             171 k
+ librsvg2                               x86_64  2.42.7-4.el8                         appstream          571 k
+ libsodium                              x86_64  1.0.18-2.el8                         ceph-nautilus      163 k
+ libtiff                                x86_64  4.0.9-21.el8                         appstream          188 k
+ libtool-ltdl                           x86_64  2.4.6-25.el8                         baseos              58 k
+ libverto-libevent                      x86_64  0.3.0-5.el8                          baseos              16 k
+ libwebp                                x86_64  1.0.0-5.el8                          appstream          272 k
+ libxslt                                x86_64  1.1.32-6.el8                         baseos             250 k
+ mcpp                                   x86_64  2.7.2-20.el8                         appstream           31 k
+ nfs-utils                              x86_64  1:2.3.3-50.el8                       baseos             504 k
+ openblas                               x86_64  0.3.15-3.el8                         appstream          4.7 M
+ openblas-threads                       x86_64  0.3.15-3.el8                         appstream          4.9 M
+ openjpeg2                              x86_64  2.4.0-4.el8                          appstream          165 k
+ perl-Filter                            x86_64  2:1.58-2.el8                         appstream           82 k
+ perl-Text-Unidecode                    noarch  1.30-5.el8                           appstream          149 k
+ perl-XML-Parser                        x86_64  2.44-11.el8                          appstream          226 k
+ perl-XML-XPath                         noarch  1.42-3.el8                           appstream           88 k
+ perl-encoding                          x86_64  4:2.22-3.el8                         appstream           68 k
+ perl-open                              noarch  1.11-421.el8                         appstream           78 k
+ pkgconf                                x86_64  1.4.2-1.el8                          baseos              38 k
+ pkgconf-m4                             noarch  1.4.2-1.el8                          baseos              17 k
+ pkgconf-pkg-config                     x86_64  1.4.2-1.el8                          baseos              15 k
+ platform-python-devel                  x86_64  3.6.8-45.el8                         appstream          250 k
+ python-oslo-cache-lang                 noarch  2.7.1-1.el8                          openstack-wallaby   16 k
+ python-oslo-concurrency-lang           noarch  4.4.0-1.el8                          openstack-wallaby   13 k
+ python-oslo-db-lang                    noarch  8.5.1-1.el8                          openstack-wallaby   13 k
+ python-oslo-i18n-lang                  noarch  5.0.1-2.el8                          openstack-wallaby   13 k
+ python-oslo-log-lang                   noarch  4.4.0-2.el8                          openstack-wallaby   13 k
+ python-oslo-middleware-lang            noarch  4.2.1-1.el8                          openstack-wallaby   12 k
+ python-oslo-policy-lang                noarch  3.7.1-1.el8                          openstack-wallaby   12 k
+ python-oslo-privsep-lang               noarch  2.5.1-1.el8                          openstack-wallaby   12 k
+ python-oslo-utils-lang                 noarch  4.8.1-1.el8                          openstack-wallaby   12 k
+ python-oslo-versionedobjects-lang      noarch  2.4.1-1.el8                          openstack-wallaby   12 k
+ python-oslo-vmware-lang                noarch  3.8.1-1.el8                          openstack-wallaby   13 k
+ python-pycadf-common                   noarch  3.1.1-2.el8                          openstack-wallaby   14 k
+ python-rpm-macros                      noarch  3-41.el8                             appstream           15 k
+ python-srpm-macros                     noarch  3-41.el8                             appstream           15 k
+ python3-Bottleneck                     x86_64  1.2.1-13.el8                         openstack-wallaby  131 k
+ python3-PyMySQL                        noarch  0.10.1-2.module_el8.5.0+761+faacb0fb appstream           98 k
+ python3-alembic                        noarch  1.4.3-1.el8                          openstack-wallaby  816 k
+ python3-amqp                           noarch  5.0.5-1.el8                          openstack-wallaby   97 k
+ python3-attrs                          noarch  17.4.0-6.el8                         appstream           53 k
+ python3-automaton                      noarch  2.3.1-1.el8                          openstack-wallaby   41 k
+ python3-babel                          noarch  2.5.1-7.el8                          appstream          4.8 M
+ python3-barbicanclient                 noarch  5.1.0-1.el8                          openstack-wallaby  130 k
+ python3-bcrypt                         x86_64  3.1.7-3.el8s                         ceph-nautilus       44 k
+ python3-boto3                          noarch  1.6.1-2.el8                          openstack-wallaby  137 k
+ python3-botocore                       noarch  1.17.52-1.el8                        openstack-wallaby  4.4 M
+ python3-cachetools                     noarch  4.2.0-1.el8                          openstack-wallaby   35 k
+ python3-cairo                          x86_64  1.16.3-6.el8                         appstream           90 k
+ python3-castellan                      noarch  3.7.2-1.el8                          openstack-wallaby  127 k
+ python3-cffi                           x86_64  1.13.2-1.el8                         openstack-wallaby  245 k
+ python3-chardet                        noarch  3.0.4-7.el8                          baseos             195 k
+ python3-cinder                         noarch  1:18.1.0-1.el8                       openstack-wallaby  7.4 k
+ python3-cinder-common                  noarch  1:18.1.0-1.el8                       openstack-wallaby  4.1 M
+ python3-cinderclient                   noarch  7.4.1-1.el8                          openstack-wallaby  241 k
+ python3-cliff                          noarch  3.7.0-1.el8                          openstack-wallaby   95 k
+ python3-cmd2                           noarch  1.4.0-1.1.el8                        openstack-wallaby  307 k
+ python3-colorama                       noarch  0.4.3-3.el8                          openstack-wallaby   36 k
+ python3-cryptography                   x86_64  3.2.1-5.el8                          baseos             559 k
+ python3-cursive                        noarch  0.2.2-1.el8                          openstack-wallaby   58 k
+ python3-cycler                         noarch  0.10.0-13.el8                        openstack-wallaby   20 k
+ python3-debtcollector                  noarch  2.2.0-1.el8                          openstack-wallaby   32 k
+ python3-docutils                       noarch  0.14-12.module_el8.5.0+761+faacb0fb  appstream          1.6 M
+ python3-dogpile-cache                  noarch  1.1.2-1.1.el8                        openstack-wallaby   90 k
+ python3-editor                         noarch  1.0.4-4.el8                          openstack-wallaby   19 k
+ python3-etcd3gw                        noarch  0.2.5-1.el8                          openstack-wallaby   41 k
+ python3-eventlet                       noarch  0.30.0-1.1.el8                       openstack-wallaby  607 k
+ python3-fasteners                      noarch  0.14.1-20.el8                        openstack-wallaby   44 k
+ python3-fluidity-sm                    noarch  0.2.0-16.el8                         openstack-wallaby   20 k
+ python3-funcsigs                       noarch  1.0.2-17.el8                         ceph-nautilus       30 k
+ python3-futurist                       noarch  2.3.0-2.el8                          openstack-wallaby   63 k
+ python3-glanceclient                   noarch  1:3.3.0-1.el8                        openstack-wallaby  147 k
+ python3-google-api-client              noarch  1:1.6.7-10.el8                       openstack-wallaby   97 k
+ python3-greenlet                       x86_64  0.4.13-4.el8                         appstream           31 k
+ python3-httplib2                       noarch  0.10.3-4.el8                         powertools         108 k
+ python3-idna                           noarch  2.5-5.el8                            baseos              97 k
+ python3-importlib-metadata             noarch  1.7.0-1.el8                          openstack-wallaby   46 k
+ python3-inotify                        noarch  0.9.6-13.el8                         baseos              57 k
+ python3-iso8601                        noarch  0.1.12-3.el8                         openstack-wallaby   25 k
+ python3-jeepney                        noarch  0.4.3-1.el8                          openstack-wallaby  4.7 M
+ python3-jinja2                         noarch  2.10.1-3.el8                         appstream          538 k
+ python3-jmespath                       noarch  0.9.0-11.el8                         appstream           45 k
+ python3-jsonpatch                      noarch  1.21-2.el8                           appstream           27 k
+ python3-jsonpointer                    noarch  1.10-11.el8                          appstream           20 k
+ python3-jsonschema                     noarch  3.2.0-5.el8                          openstack-wallaby  112 k
+ python3-kazoo                          noarch  2.8.0-1.el8                          openstack-wallaby  164 k
+ python3-keyring                        noarch  21.0.0-1.el8                         openstack-wallaby   80 k
+ python3-keystoneauth1                  noarch  4.3.1-1.el8                          openstack-wallaby  431 k
+ python3-keystoneclient                 noarch  1:4.2.0-1.el8                        openstack-wallaby  252 k
+ python3-keystonemiddleware             noarch  9.2.0-1.el8                          openstack-wallaby   92 k
+ python3-kiwisolver                     x86_64  1.1.0-4.el8                          openstack-wallaby   78 k
+ python3-kombu                          noarch  1:5.0.2-1.el8                        openstack-wallaby  338 k
+ python3-lexicon                        noarch  1.0.0-9.el8                          openstack-wallaby   19 k
+ python3-lxml                           x86_64  4.2.3-4.el8                          appstream          1.5 M
+ python3-mako                           noarch  1.0.6-13.el8                         appstream          157 k
+ python3-markupsafe                     x86_64  0.23-19.el8                          appstream           39 k
+ python3-matplotlib                     x86_64  3.1.1-2.el8                          openstack-wallaby  3.3 M
+ python3-matplotlib-data                noarch  3.1.1-2.el8                          openstack-wallaby  1.8 M
+ python3-matplotlib-data-fonts          noarch  3.1.1-2.el8                          openstack-wallaby  2.4 M
+ python3-matplotlib-tk                  x86_64  3.1.1-2.el8                          openstack-wallaby   64 k
+ python3-memcached                      noarch  1.59-1.el8                           openstack-wallaby   44 k
+ python3-migrate                        noarch  0.13.0-1.el8                         openstack-wallaby  238 k
+ python3-mock                           noarch  3.0.5-7.el8                          ceph-nautilus       55 k
+ python3-msgpack                        x86_64  1.0.2-1.el8                          openstack-wallaby   93 k
+ python3-netaddr                        noarch  0.7.19-8.el8                         appstream          1.5 M
+ python3-netifaces                      x86_64  0.10.6-4.el8                         appstream           25 k
+ python3-networkx                       noarch  2.5-1.el8                            openstack-wallaby  2.5 M
+ python3-novaclient                     noarch  1:17.4.0-1.el8                       openstack-wallaby  225 k
+ python3-numexpr                        x86_64  2.7.1-1.el8                          openstack-wallaby  198 k
+ python3-numpy                          x86_64  1:1.14.3-10.el8                      appstream          3.7 M
+ python3-numpy-f2py                     x86_64  1:1.14.3-10.el8                      appstream          225 k
+ python3-oauth2client                   noarch  4.1.3-8.el8                          openstack-wallaby  149 k
+ python3-os-brick                       noarch  4.3.2-1.el8                          openstack-wallaby  1.1 M
+ python3-os-service-types               noarch  1.7.0-1.el8                          openstack-wallaby   36 k
+ python3-os-win                         noarch  5.4.0-1.el8                          openstack-wallaby  450 k
+ python3-oslo-cache                     noarch  2.7.1-1.el8                          openstack-wallaby   53 k
+ python3-oslo-concurrency               noarch  4.4.0-1.el8                          openstack-wallaby   41 k
+ python3-oslo-config                    noarch  2:8.5.1-1.el8                        openstack-wallaby  227 k
+ python3-oslo-context                   noarch  3.2.1-1.el8                          openstack-wallaby   25 k
+ python3-oslo-db                        noarch  8.5.1-1.el8                          openstack-wallaby  147 k
+ python3-oslo-i18n                      noarch  5.0.1-2.el8                          openstack-wallaby   58 k
+ python3-oslo-log                       noarch  4.4.0-2.el8                          openstack-wallaby   63 k
+ python3-oslo-messaging                 noarch  12.7.2-1.el8                         openstack-wallaby  226 k
+ python3-oslo-middleware                noarch  4.2.1-1.el8                          openstack-wallaby   53 k
+ python3-oslo-policy                    noarch  3.7.1-1.el8                          openstack-wallaby   75 k
+ python3-oslo-privsep                   noarch  2.5.1-1.el8                          openstack-wallaby   40 k
+ python3-oslo-reports                   noarch  2.2.0-2.el8                          openstack-wallaby   59 k
+ python3-oslo-rootwrap                  noarch  6.3.1-1.el8                          openstack-wallaby   44 k
+ python3-oslo-serialization             noarch  4.1.1-1.el8                          openstack-wallaby   32 k
+ python3-oslo-service                   noarch  2.5.1-1.el8                          openstack-wallaby   70 k
+ python3-oslo-upgradecheck              noarch  1.3.1-1.el8                          openstack-wallaby   26 k
+ python3-oslo-utils                     noarch  4.8.1-1.el8                          openstack-wallaby   80 k
+ python3-oslo-versionedobjects          noarch  2.4.1-1.el8                          openstack-wallaby   78 k
+ python3-oslo-vmware                    noarch  3.8.1-1.el8                          openstack-wallaby  232 k
+ python3-osprofiler                     noarch  3.4.0-2.el8                          openstack-wallaby  132 k
+ python3-packaging                      noarch  20.4-1.el8                           openstack-wallaby   67 k
+ python3-pandas                         x86_64  0.25.3-1.el8                         openstack-wallaby   11 M
+ python3-paramiko                       noarch  2.7.2-1.el8                          openstack-wallaby  314 k
+ python3-paste                          noarch  3.5.0-1.el8                          openstack-wallaby  813 k
+ python3-paste-deploy                   noarch  2.1.1-1.el8                          openstack-wallaby   40 k
+ python3-pbr                            noarch  5.5.1-1.el8                          openstack-wallaby  1.1 M
+ python3-pillow                         x86_64  5.1.1-18.el8                         appstream          632 k
+ python3-pip                            noarch  9.0.3-22.el8                         appstream           20 k
+ python3-ply                            noarch  3.9-9.el8                            baseos             111 k
+ python3-prettytable                    noarch  0.7.2-14.el8                         appstream           44 k
+ python3-psutil                         x86_64  5.7.3-1.el8                          openstack-wallaby  420 k
+ python3-pyOpenSSL                      noarch  19.0.0-1.el8                         appstream          103 k
+ python3-pyasn1                         noarch  0.4.6-3.el8                          ceph-nautilus      140 k
+ python3-pyasn1-modules                 noarch  0.4.6-3.el8                          ceph-nautilus      151 k
+ python3-pycadf                         noarch  3.1.1-2.el8                          openstack-wallaby   51 k
+ python3-pycparser                      noarch  2.14-14.el8                          baseos             109 k
+ python3-pydot                          noarch  1.4.1-1.el8                          openstack-wallaby   51 k
+ python3-pygraphviz                     x86_64  1.5-9.el8                            openstack-wallaby   91 k
+ python3-pynacl                         x86_64  1.4.0-1.el8                          openstack-wallaby  109 k
+ python3-pyngus                         noarch  2.3.0-4.el8                          openstack-wallaby   54 k
+ python3-pyperclip                      noarch  1.8.0-2.el8                          openstack-wallaby   24 k
+ python3-pyrsistent                     x86_64  0.17.3-1.el8                         openstack-wallaby  107 k
+ python3-pysocks                        noarch  1.6.8-3.el8                          baseos              34 k
+ python3-pytz                           noarch  2017.2-9.el8                         appstream           54 k
+ python3-pyyaml                         x86_64  5.4.1-2.el8                          openstack-wallaby  208 k
+ python3-qpid-proton                    x86_64  0.30.0-1.el8                         openstack-wallaby  396 k
+ python3-redis                          noarch  3.5.3-1.el8                          openstack-wallaby  142 k
+ python3-repoze-lru                     noarch  0.7-6.el8                            ceph-nautilus       33 k
+ python3-requests                       noarch  2.25.1-1.el8                         openstack-wallaby  128 k
+ python3-rfc3986                        noarch  1.4.0-3.el8                          openstack-wallaby   52 k
+ python3-routes                         noarch  2.4.1-12.el8                         ceph-nautilus      196 k
+ python3-rpm-generators                 noarch  5-7.el8                              appstream           25 k
+ python3-rpm-macros                     noarch  3-41.el8                             appstream           14 k
+ python3-rsa                            noarch  4.6-2.el8                            openstack-wallaby   60 k
+ python3-s3transfer                     noarch  0.3.3-3.el8                          openstack-wallaby  108 k
+ python3-scipy                          x86_64  1.0.0-21.module_el8.5.0+771+e5d9a225 appstream           14 M
+ python3-secretstorage                  noarch  3.1.1-4.el8                          openstack-wallaby   36 k
+ python3-simplejson                     x86_64  3.17.2-2.el8                         openstack-wallaby  280 k
+ python3-soupsieve                      noarch  2.1.0-1.el8                          openstack-wallaby   66 k
+ python3-sqlalchemy                     x86_64  1.3.2-2.module_el8.5.0+761+faacb0fb  appstream          1.9 M
+ python3-sqlparse                       noarch  0.3.1-3.el8                          openstack-wallaby   88 k
+ python3-statsd                         noarch  3.2.1-16.el8                         openstack-wallaby   35 k
+ python3-stevedore                      noarch  3.3.1-1.el8                          openstack-wallaby   69 k
+ python3-suds                           noarch  0.7-0.10.94664ddd46a6.el8            appstream          242 k
+ python3-swiftclient                    noarch  3.11.1-1.el8                         openstack-wallaby  175 k
+ python3-tables                         x86_64  3.5.2-6.el8                          openstack-wallaby  1.4 M
+ python3-tabulate                       noarch  0.8.7-4.el8                          openstack-wallaby   50 k
+ python3-taskflow                       noarch  4.6.0-1.el8                          openstack-wallaby  689 k
+ python3-tempita                        noarch  0.5.1-25.el8                         openstack-wallaby   39 k
+ python3-tenacity                       noarch  6.2.0-1.el8                          openstack-wallaby   50 k
+ python3-tkinter                        x86_64  3.6.8-45.el8                         appstream          372 k
+ python3-tooz                           noarch  2.8.2-1.el8                          openstack-wallaby  109 k
+ python3-uritemplate                    noarch  3.0.0-10.el8                         openstack-wallaby   23 k
+ python3-urllib3                        noarch  1.25.10-4.el8                        openstack-wallaby  189 k
+ python3-vine                           noarch  5.0.0-2.el8                          openstack-wallaby   26 k
+ python3-voluptuous                     noarch  0.12.1-1.el8                         openstack-wallaby   62 k
+ python3-warlock                        noarch  1.3.3-1.el8                          openstack-wallaby   22 k
+ python3-wcwidth                        noarch  0.2.5-2.el8                          openstack-wallaby   47 k
+ python3-webencodings                   noarch  0.5.1-6.el8                          appstream           27 k
+ python3-webob                          noarch  1.8.6-3.el8                          openstack-wallaby  253 k
+ python3-wrapt                          x86_64  1.12.1-3.el8                         openstack-wallaby   55 k
+ python3-yappi                          x86_64  1.3.0-1.el8                          openstack-wallaby   54 k
+ python3-zake                           noarch  0.2.2-18.el8                         openstack-wallaby   46 k
+ python3-zipp                           noarch  3.4.0-1.el8                          openstack-wallaby   16 k
+ python3-zstd                           x86_64  1.4.5.1-1.el8                        openstack-wallaby   18 k
+ python36                               x86_64  3.6.8-38.module_el8.5.0+895+a459eca8 appstream           19 k
+ qpid-proton-c                          x86_64  0.30.0-1.el8                         openstack-wallaby  199 k
+ quota                                  x86_64  1:4.04-14.el8                        baseos             214 k
+ quota-nls                              noarch  1:4.04-14.el8                        baseos              95 k
+ rpcbind                                x86_64  1.2.5-8.el8                          baseos              70 k
+ sysfsutils                             x86_64  2.1.0-25.el8                         appstream           49 k
+ tcl                                    x86_64  1:8.6.8-2.el8                        baseos             1.1 M
+ texlive-base                           noarch  7:20180414-25.el8                    appstream          2.4 M
+ texlive-dvipng                         x86_64  7:20180414-25.el8                    appstream          332 k
+ texlive-kpathsea                       x86_64  7:20180414-25.el8                    appstream          1.1 M
+ texlive-lib                            x86_64  7:20180414-25.el8                    appstream          541 k
+ texlive-tetex                          noarch  7:20180414-25.el8                    appstream          403 k
+ texlive-texlive.infra                  noarch  7:20180414-25.el8                    appstream          280 k
+ tk                                     x86_64  1:8.6.8-1.el8                        appstream          1.6 M
+ urw-base35-bookman-fonts               noarch  20170801-10.el8                      appstream          857 k
+ urw-base35-c059-fonts                  noarch  20170801-10.el8                      appstream          884 k
+ urw-base35-d050000l-fonts              noarch  20170801-10.el8                      appstream           79 k
+ urw-base35-fonts                       noarch  20170801-10.el8                      appstream           12 k
+ urw-base35-fonts-common                noarch  20170801-10.el8                      appstream           23 k
+ urw-base35-gothic-fonts                noarch  20170801-10.el8                      appstream          654 k
+ urw-base35-nimbus-mono-ps-fonts        noarch  20170801-10.el8                      appstream          801 k
+ urw-base35-nimbus-roman-fonts          noarch  20170801-10.el8                      appstream          865 k
+ urw-base35-nimbus-sans-fonts           noarch  20170801-10.el8                      appstream          1.3 M
+ urw-base35-p052-fonts                  noarch  20170801-10.el8                      appstream          982 k
+ urw-base35-standard-symbols-ps-fonts   noarch  20170801-10.el8                      appstream           44 k
+ urw-base35-z003-fonts                  noarch  20170801-10.el8                      appstream          279 k
+ xdg-utils                              noarch  1.1.2-5.el8                          appstream           84 k
+ xorg-x11-font-utils                    x86_64  1:7.5-41.el8                         appstream          104 k
+ xorg-x11-fonts-ISO8859-1-100dpi        noarch  7.5-19.el8                           appstream          1.1 M
+ xorg-x11-server-utils                  x86_64  7.7-27.el8                           appstream          198 k
+Installing weak dependencies:
+ python3-beautifulsoup4                 noarch  4.9.3-1.el8                          openstack-wallaby  215 k
+ python3-cssselect                      noarch  0.9.2-13.el8                         openstack-wallaby   40 k
+ python3-html5lib                       noarch  1:0.999999999-6.el8                  appstream          214 k
+ python3-invoke                         noarch  1.4.0-1.el8                          openstack-wallaby  157 k
+
+Transaction Summary
+=============================================================================================================
+Install  289 Packages
+
+Total download size: 136 M
+Installed size: 586 M
+Downloading Packages:
+(1/289): adobe-mappings-cmap-deprecated-2017120 452 kB/s | 119 kB     00:00    
+(2/289): adobe-mappings-pdf-20180407-1.el8.noar 2.0 MB/s | 707 kB     00:00    
+(3/289): atk-2.28.1-1.el8.x86_64.rpm            2.4 MB/s | 272 kB     00:00    
+(4/289): desktop-file-utils-0.23-8.el8.x86_64.r 1.3 MB/s |  80 kB     00:00    
+(5/289): adobe-mappings-cmap-20171205-3.el8.noa 5.0 MB/s | 2.1 MB     00:00    
+(6/289): gd-2.2.5-7.el8.x86_64.rpm              2.6 MB/s | 144 kB     00:00    
+(7/289): gdk-pixbuf2-modules-2.36.12-5.el8.x86_ 2.5 MB/s | 109 kB     00:00    
+(8/289): gtk-update-icon-cache-3.22.30-10.el8.x 431 kB/s |  33 kB     00:00    
+(9/289): graphviz-2.40.1-43.el8.x86_64.rpm      5.0 MB/s | 1.7 MB     00:00    
+(10/289): google-droid-sans-fonts-20120715-13.e 5.9 MB/s | 2.5 MB     00:00    
+(11/289): hicolor-icon-theme-0.17-2.el8.noarch. 435 kB/s |  49 kB     00:00    
+(12/289): gtk2-2.24.32-5.el8.x86_64.rpm         8.5 MB/s | 3.4 MB     00:00    
+(13/289): jasper-libs-2.0.14-5.el8.x86_64.rpm   1.5 MB/s | 167 kB     00:00    
+(14/289): jbig2dec-libs-0.16-1.el8.x86_64.rpm   835 kB/s |  71 kB     00:00    
+(15/289): jbigkit-libs-2.1-14.el8.x86_64.rpm    578 kB/s |  55 kB     00:00    
+(16/289): lcms2-2.9-2.el8.x86_64.rpm            1.7 MB/s | 165 kB     00:00    
+(17/289): libICE-1.0.9-15.el8.x86_64.rpm        979 kB/s |  74 kB     00:00    
+(18/289): libSM-1.2.3-1.el8.x86_64.rpm          722 kB/s |  48 kB     00:00    
+(19/289): libXcomposite-0.4.4-14.el8.x86_64.rpm 351 kB/s |  28 kB     00:00    
+(20/289): libXcursor-1.1.15-3.el8.x86_64.rpm    739 kB/s |  36 kB     00:00    
+(21/289): libXaw-1.0.13-10.el8.x86_64.rpm       2.0 MB/s | 194 kB     00:00    
+(22/289): libXdamage-1.1.4-14.el8.x86_64.rpm    664 kB/s |  27 kB     00:00    
+(23/289): libXi-1.7.10-1.el8.x86_64.rpm         521 kB/s |  49 kB     00:00    
+(24/289): libXinerama-1.1.4-1.el8.x86_64.rpm    193 kB/s |  16 kB     00:00    
+(25/289): libXmu-1.1.3-1.el8.x86_64.rpm         310 kB/s |  75 kB     00:00    
+(26/289): libXrandr-1.5.2-1.el8.x86_64.rpm      195 kB/s |  34 kB     00:00    
+(27/289): libXpm-3.5.12-8.el8.x86_64.rpm        298 kB/s |  58 kB     00:00    
+(28/289): libXxf86misc-1.0.4-1.el8.x86_64.rpm   370 kB/s |  23 kB     00:00    
+(29/289): libfontenc-1.1.3-8.el8.x86_64.rpm     586 kB/s |  37 kB     00:00    
+(30/289): libXt-1.1.5-12.el8.x86_64.rpm         2.3 MB/s | 186 kB     00:00    
+(31/289): libijs-0.35-5.el8.x86_64.rpm          468 kB/s |  30 kB     00:00    
+(32/289): libidn-1.34-5.el8.x86_64.rpm          2.8 MB/s | 239 kB     00:00    
+(33/289): libmcpp-2.7.2-20.el8.x86_64.rpm       1.5 MB/s |  81 kB     00:00    
+(34/289): libpaper-1.1.24-22.el8.x86_64.rpm     764 kB/s |  45 kB     00:00    
+(35/289): libtiff-4.0.9-21.el8.x86_64.rpm       2.4 MB/s | 188 kB     00:00    
+(36/289): librsvg2-2.42.7-4.el8.x86_64.rpm      5.5 MB/s | 571 kB     00:00    
+(37/289): libgs-9.27-1.el8.x86_64.rpm            12 MB/s | 3.1 MB     00:00    
+(38/289): mcpp-2.7.2-20.el8.x86_64.rpm          424 kB/s |  31 kB     00:00    
+(39/289): libwebp-1.0.0-5.el8.x86_64.rpm        2.1 MB/s | 272 kB     00:00    
+(40/289): openjpeg2-2.4.0-4.el8.x86_64.rpm      1.2 MB/s | 165 kB     00:00    
+(41/289): perl-Filter-1.58-2.el8.x86_64.rpm     841 kB/s |  82 kB     00:00    
+(42/289): perl-Text-Unidecode-1.30-5.el8.noarch 1.6 MB/s | 149 kB     00:00    
+(43/289): openblas-0.3.15-3.el8.x86_64.rpm      8.6 MB/s | 4.7 MB     00:00    
+(44/289): perl-XML-Parser-2.44-11.el8.x86_64.rp 1.6 MB/s | 226 kB     00:00    
+(45/289): openblas-threads-0.3.15-3.el8.x86_64. 7.8 MB/s | 4.9 MB     00:00    
+(46/289): perl-encoding-2.22-3.el8.x86_64.rpm   629 kB/s |  68 kB     00:00    
+(47/289): perl-XML-XPath-1.42-3.el8.noarch.rpm  723 kB/s |  88 kB     00:00    
+(48/289): platform-python-devel-3.6.8-45.el8.x8 3.1 MB/s | 250 kB     00:00    
+(49/289): python-rpm-macros-3-41.el8.noarch.rpm 188 kB/s |  15 kB     00:00    
+(50/289): perl-open-1.11-421.el8.noarch.rpm     842 kB/s |  78 kB     00:00    
+(51/289): python-srpm-macros-3-41.el8.noarch.rp 410 kB/s |  15 kB     00:00    
+(52/289): python3-attrs-17.4.0-6.el8.noarch.rpm 486 kB/s |  53 kB     00:00    
+(53/289): python3-PyMySQL-0.10.1-2.module_el8.5 823 kB/s |  98 kB     00:00    
+(54/289): python3-cairo-1.16.3-6.el8.x86_64.rpm 589 kB/s |  90 kB     00:00    
+(55/289): python3-greenlet-0.4.13-4.el8.x86_64. 400 kB/s |  31 kB     00:00    
+(56/289): python3-html5lib-0.999999999-6.el8.no 1.5 MB/s | 214 kB     00:00    
+(57/289): python3-docutils-0.14-12.module_el8.5 4.1 MB/s | 1.6 MB     00:00    
+(58/289): python3-jmespath-0.9.0-11.el8.noarch. 642 kB/s |  45 kB     00:00    
+(59/289): python3-jinja2-2.10.1-3.el8.noarch.rp 4.4 MB/s | 538 kB     00:00    
+(60/289): python3-jsonpatch-1.21-2.el8.noarch.r 687 kB/s |  27 kB     00:00    
+(61/289): python3-babel-2.5.1-7.el8.noarch.rpm  7.1 MB/s | 4.8 MB     00:00    
+(62/289): python3-jsonpointer-1.10-11.el8.noarc 110 kB/s |  20 kB     00:00    
+(63/289): python3-lxml-4.2.3-4.el8.x86_64.rpm   8.0 MB/s | 1.5 MB     00:00    
+(64/289): python3-markupsafe-0.23-19.el8.x86_64 733 kB/s |  39 kB     00:00    
+(65/289): python3-mako-1.0.6-13.el8.noarch.rpm  2.4 MB/s | 157 kB     00:00    
+(66/289): python3-netifaces-0.10.6-4.el8.x86_64 668 kB/s |  25 kB     00:00    
+(67/289): python3-numpy-f2py-1.14.3-10.el8.x86_ 2.9 MB/s | 225 kB     00:00    
+(68/289): python3-netaddr-0.7.19-8.el8.noarch.r 9.8 MB/s | 1.5 MB     00:00    
+(69/289): python3-pip-9.0.3-22.el8.noarch.rpm    99 kB/s |  20 kB     00:00    
+(70/289): python3-pillow-5.1.1-18.el8.x86_64.rp 2.7 MB/s | 632 kB     00:00    
+(71/289): python3-numpy-1.14.3-10.el8.x86_64.rp 9.8 MB/s | 3.7 MB     00:00    
+(72/289): python3-prettytable-0.7.2-14.el8.noar 778 kB/s |  44 kB     00:00    
+(73/289): python3-pyOpenSSL-19.0.0-1.el8.noarch 1.3 MB/s | 103 kB     00:00    
+(74/289): python3-rpm-generators-5-7.el8.noarch 334 kB/s |  25 kB     00:00    
+(75/289): python3-pytz-2017.2-9.el8.noarch.rpm  596 kB/s |  54 kB     00:00    
+(76/289): python3-rpm-macros-3-41.el8.noarch.rp 247 kB/s |  14 kB     00:00    
+(77/289): python3-suds-0.7-0.10.94664ddd46a6.el 1.6 MB/s | 242 kB     00:00    
+(78/289): python3-tkinter-3.6.8-45.el8.x86_64.r 3.1 MB/s | 372 kB     00:00    
+(79/289): python3-sqlalchemy-1.3.2-2.module_el8 6.4 MB/s | 1.9 MB     00:00    
+(80/289): python3-webencodings-0.5.1-6.el8.noar 376 kB/s |  27 kB     00:00    
+(81/289): python36-3.6.8-38.module_el8.5.0+895+ 288 kB/s |  19 kB     00:00    
+(82/289): sysfsutils-2.1.0-25.el8.x86_64.rpm    612 kB/s |  49 kB     00:00    
+(83/289): texlive-dvipng-20180414-25.el8.x86_64 2.7 MB/s | 332 kB     00:00    
+(84/289): texlive-base-20180414-25.el8.noarch.r  11 MB/s | 2.4 MB     00:00    
+(85/289): texlive-lib-20180414-25.el8.x86_64.rp 7.3 MB/s | 541 kB     00:00    
+(86/289): texlive-kpathsea-20180414-25.el8.x86_ 6.6 MB/s | 1.1 MB     00:00    
+(87/289): texlive-tetex-20180414-25.el8.noarch. 4.6 MB/s | 403 kB     00:00    
+(88/289): texlive-texlive.infra-20180414-25.el8 3.7 MB/s | 280 kB     00:00    
+(89/289): tk-8.6.8-1.el8.x86_64.rpm              11 MB/s | 1.6 MB     00:00    
+(90/289): urw-base35-bookman-fonts-20170801-10. 6.0 MB/s | 857 kB     00:00    
+(91/289): python3-scipy-1.0.0-21.module_el8.5.0 5.2 MB/s |  14 MB     00:02    
+(92/289): urw-base35-d050000l-fonts-20170801-10  47 kB/s |  79 kB     00:01    
+(93/289): urw-base35-c059-fonts-20170801-10.el8 499 kB/s | 884 kB     00:01    
+(94/289): urw-base35-fonts-20170801-10.el8.noar 160 kB/s |  12 kB     00:00    
+(95/289): urw-base35-fonts-common-20170801-10.e 255 kB/s |  23 kB     00:00    
+(96/289): urw-base35-gothic-fonts-20170801-10.e 3.0 MB/s | 654 kB     00:00    
+(97/289): urw-base35-nimbus-roman-fonts-2017080 2.5 MB/s | 865 kB     00:00    
+(98/289): urw-base35-nimbus-mono-ps-fonts-20170 2.1 MB/s | 801 kB     00:00    
+(99/289): urw-base35-nimbus-sans-fonts-20170801 6.7 MB/s | 1.3 MB     00:00    
+(100/289): urw-base35-standard-symbols-ps-fonts 1.0 MB/s |  44 kB     00:00    
+(101/289): urw-base35-z003-fonts-20170801-10.el 3.7 MB/s | 279 kB     00:00    
+(102/289): xdg-utils-1.1.2-5.el8.noarch.rpm     1.4 MB/s |  84 kB     00:00    
+(103/289): urw-base35-p052-fonts-20170801-10.el 7.7 MB/s | 982 kB     00:00    
+(104/289): xorg-x11-font-utils-7.5-41.el8.x86_6 623 kB/s | 104 kB     00:00    
+(105/289): xorg-x11-server-utils-7.7-27.el8.x86 1.1 MB/s | 198 kB     00:00    
+(106/289): xorg-x11-fonts-ISO8859-1-100dpi-7.5- 3.8 MB/s | 1.1 MB     00:00    
+(107/289): avahi-libs-0.7-20.el8.x86_64.rpm     310 kB/s |  62 kB     00:00    
+(108/289): cryptsetup-2.3.7-2.el8.x86_64.rpm    1.0 MB/s | 198 kB     00:00    
+(109/289): device-mapper-multipath-0.8.4-22.el8 1.6 MB/s | 200 kB     00:00    
+(110/289): gdk-pixbuf2-2.36.12-5.el8.x86_64.rpm 4.6 MB/s | 467 kB     00:00    
+(111/289): gssproxy-0.8.0-20.el8.x86_64.rpm     2.0 MB/s | 119 kB     00:00    
+(112/289): cups-libs-2.2.6-44.el8.x86_64.rpm    1.5 MB/s | 434 kB     00:00    
+(113/289): iscsi-initiator-utils-6.2.1.4-4.git0 6.2 MB/s | 378 kB     00:00    
+(114/289): iscsi-initiator-utils-iscsiuio-6.2.1 1.9 MB/s | 100 kB     00:00    
+(115/289): isns-utils-libs-0.99-1.el8.x86_64.rp 2.7 MB/s | 105 kB     00:00    
+(116/289): keyutils-1.5.10-9.el8.x86_64.rpm     1.4 MB/s |  66 kB     00:00    
+(117/289): libcgroup-0.41-19.el8.x86_64.rpm     1.3 MB/s |  70 kB     00:00    
+(118/289): libcgroup-tools-0.41-19.el8.x86_64.r 2.0 MB/s |  93 kB     00:00    
+(119/289): libpkgconf-1.4.2-1.el8.x86_64.rpm    779 kB/s |  35 kB     00:00    
+(120/289): libquadmath-8.5.0-10.el8.x86_64.rpm  3.8 MB/s | 171 kB     00:00    
+(121/289): libgfortran-8.5.0-10.el8.x86_64.rpm  6.1 MB/s | 643 kB     00:00    
+(122/289): libverto-libevent-0.3.0-5.el8.x86_64 456 kB/s |  16 kB     00:00    
+(123/289): libtool-ltdl-2.4.6-25.el8.x86_64.rpm 1.2 MB/s |  58 kB     00:00    
+(124/289): pkgconf-1.4.2-1.el8.x86_64.rpm       379 kB/s |  38 kB     00:00    
+(125/289): libxslt-1.1.32-6.el8.x86_64.rpm      1.9 MB/s | 250 kB     00:00    
+(126/289): nfs-utils-2.3.3-50.el8.x86_64.rpm    3.9 MB/s | 504 kB     00:00    
+(127/289): pkgconf-m4-1.4.2-1.el8.noarch.rpm    393 kB/s |  17 kB     00:00    
+(128/289): pkgconf-pkg-config-1.4.2-1.el8.x86_6 331 kB/s |  15 kB     00:00    
+(129/289): python3-chardet-3.0.4-7.el8.noarch.r 4.1 MB/s | 195 kB     00:00    
+(130/289): python3-inotify-0.9.6-13.el8.noarch. 1.5 MB/s |  57 kB     00:00    
+(131/289): python3-idna-2.5-5.el8.noarch.rpm    2.0 MB/s |  97 kB     00:00    
+(132/289): python3-ply-3.9-9.el8.noarch.rpm     2.6 MB/s | 111 kB     00:00    
+(133/289): python3-pycparser-2.14-14.el8.noarch 2.1 MB/s | 109 kB     00:00    
+(134/289): python3-cryptography-3.2.1-5.el8.x86 4.5 MB/s | 559 kB     00:00    
+(135/289): python3-pysocks-1.6.8-3.el8.noarch.r 867 kB/s |  34 kB     00:00    
+(136/289): quota-4.04-14.el8.x86_64.rpm         3.9 MB/s | 214 kB     00:00    
+(137/289): quota-nls-4.04-14.el8.noarch.rpm     1.8 MB/s |  95 kB     00:00    
+(138/289): rpcbind-1.2.5-8.el8.x86_64.rpm       1.8 MB/s |  70 kB     00:00    
+(139/289): tcl-8.6.8-2.el8.x86_64.rpm           8.5 MB/s | 1.1 MB     00:00    
+(140/289): libaec-1.0.2-3.el8.x86_64.rpm        163 kB/s |  39 kB     00:00    
+(141/289): python3-httplib2-0.10.3-4.el8.noarch 466 kB/s | 108 kB     00:00    
+(142/289): python3-funcsigs-1.0.2-17.el8.noarch 211 kB/s |  30 kB     00:00    
+(143/289): python3-bcrypt-3.1.7-3.el8s.x86_64.r 265 kB/s |  44 kB     00:00    
+(144/289): libsodium-1.0.18-2.el8.x86_64.rpm    535 kB/s | 163 kB     00:00    
+(145/289): python3-mock-3.0.5-7.el8.noarch.rpm  1.5 MB/s |  55 kB     00:00    
+(146/289): python3-pyasn1-0.4.6-3.el8.noarch.rp 2.4 MB/s | 140 kB     00:00    
+(147/289): python3-repoze-lru-0.7-6.el8.noarch. 1.1 MB/s |  33 kB     00:00    
+(148/289): python3-pyasn1-modules-0.4.6-3.el8.n 3.5 MB/s | 151 kB     00:00    
+(149/289): blosc-1.20.1-1.el8.x86_64.rpm        1.7 MB/s |  62 kB     00:00    
+(150/289): python3-routes-2.4.1-12.el8.noarch.r 3.7 MB/s | 196 kB     00:00    
+(151/289): libqhull-7.2.1-2.el8.x86_64.rpm      4.0 MB/s | 168 kB     00:00    
+(152/289): python-oslo-cache-lang-2.7.1-1.el8.n 604 kB/s |  16 kB     00:00    
+(153/289): openstack-cinder-18.1.0-1.el8.noarch 843 kB/s |  62 kB     00:00    
+(154/289): python-oslo-concurrency-lang-4.4.0-1 586 kB/s |  13 kB     00:00    
+(155/289): hdf5-1.10.5-5.el8.x86_64.rpm          15 MB/s | 2.1 MB     00:00    
+(156/289): python-oslo-db-lang-8.5.1-1.el8.noar 335 kB/s |  13 kB     00:00    
+(157/289): python-oslo-i18n-lang-5.0.1-2.el8.no 351 kB/s |  13 kB     00:00    
+(158/289): python-oslo-log-lang-4.4.0-2.el8.noa  72 kB/s |  13 kB     00:00    
+(159/289): python-oslo-middleware-lang-4.2.1-1.  68 kB/s |  12 kB     00:00    
+(160/289): python-oslo-policy-lang-3.7.1-1.el8.  68 kB/s |  12 kB     00:00    
+(161/289): python-oslo-versionedobjects-lang-2. 791 kB/s |  12 kB     00:00    
+(162/289): python-oslo-privsep-lang-2.5.1-1.el8 628 kB/s |  12 kB     00:00    
+(163/289): python-oslo-utils-lang-4.8.1-1.el8.n 597 kB/s |  12 kB     00:00    
+(164/289): python-oslo-vmware-lang-3.8.1-1.el8. 739 kB/s |  13 kB     00:00    
+(165/289): python-pycadf-common-3.1.1-2.el8.noa 729 kB/s |  14 kB     00:00    
+(166/289): python3-Bottleneck-1.2.1-13.el8.x86_ 5.7 MB/s | 131 kB     00:00    
+(167/289): python3-automaton-2.3.1-1.el8.noarch 1.9 MB/s |  41 kB     00:00    
+(168/289): python3-amqp-5.0.5-1.el8.noarch.rpm  3.9 MB/s |  97 kB     00:00    
+(169/289): python3-barbicanclient-5.1.0-1.el8.n 6.1 MB/s | 130 kB     00:00    
+(170/289): python3-beautifulsoup4-4.9.3-1.el8.n 5.3 MB/s | 215 kB     00:00    
+(171/289): python3-boto3-1.6.1-2.el8.noarch.rpm 5.1 MB/s | 137 kB     00:00    
+(172/289): python3-alembic-1.4.3-1.el8.noarch.r 9.0 MB/s | 816 kB     00:00    
+(173/289): python3-cachetools-4.2.0-1.el8.noarc 2.3 MB/s |  35 kB     00:00    
+(174/289): python3-castellan-3.7.2-1.el8.noarch 5.4 MB/s | 127 kB     00:00    
+(175/289): python3-cffi-1.13.2-1.el8.x86_64.rpm 4.2 MB/s | 245 kB     00:00    
+(176/289): python3-cinder-18.1.0-1.el8.noarch.r 394 kB/s | 7.4 kB     00:00    
+(177/289): python3-cinderclient-7.4.1-1.el8.noa 3.8 MB/s | 241 kB     00:00    
+(178/289): python3-cliff-3.7.0-1.el8.noarch.rpm 2.0 MB/s |  95 kB     00:00    
+(179/289): python3-cmd2-1.4.0-1.1.el8.noarch.rp 5.2 MB/s | 307 kB     00:00    
+(180/289): python3-colorama-0.4.3-3.el8.noarch. 573 kB/s |  36 kB     00:00    
+(181/289): python3-cinder-common-18.1.0-1.el8.n 5.3 MB/s | 4.1 MB     00:00    
+(182/289): python3-cssselect-0.9.2-13.el8.noarc  75 kB/s |  40 kB     00:00    
+(183/289): python3-botocore-1.17.52-1.el8.noarc 4.9 MB/s | 4.4 MB     00:00    
+(184/289): python3-cycler-0.10.0-13.el8.noarch. 546 kB/s |  20 kB     00:00    
+(185/289): python3-cursive-0.2.2-1.el8.noarch.r 1.3 MB/s |  58 kB     00:00    
+(186/289): python3-debtcollector-2.2.0-1.el8.no 1.4 MB/s |  32 kB     00:00    
+(187/289): python3-editor-1.0.4-4.el8.noarch.rp 990 kB/s |  19 kB     00:00    
+(188/289): python3-dogpile-cache-1.1.2-1.1.el8. 3.4 MB/s |  90 kB     00:00    
+(189/289): python3-etcd3gw-0.2.5-1.el8.noarch.r 1.8 MB/s |  41 kB     00:00    
+(190/289): python3-fasteners-0.14.1-20.el8.noar 1.8 MB/s |  44 kB     00:00    
+(191/289): python3-fluidity-sm-0.2.0-16.el8.noa 983 kB/s |  20 kB     00:00    
+(192/289): python3-futurist-2.3.0-2.el8.noarch. 3.0 MB/s |  63 kB     00:00    
+(193/289): python3-eventlet-0.30.0-1.1.el8.noar 7.5 MB/s | 607 kB     00:00    
+(194/289): python3-glanceclient-3.3.0-1.el8.noa 3.0 MB/s | 147 kB     00:00    
+(195/289): python3-importlib-metadata-1.7.0-1.e 2.7 MB/s |  46 kB     00:00    
+(196/289): python3-iso8601-0.1.12-3.el8.noarch. 1.5 MB/s |  25 kB     00:00    
+(197/289): python3-invoke-1.4.0-1.el8.noarch.rp 4.8 MB/s | 157 kB     00:00    
+(198/289): python3-jsonschema-3.2.0-5.el8.noarc 3.6 MB/s | 112 kB     00:00    
+(199/289): python3-kazoo-2.8.0-1.el8.noarch.rpm 3.9 MB/s | 164 kB     00:00    
+(200/289): python3-keyring-21.0.0-1.el8.noarch. 3.3 MB/s |  80 kB     00:00    
+(201/289): python3-keystoneauth1-4.3.1-1.el8.no 6.6 MB/s | 431 kB     00:00    
+(202/289): python3-google-api-client-1.6.7-10.e 387 kB/s |  97 kB     00:00    
+(203/289): python3-keystoneclient-4.2.0-1.el8.n 5.7 MB/s | 252 kB     00:00    
+(204/289): python3-kiwisolver-1.1.0-4.el8.x86_6 3.0 MB/s |  78 kB     00:00    
+(205/289): python3-keystonemiddleware-9.2.0-1.e 1.5 MB/s |  92 kB     00:00    
+(206/289): python3-lexicon-1.0.0-9.el8.noarch.r 968 kB/s |  19 kB     00:00    
+(207/289): python3-kombu-5.0.2-1.el8.noarch.rpm 4.8 MB/s | 338 kB     00:00    
+(208/289): python3-jeepney-0.4.3-1.el8.noarch.r 4.6 MB/s | 4.7 MB     00:01    
+(209/289): python3-matplotlib-data-3.1.1-2.el8. 2.5 MB/s | 1.8 MB     00:00    
+(210/289): python3-matplotlib-3.1.1-2.el8.x86_6 4.1 MB/s | 3.3 MB     00:00    
+(211/289): python3-matplotlib-tk-3.1.1-2.el8.x8 1.5 MB/s |  64 kB     00:00    
+(212/289): python3-memcached-1.59-1.el8.noarch. 2.3 MB/s |  44 kB     00:00    
+(213/289): python3-msgpack-1.0.2-1.el8.x86_64.r 3.0 MB/s |  93 kB     00:00    
+(214/289): python3-migrate-0.13.0-1.el8.noarch. 4.5 MB/s | 238 kB     00:00    
+(215/289): python3-novaclient-17.4.0-1.el8.noar 5.2 MB/s | 225 kB     00:00    
+(216/289): python3-numexpr-2.7.1-1.el8.x86_64.r 4.0 MB/s | 198 kB     00:00    
+(217/289): python3-matplotlib-data-fonts-3.1.1- 4.5 MB/s | 2.4 MB     00:00    
+(218/289): python3-oauth2client-4.1.3-8.el8.noa 497 kB/s | 149 kB     00:00    
+(219/289): python3-networkx-2.5-1.el8.noarch.rp 5.8 MB/s | 2.5 MB     00:00    
+(220/289): python3-os-service-types-1.7.0-1.el8 1.2 MB/s |  36 kB     00:00    
+(221/289): python3-oslo-cache-2.7.1-1.el8.noarc 1.8 MB/s |  53 kB     00:00    
+(222/289): python3-os-win-5.4.0-1.el8.noarch.rp 8.8 MB/s | 450 kB     00:00    
+(223/289): python3-oslo-concurrency-4.4.0-1.el8 1.6 MB/s |  41 kB     00:00    
+(224/289): python3-oslo-config-8.5.1-1.el8.noar 8.4 MB/s | 227 kB     00:00    
+(225/289): python3-oslo-context-3.2.1-1.el8.noa 1.1 MB/s |  25 kB     00:00    
+(226/289): python3-os-brick-4.3.2-1.el8.noarch. 8.3 MB/s | 1.1 MB     00:00    
+(227/289): python3-oslo-i18n-5.0.1-2.el8.noarch 1.9 MB/s |  58 kB     00:00    
+(228/289): python3-oslo-db-8.5.1-1.el8.noarch.r 4.1 MB/s | 147 kB     00:00    
+(229/289): python3-oslo-log-4.4.0-2.el8.noarch. 3.5 MB/s |  63 kB     00:00    
+(230/289): python3-oslo-middleware-4.2.1-1.el8. 2.5 MB/s |  53 kB     00:00    
+(231/289): python3-oslo-policy-3.7.1-1.el8.noar 4.3 MB/s |  75 kB     00:00    
+(232/289): python3-oslo-messaging-12.7.2-1.el8. 5.7 MB/s | 226 kB     00:00    
+(233/289): python3-oslo-privsep-2.5.1-1.el8.noa 2.3 MB/s |  40 kB     00:00    
+(234/289): python3-oslo-reports-2.2.0-2.el8.noa 3.1 MB/s |  59 kB     00:00    
+(235/289): python3-oslo-serialization-4.1.1-1.e 2.3 MB/s |  32 kB     00:00    
+(236/289): python3-oslo-rootwrap-6.3.1-1.el8.no 2.1 MB/s |  44 kB     00:00    
+(237/289): python3-oslo-service-2.5.1-1.el8.noa 4.0 MB/s |  70 kB     00:00    
+(238/289): python3-oslo-upgradecheck-1.3.1-1.el 1.7 MB/s |  26 kB     00:00    
+(239/289): python3-oslo-utils-4.8.1-1.el8.noarc 4.0 MB/s |  80 kB     00:00    
+(240/289): python3-oslo-versionedobjects-2.4.1- 3.7 MB/s |  78 kB     00:00    
+(241/289): python3-oslo-vmware-3.8.1-1.el8.noar 8.6 MB/s | 232 kB     00:00    
+(242/289): python3-osprofiler-3.4.0-2.el8.noarc 5.1 MB/s | 132 kB     00:00    
+(243/289): python3-packaging-20.4-1.el8.noarch. 3.4 MB/s |  67 kB     00:00    
+(244/289): python3-paramiko-2.7.2-1.el8.noarch. 5.0 MB/s | 314 kB     00:00    
+(245/289): python3-paste-deploy-2.1.1-1.el8.noa 1.6 MB/s |  40 kB     00:00    
+(246/289): python3-paste-3.5.0-1.el8.noarch.rpm 6.4 MB/s | 813 kB     00:00    
+(247/289): python3-psutil-5.7.3-1.el8.x86_64.rp 5.7 MB/s | 420 kB     00:00    
+(248/289): python3-pycadf-3.1.1-2.el8.noarch.rp 1.8 MB/s |  51 kB     00:00    
+(249/289): python3-pydot-1.4.1-1.el8.noarch.rpm 2.5 MB/s |  51 kB     00:00    
+(250/289): python3-pygraphviz-1.5-9.el8.x86_64. 3.3 MB/s |  91 kB     00:00    
+(251/289): python3-pynacl-1.4.0-1.el8.x86_64.rp 4.6 MB/s | 109 kB     00:00    
+(252/289): python3-pbr-5.5.1-1.el8.noarch.rpm   4.3 MB/s | 1.1 MB     00:00    
+(253/289): python3-pyngus-2.3.0-4.el8.noarch.rp 2.7 MB/s |  54 kB     00:00    
+(254/289): python3-pyperclip-1.8.0-2.el8.noarch 1.2 MB/s |  24 kB     00:00    
+(255/289): python3-pyrsistent-0.17.3-1.el8.x86_ 4.2 MB/s | 107 kB     00:00    
+(256/289): python3-pyyaml-5.4.1-2.el8.x86_64.rp 4.7 MB/s | 208 kB     00:00    
+(257/289): python3-qpid-proton-0.30.0-1.el8.x86 6.9 MB/s | 396 kB     00:00    
+(258/289): python3-redis-3.5.3-1.el8.noarch.rpm 3.6 MB/s | 142 kB     00:00    
+(259/289): python3-requests-2.25.1-1.el8.noarch 5.0 MB/s | 128 kB     00:00    
+(260/289): python3-rfc3986-1.4.0-3.el8.noarch.r 2.7 MB/s |  52 kB     00:00    
+(261/289): python3-rsa-4.6-2.el8.noarch.rpm     2.1 MB/s |  60 kB     00:00    
+(262/289): python3-s3transfer-0.3.3-3.el8.noarc 3.2 MB/s | 108 kB     00:00    
+(263/289): python3-secretstorage-3.1.1-4.el8.no 1.7 MB/s |  36 kB     00:00    
+(264/289): python3-soupsieve-2.1.0-1.el8.noarch 2.3 MB/s |  66 kB     00:00    
+(265/289): python3-sqlparse-0.3.1-3.el8.noarch. 4.2 MB/s |  88 kB     00:00    
+(266/289): python3-simplejson-3.17.2-2.el8.x86_ 4.5 MB/s | 280 kB     00:00    
+(267/289): python3-statsd-3.2.1-16.el8.noarch.r 1.7 MB/s |  35 kB     00:00    
+(268/289): python3-stevedore-3.3.1-1.el8.noarch 3.5 MB/s |  69 kB     00:00    
+(269/289): python3-swiftclient-3.11.1-1.el8.noa 1.0 MB/s | 175 kB     00:00    
+(270/289): python3-tabulate-0.8.7-4.el8.noarch. 2.7 MB/s |  50 kB     00:00    
+(271/289): python3-pandas-0.25.3-1.el8.x86_64.r 5.6 MB/s |  11 MB     00:01    
+(272/289): python3-tables-3.5.2-6.el8.x86_64.rp 1.0 MB/s | 1.4 MB     00:01    
+(273/289): python3-taskflow-4.6.0-1.el8.noarch. 601 kB/s | 689 kB     00:01    
+(274/289): python3-tempita-0.5.1-25.el8.noarch. 1.2 MB/s |  39 kB     00:00    
+(275/289): python3-uritemplate-3.0.0-10.el8.noa 1.4 MB/s |  23 kB     00:00    
+(276/289): python3-tenacity-6.2.0-1.el8.noarch. 1.3 MB/s |  50 kB     00:00    
+(277/289): python3-tooz-2.8.2-1.el8.noarch.rpm  2.8 MB/s | 109 kB     00:00    
+(278/289): python3-vine-5.0.0-2.el8.noarch.rpm  1.4 MB/s |  26 kB     00:00    
+(279/289): python3-voluptuous-0.12.1-1.el8.noar 2.8 MB/s |  62 kB     00:00    
+(280/289): python3-urllib3-1.25.10-4.el8.noarch 4.6 MB/s | 189 kB     00:00    
+(281/289): python3-warlock-1.3.3-1.el8.noarch.r 1.0 MB/s |  22 kB     00:00    
+(282/289): python3-wcwidth-0.2.5-2.el8.noarch.r 2.6 MB/s |  47 kB     00:00    
+(283/289): python3-wrapt-1.12.1-3.el8.x86_64.rp 1.8 MB/s |  55 kB     00:00    
+(284/289): python3-yappi-1.3.0-1.el8.x86_64.rpm 1.7 MB/s |  54 kB     00:00    
+(285/289): python3-webob-1.8.6-3.el8.noarch.rpm 5.4 MB/s | 253 kB     00:00    
+(286/289): python3-zake-0.2.2-18.el8.noarch.rpm 2.3 MB/s |  46 kB     00:00    
+(287/289): python3-zipp-3.4.0-1.el8.noarch.rpm  948 kB/s |  16 kB     00:00    
+(288/289): python3-zstd-1.4.5.1-1.el8.x86_64.rp 1.2 MB/s |  18 kB     00:00    
+(289/289): qpid-proton-c-0.30.0-1.el8.x86_64.rp 1.0 MB/s | 199 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           8.3 MB/s | 136 MB     00:16     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : urw-base35-fonts-common-20170801-10.el8.noarch       1/289 
+  Installing       : python3-pyyaml-5.4.1-2.el8.x86_64                    2/289 
+  Installing       : python3-prettytable-0.7.2-14.el8.noarch              3/289 
+  Installing       : python3-webob-1.8.6-3.el8.noarch                     4/289 
+  Installing       : python3-pytz-2017.2-9.el8.noarch                     5/289 
+  Installing       : python3-iso8601-0.1.12-3.el8.noarch                  6/289 
+  Installing       : gdk-pixbuf2-2.36.12-5.el8.x86_64                     7/289 
+  Running scriptlet: gdk-pixbuf2-2.36.12-5.el8.x86_64                     7/289 
+  Installing       : python3-netaddr-0.7.19-8.el8.noarch                  8/289 
+  Installing       : python3-tenacity-6.2.0-1.el8.noarch                  9/289 
+  Installing       : python3-futurist-2.3.0-2.el8.noarch                 10/289 
+  Installing       : python3-fasteners-0.14.1-20.el8.noarch              11/289 
+  Installing       : python3-pyasn1-0.4.6-3.el8.noarch                   12/289 
+  Installing       : python3-sqlalchemy-1.3.2-2.module_el8.5.0+761+fa    13/289 
+  Installing       : python3-greenlet-0.4.13-4.el8.x86_64                14/289 
+  Installing       : libICE-1.0.9-15.el8.x86_64                          15/289 
+  Installing       : python3-msgpack-1.0.2-1.el8.x86_64                  16/289 
+  Installing       : python3-httplib2-0.10.3-4.el8.noarch                17/289 
+  Running scriptlet: texlive-base-7:20180414-25.el8.noarch               18/289 
+  Installing       : texlive-base-7:20180414-25.el8.noarch               18/289 
+  Installing       : libXpm-3.5.12-8.el8.x86_64                          19/289 
+  Installing       : libSM-1.2.3-1.el8.x86_64                            20/289 
+  Installing       : libXt-1.1.5-12.el8.x86_64                           21/289 
+  Installing       : libXmu-1.1.3-1.el8.x86_64                           22/289 
+  Installing       : python3-matplotlib-data-fonts-3.1.1-2.el8.noarch    23/289 
+  Installing       : python3-matplotlib-data-3.1.1-2.el8.noarch          24/289 
+  Installing       : python3-wrapt-1.12.1-3.el8.x86_64                   25/289 
+  Installing       : python3-wcwidth-0.2.5-2.el8.noarch                  26/289 
+  Installing       : python3-vine-5.0.0-2.el8.noarch                     27/289 
+  Installing       : python3-amqp-5.0.5-1.el8.noarch                     28/289 
+  Installing       : python3-tempita-0.5.1-25.el8.noarch                 29/289 
+  Installing       : python3-psutil-5.7.3-1.el8.x86_64                   30/289 
+  Installing       : python3-packaging-20.4-1.el8.noarch                 31/289 
+  Installing       : python3-cachetools-4.2.0-1.el8.noarch               32/289 
+  Installing       : tcl-1:8.6.8-2.el8.x86_64                            33/289 
+  Running scriptlet: tcl-1:8.6.8-2.el8.x86_64                            33/289 
+  Installing       : python3-idna-2.5-5.el8.noarch                       34/289 
+  Installing       : libquadmath-8.5.0-10.el8.x86_64                     35/289 
+  Running scriptlet: libquadmath-8.5.0-10.el8.x86_64                     35/289 
+  Installing       : libgfortran-8.5.0-10.el8.x86_64                     36/289 
+  Running scriptlet: libgfortran-8.5.0-10.el8.x86_64                     36/289 
+  Installing       : openblas-0.3.15-3.el8.x86_64                        37/289 
+  Running scriptlet: openblas-0.3.15-3.el8.x86_64                        37/289 
+  Installing       : openblas-threads-0.3.15-3.el8.x86_64                38/289 
+  Running scriptlet: openblas-threads-0.3.15-3.el8.x86_64                38/289 
+  Installing       : python3-numpy-1:1.14.3-10.el8.x86_64                39/289 
+  Installing       : python3-numexpr-2.7.1-1.el8.x86_64                  40/289 
+  Installing       : cryptsetup-2.3.7-2.el8.x86_64                       41/289 
+  Installing       : texlive-lib-7:20180414-25.el8.x86_64                42/289 
+  Installing       : python3-markupsafe-0.23-19.el8.x86_64               43/289 
+  Installing       : python3-mako-1.0.6-13.el8.noarch                    44/289 
+  Installing       : python3-jmespath-0.9.0-11.el8.noarch                45/289 
+  Installing       : python3-attrs-17.4.0-6.el8.noarch                   46/289 
+  Installing       : perl-XML-Parser-2.44-11.el8.x86_64                  47/289 
+  Installing       : openjpeg2-2.4.0-4.el8.x86_64                        48/289 
+  Installing       : libwebp-1.0.0-5.el8.x86_64                          49/289 
+  Installing       : libXrandr-1.5.2-1.el8.x86_64                        50/289 
+  Installing       : libXinerama-1.1.4-1.el8.x86_64                      51/289 
+  Installing       : libXi-1.7.10-1.el8.x86_64                           52/289 
+  Installing       : libXcursor-1.1.15-3.el8.x86_64                      53/289 
+  Installing       : lcms2-2.9-2.el8.x86_64                              54/289 
+  Running scriptlet: lcms2-2.9-2.el8.x86_64                              54/289 
+  Installing       : atk-2.28.1-1.el8.x86_64                             55/289 
+  Installing       : adobe-mappings-cmap-20171205-3.el8.noarch           56/289 
+  Installing       : adobe-mappings-cmap-deprecated-20171205-3.el8.no    57/289 
+  Running scriptlet: tk-1:8.6.8-1.el8.x86_64                             58/289 
+  Installing       : tk-1:8.6.8-1.el8.x86_64                             58/289 
+  Running scriptlet: tk-1:8.6.8-1.el8.x86_64                             58/289 
+  Installing       : python3-tkinter-3.6.8-45.el8.x86_64                 59/289 
+  Installing       : python3-tabulate-0.8.7-4.el8.noarch                 60/289 
+  Installing       : libXaw-1.0.13-10.el8.x86_64                         61/289 
+  Installing       : python3-pyasn1-modules-0.4.6-3.el8.noarch           62/289 
+  Installing       : python3-rsa-4.6-2.el8.noarch                        63/289 
+  Installing       : gtk-update-icon-cache-3.22.30-10.el8.x86_64         64/289 
+  Installing       : librsvg2-2.42.7-4.el8.x86_64                        65/289 
+  Installing       : python3-babel-2.5.1-7.el8.noarch                    66/289 
+  Installing       : python3-jinja2-2.10.1-3.el8.noarch                  67/289 
+  Installing       : python36-3.6.8-38.module_el8.5.0+895+a459eca8.x8    68/289 
+  Running scriptlet: python36-3.6.8-38.module_el8.5.0+895+a459eca8.x8    68/289 
+  Installing       : python3-pip-9.0.3-22.el8.noarch                     69/289 
+  Installing       : python3-pbr-5.5.1-1.el8.noarch                      70/289 
+  Installing       : python3-automaton-2.3.1-1.el8.noarch                71/289 
+  Installing       : python3-os-service-types-1.7.0-1.el8.noarch         72/289 
+  Installing       : python3-docutils-0.14-12.module_el8.5.0+761+faac    73/289 
+  Installing       : python3-oslo-rootwrap-6.3.1-1.el8.noarch            74/289 
+  Installing       : python3-yappi-1.3.0-1.el8.x86_64                    75/289 
+  Installing       : qpid-proton-c-0.30.0-1.el8.x86_64                   76/289 
+  Installing       : python3-qpid-proton-0.30.0-1.el8.x86_64             77/289 
+  Installing       : python3-pyngus-2.3.0-4.el8.noarch                   78/289 
+  Installing       : python3-zstd-1.4.5.1-1.el8.x86_64                   79/289 
+  Installing       : python3-zipp-3.4.0-1.el8.noarch                     80/289 
+  Installing       : python3-importlib-metadata-1.7.0-1.el8.noarch       81/289 
+  Installing       : python3-stevedore-3.3.1-1.el8.noarch                82/289 
+  Installing       : python3-dogpile-cache-1.1.2-1.1.el8.noarch          83/289 
+  Installing       : python3-kombu-1:5.0.2-1.el8.noarch                  84/289 
+  Installing       : python3-voluptuous-0.12.1-1.el8.noarch              85/289 
+  Installing       : python3-uritemplate-3.0.0-10.el8.noarch             86/289 
+  Installing       : python3-statsd-3.2.1-16.el8.noarch                  87/289 
+  Installing       : python3-sqlparse-0.3.1-3.el8.noarch                 88/289 
+  Installing       : python3-migrate-0.13.0-1.el8.noarch                 89/289 
+  Installing       : python3-soupsieve-2.1.0-1.el8.noarch                90/289 
+  Installing       : python3-simplejson-3.17.2-2.el8.x86_64              91/289 
+  Installing       : python3-rfc3986-1.4.0-3.el8.noarch                  92/289 
+  Installing       : python3-redis-3.5.3-1.el8.noarch                    93/289 
+  Installing       : python3-pyrsistent-0.17.3-1.el8.x86_64              94/289 
+  Installing       : python3-jsonschema-3.2.0-5.el8.noarch               95/289 
+  Installing       : python3-pyperclip-1.8.0-2.el8.noarch                96/289 
+  Installing       : python3-memcached-1.59-1.el8.noarch                 97/289 
+  Installing       : python3-lexicon-1.0.0-9.el8.noarch                  98/289 
+  Installing       : python3-kiwisolver-1.1.0-4.el8.x86_64               99/289 
+  Installing       : python3-kazoo-2.8.0-1.el8.noarch                   100/289 
+  Installing       : python3-zake-0.2.2-18.el8.noarch                   101/289 
+  Installing       : python3-jeepney-0.4.3-1.el8.noarch                 102/289 
+  Installing       : python3-fluidity-sm-0.2.0-16.el8.noarch            103/289 
+  Installing       : python3-invoke-1.4.0-1.el8.noarch                  104/289 
+  Installing       : python3-editor-1.0.4-4.el8.noarch                  105/289 
+  Installing       : python3-alembic-1.4.3-1.el8.noarch                 106/289 
+  Installing       : python3-cycler-0.10.0-13.el8.noarch                107/289 
+  Installing       : python3-cssselect-0.9.2-13.el8.noarch              108/289 
+  Installing       : python3-colorama-0.4.3-3.el8.noarch                109/289 
+  Installing       : python3-cmd2-1.4.0-1.1.el8.noarch                  110/289 
+  Installing       : python3-cliff-3.7.0-1.el8.noarch                   111/289 
+  Installing       : python-pycadf-common-3.1.1-2.el8.noarch            112/289 
+  Installing       : python-oslo-vmware-lang-3.8.1-1.el8.noarch         113/289 
+  Installing       : python-oslo-versionedobjects-lang-2.4.1-1.el8.no   114/289 
+  Installing       : python-oslo-utils-lang-4.8.1-1.el8.noarch          115/289 
+  Installing       : python-oslo-privsep-lang-2.5.1-1.el8.noarch        116/289 
+  Installing       : python-oslo-policy-lang-3.7.1-1.el8.noarch         117/289 
+  Installing       : python-oslo-middleware-lang-4.2.1-1.el8.noarch     118/289 
+  Installing       : python-oslo-log-lang-4.4.0-2.el8.noarch            119/289 
+  Installing       : python-oslo-i18n-lang-5.0.1-2.el8.noarch           120/289 
+  Installing       : python3-oslo-i18n-5.0.1-2.el8.noarch               121/289 
+  Installing       : python-oslo-db-lang-8.5.1-1.el8.noarch             122/289 
+  Installing       : python-oslo-concurrency-lang-4.4.0-1.el8.noarch    123/289 
+  Installing       : python-oslo-cache-lang-2.7.1-1.el8.noarch          124/289 
+  Installing       : libqhull-1:7.2.1-2.el8.x86_64                      125/289 
+  Installing       : blosc-1.20.1-1.el8.x86_64                          126/289 
+  Installing       : python3-repoze-lru-0.7-6.el8.noarch                127/289 
+  Installing       : python3-routes-2.4.1-12.el8.noarch                 128/289 
+  Installing       : python3-mock-3.0.5-7.el8.noarch                    129/289 
+  Installing       : python3-funcsigs-1.0.2-17.el8.noarch               130/289 
+  Installing       : python3-debtcollector-2.2.0-1.el8.noarch           131/289 
+  Installing       : python3-oslo-context-3.2.1-1.el8.noarch            132/289 
+  Installing       : libsodium-1.0.18-2.el8.x86_64                      133/289 
+  Installing       : libaec-1.0.2-3.el8.x86_64                          134/289 
+  Installing       : hdf5-1.10.5-5.el8.x86_64                           135/289 
+  Installing       : python3-tables-3.5.2-6.el8.x86_64                  136/289 
+  Running scriptlet: rpcbind-1.2.5-8.el8.x86_64                         137/289 
+  Installing       : rpcbind-1.2.5-8.el8.x86_64                         137/289 
+  Running scriptlet: rpcbind-1.2.5-8.el8.x86_64                         137/289 
+  Installing       : quota-nls-1:4.04-14.el8.noarch                     138/289 
+  Installing       : quota-1:4.04-14.el8.x86_64                         139/289 
+  Installing       : python3-pysocks-1.6.8-3.el8.noarch                 140/289 
+  Installing       : python3-urllib3-1.25.10-4.el8.noarch               141/289 
+  Installing       : python3-botocore-1.17.52-1.el8.noarch              142/289 
+  Installing       : python3-s3transfer-0.3.3-3.el8.noarch              143/289 
+  Installing       : python3-boto3-1.6.1-2.el8.noarch                   144/289 
+  Installing       : python3-ply-3.9-9.el8.noarch                       145/289 
+  Installing       : python3-pycparser-2.14-14.el8.noarch               146/289 
+  Installing       : python3-cffi-1.13.2-1.el8.x86_64                   147/289 
+  Installing       : python3-cryptography-3.2.1-5.el8.x86_64            148/289 
+  Installing       : python3-eventlet-0.30.0-1.1.el8.noarch             149/289 
+  Installing       : python3-pyOpenSSL-19.0.0-1.el8.noarch              150/289 
+  Installing       : python3-paste-3.5.0-1.el8.noarch                   151/289 
+  Installing       : python3-paste-deploy-2.1.1-1.el8.noarch            152/289 
+  Installing       : python3-oauth2client-4.1.3-8.el8.noarch            153/289 
+  Installing       : python3-pynacl-1.4.0-1.el8.x86_64                  154/289 
+  Installing       : python3-google-api-client-1:1.6.7-10.el8.noarch    155/289 
+  Installing       : python3-PyMySQL-0.10.1-2.module_el8.5.0+761+faac   156/289 
+  Installing       : python3-secretstorage-3.1.1-4.el8.noarch           157/289 
+  Installing       : python3-keyring-21.0.0-1.el8.noarch                158/289 
+  Installing       : python3-bcrypt-3.1.7-3.el8s.x86_64                 159/289 
+  Installing       : python3-paramiko-2.7.2-1.el8.noarch                160/289 
+  Installing       : python3-inotify-0.9.6-13.el8.noarch                161/289 
+  Installing       : python3-chardet-3.0.4-7.el8.noarch                 162/289 
+  Installing       : python3-requests-2.25.1-1.el8.noarch               163/289 
+  Installing       : python3-oslo-config-2:8.5.1-1.el8.noarch           164/289 
+  Installing       : python3-keystoneauth1-4.3.1-1.el8.noarch           165/289 
+  Installing       : python3-etcd3gw-0.2.5-1.el8.noarch                 166/289 
+  Installing       : pkgconf-m4-1.4.2-1.el8.noarch                      167/289 
+  Installing       : libxslt-1.1.32-6.el8.x86_64                        168/289 
+  Installing       : libverto-libevent-0.3.0-5.el8.x86_64               169/289 
+  Installing       : gssproxy-0.8.0-20.el8.x86_64                       170/289 
+  Running scriptlet: gssproxy-0.8.0-20.el8.x86_64                       170/289 
+  Installing       : libtool-ltdl-2.4.6-25.el8.x86_64                   171/289 
+  Running scriptlet: libtool-ltdl-2.4.6-25.el8.x86_64                   171/289 
+  Installing       : libpkgconf-1.4.2-1.el8.x86_64                      172/289 
+  Installing       : pkgconf-1.4.2-1.el8.x86_64                         173/289 
+  Installing       : pkgconf-pkg-config-1.4.2-1.el8.x86_64              174/289 
+  Running scriptlet: libcgroup-0.41-19.el8.x86_64                       175/289 
+  Installing       : libcgroup-0.41-19.el8.x86_64                       175/289 
+  Running scriptlet: libcgroup-0.41-19.el8.x86_64                       175/289 
+  Installing       : libcgroup-tools-0.41-19.el8.x86_64                 176/289 
+  Running scriptlet: libcgroup-tools-0.41-19.el8.x86_64                 176/289 
+  Installing       : keyutils-1.5.10-9.el8.x86_64                       177/289 
+  Running scriptlet: nfs-utils-1:2.3.3-50.el8.x86_64                    178/289 
+  Installing       : nfs-utils-1:2.3.3-50.el8.x86_64                    178/289 
+  Running scriptlet: nfs-utils-1:2.3.3-50.el8.x86_64                    178/289 
+  Installing       : isns-utils-libs-0.99-1.el8.x86_64                  179/289 
+  Running scriptlet: isns-utils-libs-0.99-1.el8.x86_64                  179/289 
+  Installing       : iscsi-initiator-utils-iscsiuio-6.2.1.4-4.git095f   180/289 
+  Running scriptlet: iscsi-initiator-utils-iscsiuio-6.2.1.4-4.git095f   180/289 
+  Installing       : iscsi-initiator-utils-6.2.1.4-4.git095f59c.el8.x   181/289 
+  Running scriptlet: iscsi-initiator-utils-6.2.1.4-4.git095f59c.el8.x   181/289 
+  Installing       : device-mapper-multipath-0.8.4-22.el8.x86_64        182/289 
+  Running scriptlet: device-mapper-multipath-0.8.4-22.el8.x86_64        182/289 
+  Installing       : avahi-libs-0.7-20.el8.x86_64                       183/289 
+  Installing       : cups-libs-1:2.2.6-44.el8.x86_64                    184/289 
+  Installing       : sysfsutils-2.1.0-25.el8.x86_64                     185/289 
+  Installing       : python3-webencodings-0.5.1-6.el8.noarch            186/289 
+  Installing       : python3-html5lib-1:0.999999999-6.el8.noarch        187/289 
+  Installing       : python3-beautifulsoup4-4.9.3-1.el8.noarch          188/289 
+  Installing       : python3-lxml-4.2.3-4.el8.x86_64                    189/289 
+  Installing       : python3-suds-0.7-0.10.94664ddd46a6.el8.noarch      190/289 
+  Installing       : python3-rpm-generators-5-7.el8.noarch              191/289 
+  Installing       : python3-netifaces-0.10.6-4.el8.x86_64              192/289 
+  Installing       : python3-oslo-utils-4.8.1-1.el8.noarch              193/289 
+  Installing       : python3-oslo-serialization-4.1.1-1.el8.noarch      194/289 
+  Installing       : python3-oslo-log-4.4.0-2.el8.noarch                195/289 
+  Installing       : python3-oslo-concurrency-4.4.0-1.el8.noarch        196/289 
+  Installing       : python3-oslo-service-2.5.1-1.el8.noarch            197/289 
+  Installing       : python3-keystoneclient-1:4.2.0-1.el8.noarch        198/289 
+  Installing       : python3-os-win-5.4.0-1.el8.noarch                  199/289 
+  Installing       : python3-oslo-privsep-2.5.1-1.el8.noarch            200/289 
+  Installing       : python3-barbicanclient-5.1.0-1.el8.noarch          201/289 
+  Installing       : python3-castellan-3.7.2-1.el8.noarch               202/289 
+  Installing       : python3-oslo-policy-3.7.1-1.el8.noarch             203/289 
+  Installing       : python3-oslo-middleware-4.2.1-1.el8.noarch         204/289 
+  Installing       : python3-oslo-messaging-12.7.2-1.el8.noarch         205/289 
+  Installing       : python3-osprofiler-3.4.0-2.el8.noarch              206/289 
+  Installing       : python3-oslo-versionedobjects-2.4.1-1.el8.noarch   207/289 
+  Installing       : python3-oslo-upgradecheck-1.3.1-1.el8.noarch       208/289 
+  Installing       : python3-cursive-0.2.2-1.el8.noarch                 209/289 
+  Installing       : python3-os-brick-4.3.2-1.el8.noarch                210/289 
+  Installing       : python3-swiftclient-3.11.1-1.el8.noarch            211/289 
+  Installing       : python3-oslo-vmware-3.8.1-1.el8.noarch             212/289 
+  Installing       : python3-oslo-cache-2.7.1-1.el8.noarch              213/289 
+  Installing       : python3-novaclient-1:17.4.0-1.el8.noarch           214/289 
+  Installing       : python3-oslo-reports-2.2.0-2.el8.noarch            215/289 
+  Installing       : python3-pycadf-3.1.1-2.el8.noarch                  216/289 
+  Installing       : python3-keystonemiddleware-9.2.0-1.el8.noarch      217/289 
+  Installing       : python3-tooz-2.8.2-1.el8.noarch                    218/289 
+  Installing       : python3-cinderclient-7.4.1-1.el8.noarch            219/289 
+  Installing       : python3-oslo-db-8.5.1-1.el8.noarch                 220/289 
+  Installing       : python3-jsonpointer-1.10-11.el8.noarch             221/289 
+  Installing       : python3-jsonpatch-1.21-2.el8.noarch                222/289 
+  Installing       : python3-warlock-1.3.3-1.el8.noarch                 223/289 
+  Installing       : python3-glanceclient-1:3.3.0-1.el8.noarch          224/289 
+  Installing       : python3-cairo-1.16.3-6.el8.x86_64                  225/289 
+  Installing       : python-srpm-macros-3-41.el8.noarch                 226/289 
+  Installing       : python-rpm-macros-3-41.el8.noarch                  227/289 
+  Installing       : python3-rpm-macros-3-41.el8.noarch                 228/289 
+  Installing       : platform-python-devel-3.6.8-45.el8.x86_64          229/289 
+  Installing       : python3-numpy-f2py-1:1.14.3-10.el8.x86_64          230/289 
+  Running scriptlet: python3-numpy-f2py-1:1.14.3-10.el8.x86_64          230/289 
+  Installing       : python3-scipy-1.0.0-21.module_el8.5.0+771+e5d9a2   231/289 
+  Installing       : python3-Bottleneck-1.2.1-13.el8.x86_64             232/289 
+  Installing       : perl-Text-Unidecode-1.30-5.el8.noarch              233/289 
+  Installing       : perl-Filter-2:1.58-2.el8.x86_64                    234/289 
+  Installing       : perl-encoding-4:2.22-3.el8.x86_64                  235/289 
+  Installing       : perl-open-1.11-421.el8.noarch                      236/289 
+  Installing       : perl-XML-XPath-1.42-3.el8.noarch                   237/289 
+  Installing       : texlive-texlive.infra-7:20180414-25.el8.noarch     238/289 
+  Installing       : texlive-tetex-7:20180414-25.el8.noarch             239/289 
+  Installing       : texlive-kpathsea-7:20180414-25.el8.x86_64          240/289 
+  Running scriptlet: texlive-kpathsea-7:20180414-25.el8.x86_64          240/289 
+  Installing       : libpaper-1.1.24-22.el8.x86_64                      241/289 
+  Installing       : libmcpp-2.7.2-20.el8.x86_64                        242/289 
+  Running scriptlet: libmcpp-2.7.2-20.el8.x86_64                        242/289 
+  Installing       : mcpp-2.7.2-20.el8.x86_64                           243/289 
+  Installing       : libijs-0.35-5.el8.x86_64                           244/289 
+  Installing       : libidn-1.34-5.el8.x86_64                           245/289 
+  Running scriptlet: libidn-1.34-5.el8.x86_64                           245/289 
+  Installing       : libfontenc-1.1.3-8.el8.x86_64                      246/289 
+  Installing       : xorg-x11-font-utils-1:7.5-41.el8.x86_64            247/289 
+  Installing       : xorg-x11-fonts-ISO8859-1-100dpi-7.5-19.el8.noarc   248/289 
+  Running scriptlet: xorg-x11-fonts-ISO8859-1-100dpi-7.5-19.el8.noarc   248/289 
+  Installing       : libXxf86misc-1.0.4-1.el8.x86_64                    249/289 
+  Installing       : xorg-x11-server-utils-7.7-27.el8.x86_64            250/289 
+  Installing       : urw-base35-bookman-fonts-20170801-10.el8.noarch    251/289 
+  Running scriptlet: urw-base35-bookman-fonts-20170801-10.el8.noarch    251/289 
+  Installing       : urw-base35-c059-fonts-20170801-10.el8.noarch       252/289 
+  Running scriptlet: urw-base35-c059-fonts-20170801-10.el8.noarch       252/289 
+  Installing       : urw-base35-d050000l-fonts-20170801-10.el8.noarch   253/289 
+  Running scriptlet: urw-base35-d050000l-fonts-20170801-10.el8.noarch   253/289 
+  Installing       : urw-base35-gothic-fonts-20170801-10.el8.noarch     254/289 
+  Running scriptlet: urw-base35-gothic-fonts-20170801-10.el8.noarch     254/289 
+  Installing       : urw-base35-nimbus-mono-ps-fonts-20170801-10.el8.   255/289 
+  Running scriptlet: urw-base35-nimbus-mono-ps-fonts-20170801-10.el8.   255/289 
+  Installing       : urw-base35-nimbus-roman-fonts-20170801-10.el8.no   256/289 
+  Running scriptlet: urw-base35-nimbus-roman-fonts-20170801-10.el8.no   256/289 
+  Installing       : urw-base35-nimbus-sans-fonts-20170801-10.el8.noa   257/289 
+  Running scriptlet: urw-base35-nimbus-sans-fonts-20170801-10.el8.noa   257/289 
+  Installing       : urw-base35-p052-fonts-20170801-10.el8.noarch       258/289 
+  Running scriptlet: urw-base35-p052-fonts-20170801-10.el8.noarch       258/289 
+  Installing       : urw-base35-standard-symbols-ps-fonts-20170801-10   259/289 
+  Running scriptlet: urw-base35-standard-symbols-ps-fonts-20170801-10   259/289 
+  Installing       : urw-base35-z003-fonts-20170801-10.el8.noarch       260/289 
+  Running scriptlet: urw-base35-z003-fonts-20170801-10.el8.noarch       260/289 
+  Installing       : urw-base35-fonts-20170801-10.el8.noarch            261/289 
+  Installing       : libXdamage-1.1.4-14.el8.x86_64                     262/289 
+  Installing       : libXcomposite-0.4.4-14.el8.x86_64                  263/289 
+  Installing       : jbigkit-libs-2.1-14.el8.x86_64                     264/289 
+  Running scriptlet: jbigkit-libs-2.1-14.el8.x86_64                     264/289 
+  Installing       : libtiff-4.0.9-21.el8.x86_64                        265/289 
+  Installing       : gd-2.2.5-7.el8.x86_64                              266/289 
+  Running scriptlet: gd-2.2.5-7.el8.x86_64                              266/289 
+  Installing       : python3-pillow-5.1.1-18.el8.x86_64                 267/289 
+  Installing       : texlive-dvipng-7:20180414-25.el8.x86_64            268/289 
+  Running scriptlet: texlive-dvipng-7:20180414-25.el8.x86_64            268/289 
+  Installing       : python3-matplotlib-tk-3.1.1-2.el8.x86_64           269/289 
+  Installing       : python3-matplotlib-3.1.1-2.el8.x86_64              270/289 
+  Installing       : python3-pandas-0.25.3-1.el8.x86_64                 271/289 
+  Installing       : jbig2dec-libs-0.16-1.el8.x86_64                    272/289 
+  Running scriptlet: jbig2dec-libs-0.16-1.el8.x86_64                    272/289 
+  Installing       : jasper-libs-2.0.14-5.el8.x86_64                    273/289 
+  Installing       : gdk-pixbuf2-modules-2.36.12-5.el8.x86_64           274/289 
+  Installing       : hicolor-icon-theme-0.17-2.el8.noarch               275/289 
+  Installing       : gtk2-2.24.32-5.el8.x86_64                          276/289 
+  Running scriptlet: gtk2-2.24.32-5.el8.x86_64                          276/289 
+  Installing       : google-droid-sans-fonts-20120715-13.el8.noarch     277/289 
+  Installing       : desktop-file-utils-0.23-8.el8.x86_64               278/289 
+  Installing       : xdg-utils-1.1.2-5.el8.noarch                       279/289 
+  Installing       : adobe-mappings-pdf-20180407-1.el8.noarch           280/289 
+  Installing       : libgs-9.27-1.el8.x86_64                            281/289 
+  Installing       : graphviz-2.40.1-43.el8.x86_64                      282/289 
+  Running scriptlet: graphviz-2.40.1-43.el8.x86_64                      282/289 
+  Installing       : python3-pydot-1.4.1-1.el8.noarch                   283/289 
+  Installing       : python3-pygraphviz-1.5-9.el8.x86_64                284/289 
+  Installing       : python3-networkx-2.5-1.el8.noarch                  285/289 
+  Installing       : python3-taskflow-4.6.0-1.el8.noarch                286/289 
+  Installing       : python3-cinder-common-1:18.1.0-1.el8.noarch        287/289 
+  Installing       : python3-cinder-1:18.1.0-1.el8.noarch               288/289 
+  Running scriptlet: openstack-cinder-1:18.1.0-1.el8.noarch             289/289 
+  Installing       : openstack-cinder-1:18.1.0-1.el8.noarch             289/289 
+  Running scriptlet: openstack-cinder-1:18.1.0-1.el8.noarch             289/289 
+  Running scriptlet: texlive-base-7:20180414-25.el8.noarch              289/289 
+  Running scriptlet: urw-base35-bookman-fonts-20170801-10.el8.noarch    289/289 
+  Running scriptlet: urw-base35-c059-fonts-20170801-10.el8.noarch       289/289 
+  Running scriptlet: urw-base35-d050000l-fonts-20170801-10.el8.noarch   289/289 
+  Running scriptlet: urw-base35-gothic-fonts-20170801-10.el8.noarch     289/289 
+  Running scriptlet: urw-base35-nimbus-mono-ps-fonts-20170801-10.el8.   289/289 
+  Running scriptlet: urw-base35-nimbus-roman-fonts-20170801-10.el8.no   289/289 
+  Running scriptlet: urw-base35-nimbus-sans-fonts-20170801-10.el8.noa   289/289 
+  Running scriptlet: urw-base35-p052-fonts-20170801-10.el8.noarch       289/289 
+  Running scriptlet: urw-base35-standard-symbols-ps-fonts-20170801-10   289/289 
+  Running scriptlet: urw-base35-z003-fonts-20170801-10.el8.noarch       289/289 
+  Running scriptlet: openstack-cinder-1:18.1.0-1.el8.noarch             289/289 
+  Running scriptlet: gdk-pixbuf2-2.36.12-5.el8.x86_64                   289/289 
+  Running scriptlet: texlive-kpathsea-7:20180414-25.el8.x86_64          289/289 
+  Running scriptlet: hicolor-icon-theme-0.17-2.el8.noarch               289/289 
+  Running scriptlet: desktop-file-utils-0.23-8.el8.x86_64               289/289 
+  Verifying        : adobe-mappings-cmap-20171205-3.el8.noarch            1/289 
+  Verifying        : adobe-mappings-cmap-deprecated-20171205-3.el8.no     2/289 
+  Verifying        : adobe-mappings-pdf-20180407-1.el8.noarch             3/289 
+  Verifying        : atk-2.28.1-1.el8.x86_64                              4/289 
+  Verifying        : desktop-file-utils-0.23-8.el8.x86_64                 5/289 
+  Verifying        : gd-2.2.5-7.el8.x86_64                                6/289 
+  Verifying        : gdk-pixbuf2-modules-2.36.12-5.el8.x86_64             7/289 
+  Verifying        : google-droid-sans-fonts-20120715-13.el8.noarch       8/289 
+  Verifying        : graphviz-2.40.1-43.el8.x86_64                        9/289 
+  Verifying        : gtk-update-icon-cache-3.22.30-10.el8.x86_64         10/289 
+  Verifying        : gtk2-2.24.32-5.el8.x86_64                           11/289 
+  Verifying        : hicolor-icon-theme-0.17-2.el8.noarch                12/289 
+  Verifying        : jasper-libs-2.0.14-5.el8.x86_64                     13/289 
+  Verifying        : jbig2dec-libs-0.16-1.el8.x86_64                     14/289 
+  Verifying        : jbigkit-libs-2.1-14.el8.x86_64                      15/289 
+  Verifying        : lcms2-2.9-2.el8.x86_64                              16/289 
+  Verifying        : libICE-1.0.9-15.el8.x86_64                          17/289 
+  Verifying        : libSM-1.2.3-1.el8.x86_64                            18/289 
+  Verifying        : libXaw-1.0.13-10.el8.x86_64                         19/289 
+  Verifying        : libXcomposite-0.4.4-14.el8.x86_64                   20/289 
+  Verifying        : libXcursor-1.1.15-3.el8.x86_64                      21/289 
+  Verifying        : libXdamage-1.1.4-14.el8.x86_64                      22/289 
+  Verifying        : libXi-1.7.10-1.el8.x86_64                           23/289 
+  Verifying        : libXinerama-1.1.4-1.el8.x86_64                      24/289 
+  Verifying        : libXmu-1.1.3-1.el8.x86_64                           25/289 
+  Verifying        : libXpm-3.5.12-8.el8.x86_64                          26/289 
+  Verifying        : libXrandr-1.5.2-1.el8.x86_64                        27/289 
+  Verifying        : libXt-1.1.5-12.el8.x86_64                           28/289 
+  Verifying        : libXxf86misc-1.0.4-1.el8.x86_64                     29/289 
+  Verifying        : libfontenc-1.1.3-8.el8.x86_64                       30/289 
+  Verifying        : libgs-9.27-1.el8.x86_64                             31/289 
+  Verifying        : libidn-1.34-5.el8.x86_64                            32/289 
+  Verifying        : libijs-0.35-5.el8.x86_64                            33/289 
+  Verifying        : libmcpp-2.7.2-20.el8.x86_64                         34/289 
+  Verifying        : libpaper-1.1.24-22.el8.x86_64                       35/289 
+  Verifying        : librsvg2-2.42.7-4.el8.x86_64                        36/289 
+  Verifying        : libtiff-4.0.9-21.el8.x86_64                         37/289 
+  Verifying        : libwebp-1.0.0-5.el8.x86_64                          38/289 
+  Verifying        : mcpp-2.7.2-20.el8.x86_64                            39/289 
+  Verifying        : openblas-0.3.15-3.el8.x86_64                        40/289 
+  Verifying        : openblas-threads-0.3.15-3.el8.x86_64                41/289 
+  Verifying        : openjpeg2-2.4.0-4.el8.x86_64                        42/289 
+  Verifying        : perl-Filter-2:1.58-2.el8.x86_64                     43/289 
+  Verifying        : perl-Text-Unidecode-1.30-5.el8.noarch               44/289 
+  Verifying        : perl-XML-Parser-2.44-11.el8.x86_64                  45/289 
+  Verifying        : perl-XML-XPath-1.42-3.el8.noarch                    46/289 
+  Verifying        : perl-encoding-4:2.22-3.el8.x86_64                   47/289 
+  Verifying        : perl-open-1.11-421.el8.noarch                       48/289 
+  Verifying        : platform-python-devel-3.6.8-45.el8.x86_64           49/289 
+  Verifying        : python-rpm-macros-3-41.el8.noarch                   50/289 
+  Verifying        : python-srpm-macros-3-41.el8.noarch                  51/289 
+  Verifying        : python3-PyMySQL-0.10.1-2.module_el8.5.0+761+faac    52/289 
+  Verifying        : python3-attrs-17.4.0-6.el8.noarch                   53/289 
+  Verifying        : python3-babel-2.5.1-7.el8.noarch                    54/289 
+  Verifying        : python3-cairo-1.16.3-6.el8.x86_64                   55/289 
+  Verifying        : python3-docutils-0.14-12.module_el8.5.0+761+faac    56/289 
+  Verifying        : python3-greenlet-0.4.13-4.el8.x86_64                57/289 
+  Verifying        : python3-html5lib-1:0.999999999-6.el8.noarch         58/289 
+  Verifying        : python3-jinja2-2.10.1-3.el8.noarch                  59/289 
+  Verifying        : python3-jmespath-0.9.0-11.el8.noarch                60/289 
+  Verifying        : python3-jsonpatch-1.21-2.el8.noarch                 61/289 
+  Verifying        : python3-jsonpointer-1.10-11.el8.noarch              62/289 
+  Verifying        : python3-lxml-4.2.3-4.el8.x86_64                     63/289 
+  Verifying        : python3-mako-1.0.6-13.el8.noarch                    64/289 
+  Verifying        : python3-markupsafe-0.23-19.el8.x86_64               65/289 
+  Verifying        : python3-netaddr-0.7.19-8.el8.noarch                 66/289 
+  Verifying        : python3-netifaces-0.10.6-4.el8.x86_64               67/289 
+  Verifying        : python3-numpy-1:1.14.3-10.el8.x86_64                68/289 
+  Verifying        : python3-numpy-f2py-1:1.14.3-10.el8.x86_64           69/289 
+  Verifying        : python3-pillow-5.1.1-18.el8.x86_64                  70/289 
+  Verifying        : python3-pip-9.0.3-22.el8.noarch                     71/289 
+  Verifying        : python3-prettytable-0.7.2-14.el8.noarch             72/289 
+  Verifying        : python3-pyOpenSSL-19.0.0-1.el8.noarch               73/289 
+  Verifying        : python3-pytz-2017.2-9.el8.noarch                    74/289 
+  Verifying        : python3-rpm-generators-5-7.el8.noarch               75/289 
+  Verifying        : python3-rpm-macros-3-41.el8.noarch                  76/289 
+  Verifying        : python3-scipy-1.0.0-21.module_el8.5.0+771+e5d9a2    77/289 
+  Verifying        : python3-sqlalchemy-1.3.2-2.module_el8.5.0+761+fa    78/289 
+  Verifying        : python3-suds-0.7-0.10.94664ddd46a6.el8.noarch       79/289 
+  Verifying        : python3-tkinter-3.6.8-45.el8.x86_64                 80/289 
+  Verifying        : python3-webencodings-0.5.1-6.el8.noarch             81/289 
+  Verifying        : python36-3.6.8-38.module_el8.5.0+895+a459eca8.x8    82/289 
+  Verifying        : sysfsutils-2.1.0-25.el8.x86_64                      83/289 
+  Verifying        : texlive-base-7:20180414-25.el8.noarch               84/289 
+  Verifying        : texlive-dvipng-7:20180414-25.el8.x86_64             85/289 
+  Verifying        : texlive-kpathsea-7:20180414-25.el8.x86_64           86/289 
+  Verifying        : texlive-lib-7:20180414-25.el8.x86_64                87/289 
+  Verifying        : texlive-tetex-7:20180414-25.el8.noarch              88/289 
+  Verifying        : texlive-texlive.infra-7:20180414-25.el8.noarch      89/289 
+  Verifying        : tk-1:8.6.8-1.el8.x86_64                             90/289 
+  Verifying        : urw-base35-bookman-fonts-20170801-10.el8.noarch     91/289 
+  Verifying        : urw-base35-c059-fonts-20170801-10.el8.noarch        92/289 
+  Verifying        : urw-base35-d050000l-fonts-20170801-10.el8.noarch    93/289 
+  Verifying        : urw-base35-fonts-20170801-10.el8.noarch             94/289 
+  Verifying        : urw-base35-fonts-common-20170801-10.el8.noarch      95/289 
+  Verifying        : urw-base35-gothic-fonts-20170801-10.el8.noarch      96/289 
+  Verifying        : urw-base35-nimbus-mono-ps-fonts-20170801-10.el8.    97/289 
+  Verifying        : urw-base35-nimbus-roman-fonts-20170801-10.el8.no    98/289 
+  Verifying        : urw-base35-nimbus-sans-fonts-20170801-10.el8.noa    99/289 
+  Verifying        : urw-base35-p052-fonts-20170801-10.el8.noarch       100/289 
+  Verifying        : urw-base35-standard-symbols-ps-fonts-20170801-10   101/289 
+  Verifying        : urw-base35-z003-fonts-20170801-10.el8.noarch       102/289 
+  Verifying        : xdg-utils-1.1.2-5.el8.noarch                       103/289 
+  Verifying        : xorg-x11-font-utils-1:7.5-41.el8.x86_64            104/289 
+  Verifying        : xorg-x11-fonts-ISO8859-1-100dpi-7.5-19.el8.noarc   105/289 
+  Verifying        : xorg-x11-server-utils-7.7-27.el8.x86_64            106/289 
+  Verifying        : avahi-libs-0.7-20.el8.x86_64                       107/289 
+  Verifying        : cryptsetup-2.3.7-2.el8.x86_64                      108/289 
+  Verifying        : cups-libs-1:2.2.6-44.el8.x86_64                    109/289 
+  Verifying        : device-mapper-multipath-0.8.4-22.el8.x86_64        110/289 
+  Verifying        : gdk-pixbuf2-2.36.12-5.el8.x86_64                   111/289 
+  Verifying        : gssproxy-0.8.0-20.el8.x86_64                       112/289 
+  Verifying        : iscsi-initiator-utils-6.2.1.4-4.git095f59c.el8.x   113/289 
+  Verifying        : iscsi-initiator-utils-iscsiuio-6.2.1.4-4.git095f   114/289 
+  Verifying        : isns-utils-libs-0.99-1.el8.x86_64                  115/289 
+  Verifying        : keyutils-1.5.10-9.el8.x86_64                       116/289 
+  Verifying        : libcgroup-0.41-19.el8.x86_64                       117/289 
+  Verifying        : libcgroup-tools-0.41-19.el8.x86_64                 118/289 
+  Verifying        : libgfortran-8.5.0-10.el8.x86_64                    119/289 
+  Verifying        : libpkgconf-1.4.2-1.el8.x86_64                      120/289 
+  Verifying        : libquadmath-8.5.0-10.el8.x86_64                    121/289 
+  Verifying        : libtool-ltdl-2.4.6-25.el8.x86_64                   122/289 
+  Verifying        : libverto-libevent-0.3.0-5.el8.x86_64               123/289 
+  Verifying        : libxslt-1.1.32-6.el8.x86_64                        124/289 
+  Verifying        : nfs-utils-1:2.3.3-50.el8.x86_64                    125/289 
+  Verifying        : pkgconf-1.4.2-1.el8.x86_64                         126/289 
+  Verifying        : pkgconf-m4-1.4.2-1.el8.noarch                      127/289 
+  Verifying        : pkgconf-pkg-config-1.4.2-1.el8.x86_64              128/289 
+  Verifying        : python3-chardet-3.0.4-7.el8.noarch                 129/289 
+  Verifying        : python3-cryptography-3.2.1-5.el8.x86_64            130/289 
+  Verifying        : python3-idna-2.5-5.el8.noarch                      131/289 
+  Verifying        : python3-inotify-0.9.6-13.el8.noarch                132/289 
+  Verifying        : python3-ply-3.9-9.el8.noarch                       133/289 
+  Verifying        : python3-pycparser-2.14-14.el8.noarch               134/289 
+  Verifying        : python3-pysocks-1.6.8-3.el8.noarch                 135/289 
+  Verifying        : quota-1:4.04-14.el8.x86_64                         136/289 
+  Verifying        : quota-nls-1:4.04-14.el8.noarch                     137/289 
+  Verifying        : rpcbind-1.2.5-8.el8.x86_64                         138/289 
+  Verifying        : tcl-1:8.6.8-2.el8.x86_64                           139/289 
+  Verifying        : libaec-1.0.2-3.el8.x86_64                          140/289 
+  Verifying        : python3-httplib2-0.10.3-4.el8.noarch               141/289 
+  Verifying        : libsodium-1.0.18-2.el8.x86_64                      142/289 
+  Verifying        : python3-bcrypt-3.1.7-3.el8s.x86_64                 143/289 
+  Verifying        : python3-funcsigs-1.0.2-17.el8.noarch               144/289 
+  Verifying        : python3-mock-3.0.5-7.el8.noarch                    145/289 
+  Verifying        : python3-pyasn1-0.4.6-3.el8.noarch                  146/289 
+  Verifying        : python3-pyasn1-modules-0.4.6-3.el8.noarch          147/289 
+  Verifying        : python3-repoze-lru-0.7-6.el8.noarch                148/289 
+  Verifying        : python3-routes-2.4.1-12.el8.noarch                 149/289 
+  Verifying        : blosc-1.20.1-1.el8.x86_64                          150/289 
+  Verifying        : hdf5-1.10.5-5.el8.x86_64                           151/289 
+  Verifying        : libqhull-1:7.2.1-2.el8.x86_64                      152/289 
+  Verifying        : openstack-cinder-1:18.1.0-1.el8.noarch             153/289 
+  Verifying        : python-oslo-cache-lang-2.7.1-1.el8.noarch          154/289 
+  Verifying        : python-oslo-concurrency-lang-4.4.0-1.el8.noarch    155/289 
+  Verifying        : python-oslo-db-lang-8.5.1-1.el8.noarch             156/289 
+  Verifying        : python-oslo-i18n-lang-5.0.1-2.el8.noarch           157/289 
+  Verifying        : python-oslo-log-lang-4.4.0-2.el8.noarch            158/289 
+  Verifying        : python-oslo-middleware-lang-4.2.1-1.el8.noarch     159/289 
+  Verifying        : python-oslo-policy-lang-3.7.1-1.el8.noarch         160/289 
+  Verifying        : python-oslo-privsep-lang-2.5.1-1.el8.noarch        161/289 
+  Verifying        : python-oslo-utils-lang-4.8.1-1.el8.noarch          162/289 
+  Verifying        : python-oslo-versionedobjects-lang-2.4.1-1.el8.no   163/289 
+  Verifying        : python-oslo-vmware-lang-3.8.1-1.el8.noarch         164/289 
+  Verifying        : python-pycadf-common-3.1.1-2.el8.noarch            165/289 
+  Verifying        : python3-Bottleneck-1.2.1-13.el8.x86_64             166/289 
+  Verifying        : python3-alembic-1.4.3-1.el8.noarch                 167/289 
+  Verifying        : python3-amqp-5.0.5-1.el8.noarch                    168/289 
+  Verifying        : python3-automaton-2.3.1-1.el8.noarch               169/289 
+  Verifying        : python3-barbicanclient-5.1.0-1.el8.noarch          170/289 
+  Verifying        : python3-beautifulsoup4-4.9.3-1.el8.noarch          171/289 
+  Verifying        : python3-boto3-1.6.1-2.el8.noarch                   172/289 
+  Verifying        : python3-botocore-1.17.52-1.el8.noarch              173/289 
+  Verifying        : python3-cachetools-4.2.0-1.el8.noarch              174/289 
+  Verifying        : python3-castellan-3.7.2-1.el8.noarch               175/289 
+  Verifying        : python3-cffi-1.13.2-1.el8.x86_64                   176/289 
+  Verifying        : python3-cinder-1:18.1.0-1.el8.noarch               177/289 
+  Verifying        : python3-cinder-common-1:18.1.0-1.el8.noarch        178/289 
+  Verifying        : python3-cinderclient-7.4.1-1.el8.noarch            179/289 
+  Verifying        : python3-cliff-3.7.0-1.el8.noarch                   180/289 
+  Verifying        : python3-cmd2-1.4.0-1.1.el8.noarch                  181/289 
+  Verifying        : python3-colorama-0.4.3-3.el8.noarch                182/289 
+  Verifying        : python3-cssselect-0.9.2-13.el8.noarch              183/289 
+  Verifying        : python3-cursive-0.2.2-1.el8.noarch                 184/289 
+  Verifying        : python3-cycler-0.10.0-13.el8.noarch                185/289 
+  Verifying        : python3-debtcollector-2.2.0-1.el8.noarch           186/289 
+  Verifying        : python3-dogpile-cache-1.1.2-1.1.el8.noarch         187/289 
+  Verifying        : python3-editor-1.0.4-4.el8.noarch                  188/289 
+  Verifying        : python3-etcd3gw-0.2.5-1.el8.noarch                 189/289 
+  Verifying        : python3-eventlet-0.30.0-1.1.el8.noarch             190/289 
+  Verifying        : python3-fasteners-0.14.1-20.el8.noarch             191/289 
+  Verifying        : python3-fluidity-sm-0.2.0-16.el8.noarch            192/289 
+  Verifying        : python3-futurist-2.3.0-2.el8.noarch                193/289 
+  Verifying        : python3-glanceclient-1:3.3.0-1.el8.noarch          194/289 
+  Verifying        : python3-google-api-client-1:1.6.7-10.el8.noarch    195/289 
+  Verifying        : python3-importlib-metadata-1.7.0-1.el8.noarch      196/289 
+  Verifying        : python3-invoke-1.4.0-1.el8.noarch                  197/289 
+  Verifying        : python3-iso8601-0.1.12-3.el8.noarch                198/289 
+  Verifying        : python3-jeepney-0.4.3-1.el8.noarch                 199/289 
+  Verifying        : python3-jsonschema-3.2.0-5.el8.noarch              200/289 
+  Verifying        : python3-kazoo-2.8.0-1.el8.noarch                   201/289 
+  Verifying        : python3-keyring-21.0.0-1.el8.noarch                202/289 
+  Verifying        : python3-keystoneauth1-4.3.1-1.el8.noarch           203/289 
+  Verifying        : python3-keystoneclient-1:4.2.0-1.el8.noarch        204/289 
+  Verifying        : python3-keystonemiddleware-9.2.0-1.el8.noarch      205/289 
+  Verifying        : python3-kiwisolver-1.1.0-4.el8.x86_64              206/289 
+  Verifying        : python3-kombu-1:5.0.2-1.el8.noarch                 207/289 
+  Verifying        : python3-lexicon-1.0.0-9.el8.noarch                 208/289 
+  Verifying        : python3-matplotlib-3.1.1-2.el8.x86_64              209/289 
+  Verifying        : python3-matplotlib-data-3.1.1-2.el8.noarch         210/289 
+  Verifying        : python3-matplotlib-data-fonts-3.1.1-2.el8.noarch   211/289 
+  Verifying        : python3-matplotlib-tk-3.1.1-2.el8.x86_64           212/289 
+  Verifying        : python3-memcached-1.59-1.el8.noarch                213/289 
+  Verifying        : python3-migrate-0.13.0-1.el8.noarch                214/289 
+  Verifying        : python3-msgpack-1.0.2-1.el8.x86_64                 215/289 
+  Verifying        : python3-networkx-2.5-1.el8.noarch                  216/289 
+  Verifying        : python3-novaclient-1:17.4.0-1.el8.noarch           217/289 
+  Verifying        : python3-numexpr-2.7.1-1.el8.x86_64                 218/289 
+  Verifying        : python3-oauth2client-4.1.3-8.el8.noarch            219/289 
+  Verifying        : python3-os-brick-4.3.2-1.el8.noarch                220/289 
+  Verifying        : python3-os-service-types-1.7.0-1.el8.noarch        221/289 
+  Verifying        : python3-os-win-5.4.0-1.el8.noarch                  222/289 
+  Verifying        : python3-oslo-cache-2.7.1-1.el8.noarch              223/289 
+  Verifying        : python3-oslo-concurrency-4.4.0-1.el8.noarch        224/289 
+  Verifying        : python3-oslo-config-2:8.5.1-1.el8.noarch           225/289 
+  Verifying        : python3-oslo-context-3.2.1-1.el8.noarch            226/289 
+  Verifying        : python3-oslo-db-8.5.1-1.el8.noarch                 227/289 
+  Verifying        : python3-oslo-i18n-5.0.1-2.el8.noarch               228/289 
+  Verifying        : python3-oslo-log-4.4.0-2.el8.noarch                229/289 
+  Verifying        : python3-oslo-messaging-12.7.2-1.el8.noarch         230/289 
+  Verifying        : python3-oslo-middleware-4.2.1-1.el8.noarch         231/289 
+  Verifying        : python3-oslo-policy-3.7.1-1.el8.noarch             232/289 
+  Verifying        : python3-oslo-privsep-2.5.1-1.el8.noarch            233/289 
+  Verifying        : python3-oslo-reports-2.2.0-2.el8.noarch            234/289 
+  Verifying        : python3-oslo-rootwrap-6.3.1-1.el8.noarch           235/289 
+  Verifying        : python3-oslo-serialization-4.1.1-1.el8.noarch      236/289 
+  Verifying        : python3-oslo-service-2.5.1-1.el8.noarch            237/289 
+  Verifying        : python3-oslo-upgradecheck-1.3.1-1.el8.noarch       238/289 
+  Verifying        : python3-oslo-utils-4.8.1-1.el8.noarch              239/289 
+  Verifying        : python3-oslo-versionedobjects-2.4.1-1.el8.noarch   240/289 
+  Verifying        : python3-oslo-vmware-3.8.1-1.el8.noarch             241/289 
+  Verifying        : python3-osprofiler-3.4.0-2.el8.noarch              242/289 
+  Verifying        : python3-packaging-20.4-1.el8.noarch                243/289 
+  Verifying        : python3-pandas-0.25.3-1.el8.x86_64                 244/289 
+  Verifying        : python3-paramiko-2.7.2-1.el8.noarch                245/289 
+  Verifying        : python3-paste-3.5.0-1.el8.noarch                   246/289 
+  Verifying        : python3-paste-deploy-2.1.1-1.el8.noarch            247/289 
+  Verifying        : python3-pbr-5.5.1-1.el8.noarch                     248/289 
+  Verifying        : python3-psutil-5.7.3-1.el8.x86_64                  249/289 
+  Verifying        : python3-pycadf-3.1.1-2.el8.noarch                  250/289 
+  Verifying        : python3-pydot-1.4.1-1.el8.noarch                   251/289 
+  Verifying        : python3-pygraphviz-1.5-9.el8.x86_64                252/289 
+  Verifying        : python3-pynacl-1.4.0-1.el8.x86_64                  253/289 
+  Verifying        : python3-pyngus-2.3.0-4.el8.noarch                  254/289 
+  Verifying        : python3-pyperclip-1.8.0-2.el8.noarch               255/289 
+  Verifying        : python3-pyrsistent-0.17.3-1.el8.x86_64             256/289 
+  Verifying        : python3-pyyaml-5.4.1-2.el8.x86_64                  257/289 
+  Verifying        : python3-qpid-proton-0.30.0-1.el8.x86_64            258/289 
+  Verifying        : python3-redis-3.5.3-1.el8.noarch                   259/289 
+  Verifying        : python3-requests-2.25.1-1.el8.noarch               260/289 
+  Verifying        : python3-rfc3986-1.4.0-3.el8.noarch                 261/289 
+  Verifying        : python3-rsa-4.6-2.el8.noarch                       262/289 
+  Verifying        : python3-s3transfer-0.3.3-3.el8.noarch              263/289 
+  Verifying        : python3-secretstorage-3.1.1-4.el8.noarch           264/289 
+  Verifying        : python3-simplejson-3.17.2-2.el8.x86_64             265/289 
+  Verifying        : python3-soupsieve-2.1.0-1.el8.noarch               266/289 
+  Verifying        : python3-sqlparse-0.3.1-3.el8.noarch                267/289 
+  Verifying        : python3-statsd-3.2.1-16.el8.noarch                 268/289 
+  Verifying        : python3-stevedore-3.3.1-1.el8.noarch               269/289 
+  Verifying        : python3-swiftclient-3.11.1-1.el8.noarch            270/289 
+  Verifying        : python3-tables-3.5.2-6.el8.x86_64                  271/289 
+  Verifying        : python3-tabulate-0.8.7-4.el8.noarch                272/289 
+  Verifying        : python3-taskflow-4.6.0-1.el8.noarch                273/289 
+  Verifying        : python3-tempita-0.5.1-25.el8.noarch                274/289 
+  Verifying        : python3-tenacity-6.2.0-1.el8.noarch                275/289 
+  Verifying        : python3-tooz-2.8.2-1.el8.noarch                    276/289 
+  Verifying        : python3-uritemplate-3.0.0-10.el8.noarch            277/289 
+  Verifying        : python3-urllib3-1.25.10-4.el8.noarch               278/289 
+  Verifying        : python3-vine-5.0.0-2.el8.noarch                    279/289 
+  Verifying        : python3-voluptuous-0.12.1-1.el8.noarch             280/289 
+  Verifying        : python3-warlock-1.3.3-1.el8.noarch                 281/289 
+  Verifying        : python3-wcwidth-0.2.5-2.el8.noarch                 282/289 
+  Verifying        : python3-webob-1.8.6-3.el8.noarch                   283/289 
+  Verifying        : python3-wrapt-1.12.1-3.el8.x86_64                  284/289 
+  Verifying        : python3-yappi-1.3.0-1.el8.x86_64                   285/289 
+  Verifying        : python3-zake-0.2.2-18.el8.noarch                   286/289 
+  Verifying        : python3-zipp-3.4.0-1.el8.noarch                    287/289 
+  Verifying        : python3-zstd-1.4.5.1-1.el8.x86_64                  288/289 
+  Verifying        : qpid-proton-c-0.30.0-1.el8.x86_64                  289/289 
+
+Installed:
+  adobe-mappings-cmap-20171205-3.el8.noarch                                     
+  adobe-mappings-cmap-deprecated-20171205-3.el8.noarch                          
+  adobe-mappings-pdf-20180407-1.el8.noarch                                      
+  atk-2.28.1-1.el8.x86_64                                                       
+  avahi-libs-0.7-20.el8.x86_64                                                  
+  blosc-1.20.1-1.el8.x86_64                                                     
+  cryptsetup-2.3.7-2.el8.x86_64                                                 
+  cups-libs-1:2.2.6-44.el8.x86_64                                               
+  desktop-file-utils-0.23-8.el8.x86_64                                          
+  device-mapper-multipath-0.8.4-22.el8.x86_64                                   
+  gd-2.2.5-7.el8.x86_64                                                         
+  gdk-pixbuf2-2.36.12-5.el8.x86_64                                              
+  gdk-pixbuf2-modules-2.36.12-5.el8.x86_64                                      
+  google-droid-sans-fonts-20120715-13.el8.noarch                                
+  graphviz-2.40.1-43.el8.x86_64                                                 
+  gssproxy-0.8.0-20.el8.x86_64                                                  
+  gtk-update-icon-cache-3.22.30-10.el8.x86_64                                   
+  gtk2-2.24.32-5.el8.x86_64                                                     
+  hdf5-1.10.5-5.el8.x86_64                                                      
+  hicolor-icon-theme-0.17-2.el8.noarch                                          
+  iscsi-initiator-utils-6.2.1.4-4.git095f59c.el8.x86_64                         
+  iscsi-initiator-utils-iscsiuio-6.2.1.4-4.git095f59c.el8.x86_64                
+  isns-utils-libs-0.99-1.el8.x86_64                                             
+  jasper-libs-2.0.14-5.el8.x86_64                                               
+  jbig2dec-libs-0.16-1.el8.x86_64                                               
+  jbigkit-libs-2.1-14.el8.x86_64                                                
+  keyutils-1.5.10-9.el8.x86_64                                                  
+  lcms2-2.9-2.el8.x86_64                                                        
+  libICE-1.0.9-15.el8.x86_64                                                    
+  libSM-1.2.3-1.el8.x86_64                                                      
+  libXaw-1.0.13-10.el8.x86_64                                                   
+  libXcomposite-0.4.4-14.el8.x86_64                                             
+  libXcursor-1.1.15-3.el8.x86_64                                                
+  libXdamage-1.1.4-14.el8.x86_64                                                
+  libXi-1.7.10-1.el8.x86_64                                                     
+  libXinerama-1.1.4-1.el8.x86_64                                                
+  libXmu-1.1.3-1.el8.x86_64                                                     
+  libXpm-3.5.12-8.el8.x86_64                                                    
+  libXrandr-1.5.2-1.el8.x86_64                                                  
+  libXt-1.1.5-12.el8.x86_64                                                     
+  libXxf86misc-1.0.4-1.el8.x86_64                                               
+  libaec-1.0.2-3.el8.x86_64                                                     
+  libcgroup-0.41-19.el8.x86_64                                                  
+  libcgroup-tools-0.41-19.el8.x86_64                                            
+  libfontenc-1.1.3-8.el8.x86_64                                                 
+  libgfortran-8.5.0-10.el8.x86_64                                               
+  libgs-9.27-1.el8.x86_64                                                       
+  libidn-1.34-5.el8.x86_64                                                      
+  libijs-0.35-5.el8.x86_64                                                      
+  libmcpp-2.7.2-20.el8.x86_64                                                   
+  libpaper-1.1.24-22.el8.x86_64                                                 
+  libpkgconf-1.4.2-1.el8.x86_64                                                 
+  libqhull-1:7.2.1-2.el8.x86_64                                                 
+  libquadmath-8.5.0-10.el8.x86_64                                               
+  librsvg2-2.42.7-4.el8.x86_64                                                  
+  libsodium-1.0.18-2.el8.x86_64                                                 
+  libtiff-4.0.9-21.el8.x86_64                                                   
+  libtool-ltdl-2.4.6-25.el8.x86_64                                              
+  libverto-libevent-0.3.0-5.el8.x86_64                                          
+  libwebp-1.0.0-5.el8.x86_64                                                    
+  libxslt-1.1.32-6.el8.x86_64                                                   
+  mcpp-2.7.2-20.el8.x86_64                                                      
+  nfs-utils-1:2.3.3-50.el8.x86_64                                               
+  openblas-0.3.15-3.el8.x86_64                                                  
+  openblas-threads-0.3.15-3.el8.x86_64                                          
+  openjpeg2-2.4.0-4.el8.x86_64                                                  
+  openstack-cinder-1:18.1.0-1.el8.noarch                                        
+  perl-Filter-2:1.58-2.el8.x86_64                                               
+  perl-Text-Unidecode-1.30-5.el8.noarch                                         
+  perl-XML-Parser-2.44-11.el8.x86_64                                            
+  perl-XML-XPath-1.42-3.el8.noarch                                              
+  perl-encoding-4:2.22-3.el8.x86_64                                             
+  perl-open-1.11-421.el8.noarch                                                 
+  pkgconf-1.4.2-1.el8.x86_64                                                    
+  pkgconf-m4-1.4.2-1.el8.noarch                                                 
+  pkgconf-pkg-config-1.4.2-1.el8.x86_64                                         
+  platform-python-devel-3.6.8-45.el8.x86_64                                     
+  python-oslo-cache-lang-2.7.1-1.el8.noarch                                     
+  python-oslo-concurrency-lang-4.4.0-1.el8.noarch                               
+  python-oslo-db-lang-8.5.1-1.el8.noarch                                        
+  python-oslo-i18n-lang-5.0.1-2.el8.noarch                                      
+  python-oslo-log-lang-4.4.0-2.el8.noarch                                       
+  python-oslo-middleware-lang-4.2.1-1.el8.noarch                                
+  python-oslo-policy-lang-3.7.1-1.el8.noarch                                    
+  python-oslo-privsep-lang-2.5.1-1.el8.noarch                                   
+  python-oslo-utils-lang-4.8.1-1.el8.noarch                                     
+  python-oslo-versionedobjects-lang-2.4.1-1.el8.noarch                          
+  python-oslo-vmware-lang-3.8.1-1.el8.noarch                                    
+  python-pycadf-common-3.1.1-2.el8.noarch                                       
+  python-rpm-macros-3-41.el8.noarch                                             
+  python-srpm-macros-3-41.el8.noarch                                            
+  python3-Bottleneck-1.2.1-13.el8.x86_64                                        
+  python3-PyMySQL-0.10.1-2.module_el8.5.0+761+faacb0fb.noarch                   
+  python3-alembic-1.4.3-1.el8.noarch                                            
+  python3-amqp-5.0.5-1.el8.noarch                                               
+  python3-attrs-17.4.0-6.el8.noarch                                             
+  python3-automaton-2.3.1-1.el8.noarch                                          
+  python3-babel-2.5.1-7.el8.noarch                                              
+  python3-barbicanclient-5.1.0-1.el8.noarch                                     
+  python3-bcrypt-3.1.7-3.el8s.x86_64                                            
+  python3-beautifulsoup4-4.9.3-1.el8.noarch                                     
+  python3-boto3-1.6.1-2.el8.noarch                                              
+  python3-botocore-1.17.52-1.el8.noarch                                         
+  python3-cachetools-4.2.0-1.el8.noarch                                         
+  python3-cairo-1.16.3-6.el8.x86_64                                             
+  python3-castellan-3.7.2-1.el8.noarch                                          
+  python3-cffi-1.13.2-1.el8.x86_64                                              
+  python3-chardet-3.0.4-7.el8.noarch                                            
+  python3-cinder-1:18.1.0-1.el8.noarch                                          
+  python3-cinder-common-1:18.1.0-1.el8.noarch                                   
+  python3-cinderclient-7.4.1-1.el8.noarch                                       
+  python3-cliff-3.7.0-1.el8.noarch                                              
+  python3-cmd2-1.4.0-1.1.el8.noarch                                             
+  python3-colorama-0.4.3-3.el8.noarch                                           
+  python3-cryptography-3.2.1-5.el8.x86_64                                       
+  python3-cssselect-0.9.2-13.el8.noarch                                         
+  python3-cursive-0.2.2-1.el8.noarch                                            
+  python3-cycler-0.10.0-13.el8.noarch                                           
+  python3-debtcollector-2.2.0-1.el8.noarch                                      
+  python3-docutils-0.14-12.module_el8.5.0+761+faacb0fb.noarch                   
+  python3-dogpile-cache-1.1.2-1.1.el8.noarch                                    
+  python3-editor-1.0.4-4.el8.noarch                                             
+  python3-etcd3gw-0.2.5-1.el8.noarch                                            
+  python3-eventlet-0.30.0-1.1.el8.noarch                                        
+  python3-fasteners-0.14.1-20.el8.noarch                                        
+  python3-fluidity-sm-0.2.0-16.el8.noarch                                       
+  python3-funcsigs-1.0.2-17.el8.noarch                                          
+  python3-futurist-2.3.0-2.el8.noarch                                           
+  python3-glanceclient-1:3.3.0-1.el8.noarch                                     
+  python3-google-api-client-1:1.6.7-10.el8.noarch                               
+  python3-greenlet-0.4.13-4.el8.x86_64                                          
+  python3-html5lib-1:0.999999999-6.el8.noarch                                   
+  python3-httplib2-0.10.3-4.el8.noarch                                          
+  python3-idna-2.5-5.el8.noarch                                                 
+  python3-importlib-metadata-1.7.0-1.el8.noarch                                 
+  python3-inotify-0.9.6-13.el8.noarch                                           
+  python3-invoke-1.4.0-1.el8.noarch                                             
+  python3-iso8601-0.1.12-3.el8.noarch                                           
+  python3-jeepney-0.4.3-1.el8.noarch                                            
+  python3-jinja2-2.10.1-3.el8.noarch                                            
+  python3-jmespath-0.9.0-11.el8.noarch                                          
+  python3-jsonpatch-1.21-2.el8.noarch                                           
+  python3-jsonpointer-1.10-11.el8.noarch                                        
+  python3-jsonschema-3.2.0-5.el8.noarch                                         
+  python3-kazoo-2.8.0-1.el8.noarch                                              
+  python3-keyring-21.0.0-1.el8.noarch                                           
+  python3-keystoneauth1-4.3.1-1.el8.noarch                                      
+  python3-keystoneclient-1:4.2.0-1.el8.noarch                                   
+  python3-keystonemiddleware-9.2.0-1.el8.noarch                                 
+  python3-kiwisolver-1.1.0-4.el8.x86_64                                         
+  python3-kombu-1:5.0.2-1.el8.noarch                                            
+  python3-lexicon-1.0.0-9.el8.noarch                                            
+  python3-lxml-4.2.3-4.el8.x86_64                                               
+  python3-mako-1.0.6-13.el8.noarch                                              
+  python3-markupsafe-0.23-19.el8.x86_64                                         
+  python3-matplotlib-3.1.1-2.el8.x86_64                                         
+  python3-matplotlib-data-3.1.1-2.el8.noarch                                    
+  python3-matplotlib-data-fonts-3.1.1-2.el8.noarch                              
+  python3-matplotlib-tk-3.1.1-2.el8.x86_64                                      
+  python3-memcached-1.59-1.el8.noarch                                           
+  python3-migrate-0.13.0-1.el8.noarch                                           
+  python3-mock-3.0.5-7.el8.noarch                                               
+  python3-msgpack-1.0.2-1.el8.x86_64                                            
+  python3-netaddr-0.7.19-8.el8.noarch                                           
+  python3-netifaces-0.10.6-4.el8.x86_64                                         
+  python3-networkx-2.5-1.el8.noarch                                             
+  python3-novaclient-1:17.4.0-1.el8.noarch                                      
+  python3-numexpr-2.7.1-1.el8.x86_64                                            
+  python3-numpy-1:1.14.3-10.el8.x86_64                                          
+  python3-numpy-f2py-1:1.14.3-10.el8.x86_64                                     
+  python3-oauth2client-4.1.3-8.el8.noarch                                       
+  python3-os-brick-4.3.2-1.el8.noarch                                           
+  python3-os-service-types-1.7.0-1.el8.noarch                                   
+  python3-os-win-5.4.0-1.el8.noarch                                             
+  python3-oslo-cache-2.7.1-1.el8.noarch                                         
+  python3-oslo-concurrency-4.4.0-1.el8.noarch                                   
+  python3-oslo-config-2:8.5.1-1.el8.noarch                                      
+  python3-oslo-context-3.2.1-1.el8.noarch                                       
+  python3-oslo-db-8.5.1-1.el8.noarch                                            
+  python3-oslo-i18n-5.0.1-2.el8.noarch                                          
+  python3-oslo-log-4.4.0-2.el8.noarch                                           
+  python3-oslo-messaging-12.7.2-1.el8.noarch                                    
+  python3-oslo-middleware-4.2.1-1.el8.noarch                                    
+  python3-oslo-policy-3.7.1-1.el8.noarch                                        
+  python3-oslo-privsep-2.5.1-1.el8.noarch                                       
+  python3-oslo-reports-2.2.0-2.el8.noarch                                       
+  python3-oslo-rootwrap-6.3.1-1.el8.noarch                                      
+  python3-oslo-serialization-4.1.1-1.el8.noarch                                 
+  python3-oslo-service-2.5.1-1.el8.noarch                                       
+  python3-oslo-upgradecheck-1.3.1-1.el8.noarch                                  
+  python3-oslo-utils-4.8.1-1.el8.noarch                                         
+  python3-oslo-versionedobjects-2.4.1-1.el8.noarch                              
+  python3-oslo-vmware-3.8.1-1.el8.noarch                                        
+  python3-osprofiler-3.4.0-2.el8.noarch                                         
+  python3-packaging-20.4-1.el8.noarch                                           
+  python3-pandas-0.25.3-1.el8.x86_64                                            
+  python3-paramiko-2.7.2-1.el8.noarch                                           
+  python3-paste-3.5.0-1.el8.noarch                                              
+  python3-paste-deploy-2.1.1-1.el8.noarch                                       
+  python3-pbr-5.5.1-1.el8.noarch                                                
+  python3-pillow-5.1.1-18.el8.x86_64                                            
+  python3-pip-9.0.3-22.el8.noarch                                               
+  python3-ply-3.9-9.el8.noarch                                                  
+  python3-prettytable-0.7.2-14.el8.noarch                                       
+  python3-psutil-5.7.3-1.el8.x86_64                                             
+  python3-pyOpenSSL-19.0.0-1.el8.noarch                                         
+  python3-pyasn1-0.4.6-3.el8.noarch                                             
+  python3-pyasn1-modules-0.4.6-3.el8.noarch                                     
+  python3-pycadf-3.1.1-2.el8.noarch                                             
+  python3-pycparser-2.14-14.el8.noarch                                          
+  python3-pydot-1.4.1-1.el8.noarch                                              
+  python3-pygraphviz-1.5-9.el8.x86_64                                           
+  python3-pynacl-1.4.0-1.el8.x86_64                                             
+  python3-pyngus-2.3.0-4.el8.noarch                                             
+  python3-pyperclip-1.8.0-2.el8.noarch                                          
+  python3-pyrsistent-0.17.3-1.el8.x86_64                                        
+  python3-pysocks-1.6.8-3.el8.noarch                                            
+  python3-pytz-2017.2-9.el8.noarch                                              
+  python3-pyyaml-5.4.1-2.el8.x86_64                                             
+  python3-qpid-proton-0.30.0-1.el8.x86_64                                       
+  python3-redis-3.5.3-1.el8.noarch                                              
+  python3-repoze-lru-0.7-6.el8.noarch                                           
+  python3-requests-2.25.1-1.el8.noarch                                          
+  python3-rfc3986-1.4.0-3.el8.noarch                                            
+  python3-routes-2.4.1-12.el8.noarch                                            
+  python3-rpm-generators-5-7.el8.noarch                                         
+  python3-rpm-macros-3-41.el8.noarch                                            
+  python3-rsa-4.6-2.el8.noarch                                                  
+  python3-s3transfer-0.3.3-3.el8.noarch                                         
+  python3-scipy-1.0.0-21.module_el8.5.0+771+e5d9a225.x86_64                     
+  python3-secretstorage-3.1.1-4.el8.noarch                                      
+  python3-simplejson-3.17.2-2.el8.x86_64                                        
+  python3-soupsieve-2.1.0-1.el8.noarch                                          
+  python3-sqlalchemy-1.3.2-2.module_el8.5.0+761+faacb0fb.x86_64                 
+  python3-sqlparse-0.3.1-3.el8.noarch                                           
+  python3-statsd-3.2.1-16.el8.noarch                                            
+  python3-stevedore-3.3.1-1.el8.noarch                                          
+  python3-suds-0.7-0.10.94664ddd46a6.el8.noarch                                 
+  python3-swiftclient-3.11.1-1.el8.noarch                                       
+  python3-tables-3.5.2-6.el8.x86_64                                             
+  python3-tabulate-0.8.7-4.el8.noarch                                           
+  python3-taskflow-4.6.0-1.el8.noarch                                           
+  python3-tempita-0.5.1-25.el8.noarch                                           
+  python3-tenacity-6.2.0-1.el8.noarch                                           
+  python3-tkinter-3.6.8-45.el8.x86_64                                           
+  python3-tooz-2.8.2-1.el8.noarch                                               
+  python3-uritemplate-3.0.0-10.el8.noarch                                       
+  python3-urllib3-1.25.10-4.el8.noarch                                          
+  python3-vine-5.0.0-2.el8.noarch                                               
+  python3-voluptuous-0.12.1-1.el8.noarch                                        
+  python3-warlock-1.3.3-1.el8.noarch                                            
+  python3-wcwidth-0.2.5-2.el8.noarch                                            
+  python3-webencodings-0.5.1-6.el8.noarch                                       
+  python3-webob-1.8.6-3.el8.noarch                                              
+  python3-wrapt-1.12.1-3.el8.x86_64                                             
+  python3-yappi-1.3.0-1.el8.x86_64                                              
+  python3-zake-0.2.2-18.el8.noarch                                              
+  python3-zipp-3.4.0-1.el8.noarch                                               
+  python3-zstd-1.4.5.1-1.el8.x86_64                                             
+  python36-3.6.8-38.module_el8.5.0+895+a459eca8.x86_64                          
+  qpid-proton-c-0.30.0-1.el8.x86_64                                             
+  quota-1:4.04-14.el8.x86_64                                                    
+  quota-nls-1:4.04-14.el8.noarch                                                
+  rpcbind-1.2.5-8.el8.x86_64                                                    
+  sysfsutils-2.1.0-25.el8.x86_64                                                
+  tcl-1:8.6.8-2.el8.x86_64                                                      
+  texlive-base-7:20180414-25.el8.noarch                                         
+  texlive-dvipng-7:20180414-25.el8.x86_64                                       
+  texlive-kpathsea-7:20180414-25.el8.x86_64                                     
+  texlive-lib-7:20180414-25.el8.x86_64                                          
+  texlive-tetex-7:20180414-25.el8.noarch                                        
+  texlive-texlive.infra-7:20180414-25.el8.noarch                                
+  tk-1:8.6.8-1.el8.x86_64                                                       
+  urw-base35-bookman-fonts-20170801-10.el8.noarch                               
+  urw-base35-c059-fonts-20170801-10.el8.noarch                                  
+  urw-base35-d050000l-fonts-20170801-10.el8.noarch                              
+  urw-base35-fonts-20170801-10.el8.noarch                                       
+  urw-base35-fonts-common-20170801-10.el8.noarch                                
+  urw-base35-gothic-fonts-20170801-10.el8.noarch                                
+  urw-base35-nimbus-mono-ps-fonts-20170801-10.el8.noarch                        
+  urw-base35-nimbus-roman-fonts-20170801-10.el8.noarch                          
+  urw-base35-nimbus-sans-fonts-20170801-10.el8.noarch                           
+  urw-base35-p052-fonts-20170801-10.el8.noarch                                  
+  urw-base35-standard-symbols-ps-fonts-20170801-10.el8.noarch                   
+  urw-base35-z003-fonts-20170801-10.el8.noarch                                  
+  xdg-utils-1.1.2-5.el8.noarch                                                  
+  xorg-x11-font-utils-1:7.5-41.el8.x86_64                                       
+  xorg-x11-fonts-ISO8859-1-100dpi-7.5-19.el8.noarch                             
+  xorg-x11-server-utils-7.7-27.el8.x86_64                                       
+
+Complete!
+Configuring /etc/cinder/cinder.conf.
+Setting database connection: mysql+pymysql://cinder:cinderDBPass@controller/cinder.
+'/etc/cinder/cinder.conf' -> '/tmp/000_etc_cinder_cinder.conf.iniset'
+iniset /tmp/000_etc_cinder_cinder.conf.iniset database connection mysql+pymysql://cinder:cinderDBPass@controller/cinder
+Configuring RabbitMQ message queue access.
+'/etc/cinder/cinder.conf' -> '/tmp/001_etc_cinder_cinder.conf.iniset'
+iniset /tmp/001_etc_cinder_cinder.conf.iniset DEFAULT transport_url rabbit://openstack:rabbitPass@controller
+'/etc/cinder/cinder.conf' -> '/tmp/002_etc_cinder_cinder.conf.iniset'
+iniset /tmp/002_etc_cinder_cinder.conf.iniset DEFAULT auth_strategy keystone
+'/etc/cinder/cinder.conf' -> '/tmp/003_etc_cinder_cinder.conf.iniset'
+iniset /tmp/003_etc_cinder_cinder.conf.iniset keystone_authtoken www_authenticate_uri http://controller:5000
+'/etc/cinder/cinder.conf' -> '/tmp/004_etc_cinder_cinder.conf.iniset'
+iniset /tmp/004_etc_cinder_cinder.conf.iniset keystone_authtoken auth_url http://controller:5000
+'/etc/cinder/cinder.conf' -> '/tmp/005_etc_cinder_cinder.conf.iniset'
+iniset /tmp/005_etc_cinder_cinder.conf.iniset keystone_authtoken memcached_servers controller:11211
+'/etc/cinder/cinder.conf' -> '/tmp/006_etc_cinder_cinder.conf.iniset'
+iniset /tmp/006_etc_cinder_cinder.conf.iniset keystone_authtoken auth_type password
+'/etc/cinder/cinder.conf' -> '/tmp/007_etc_cinder_cinder.conf.iniset'
+iniset /tmp/007_etc_cinder_cinder.conf.iniset keystone_authtoken project_domain_id default
+'/etc/cinder/cinder.conf' -> '/tmp/008_etc_cinder_cinder.conf.iniset'
+iniset /tmp/008_etc_cinder_cinder.conf.iniset keystone_authtoken user_domain_id default
+'/etc/cinder/cinder.conf' -> '/tmp/009_etc_cinder_cinder.conf.iniset'
+iniset /tmp/009_etc_cinder_cinder.conf.iniset keystone_authtoken project_name service
+'/etc/cinder/cinder.conf' -> '/tmp/010_etc_cinder_cinder.conf.iniset'
+iniset /tmp/010_etc_cinder_cinder.conf.iniset keystone_authtoken username cinder
+'/etc/cinder/cinder.conf' -> '/tmp/011_etc_cinder_cinder.conf.iniset'
+iniset /tmp/011_etc_cinder_cinder.conf.iniset keystone_authtoken password cinderPass
+'/etc/cinder/cinder.conf' -> '/tmp/012_etc_cinder_cinder.conf.iniset'
+iniset /tmp/012_etc_cinder_cinder.conf.iniset DEFAULT target_helper lioadm
+'/etc/cinder/cinder.conf' -> '/tmp/013_etc_cinder_cinder.conf.iniset'
+iniset /tmp/013_etc_cinder_cinder.conf.iniset backend_defaults target_helper lioadm
+'/etc/cinder/cinder.conf' -> '/tmp/014_etc_cinder_cinder.conf.iniset'
+iniset /tmp/014_etc_cinder_cinder.conf.iniset lvm volume_driver cinder.volume.drivers.lvm.LVMVolumeDriver
+'/etc/cinder/cinder.conf' -> '/tmp/015_etc_cinder_cinder.conf.iniset'
+iniset /tmp/015_etc_cinder_cinder.conf.iniset lvm volume_group cinder-volumes
+'/etc/cinder/cinder.conf' -> '/tmp/016_etc_cinder_cinder.conf.iniset'
+iniset /tmp/016_etc_cinder_cinder.conf.iniset lvm target_ip_address 10.0.0.41
+'/etc/cinder/cinder.conf' -> '/tmp/017_etc_cinder_cinder.conf.iniset'
+iniset /tmp/017_etc_cinder_cinder.conf.iniset lvm iscsi_protocol iscsi
+'/etc/cinder/cinder.conf' -> '/tmp/018_etc_cinder_cinder.conf.iniset'
+iniset /tmp/018_etc_cinder_cinder.conf.iniset lvm iscsi_helper lioadm
+'/etc/cinder/cinder.conf' -> '/tmp/019_etc_cinder_cinder.conf.iniset'
+iniset /tmp/019_etc_cinder_cinder.conf.iniset DEFAULT target_ip_address 10.0.0.41
+'/etc/cinder/cinder.conf' -> '/tmp/020_etc_cinder_cinder.conf.iniset'
+iniset /tmp/020_etc_cinder_cinder.conf.iniset DEFAULT enable_v3_api True
+'/etc/cinder/cinder.conf' -> '/tmp/021_etc_cinder_cinder.conf.iniset'
+iniset /tmp/021_etc_cinder_cinder.conf.iniset DEFAULT state_path /var/lib/cinder
+'/etc/cinder/cinder.conf' -> '/tmp/022_etc_cinder_cinder.conf.iniset'
+iniset /tmp/022_etc_cinder_cinder.conf.iniset DEFAULT volumes_dir /var/lib/cinder
+'/etc/cinder/cinder.conf' -> '/tmp/023_etc_cinder_cinder.conf.iniset'
+iniset /tmp/023_etc_cinder_cinder.conf.iniset DEFAULT enabled_backends lvm
+'/etc/cinder/cinder.conf' -> '/tmp/024_etc_cinder_cinder.conf.iniset'
+iniset /tmp/024_etc_cinder_cinder.conf.iniset DEFAULT glance_api_servers http://controller:9292
+'/etc/cinder/cinder.conf' -> '/tmp/025_etc_cinder_cinder.conf.iniset'
+iniset /tmp/025_etc_cinder_cinder.conf.iniset oslo_concurrency lock_path /var/lib/cinder/tmp
+Restarting cinder service.
+Created symlink /etc/systemd/system/multi-user.target.wants/openstack-cinder-volume.service → /usr/lib/systemd/system/openstack-cinder-volume.service.
+module iscsiadm 1.0;
+
+require {
+        type iscsid_t;
+        class capability dac_override;
+}
+
+#============= iscsid_t ==============
+allow iscsid_t self:capability dac_override;
+Warning: ALREADY_ENABLED: iscsi-target
+success
+success
+Verifying Block Storage installation on controller node.
+Sourcing the admin credentials.
+Restarting restarting cinder-scheduler.
+ssh controller sudo systemctl restart openstack-cinder-api
+ssh controller sudo systemctl restart openstack-cinder-scheduler
+Waiting for cinder to start.
+openstack volume service list is available:
+ssh controller source /home/stack/config/admin-openstackrc.sh; openstack volume service list
++------------------+-------------+------+---------+-------+----------------------------+
+| Binary           | Host        | Zone | Status  | State | Updated At                 |
++------------------+-------------+------+---------+-------+----------------------------+
+| cinder-scheduler | controller  | nova | enabled | up    | 2022-03-08T15:58:51.000000 |
+| cinder-volume    | storage@lvm | nova | enabled | up    | 2022-03-08T15:58:59.000000 |
++------------------+-------------+------+---------+-------+----------------------------+
+Waiting for all cinder services to start..
+All cinder services seem to be up and running.
+ssh controller source /home/stack/config/admin-openstackrc.sh; openstack volume service list
++------------------+-------------+------+---------+-------+----------------------------+
+| Binary           | Host        | Zone | Status  | State | Updated At                 |
++------------------+-------------+------+---------+-------+----------------------------+
+| cinder-scheduler | controller  | nova | enabled | up    | 2022-03-08T15:59:02.000000 |
+| cinder-volume    | storage@lvm | nova | enabled | up    | 2022-03-08T15:59:09.000000 |
++------------------+-------------+------+---------+-------+----------------------------+
+Sourcing the demo credentials.
+openstack volume create --size 1 volume1
+ssh controller source /home/stack/config/demo-openstackrc.sh; openstack volume create --size 1 volume1
++---------------------+--------------------------------------+
+| Field               | Value                                |
++---------------------+--------------------------------------+
+| attachments         | []                                   |
+| availability_zone   | nova                                 |
+| bootable            | false                                |
+| consistencygroup_id | None                                 |
+| created_at          | 2022-03-08T15:59:13.884751           |
+| description         | None                                 |
+| encrypted           | False                                |
+| id                  | 5a01004f-4ac4-46fb-bbe1-49ecd801a9b4 |
+| multiattach         | False                                |
+| name                | volume1                              |
+| properties          |                                      |
+| replication_status  | None                                 |
+| size                | 1                                    |
+| snapshot_id         | None                                 |
+| source_volid        | None                                 |
+| status              | creating                             |
+| type                | __DEFAULT__                          |
+| updated_at          | None                                 |
+| user_id             | 2451f8f6db9b4b029b5e9fd201e8d38a     |
++---------------------+--------------------------------------+
+Waiting for cinder to list the new volume.
+Waiting for cinder volume to become available..
+Volume successfully created:
+ssh controller source /home/stack/config/demo-openstackrc.sh; openstack volume list
++--------------------------------------+---------+-----------+------+-------------+
+| ID                                   | Name    | Status    | Size | Attached to |
++--------------------------------------+---------+-----------+------+-------------+
+| 5a01004f-4ac4-46fb-bbe1-49ecd801a9b4 | volume1 | available |    1 |             |
++--------------------------------------+---------+-----------+------+-------------+
+Deleting volume.
+ssh controller source /home/stack/config/demo-openstackrc.sh; openstack volume delete volume1
+openstack volume list
+ssh controller source /home/stack/config/demo-openstackrc.sh; openstack volume list
+

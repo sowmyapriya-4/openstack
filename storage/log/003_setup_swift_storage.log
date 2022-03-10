@@ -1,0 +1,85 @@
+Success. Node storage in mgmt: 10.0.0.41.
+IP address of this node's interface in management network: 10.0.0.41.
+'/etc/default/rsync' -> '/tmp/029_etc_default_rsync.iniset'
+start the rsync service.
+● rsyncd.service - fast remote file copy program daemon
+   Loaded: loaded (/usr/lib/systemd/system/rsyncd.service; enabled; vendor preset: disabled)
+   Active: active (running) since Tue 2022-03-08 10:49:57 EST; 27min ago
+ Main PID: 1177 (rsync)
+    Tasks: 1 (limit: 23634)
+   Memory: 804.0K
+   CGroup: /system.slice/rsyncd.service
+           └─1177 /usr/bin/rsync --daemon --no-detach
+
+Mar 08 10:49:57 storage systemd[1]: Started fast remote file copy program daemon.
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 11752  100 11752    0     0  10703      0  0:00:01  0:00:01 --:--:-- 10703
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 18462  100 18462    0     0  16677      0  0:00:01  0:00:01 --:--:-- 16677
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 18940  100 18940    0     0  16541      0  0:00:01  0:00:01 --:--:-- 16541
+'/etc/swift/account-server.conf' -> '/tmp/030_etc_swift_account-server.conf.iniset'
+iniset /tmp/030_etc_swift_account-server.conf.iniset DEFAULT bind_ip 10.0.0.41
+'/etc/swift/account-server.conf' -> '/tmp/031_etc_swift_account-server.conf.iniset'
+iniset /tmp/031_etc_swift_account-server.conf.iniset DEFAULT bind_port 6202
+'/etc/swift/account-server.conf' -> '/tmp/032_etc_swift_account-server.conf.iniset'
+iniset /tmp/032_etc_swift_account-server.conf.iniset DEFAULT user swift
+'/etc/swift/account-server.conf' -> '/tmp/033_etc_swift_account-server.conf.iniset'
+iniset /tmp/033_etc_swift_account-server.conf.iniset DEFAULT swift_dir /etc/swift
+'/etc/swift/account-server.conf' -> '/tmp/034_etc_swift_account-server.conf.iniset'
+iniset /tmp/034_etc_swift_account-server.conf.iniset DEFAULT devices /srv/node
+'/etc/swift/account-server.conf' -> '/tmp/035_etc_swift_account-server.conf.iniset'
+iniset /tmp/035_etc_swift_account-server.conf.iniset DEFAULT mount_check True
+'/etc/swift/account-server.conf' -> '/tmp/036_etc_swift_account-server.conf.iniset'
+iniset /tmp/036_etc_swift_account-server.conf.iniset pipeline:main pipeline healthcheck recon account-server
+'/etc/swift/account-server.conf' -> '/tmp/037_etc_swift_account-server.conf.iniset'
+iniset /tmp/037_etc_swift_account-server.conf.iniset filter:recon use egg:swift#recon
+'/etc/swift/account-server.conf' -> '/tmp/038_etc_swift_account-server.conf.iniset'
+iniset /tmp/038_etc_swift_account-server.conf.iniset filter:recon recon_cache_path /var/cache/swift
+'/etc/swift/container-server.conf' -> '/tmp/039_etc_swift_container-server.conf.iniset'
+iniset /tmp/039_etc_swift_container-server.conf.iniset DEFAULT bind_ip 10.0.0.41
+'/etc/swift/container-server.conf' -> '/tmp/040_etc_swift_container-server.conf.iniset'
+iniset /tmp/040_etc_swift_container-server.conf.iniset DEFAULT bind_port 6201
+'/etc/swift/container-server.conf' -> '/tmp/041_etc_swift_container-server.conf.iniset'
+iniset /tmp/041_etc_swift_container-server.conf.iniset DEFAULT user swift
+'/etc/swift/container-server.conf' -> '/tmp/042_etc_swift_container-server.conf.iniset'
+iniset /tmp/042_etc_swift_container-server.conf.iniset DEFAULT swift_dir /etc/swift
+'/etc/swift/container-server.conf' -> '/tmp/043_etc_swift_container-server.conf.iniset'
+iniset /tmp/043_etc_swift_container-server.conf.iniset DEFAULT devices /srv/node
+'/etc/swift/container-server.conf' -> '/tmp/044_etc_swift_container-server.conf.iniset'
+iniset /tmp/044_etc_swift_container-server.conf.iniset DEFAULT mount_check True
+'/etc/swift/container-server.conf' -> '/tmp/045_etc_swift_container-server.conf.iniset'
+iniset /tmp/045_etc_swift_container-server.conf.iniset pipeline:main pipeline healthcheck recon container-server
+'/etc/swift/container-server.conf' -> '/tmp/046_etc_swift_container-server.conf.iniset'
+iniset /tmp/046_etc_swift_container-server.conf.iniset filter:recon use egg:swift#recon
+'/etc/swift/container-server.conf' -> '/tmp/047_etc_swift_container-server.conf.iniset'
+iniset /tmp/047_etc_swift_container-server.conf.iniset filter:recon recon_cache_path /var/cache/swift
+'/etc/swift/object-server.conf' -> '/tmp/048_etc_swift_object-server.conf.iniset'
+iniset /tmp/048_etc_swift_object-server.conf.iniset DEFAULT bind_ip 10.0.0.41
+'/etc/swift/object-server.conf' -> '/tmp/049_etc_swift_object-server.conf.iniset'
+iniset /tmp/049_etc_swift_object-server.conf.iniset DEFAULT bind_port 6200
+'/etc/swift/object-server.conf' -> '/tmp/050_etc_swift_object-server.conf.iniset'
+iniset /tmp/050_etc_swift_object-server.conf.iniset DEFAULT user swift
+'/etc/swift/object-server.conf' -> '/tmp/051_etc_swift_object-server.conf.iniset'
+iniset /tmp/051_etc_swift_object-server.conf.iniset DEFAULT swift_dir /etc/swift
+'/etc/swift/object-server.conf' -> '/tmp/052_etc_swift_object-server.conf.iniset'
+iniset /tmp/052_etc_swift_object-server.conf.iniset DEFAULT devices /srv/node
+'/etc/swift/object-server.conf' -> '/tmp/053_etc_swift_object-server.conf.iniset'
+iniset /tmp/053_etc_swift_object-server.conf.iniset DEFAULT mount_check True
+'/etc/swift/object-server.conf' -> '/tmp/054_etc_swift_object-server.conf.iniset'
+iniset /tmp/054_etc_swift_object-server.conf.iniset pipeline:main pipeline healthcheck recon object-server
+'/etc/swift/object-server.conf' -> '/tmp/055_etc_swift_object-server.conf.iniset'
+iniset /tmp/055_etc_swift_object-server.conf.iniset filter:recon use egg:swift#recon
+'/etc/swift/object-server.conf' -> '/tmp/056_etc_swift_object-server.conf.iniset'
+iniset /tmp/056_etc_swift_object-server.conf.iniset filter:recon recon_cache_path /var/cache/swift
+'/etc/swift/object-server.conf' -> '/tmp/057_etc_swift_object-server.conf.iniset'
+iniset /tmp/057_etc_swift_object-server.conf.iniset filter:recon recon_lock_path /var/lock
+Warning: ALREADY_ENABLED: 873:tcp
+Warning: ALREADY_ENABLED: 6200:tcp
+Warning: ALREADY_ENABLED: 6201:tcp
+Warning: ALREADY_ENABLED: 6202:tcp
+success
+success

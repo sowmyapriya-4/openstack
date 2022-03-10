@@ -1,0 +1,66 @@
+Verifying heat installation.
+Waiting for heat-engine to start.
+ssh controller source /home/stack/config/demo-openstackrc.sh; openstack stack list 2>&1 |  grep 'orchestration service not found'
+Verifying that no other instance VMs are left.
+WARNING Existing VMs found. There may not be enough resources for this test.
++--------------------------------------+------------------+--------+-------------------------+--------+---------+
+| ID                                   | Name             | Status | Networks                | Image  | Flavor  |
++--------------------------------------+------------------+--------+-------------------------+--------+---------+
+| 9c528fe5-d03c-4b95-9545-df51a5734443 | private-instance | ACTIVE | selfservice=172.16.1.42 | cirros | m1.nano |
++--------------------------------------+------------------+--------+-------------------------+--------+---------+
+Creating a test heat template.
+ssh controller cat > demo-template.yml
+
+| 0  | m1.nano |  64 |    1 |         0 |     1 | True      |
+Proceeding, m1.nano flavor exists.
+Current flavors:
++----+---------+-----+------+-----------+-------+-----------+
+| ID | Name    | RAM | Disk | Ephemeral | VCPUs | Is Public |
++----+---------+-----+------+-----------+-------+-----------+
+| 0  | m1.nano |  64 |    1 |         0 |     1 | True      |
++----+---------+-----+------+-----------+-------+-----------+
+
+ssh controller source /home/stack/config/demo-openstackrc.sh; openstack network list
+NET_ID: fa9ea2fb-f15c-49ed-a148-abf5a80539a1
+ssh controller source /home/stack/config/demo-openstackrc.sh; openstack stack create -t demo-template.yml     --parameter 'NetID=fa9ea2fb-f15c-49ed-a148-abf5a80539a1' stack
++---------------------+--------------------------------------------------------------------------------------------------+
+| Field               | Value                                                                                            |
++---------------------+--------------------------------------------------------------------------------------------------+
+| id                  | 3c29e841-3b0c-4c1a-b5b9-bc1974977455                                                             |
+| stack_name          | stack                                                                                            |
+| description         | Launch a basic instance with CirrOS image using the m1.nano flavor, mykey key,  and one network. |
+| creation_time       | 2022-03-10T13:44:33Z                                                                             |
+| updated_time        | None                                                                                             |
+| stack_status        | CREATE_IN_PROGRESS                                                                               |
+| stack_status_reason | Stack CREATE started                                                                             |
++---------------------+--------------------------------------------------------------------------------------------------+
+Verifying successful creation of stack.
+openstack stack list
+....| 3c29e841-3b0c-4c1a-b5b9-bc1974977455 | stack      | CREATE_COMPLETE | 2022-03-10T13:44:33Z | None         |
+Showing the name and IP address of the instance.
+ssh controller source /home/stack/config/demo-openstackrc.sh; openstack stack output show --all stack; nova list
++---------------+--------------------------------------------------+
+| Field         | Value                                            |
++---------------+--------------------------------------------------+
+| instance_ip   | {                                                |
+|               |   "output_key": "instance_ip",                   |
+|               |   "description": "IP address of the instance.",  |
+|               |   "output_value": "203.0.113.185"                |
+|               | }                                                |
+| instance_name | {                                                |
+|               |   "output_key": "instance_name",                 |
+|               |   "description": "Name of the instance.",        |
+|               |   "output_value": "stack-server-3r653bgagm7p"    |
+|               | }                                                |
++---------------+--------------------------------------------------+
++--------------------------------------+---------------------------+--------+------------+-------------+-------------------------+
+| ID                                   | Name                      | Status | Task State | Power State | Networks                |
++--------------------------------------+---------------------------+--------+------------+-------------+-------------------------+
+| 9c528fe5-d03c-4b95-9545-df51a5734443 | private-instance          | ACTIVE | -          | Running     | selfservice=172.16.1.42 |
+| 719e6223-4cbe-4b28-8f74-12a23635c4be | stack-server-3r653bgagm7p | ACTIVE | -          | Running     | provider=203.0.113.185  |
++--------------------------------------+---------------------------+--------+------------+-------------+-------------------------+
+Deleting the test stack.
+ssh controller source /home/stack/config/demo-openstackrc.sh; openstack stack list
+SUM HEAT MEM               total        used        free      shared  buff/cache   available
+SUM HEAT MEM Mem:           3732        3294         185           4         252         204
+SUM HEAT MEM Swap:          2319         668        1651 

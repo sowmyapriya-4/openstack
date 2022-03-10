@@ -1,0 +1,6 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  8755    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0Warning: Failed to create the file /etc/swift/swift.conf: No such file or 
+Warning: directory
+ 40  8755   40  3570    0     0   3455      0  0:00:02  0:00:01  0:00:01  3455
+curl: (23) Failed writing body (0 != 3570)

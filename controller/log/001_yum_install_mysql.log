@@ -1,0 +1,122 @@
+Success. Node controller in mgmt: 10.0.0.11.
+Will bind MariaDB server to 10.0.0.11.
+Sourced MariaDB password from credentials: rootDBPass
+Installing MariaDB .
+CentOS Stream 8 - PowerTools                    2.3 kB/s | 4.4 kB     00:01    
+Package python3-PyMySQL-0.10.1-2.module_el8.5.0+761+faacb0fb.noarch is already installed.
+Dependencies resolved.
+==============================================================================================
+ Package                      Arch    Version                                 Repo        Size
+==============================================================================================
+Installing:
+ mariadb                      x86_64  3:10.3.28-1.module_el8.3.0+757+d382997d appstream  6.0 M
+ mariadb-server               x86_64  3:10.3.28-1.module_el8.3.0+757+d382997d appstream   16 M
+Installing dependencies:
+ mariadb-common               x86_64  3:10.3.28-1.module_el8.3.0+757+d382997d appstream   64 k
+ mariadb-connector-c          x86_64  3.1.11-2.el8_3                          appstream  200 k
+ mariadb-connector-c-config   noarch  3.1.11-2.el8_3                          appstream   15 k
+ mariadb-errmsg               x86_64  3:10.3.28-1.module_el8.3.0+757+d382997d appstream  234 k
+ perl-DBD-MySQL               x86_64  4.046-3.module_el8.3.0+419+c2dec72b     appstream  156 k
+ perl-DBI                     x86_64  1.641-3.module_el8.3.0+413+9be2aeb5     appstream  740 k
+ perl-Math-BigInt             noarch  1:1.9998.11-7.el8                       baseos     196 k
+ perl-Math-Complex            noarch  1.59-421.el8                            baseos     109 k
+Installing weak dependencies:
+ mariadb-backup               x86_64  3:10.3.28-1.module_el8.3.0+757+d382997d appstream  6.1 M
+ mariadb-gssapi-server        x86_64  3:10.3.28-1.module_el8.3.0+757+d382997d appstream   51 k
+ mariadb-server-utils         x86_64  3:10.3.28-1.module_el8.3.0+757+d382997d appstream  1.1 M
+
+Transaction Summary
+==============================================================================================
+Install  13 Packages
+
+Total download size: 31 M
+Installed size: 156 M
+Downloading Packages:
+(1/13): mariadb-common-10.3.28-1.module_el8.3.0 275 kB/s |  64 kB     00:00    
+(2/13): mariadb-connector-c-3.1.11-2.el8_3.x86_ 1.1 MB/s | 200 kB     00:00    
+(3/13): mariadb-connector-c-config-3.1.11-2.el8 182 kB/s |  15 kB     00:00    
+(4/13): mariadb-errmsg-10.3.28-1.module_el8.3.0 1.7 MB/s | 234 kB     00:00    
+(5/13): mariadb-gssapi-server-10.3.28-1.module_ 583 kB/s |  51 kB     00:00    
+(6/13): mariadb-backup-10.3.28-1.module_el8.3.0 5.4 MB/s | 6.1 MB     00:01    
+(7/13): mariadb-10.3.28-1.module_el8.3.0+757+d3 5.0 MB/s | 6.0 MB     00:01    
+(8/13): mariadb-server-utils-10.3.28-1.module_e 6.7 MB/s | 1.1 MB     00:00    
+(9/13): perl-DBD-MySQL-4.046-3.module_el8.3.0+4 1.4 MB/s | 156 kB     00:00    
+(10/13): perl-DBI-1.641-3.module_el8.3.0+413+9b 3.9 MB/s | 740 kB     00:00    
+(11/13): perl-Math-BigInt-1.9998.11-7.el8.noarc 709 kB/s | 196 kB     00:00    
+(12/13): perl-Math-Complex-1.59-421.el8.noarch. 556 kB/s | 109 kB     00:00    
+(13/13): mariadb-server-10.3.28-1.module_el8.3. 8.5 MB/s |  16 MB     00:01    
+--------------------------------------------------------------------------------
+Total                                           7.8 MB/s |  31 MB     00:03     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : mariadb-connector-c-config-3.1.11-2.el8_3.noarch      1/13 
+  Installing       : mariadb-common-3:10.3.28-1.module_el8.3.0+757+d382    2/13 
+  Installing       : mariadb-errmsg-3:10.3.28-1.module_el8.3.0+757+d382    3/13 
+  Installing       : perl-Math-Complex-1.59-421.el8.noarch                 4/13 
+  Installing       : perl-Math-BigInt-1:1.9998.11-7.el8.noarch             5/13 
+  Installing       : perl-DBI-1.641-3.module_el8.3.0+413+9be2aeb5.x86_6    6/13 
+  Installing       : perl-DBD-MySQL-4.046-3.module_el8.3.0+419+c2dec72b    7/13 
+  Installing       : mariadb-connector-c-3.1.11-2.el8_3.x86_64             8/13 
+  Installing       : mariadb-backup-3:10.3.28-1.module_el8.3.0+757+d382    9/13 
+  Installing       : mariadb-gssapi-server-3:10.3.28-1.module_el8.3.0+7   10/13 
+  Installing       : mariadb-server-utils-3:10.3.28-1.module_el8.3.0+75   11/13 
+  Running scriptlet: mariadb-server-3:10.3.28-1.module_el8.3.0+757+d382   12/13 
+  Installing       : mariadb-server-3:10.3.28-1.module_el8.3.0+757+d382   12/13 
+  Running scriptlet: mariadb-server-3:10.3.28-1.module_el8.3.0+757+d382   12/13 
+  Installing       : mariadb-3:10.3.28-1.module_el8.3.0+757+d382997d.x8   13/13 
+  Running scriptlet: mariadb-3:10.3.28-1.module_el8.3.0+757+d382997d.x8   13/13 
+  Verifying        : mariadb-3:10.3.28-1.module_el8.3.0+757+d382997d.x8    1/13 
+  Verifying        : mariadb-backup-3:10.3.28-1.module_el8.3.0+757+d382    2/13 
+  Verifying        : mariadb-common-3:10.3.28-1.module_el8.3.0+757+d382    3/13 
+  Verifying        : mariadb-connector-c-3.1.11-2.el8_3.x86_64             4/13 
+  Verifying        : mariadb-connector-c-config-3.1.11-2.el8_3.noarch      5/13 
+  Verifying        : mariadb-errmsg-3:10.3.28-1.module_el8.3.0+757+d382    6/13 
+  Verifying        : mariadb-gssapi-server-3:10.3.28-1.module_el8.3.0+7    7/13 
+  Verifying        : mariadb-server-3:10.3.28-1.module_el8.3.0+757+d382    8/13 
+  Verifying        : mariadb-server-utils-3:10.3.28-1.module_el8.3.0+75    9/13 
+  Verifying        : perl-DBD-MySQL-4.046-3.module_el8.3.0+419+c2dec72b   10/13 
+  Verifying        : perl-DBI-1.641-3.module_el8.3.0+413+9be2aeb5.x86_6   11/13 
+  Verifying        : perl-Math-BigInt-1:1.9998.11-7.el8.noarch            12/13 
+  Verifying        : perl-Math-Complex-1.59-421.el8.noarch                13/13 
+
+Installed:
+  mariadb-3:10.3.28-1.module_el8.3.0+757+d382997d.x86_64                        
+  mariadb-backup-3:10.3.28-1.module_el8.3.0+757+d382997d.x86_64                 
+  mariadb-common-3:10.3.28-1.module_el8.3.0+757+d382997d.x86_64                 
+  mariadb-connector-c-3.1.11-2.el8_3.x86_64                                     
+  mariadb-connector-c-config-3.1.11-2.el8_3.noarch                              
+  mariadb-errmsg-3:10.3.28-1.module_el8.3.0+757+d382997d.x86_64                 
+  mariadb-gssapi-server-3:10.3.28-1.module_el8.3.0+757+d382997d.x86_64          
+  mariadb-server-3:10.3.28-1.module_el8.3.0+757+d382997d.x86_64                 
+  mariadb-server-utils-3:10.3.28-1.module_el8.3.0+757+d382997d.x86_64           
+  perl-DBD-MySQL-4.046-3.module_el8.3.0+419+c2dec72b.x86_64                     
+  perl-DBI-1.641-3.module_el8.3.0+413+9be2aeb5.x86_64                           
+  perl-Math-BigInt-1:1.9998.11-7.el8.noarch                                     
+  perl-Math-Complex-1.59-421.el8.noarch                                         
+
+Complete!
+Restarting MariaDB service.
+Sanity check: check if password login works for root.
+Creating /etc/my.cnf.d/99-openstack.cnf.
+[mysqld]
+Configuring MariaDB to accept requests from management network (10.0.0.11).
+'/etc/my.cnf.d/99-openstack.cnf' -> '/tmp/000_etc_my.cnf.d_99-openstack.cnf.iniset'
+iniset /tmp/000_etc_my.cnf.d_99-openstack.cnf.iniset mysqld bind-address 10.0.0.11
+'/etc/my.cnf.d/99-openstack.cnf' -> '/tmp/001_etc_my.cnf.d_99-openstack.cnf.iniset'
+iniset /tmp/001_etc_my.cnf.d_99-openstack.cnf.iniset mysqld default-storage-engine innodb
+'/etc/my.cnf.d/99-openstack.cnf' -> '/tmp/002_etc_my.cnf.d_99-openstack.cnf.iniset'
+iniset /tmp/002_etc_my.cnf.d_99-openstack.cnf.iniset mysqld innodb_file_per_table on
+'/etc/my.cnf.d/99-openstack.cnf' -> '/tmp/003_etc_my.cnf.d_99-openstack.cnf.iniset'
+iniset /tmp/003_etc_my.cnf.d_99-openstack.cnf.iniset mysqld max_connections 4096
+'/etc/my.cnf.d/99-openstack.cnf' -> '/tmp/004_etc_my.cnf.d_99-openstack.cnf.iniset'
+iniset /tmp/004_etc_my.cnf.d_99-openstack.cnf.iniset mysqld collation-server utf8_general_ci
+'/etc/my.cnf.d/99-openstack.cnf' -> '/tmp/005_etc_my.cnf.d_99-openstack.cnf.iniset'
+iniset /tmp/005_etc_my.cnf.d_99-openstack.cnf.iniset mysqld character-set-server utf8
+Restarting MariaDB service.
+Enabling Firewall Service.
+success
+success

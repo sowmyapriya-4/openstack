@@ -1,0 +1,434 @@
+Installing memcache packages.
+Last metadata expiration check: 0:02:09 ago on Tue 08 Mar 2022 10:18:56 AM EST.
+Dependencies resolved.
+========================================================================================================
+ Package                        Arch    Version                                 Repository          Size
+========================================================================================================
+Installing:
+ memcached                      x86_64  1.5.22-2.el8                            appstream          162 k
+ openstack-selinux              noarch  0.8.27-1.el8                            openstack-wallaby  224 k
+ python3-memcached              noarch  1.59-1.el8                              openstack-wallaby   44 k
+ python3-openstackclient        noarch  5.5.1-1.el8                             openstack-wallaby  1.2 M
+Installing dependencies:
+ container-selinux              noarch  2:2.170.0-1.module_el8.6.0+954+963caf36 appstream           56 k
+ libpkgconf                     x86_64  1.4.2-1.el8                             baseos              35 k
+ pkgconf                        x86_64  1.4.2-1.el8                             baseos              38 k
+ pkgconf-m4                     noarch  1.4.2-1.el8                             baseos              17 k
+ pkgconf-pkg-config             x86_64  1.4.2-1.el8                             baseos              15 k
+ policycoreutils-python-utils   noarch  2.9-19.el8                              baseos             253 k
+ python-openstackclient-lang    noarch  5.5.1-1.el8                             openstack-wallaby   57 k
+ python-oslo-i18n-lang          noarch  5.0.1-2.el8                             openstack-wallaby   13 k
+ python-oslo-log-lang           noarch  4.4.0-2.el8                             openstack-wallaby   13 k
+ python-oslo-utils-lang         noarch  4.8.1-1.el8                             openstack-wallaby   12 k
+ python3-appdirs                noarch  1.4.3-12.el8                            openstack-wallaby   23 k
+ python3-attrs                  noarch  17.4.0-6.el8                            appstream           53 k
+ python3-audit                  x86_64  3.0.7-2.el8                             baseos              86 k
+ python3-chardet                noarch  3.0.4-7.el8                             baseos             195 k
+ python3-cinderclient           noarch  7.4.1-1.el8                             openstack-wallaby  241 k
+ python3-cliff                  noarch  3.7.0-1.el8                             openstack-wallaby   95 k
+ python3-cmd2                   noarch  1.4.0-1.1.el8                           openstack-wallaby  307 k
+ python3-colorama               noarch  0.4.3-3.el8                             openstack-wallaby   36 k
+ python3-debtcollector          noarch  2.2.0-1.el8                             openstack-wallaby   32 k
+ python3-dogpile-cache          noarch  1.1.2-1.1.el8                           openstack-wallaby   90 k
+ python3-funcsigs               noarch  1.0.2-17.el8                            ceph-nautilus       30 k
+ python3-idna                   noarch  2.5-5.el8                               baseos              97 k
+ python3-importlib-metadata     noarch  1.7.0-1.el8                             openstack-wallaby   46 k
+ python3-inotify                noarch  0.9.6-13.el8                            baseos              57 k
+ python3-iso8601                noarch  0.1.12-3.el8                            openstack-wallaby   25 k
+ python3-jeepney                noarch  0.4.3-1.el8                             openstack-wallaby  4.7 M
+ python3-jmespath               noarch  0.9.0-11.el8                            appstream           45 k
+ python3-jsonpatch              noarch  1.21-2.el8                              appstream           27 k
+ python3-jsonpointer            noarch  1.10-11.el8                             appstream           20 k
+ python3-keyring                noarch  21.0.0-1.el8                            openstack-wallaby   80 k
+ python3-keystoneauth1          noarch  4.3.1-1.el8                             openstack-wallaby  431 k
+ python3-keystoneclient         noarch  1:4.2.0-1.el8                           openstack-wallaby  252 k
+ python3-libsemanage            x86_64  2.9-8.el8                               baseos             128 k
+ python3-mako                   noarch  1.0.6-13.el8                            appstream          157 k
+ python3-markupsafe             x86_64  0.23-19.el8                             appstream           39 k
+ python3-msgpack                x86_64  1.0.2-1.el8                             openstack-wallaby   93 k
+ python3-munch                  noarch  2.5.0-3.el8                             openstack-wallaby   26 k
+ python3-netaddr                noarch  0.7.19-8.el8                            appstream          1.5 M
+ python3-netifaces              x86_64  0.10.6-4.el8                            appstream           25 k
+ python3-neutronclient          noarch  7.3.0-1.el8                             openstack-wallaby  310 k
+ python3-novaclient             noarch  1:17.4.0-1.el8                          openstack-wallaby  225 k
+ python3-openstacksdk           noarch  0.55.0-1.el8                            openstack-wallaby  854 k
+ python3-os-client-config       noarch  2.1.0-1.el8                             openstack-wallaby   54 k
+ python3-os-service-types       noarch  1.7.0-1.el8                             openstack-wallaby   36 k
+ python3-osc-lib                noarch  2.3.1-1.el8                             openstack-wallaby   77 k
+ python3-oslo-config            noarch  2:8.5.1-1.el8                           openstack-wallaby  227 k
+ python3-oslo-context           noarch  3.2.1-1.el8                             openstack-wallaby   25 k
+ python3-oslo-i18n              noarch  5.0.1-2.el8                             openstack-wallaby   58 k
+ python3-oslo-log               noarch  4.4.0-2.el8                             openstack-wallaby   63 k
+ python3-oslo-serialization     noarch  4.1.1-1.el8                             openstack-wallaby   32 k
+ python3-oslo-utils             noarch  4.8.1-1.el8                             openstack-wallaby   80 k
+ python3-packaging              noarch  20.4-1.el8                              openstack-wallaby   67 k
+ python3-pbr                    noarch  5.5.1-1.el8                             openstack-wallaby  1.1 M
+ python3-pip                    noarch  9.0.3-22.el8                            appstream           20 k
+ python3-policycoreutils        noarch  2.9-19.el8                              baseos             2.2 M
+ python3-prettytable            noarch  0.7.2-14.el8                            appstream           44 k
+ python3-pyparsing              noarch  2.4.6-1.el8                             openstack-wallaby  161 k
+ python3-pyperclip              noarch  1.8.0-2.el8                             openstack-wallaby   24 k
+ python3-pysocks                noarch  1.6.8-3.el8                             baseos              34 k
+ python3-pytz                   noarch  2017.2-9.el8                            appstream           54 k
+ python3-pyyaml                 x86_64  5.4.1-2.el8                             openstack-wallaby  208 k
+ python3-requests               noarch  2.25.1-1.el8                            openstack-wallaby  128 k
+ python3-requestsexceptions     noarch  1.4.0-2.el8                             openstack-wallaby   15 k
+ python3-rfc3986                noarch  1.4.0-3.el8                             openstack-wallaby   52 k
+ python3-secretstorage          noarch  3.1.1-4.el8                             openstack-wallaby   36 k
+ python3-setools                x86_64  4.3.0-3.el8                             baseos             624 k
+ python3-simplejson             x86_64  3.17.2-2.el8                            openstack-wallaby  280 k
+ python3-stevedore              noarch  3.3.1-1.el8                             openstack-wallaby   69 k
+ python3-urllib3                noarch  1.25.10-4.el8                           openstack-wallaby  189 k
+ python3-wcwidth                noarch  0.2.5-2.el8                             openstack-wallaby   47 k
+ python3-wrapt                  x86_64  1.12.1-3.el8                            openstack-wallaby   55 k
+ python3-zipp                   noarch  3.4.0-1.el8                             openstack-wallaby   16 k
+ python36                       x86_64  3.6.8-38.module_el8.5.0+895+a459eca8    appstream           19 k
+Installing weak dependencies:
+ bash-completion                noarch  1:2.7-5.el8                             baseos             274 k
+
+Transaction Summary
+========================================================================================================
+Install  78 Packages
+
+Total download size: 19 M
+Installed size: 62 M
+Downloading Packages:
+(1/78): container-selinux-2.170.0-1.module_el8. 217 kB/s |  56 kB     00:00    
+(2/78): python3-attrs-17.4.0-6.el8.noarch.rpm   198 kB/s |  53 kB     00:00    
+(3/78): memcached-1.5.22-2.el8.x86_64.rpm       555 kB/s | 162 kB     00:00    
+(4/78): python3-jmespath-0.9.0-11.el8.noarch.rp 711 kB/s |  45 kB     00:00    
+(5/78): python3-jsonpatch-1.21-2.el8.noarch.rpm 388 kB/s |  27 kB     00:00    
+(6/78): python3-jsonpointer-1.10-11.el8.noarch. 413 kB/s |  20 kB     00:00    
+(7/78): python3-markupsafe-0.23-19.el8.x86_64.r 519 kB/s |  39 kB     00:00    
+(8/78): python3-mako-1.0.6-13.el8.noarch.rpm    1.3 MB/s | 157 kB     00:00    
+(9/78): python3-netifaces-0.10.6-4.el8.x86_64.r 513 kB/s |  25 kB     00:00    
+(10/78): python3-pip-9.0.3-22.el8.noarch.rpm    246 kB/s |  20 kB     00:00    
+(11/78): python3-prettytable-0.7.2-14.el8.noarc 501 kB/s |  44 kB     00:00    
+(12/78): python3-pytz-2017.2-9.el8.noarch.rpm   914 kB/s |  54 kB     00:00    
+(13/78): python3-netaddr-0.7.19-8.el8.noarch.rp 5.2 MB/s | 1.5 MB     00:00    
+(14/78): python36-3.6.8-38.module_el8.5.0+895+a 216 kB/s |  19 kB     00:00    
+(15/78): libpkgconf-1.4.2-1.el8.x86_64.rpm      252 kB/s |  35 kB     00:00    
+(16/78): pkgconf-1.4.2-1.el8.x86_64.rpm         226 kB/s |  38 kB     00:00    
+(17/78): pkgconf-m4-1.4.2-1.el8.noarch.rpm      287 kB/s |  17 kB     00:00    
+(18/78): bash-completion-2.7-5.el8.noarch.rpm   1.0 MB/s | 274 kB     00:00    
+(19/78): pkgconf-pkg-config-1.4.2-1.el8.x86_64. 221 kB/s |  15 kB     00:00    
+(20/78): python3-audit-3.0.7-2.el8.x86_64.rpm   1.5 MB/s |  86 kB     00:00    
+(21/78): python3-idna-2.5-5.el8.noarch.rpm      1.8 MB/s |  97 kB     00:00    
+(22/78): policycoreutils-python-utils-2.9-19.el 1.5 MB/s | 253 kB     00:00    
+(23/78): python3-inotify-0.9.6-13.el8.noarch.rp 1.2 MB/s |  57 kB     00:00    
+(24/78): python3-chardet-3.0.4-7.el8.noarch.rpm 1.2 MB/s | 195 kB     00:00    
+(25/78): python3-libsemanage-2.9-8.el8.x86_64.r 2.2 MB/s | 128 kB     00:00    
+(26/78): python3-pysocks-1.6.8-3.el8.noarch.rpm 587 kB/s |  34 kB     00:00    
+(27/78): python3-funcsigs-1.0.2-17.el8.noarch.r 575 kB/s |  30 kB     00:00    
+(28/78): python3-setools-4.3.0-3.el8.x86_64.rpm 5.0 MB/s | 624 kB     00:00    
+(29/78): python3-policycoreutils-2.9-19.el8.noa 9.4 MB/s | 2.2 MB     00:00    
+(30/78): python-openstackclient-lang-5.5.1-1.el 779 kB/s |  57 kB     00:00    
+(31/78): openstack-selinux-0.8.27-1.el8.noarch. 2.0 MB/s | 224 kB     00:00    
+(32/78): python-oslo-log-lang-4.4.0-2.el8.noarc 591 kB/s |  13 kB     00:00    
+(33/78): python-oslo-utils-lang-4.8.1-1.el8.noa 501 kB/s |  12 kB     00:00    
+(34/78): python-oslo-i18n-lang-5.0.1-2.el8.noar 373 kB/s |  13 kB     00:00    
+(35/78): python3-appdirs-1.4.3-12.el8.noarch.rp 901 kB/s |  23 kB     00:00    
+(36/78): python3-cliff-3.7.0-1.el8.noarch.rpm   2.3 MB/s |  95 kB     00:00    
+(37/78): python3-cinderclient-7.4.1-1.el8.noarc 5.0 MB/s | 241 kB     00:00    
+(38/78): python3-cmd2-1.4.0-1.1.el8.noarch.rpm  6.4 MB/s | 307 kB     00:00    
+(39/78): python3-debtcollector-2.2.0-1.el8.noar 1.5 MB/s |  32 kB     00:00    
+(40/78): python3-colorama-0.4.3-3.el8.noarch.rp 1.2 MB/s |  36 kB     00:00    
+(41/78): python3-dogpile-cache-1.1.2-1.1.el8.no 3.8 MB/s |  90 kB     00:00    
+(42/78): python3-importlib-metadata-1.7.0-1.el8 2.0 MB/s |  46 kB     00:00    
+(43/78): python3-iso8601-0.1.12-3.el8.noarch.rp 1.2 MB/s |  25 kB     00:00    
+(44/78): python3-keyring-21.0.0-1.el8.noarch.rp 2.7 MB/s |  80 kB     00:00    
+(45/78): python3-keystoneauth1-4.3.1-1.el8.noar 5.9 MB/s | 431 kB     00:00    
+(46/78): python3-keystoneclient-4.2.0-1.el8.noa 5.0 MB/s | 252 kB     00:00    
+(47/78): python3-memcached-1.59-1.el8.noarch.rp 2.1 MB/s |  44 kB     00:00    
+(48/78): python3-msgpack-1.0.2-1.el8.x86_64.rpm 2.8 MB/s |  93 kB     00:00    
+(49/78): python3-munch-2.5.0-3.el8.noarch.rpm   1.2 MB/s |  26 kB     00:00    
+(50/78): python3-neutronclient-7.3.0-1.el8.noar 7.0 MB/s | 310 kB     00:00    
+(51/78): python3-novaclient-17.4.0-1.el8.noarch 4.8 MB/s | 225 kB     00:00    
+(52/78): python3-jeepney-0.4.3-1.el8.noarch.rpm  18 MB/s | 4.7 MB     00:00    
+(53/78): python3-openstacksdk-0.55.0-1.el8.noar 7.6 MB/s | 854 kB     00:00    
+(54/78): python3-openstackclient-5.5.1-1.el8.no 9.2 MB/s | 1.2 MB     00:00    
+(55/78): python3-os-client-config-2.1.0-1.el8.n 1.5 MB/s |  54 kB     00:00    
+(56/78): python3-os-service-types-1.7.0-1.el8.n 1.8 MB/s |  36 kB     00:00    
+(57/78): python3-osc-lib-2.3.1-1.el8.noarch.rpm 4.5 MB/s |  77 kB     00:00    
+(58/78): python3-oslo-context-3.2.1-1.el8.noarc 1.3 MB/s |  25 kB     00:00    
+(59/78): python3-oslo-config-8.5.1-1.el8.noarch 8.6 MB/s | 227 kB     00:00    
+(60/78): python3-oslo-i18n-5.0.1-2.el8.noarch.r 3.1 MB/s |  58 kB     00:00    
+(61/78): python3-oslo-log-4.4.0-2.el8.noarch.rp 3.5 MB/s |  63 kB     00:00    
+(62/78): python3-oslo-serialization-4.1.1-1.el8 1.8 MB/s |  32 kB     00:00    
+(63/78): python3-oslo-utils-4.8.1-1.el8.noarch. 3.3 MB/s |  80 kB     00:00    
+(64/78): python3-packaging-20.4-1.el8.noarch.rp 3.2 MB/s |  67 kB     00:00    
+(65/78): python3-pyparsing-2.4.6-1.el8.noarch.r 6.3 MB/s | 161 kB     00:00    
+(66/78): python3-pyperclip-1.8.0-2.el8.noarch.r 938 kB/s |  24 kB     00:00    
+(67/78): python3-pbr-5.5.1-1.el8.noarch.rpm      16 MB/s | 1.1 MB     00:00    
+(68/78): python3-requests-2.25.1-1.el8.noarch.r 4.0 MB/s | 128 kB     00:00    
+(69/78): python3-pyyaml-5.4.1-2.el8.x86_64.rpm  5.1 MB/s | 208 kB     00:00    
+(70/78): python3-requestsexceptions-1.4.0-2.el8 728 kB/s |  15 kB     00:00    
+(71/78): python3-rfc3986-1.4.0-3.el8.noarch.rpm 2.3 MB/s |  52 kB     00:00    
+(72/78): python3-secretstorage-3.1.1-4.el8.noar 1.7 MB/s |  36 kB     00:00    
+(73/78): python3-stevedore-3.3.1-1.el8.noarch.r 2.8 MB/s |  69 kB     00:00    
+(74/78): python3-simplejson-3.17.2-2.el8.x86_64 8.0 MB/s | 280 kB     00:00    
+(75/78): python3-urllib3-1.25.10-4.el8.noarch.r 6.1 MB/s | 189 kB     00:00    
+(76/78): python3-wcwidth-0.2.5-2.el8.noarch.rpm 2.0 MB/s |  47 kB     00:00    
+(77/78): python3-zipp-3.4.0-1.el8.noarch.rpm    982 kB/s |  16 kB     00:00    
+(78/78): python3-wrapt-1.12.1-3.el8.x86_64.rpm  2.3 MB/s |  55 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           3.7 MB/s |  19 MB     00:05     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : python3-iso8601-0.1.12-3.el8.noarch                   1/78 
+  Installing       : python3-pyparsing-2.4.6-1.el8.noarch                  2/78 
+  Installing       : python3-simplejson-3.17.2-2.el8.x86_64                3/78 
+  Installing       : python3-pyyaml-5.4.1-2.el8.x86_64                     4/78 
+  Installing       : python3-prettytable-0.7.2-14.el8.noarch               5/78 
+  Installing       : python3-netaddr-0.7.19-8.el8.noarch                   6/78 
+  Installing       : python3-idna-2.5-5.el8.noarch                         7/78 
+  Installing       : python3-pytz-2017.2-9.el8.noarch                      8/78 
+  Installing       : python3-netifaces-0.10.6-4.el8.x86_64                 9/78 
+  Installing       : python3-packaging-20.4-1.el8.noarch                  10/78 
+  Installing       : python36-3.6.8-38.module_el8.5.0+895+a459eca8.x86_   11/78 
+  Running scriptlet: python36-3.6.8-38.module_el8.5.0+895+a459eca8.x86_   11/78 
+  Installing       : python3-pip-9.0.3-22.el8.noarch                      12/78 
+  Installing       : python3-pbr-5.5.1-1.el8.noarch                       13/78 
+  Installing       : python3-os-service-types-1.7.0-1.el8.noarch          14/78 
+  Installing       : python3-zipp-3.4.0-1.el8.noarch                      15/78 
+  Installing       : python3-importlib-metadata-1.7.0-1.el8.noarch        16/78 
+  Installing       : python3-stevedore-3.3.1-1.el8.noarch                 17/78 
+  Installing       : python3-wrapt-1.12.1-3.el8.x86_64                    18/78 
+  Installing       : python3-wcwidth-0.2.5-2.el8.noarch                   19/78 
+  Installing       : python3-rfc3986-1.4.0-3.el8.noarch                   20/78 
+  Installing       : python3-requestsexceptions-1.4.0-2.el8.noarch        21/78 
+  Installing       : python3-pyperclip-1.8.0-2.el8.noarch                 22/78 
+  Installing       : python3-munch-2.5.0-3.el8.noarch                     23/78 
+  Installing       : python3-msgpack-1.0.2-1.el8.x86_64                   24/78 
+  Installing       : python3-jeepney-0.4.3-1.el8.noarch                   25/78 
+  Installing       : python3-secretstorage-3.1.1-4.el8.noarch             26/78 
+  Installing       : python3-keyring-21.0.0-1.el8.noarch                  27/78 
+  Installing       : python3-colorama-0.4.3-3.el8.noarch                  28/78 
+  Installing       : python3-appdirs-1.4.3-12.el8.noarch                  29/78 
+  Installing       : python-oslo-utils-lang-4.8.1-1.el8.noarch            30/78 
+  Installing       : python-oslo-log-lang-4.4.0-2.el8.noarch              31/78 
+  Installing       : python-oslo-i18n-lang-5.0.1-2.el8.noarch             32/78 
+  Installing       : python3-oslo-i18n-5.0.1-2.el8.noarch                 33/78 
+  Installing       : python-openstackclient-lang-5.5.1-1.el8.noarch       34/78 
+  Installing       : python3-funcsigs-1.0.2-17.el8.noarch                 35/78 
+  Installing       : python3-debtcollector-2.2.0-1.el8.noarch             36/78 
+  Installing       : python3-oslo-utils-4.8.1-1.el8.noarch                37/78 
+  Installing       : python3-oslo-serialization-4.1.1-1.el8.noarch        38/78 
+  Installing       : python3-oslo-context-3.2.1-1.el8.noarch              39/78 
+  Installing       : python3-setools-4.3.0-3.el8.x86_64                   40/78 
+  Installing       : python3-pysocks-1.6.8-3.el8.noarch                   41/78 
+  Installing       : python3-urllib3-1.25.10-4.el8.noarch                 42/78 
+  Installing       : python3-libsemanage-2.9-8.el8.x86_64                 43/78 
+  Installing       : python3-inotify-0.9.6-13.el8.noarch                  44/78 
+  Installing       : python3-chardet-3.0.4-7.el8.noarch                   45/78 
+  Installing       : python3-requests-2.25.1-1.el8.noarch                 46/78 
+  Installing       : python3-keystoneauth1-4.3.1-1.el8.noarch             47/78 
+  Installing       : python3-oslo-config-2:8.5.1-1.el8.noarch             48/78 
+  Installing       : python3-keystoneclient-1:4.2.0-1.el8.noarch          49/78 
+  Installing       : python3-oslo-log-4.4.0-2.el8.noarch                  50/78 
+  Installing       : python3-cinderclient-7.4.1-1.el8.noarch              51/78 
+  Installing       : python3-novaclient-1:17.4.0-1.el8.noarch             52/78 
+  Installing       : python3-audit-3.0.7-2.el8.x86_64                     53/78 
+  Installing       : python3-policycoreutils-2.9-19.el8.noarch            54/78 
+  Installing       : policycoreutils-python-utils-2.9-19.el8.noarch       55/78 
+  Running scriptlet: container-selinux-2:2.170.0-1.module_el8.6.0+954+9   56/78 
+  Installing       : container-selinux-2:2.170.0-1.module_el8.6.0+954+9   56/78 
+  Running scriptlet: container-selinux-2:2.170.0-1.module_el8.6.0+954+9   56/78 
+  Installing       : pkgconf-m4-1.4.2-1.el8.noarch                        57/78 
+  Installing       : libpkgconf-1.4.2-1.el8.x86_64                        58/78 
+  Installing       : pkgconf-1.4.2-1.el8.x86_64                           59/78 
+  Installing       : pkgconf-pkg-config-1.4.2-1.el8.x86_64                60/78 
+  Installing       : bash-completion-1:2.7-5.el8.noarch                   61/78 
+  Installing       : python3-markupsafe-0.23-19.el8.x86_64                62/78 
+  Installing       : python3-mako-1.0.6-13.el8.noarch                     63/78 
+  Installing       : python3-dogpile-cache-1.1.2-1.1.el8.noarch           64/78 
+  Installing       : python3-jsonpointer-1.10-11.el8.noarch               65/78 
+  Installing       : python3-jsonpatch-1.21-2.el8.noarch                  66/78 
+  Installing       : python3-jmespath-0.9.0-11.el8.noarch                 67/78 
+  Installing       : python3-openstacksdk-0.55.0-1.el8.noarch             68/78 
+  Installing       : python3-os-client-config-2.1.0-1.el8.noarch          69/78 
+  Installing       : python3-attrs-17.4.0-6.el8.noarch                    70/78 
+  Installing       : python3-cmd2-1.4.0-1.1.el8.noarch                    71/78 
+  Installing       : python3-cliff-3.7.0-1.el8.noarch                     72/78 
+  Installing       : python3-osc-lib-2.3.1-1.el8.noarch                   73/78 
+  Installing       : python3-neutronclient-7.3.0-1.el8.noarch             74/78 
+  Installing       : python3-openstackclient-5.5.1-1.el8.noarch           75/78 
+  Running scriptlet: python3-openstackclient-5.5.1-1.el8.noarch           75/78 
+The 'openstack bgp speaker show dragents' CLI is deprecated and will be removed in the future. Use 'openstack bgp dragent list' CLI instead.
+
+  Installing       : openstack-selinux-0.8.27-1.el8.noarch                76/78 
+  Running scriptlet: openstack-selinux-0.8.27-1.el8.noarch                76/78 
+  Installing       : python3-memcached-1.59-1.el8.noarch                  77/78 
+  Running scriptlet: memcached-1.5.22-2.el8.x86_64                        78/78 
+  Installing       : memcached-1.5.22-2.el8.x86_64                        78/78 
+  Running scriptlet: memcached-1.5.22-2.el8.x86_64                        78/78 
+  Running scriptlet: container-selinux-2:2.170.0-1.module_el8.6.0+954+9   78/78 
+  Running scriptlet: memcached-1.5.22-2.el8.x86_64                        78/78 
+  Verifying        : container-selinux-2:2.170.0-1.module_el8.6.0+954+9    1/78 
+  Verifying        : memcached-1.5.22-2.el8.x86_64                         2/78 
+  Verifying        : python3-attrs-17.4.0-6.el8.noarch                     3/78 
+  Verifying        : python3-jmespath-0.9.0-11.el8.noarch                  4/78 
+  Verifying        : python3-jsonpatch-1.21-2.el8.noarch                   5/78 
+  Verifying        : python3-jsonpointer-1.10-11.el8.noarch                6/78 
+  Verifying        : python3-mako-1.0.6-13.el8.noarch                      7/78 
+  Verifying        : python3-markupsafe-0.23-19.el8.x86_64                 8/78 
+  Verifying        : python3-netaddr-0.7.19-8.el8.noarch                   9/78 
+  Verifying        : python3-netifaces-0.10.6-4.el8.x86_64                10/78 
+  Verifying        : python3-pip-9.0.3-22.el8.noarch                      11/78 
+  Verifying        : python3-prettytable-0.7.2-14.el8.noarch              12/78 
+  Verifying        : python3-pytz-2017.2-9.el8.noarch                     13/78 
+  Verifying        : python36-3.6.8-38.module_el8.5.0+895+a459eca8.x86_   14/78 
+  Verifying        : bash-completion-1:2.7-5.el8.noarch                   15/78 
+  Verifying        : libpkgconf-1.4.2-1.el8.x86_64                        16/78 
+  Verifying        : pkgconf-1.4.2-1.el8.x86_64                           17/78 
+  Verifying        : pkgconf-m4-1.4.2-1.el8.noarch                        18/78 
+  Verifying        : pkgconf-pkg-config-1.4.2-1.el8.x86_64                19/78 
+  Verifying        : policycoreutils-python-utils-2.9-19.el8.noarch       20/78 
+  Verifying        : python3-audit-3.0.7-2.el8.x86_64                     21/78 
+  Verifying        : python3-chardet-3.0.4-7.el8.noarch                   22/78 
+  Verifying        : python3-idna-2.5-5.el8.noarch                        23/78 
+  Verifying        : python3-inotify-0.9.6-13.el8.noarch                  24/78 
+  Verifying        : python3-libsemanage-2.9-8.el8.x86_64                 25/78 
+  Verifying        : python3-policycoreutils-2.9-19.el8.noarch            26/78 
+  Verifying        : python3-pysocks-1.6.8-3.el8.noarch                   27/78 
+  Verifying        : python3-setools-4.3.0-3.el8.x86_64                   28/78 
+  Verifying        : python3-funcsigs-1.0.2-17.el8.noarch                 29/78 
+  Verifying        : openstack-selinux-0.8.27-1.el8.noarch                30/78 
+  Verifying        : python-openstackclient-lang-5.5.1-1.el8.noarch       31/78 
+  Verifying        : python-oslo-i18n-lang-5.0.1-2.el8.noarch             32/78 
+  Verifying        : python-oslo-log-lang-4.4.0-2.el8.noarch              33/78 
+  Verifying        : python-oslo-utils-lang-4.8.1-1.el8.noarch            34/78 
+  Verifying        : python3-appdirs-1.4.3-12.el8.noarch                  35/78 
+  Verifying        : python3-cinderclient-7.4.1-1.el8.noarch              36/78 
+  Verifying        : python3-cliff-3.7.0-1.el8.noarch                     37/78 
+  Verifying        : python3-cmd2-1.4.0-1.1.el8.noarch                    38/78 
+  Verifying        : python3-colorama-0.4.3-3.el8.noarch                  39/78 
+  Verifying        : python3-debtcollector-2.2.0-1.el8.noarch             40/78 
+  Verifying        : python3-dogpile-cache-1.1.2-1.1.el8.noarch           41/78 
+  Verifying        : python3-importlib-metadata-1.7.0-1.el8.noarch        42/78 
+  Verifying        : python3-iso8601-0.1.12-3.el8.noarch                  43/78 
+  Verifying        : python3-jeepney-0.4.3-1.el8.noarch                   44/78 
+  Verifying        : python3-keyring-21.0.0-1.el8.noarch                  45/78 
+  Verifying        : python3-keystoneauth1-4.3.1-1.el8.noarch             46/78 
+  Verifying        : python3-keystoneclient-1:4.2.0-1.el8.noarch          47/78 
+  Verifying        : python3-memcached-1.59-1.el8.noarch                  48/78 
+  Verifying        : python3-msgpack-1.0.2-1.el8.x86_64                   49/78 
+  Verifying        : python3-munch-2.5.0-3.el8.noarch                     50/78 
+  Verifying        : python3-neutronclient-7.3.0-1.el8.noarch             51/78 
+  Verifying        : python3-novaclient-1:17.4.0-1.el8.noarch             52/78 
+  Verifying        : python3-openstackclient-5.5.1-1.el8.noarch           53/78 
+  Verifying        : python3-openstacksdk-0.55.0-1.el8.noarch             54/78 
+  Verifying        : python3-os-client-config-2.1.0-1.el8.noarch          55/78 
+  Verifying        : python3-os-service-types-1.7.0-1.el8.noarch          56/78 
+  Verifying        : python3-osc-lib-2.3.1-1.el8.noarch                   57/78 
+  Verifying        : python3-oslo-config-2:8.5.1-1.el8.noarch             58/78 
+  Verifying        : python3-oslo-context-3.2.1-1.el8.noarch              59/78 
+  Verifying        : python3-oslo-i18n-5.0.1-2.el8.noarch                 60/78 
+  Verifying        : python3-oslo-log-4.4.0-2.el8.noarch                  61/78 
+  Verifying        : python3-oslo-serialization-4.1.1-1.el8.noarch        62/78 
+  Verifying        : python3-oslo-utils-4.8.1-1.el8.noarch                63/78 
+  Verifying        : python3-packaging-20.4-1.el8.noarch                  64/78 
+  Verifying        : python3-pbr-5.5.1-1.el8.noarch                       65/78 
+  Verifying        : python3-pyparsing-2.4.6-1.el8.noarch                 66/78 
+  Verifying        : python3-pyperclip-1.8.0-2.el8.noarch                 67/78 
+  Verifying        : python3-pyyaml-5.4.1-2.el8.x86_64                    68/78 
+  Verifying        : python3-requests-2.25.1-1.el8.noarch                 69/78 
+  Verifying        : python3-requestsexceptions-1.4.0-2.el8.noarch        70/78 
+  Verifying        : python3-rfc3986-1.4.0-3.el8.noarch                   71/78 
+  Verifying        : python3-secretstorage-3.1.1-4.el8.noarch             72/78 
+  Verifying        : python3-simplejson-3.17.2-2.el8.x86_64               73/78 
+  Verifying        : python3-stevedore-3.3.1-1.el8.noarch                 74/78 
+  Verifying        : python3-urllib3-1.25.10-4.el8.noarch                 75/78 
+  Verifying        : python3-wcwidth-0.2.5-2.el8.noarch                   76/78 
+  Verifying        : python3-wrapt-1.12.1-3.el8.x86_64                    77/78 
+  Verifying        : python3-zipp-3.4.0-1.el8.noarch                      78/78 
+
+Installed:
+  bash-completion-1:2.7-5.el8.noarch                                            
+  container-selinux-2:2.170.0-1.module_el8.6.0+954+963caf36.noarch              
+  libpkgconf-1.4.2-1.el8.x86_64                                                 
+  memcached-1.5.22-2.el8.x86_64                                                 
+  openstack-selinux-0.8.27-1.el8.noarch                                         
+  pkgconf-1.4.2-1.el8.x86_64                                                    
+  pkgconf-m4-1.4.2-1.el8.noarch                                                 
+  pkgconf-pkg-config-1.4.2-1.el8.x86_64                                         
+  policycoreutils-python-utils-2.9-19.el8.noarch                                
+  python-openstackclient-lang-5.5.1-1.el8.noarch                                
+  python-oslo-i18n-lang-5.0.1-2.el8.noarch                                      
+  python-oslo-log-lang-4.4.0-2.el8.noarch                                       
+  python-oslo-utils-lang-4.8.1-1.el8.noarch                                     
+  python3-appdirs-1.4.3-12.el8.noarch                                           
+  python3-attrs-17.4.0-6.el8.noarch                                             
+  python3-audit-3.0.7-2.el8.x86_64                                              
+  python3-chardet-3.0.4-7.el8.noarch                                            
+  python3-cinderclient-7.4.1-1.el8.noarch                                       
+  python3-cliff-3.7.0-1.el8.noarch                                              
+  python3-cmd2-1.4.0-1.1.el8.noarch                                             
+  python3-colorama-0.4.3-3.el8.noarch                                           
+  python3-debtcollector-2.2.0-1.el8.noarch                                      
+  python3-dogpile-cache-1.1.2-1.1.el8.noarch                                    
+  python3-funcsigs-1.0.2-17.el8.noarch                                          
+  python3-idna-2.5-5.el8.noarch                                                 
+  python3-importlib-metadata-1.7.0-1.el8.noarch                                 
+  python3-inotify-0.9.6-13.el8.noarch                                           
+  python3-iso8601-0.1.12-3.el8.noarch                                           
+  python3-jeepney-0.4.3-1.el8.noarch                                            
+  python3-jmespath-0.9.0-11.el8.noarch                                          
+  python3-jsonpatch-1.21-2.el8.noarch                                           
+  python3-jsonpointer-1.10-11.el8.noarch                                        
+  python3-keyring-21.0.0-1.el8.noarch                                           
+  python3-keystoneauth1-4.3.1-1.el8.noarch                                      
+  python3-keystoneclient-1:4.2.0-1.el8.noarch                                   
+  python3-libsemanage-2.9-8.el8.x86_64                                          
+  python3-mako-1.0.6-13.el8.noarch                                              
+  python3-markupsafe-0.23-19.el8.x86_64                                         
+  python3-memcached-1.59-1.el8.noarch                                           
+  python3-msgpack-1.0.2-1.el8.x86_64                                            
+  python3-munch-2.5.0-3.el8.noarch                                              
+  python3-netaddr-0.7.19-8.el8.noarch                                           
+  python3-netifaces-0.10.6-4.el8.x86_64                                         
+  python3-neutronclient-7.3.0-1.el8.noarch                                      
+  python3-novaclient-1:17.4.0-1.el8.noarch                                      
+  python3-openstackclient-5.5.1-1.el8.noarch                                    
+  python3-openstacksdk-0.55.0-1.el8.noarch                                      
+  python3-os-client-config-2.1.0-1.el8.noarch                                   
+  python3-os-service-types-1.7.0-1.el8.noarch                                   
+  python3-osc-lib-2.3.1-1.el8.noarch                                            
+  python3-oslo-config-2:8.5.1-1.el8.noarch                                      
+  python3-oslo-context-3.2.1-1.el8.noarch                                       
+  python3-oslo-i18n-5.0.1-2.el8.noarch                                          
+  python3-oslo-log-4.4.0-2.el8.noarch                                           
+  python3-oslo-serialization-4.1.1-1.el8.noarch                                 
+  python3-oslo-utils-4.8.1-1.el8.noarch                                         
+  python3-packaging-20.4-1.el8.noarch                                           
+  python3-pbr-5.5.1-1.el8.noarch                                                
+  python3-pip-9.0.3-22.el8.noarch                                               
+  python3-policycoreutils-2.9-19.el8.noarch                                     
+  python3-prettytable-0.7.2-14.el8.noarch                                       
+  python3-pyparsing-2.4.6-1.el8.noarch                                          
+  python3-pyperclip-1.8.0-2.el8.noarch                                          
+  python3-pysocks-1.6.8-3.el8.noarch                                            
+  python3-pytz-2017.2-9.el8.noarch                                              
+  python3-pyyaml-5.4.1-2.el8.x86_64                                             
+  python3-requests-2.25.1-1.el8.noarch                                          
+  python3-requestsexceptions-1.4.0-2.el8.noarch                                 
+  python3-rfc3986-1.4.0-3.el8.noarch                                            
+  python3-secretstorage-3.1.1-4.el8.noarch                                      
+  python3-setools-4.3.0-3.el8.x86_64                                            
+  python3-simplejson-3.17.2-2.el8.x86_64                                        
+  python3-stevedore-3.3.1-1.el8.noarch                                          
+  python3-urllib3-1.25.10-4.el8.noarch                                          
+  python3-wcwidth-0.2.5-2.el8.noarch                                            
+  python3-wrapt-1.12.1-3.el8.x86_64                                             
+  python3-zipp-3.4.0-1.el8.noarch                                               
+  python36-3.6.8-38.module_el8.5.0+895+a459eca8.x86_64                          
+
+Complete!
+Success. Node controller in mgmt: 10.0.0.11.
+Binding memcached server to 10.0.0.11.
+Restarting memcache service.
+Created symlink /etc/systemd/system/multi-user.target.wants/memcached.service → /usr/lib/systemd/system/memcached.service.
