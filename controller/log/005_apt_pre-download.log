@@ -1,0 +1,212 @@
+apt_download: mariadb-server python3-mysqldb
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  galera-4 libcgi-fast-perl libcgi-pm-perl libdbd-mariadb-perl libdbi-perl
+  libhtml-template-perl libmariadb3 libmysqlclient21 libterm-readkey-perl
+  mariadb-client-10.6 mariadb-client-core-10.6 mariadb-common
+  mariadb-server-10.6 mariadb-server-core-10.6 mysql-common socat
+Suggested packages:
+  libclone-perl libmldbm-perl libnet-daemon-perl libsql-statement-perl
+  libipc-sharedcache-perl mailx mariadb-test python3-mysqldb-dbg
+The following NEW packages will be installed:
+  galera-4 libcgi-fast-perl libcgi-pm-perl libdbd-mariadb-perl libdbi-perl
+  libhtml-template-perl libmariadb3 libmysqlclient21 libterm-readkey-perl
+  mariadb-client-10.6 mariadb-client-core-10.6 mariadb-common mariadb-server
+  mariadb-server-10.6 mariadb-server-core-10.6 mysql-common python3-mysqldb
+  socat
+0 upgraded, 18 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/29.4 MB of archives.
+After this operation, 231 MB of additional disk space will be used.
+Download complete and in download only mode
+apt_download: mariadb-server rabbitmq-server
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  erlang-asn1 erlang-base erlang-crypto erlang-eldap erlang-ftp erlang-inets
+  erlang-mnesia erlang-os-mon erlang-parsetools erlang-public-key
+  erlang-runtime-tools erlang-snmp erlang-ssl erlang-syntax-tools erlang-tftp
+  erlang-tools erlang-xmerl galera-4 libcgi-fast-perl libcgi-pm-perl
+  libdbd-mariadb-perl libdbi-perl libhtml-template-perl libmariadb3
+  libmysqlclient21 libsctp1 libterm-readkey-perl locales-all
+  mariadb-client-10.6 mariadb-client-core-10.6 mariadb-common
+  mariadb-server-10.6 mariadb-server-core-10.6 mysql-common socat
+Suggested packages:
+  erlang erlang-manpages erlang-doc libclone-perl libmldbm-perl
+  libnet-daemon-perl libsql-statement-perl libipc-sharedcache-perl
+  lksctp-tools mailx mariadb-test
+The following NEW packages will be installed:
+  erlang-asn1 erlang-base erlang-crypto erlang-eldap erlang-ftp erlang-inets
+  erlang-mnesia erlang-os-mon erlang-parsetools erlang-public-key
+  erlang-runtime-tools erlang-snmp erlang-ssl erlang-syntax-tools erlang-tftp
+  erlang-tools erlang-xmerl galera-4 libcgi-fast-perl libcgi-pm-perl
+  libdbd-mariadb-perl libdbi-perl libhtml-template-perl libmariadb3
+  libmysqlclient21 libsctp1 libterm-readkey-perl locales-all
+  mariadb-client-10.6 mariadb-client-core-10.6 mariadb-common mariadb-server
+  mariadb-server-10.6 mariadb-server-core-10.6 mysql-common rabbitmq-server
+  socat
+0 upgraded, 37 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/67.4 MB of archives.
+After this operation, 507 MB of additional disk space will be used.
+Download complete and in download only mode
+apt_download: libctf0 linux-libc-dev libisl22 cpp g++ libdpkg-perl build-essential fakeroot libalgorithm-diff-xs-perl manpages-dev zlib1g-dev python3-dev python3-pip libdpkg-perl
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+cpp is already the newest version (4:9.3.0-1ubuntu2).
+fakeroot is already the newest version (1.24-1).
+g++ is already the newest version (4:9.3.0-1ubuntu2).
+libalgorithm-diff-xs-perl is already the newest version (0.04-6).
+libdpkg-perl is already the newest version (1.19.7ubuntu3).
+libisl22 is already the newest version (0.22.1-1).
+manpages-dev is already the newest version (5.05-1).
+python3-dev is already the newest version (3.8.2-0ubuntu2).
+build-essential is already the newest version (12.8ubuntu1.1).
+libctf0 is already the newest version (2.34-6ubuntu1.3).
+linux-libc-dev is already the newest version (5.4.0-104.118).
+zlib1g-dev is already the newest version (1:1.2.11.dfsg-2ubuntu1.2).
+The following additional packages will be installed:
+  python-pip-whl python3-wheel
+The following NEW packages will be installed:
+  python-pip-whl python3-pip python3-wheel
+0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/2,060 kB of archives.
+After this operation, 3,465 kB of additional disk space will be used.
+Download complete and in download only mode
+apt_download: python3-dev python3-pip
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+python3-dev is already the newest version (3.8.2-0ubuntu2).
+The following additional packages will be installed:
+  python-pip-whl python3-wheel
+The following NEW packages will be installed:
+  python-pip-whl python3-pip python3-wheel
+0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/2,060 kB of archives.
+After this operation, 3,465 kB of additional disk space will be used.
+Download complete and in download only mode
+apt_download: keystone python3-openstackclient apache2 memcached python3-memcache
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+apache2 is already the newest version (2.4.41-4ubuntu3.9).
+The following additional packages will be installed:
+  alembic keystone-common libapache2-mod-wsgi-py3 libjs-jquery libjs-sphinxdoc
+  libjs-underscore pycadf-common python-pastedeploy-tpl python3-alembic
+  python3-amqp python3-aniso8601 python3-anyjson python3-bcrypt
+  python3-cachetools python3-cinderclient python3-defusedxml python3-dnspython
+  python3-eventlet python3-extras python3-fasteners python3-fixtures
+  python3-flask python3-flask-restful python3-futurist python3-greenlet
+  python3-itsdangerous python3-jmespath python3-keystone
+  python3-keystoneclient python3-keystonemiddleware python3-kombu python3-ldap
+  python3-migrate python3-mimeparse python3-munch python3-novaclient
+  python3-openstacksdk python3-os-client-config python3-osc-lib
+  python3-oslo.cache python3-oslo.concurrency python3-oslo.db
+  python3-oslo.messaging python3-oslo.middleware python3-oslo.policy
+  python3-oslo.service python3-oslo.upgradecheck python3-osprofiler
+  python3-passlib python3-paste python3-pastedeploy python3-pastescript
+  python3-pycadf python3-pymysql python3-pysaml2 python3-repoze.lru
+  python3-requestsexceptions python3-routes python3-scrypt python3-sqlalchemy
+  python3-sqlalchemy-ext python3-sqlparse python3-statsd python3-tempita
+  python3-tenacity python3-testscenarios python3-testtools python3-vine
+  python3-webob python3-werkzeug xmlsec1
+Suggested packages:
+  libanyevent-perl libcache-memcached-perl libmemcached libterm-readkey-perl
+  libyaml-perl python-amqp-doc python-eventlet-doc python-flask-doc
+  python-futurist-doc python-greenlet-doc python-greenlet-dev
+  python3-greenlet-dbg python3-ldappool python-kombu-doc python3-boto
+  python3-django python3-pymongo python3-redis python-migrate-doc
+  python-openstacksdk-doc python-os-client-config-doc python-osc-lib-doc
+  python-oslo.cache-doc python-oslo.concurrency-doc python3-confluent-kafka
+  python3-zmq python-oslo.middleware-doc python-oslo.policy-doc
+  python-oslo.service-doc httpd-wsgi libapache2-mod-python libapache2-mod-scgi
+  libjs-mochikit python3-cherrypy3 python-pymysql-doc python3-repoze.who
+  python-sqlalchemy-doc python3-fdb python3-pymssql python3-mysqldb
+  python3-psycopg2 python-sqlparse-doc python-tenacity-doc
+  python-testtools-doc python-webob-doc ipython3 python-werkzeug-doc
+  python3-termcolor python3-watchdog
+The following NEW packages will be installed:
+  alembic keystone keystone-common libapache2-mod-wsgi-py3 libjs-jquery
+  libjs-sphinxdoc libjs-underscore memcached pycadf-common
+  python-pastedeploy-tpl python3-alembic python3-amqp python3-aniso8601
+  python3-anyjson python3-bcrypt python3-cachetools python3-cinderclient
+  python3-defusedxml python3-dnspython python3-eventlet python3-extras
+  python3-fasteners python3-fixtures python3-flask python3-flask-restful
+  python3-futurist python3-greenlet python3-itsdangerous python3-jmespath
+  python3-keystone python3-keystoneclient python3-keystonemiddleware
+  python3-kombu python3-ldap python3-memcache python3-migrate
+  python3-mimeparse python3-munch python3-novaclient python3-openstackclient
+  python3-openstacksdk python3-os-client-config python3-osc-lib
+  python3-oslo.cache python3-oslo.concurrency python3-oslo.db
+  python3-oslo.messaging python3-oslo.middleware python3-oslo.policy
+  python3-oslo.service python3-oslo.upgradecheck python3-osprofiler
+  python3-passlib python3-paste python3-pastedeploy python3-pastescript
+  python3-pycadf python3-pymysql python3-pysaml2 python3-repoze.lru
+  python3-requestsexceptions python3-routes python3-scrypt python3-sqlalchemy
+  python3-sqlalchemy-ext python3-sqlparse python3-statsd python3-tempita
+  python3-tenacity python3-testscenarios python3-testtools python3-vine
+  python3-webob python3-werkzeug xmlsec1
+0 upgraded, 75 newly installed, 0 to remove and 0 not upgraded.
+Need to get 3,289 kB/8,066 kB of archives.
+After this operation, 52.5 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 libjs-jquery all 3.3.1~dfsg-3 [329 kB]
+Get:2 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-alembic all 1.4.3-1ubuntu1~cloud0 [116 kB]
+Err:3 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 alembic all 1.4.3-1ubuntu1~cloud0
+  400  Bad Request [IP: 91.189.88.142 80]
+Err:4 http://archive.ubuntu.com/ubuntu focal/main amd64 libapache2-mod-wsgi-py3 amd64 4.6.8-1ubuntu3
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:5 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-cinderclient all 1:7.4.0-0ubuntu1~cloud0 [138 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 python-pastedeploy-tpl all 2.1.0-1 [5,016 B]
+Err:7 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-eventlet all 0.30.0-0ubuntu1.1~cloud0
+  400  Bad Request [IP: 91.189.88.142 80]
+Err:8 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-aniso8601 all 8.0.0-1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:9 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-oslo.cache all 2.7.0-0ubuntu1~cloud0 [36.9 kB]
+Get:10 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-keystonemiddleware all 9.2.0-0ubuntu1~cloud0 [67.3 kB]
+Get:11 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-novaclient all 2:17.4.0-0ubuntu1~cloud0 [251 kB]
+Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-cachetools all 4.0.0-1 [9,820 B]
+Err:13 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-dnspython all 1.16.0-1build1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:14 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-fasteners all 0.14.1-2 [14.1 kB]
+Get:15 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-os-client-config all 2.1.0-0ubuntu3~cloud0 [20.0 kB]
+Get:16 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-openstackclient all 5.5.0-0ubuntu1~cloud0 [458 kB]
+Err:17 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-testtools all 2.4.0-0ubuntu1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:18 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-itsdangerous all 1.1.0-1 [14.6 kB]
+Get:19 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-flask all 1.1.1-2 [80.3 kB]
+Get:20 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-futurist all 2.1.0-0ubuntu1 [24.5 kB]
+Get:21 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-memcache all 1.59-4 [17.7 kB]
+Get:22 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-ldap amd64 3.2.0-4ubuntu2 [90.2 kB]
+Get:23 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-oslo.db all 8.5.0+really.8.5.0-0ubuntu1~cloud0 [115 kB]
+Get:24 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-tempita all 0.5.2-6 [14.8 kB]
+Get:25 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-munch all 2.3.2-2 [7,984 B]
+Get:26 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-testscenarios all 0.5.0-3build1 [13.7 kB]
+Get:27 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-pastedeploy all 2.1.0-1 [26.5 kB]
+Get:28 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-paste all 3.5.0+dfsg1-1~cloud0 [476 kB]
+Get:29 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-tenacity all 6.2.0-4~cloud0 [44.8 kB]
+Fetched 2,371 kB in 7s (345 kB/s)
+E: Failed to fetch http://ubuntu-cloud.archive.canonical.com/ubuntu/pool/main/a/alembic/alembic_1.4.3-1ubuntu1~cloud0_all.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mod-wsgi/libapache2-mod-wsgi-py3_4.6.8-1ubuntu3_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/p/python-aniso8601/python3-aniso8601_8.0.0-1_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/d/dnspython/python3-dnspython_1.16.0-1build1_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://ubuntu-cloud.archive.canonical.com/ubuntu/pool/main/p/python-eventlet/python3-eventlet_0.30.0-0ubuntu1.1~cloud0_all.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/p/python-testtools/python3-testtools_2.4.0-0ubuntu1_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Some files failed to download

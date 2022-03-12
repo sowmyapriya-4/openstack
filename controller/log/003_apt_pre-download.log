@@ -1,0 +1,111 @@
+apt_download: mariadb-server python3-mysqldb
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  galera-4 libcgi-fast-perl libcgi-pm-perl libdbd-mariadb-perl libdbi-perl
+  libhtml-template-perl libmariadb3 libmysqlclient21 libterm-readkey-perl
+  mariadb-client-10.6 mariadb-client-core-10.6 mariadb-common
+  mariadb-server-10.6 mariadb-server-core-10.6 mysql-common socat
+Suggested packages:
+  libclone-perl libmldbm-perl libnet-daemon-perl libsql-statement-perl
+  libipc-sharedcache-perl mailx mariadb-test python3-mysqldb-dbg
+The following NEW packages will be installed:
+  galera-4 libcgi-fast-perl libcgi-pm-perl libdbd-mariadb-perl libdbi-perl
+  libhtml-template-perl libmariadb3 libmysqlclient21 libterm-readkey-perl
+  mariadb-client-10.6 mariadb-client-core-10.6 mariadb-common mariadb-server
+  mariadb-server-10.6 mariadb-server-core-10.6 mysql-common python3-mysqldb
+  socat
+0 upgraded, 18 newly installed, 0 to remove and 0 not upgraded.
+Need to get 29.4 MB of archives.
+After this operation, 231 MB of additional disk space will be used.
+Get:1 https://mirrors.bkns.vn/mariadb/repo/10.6/ubuntu focal/main amd64 mysql-common all 1:10.6.7+maria~focal [2,884 B]
+Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libdbi-perl amd64 1.643-1ubuntu0.1 [730 kB]
+Get:3 https://mirrors.bkns.vn/mariadb/repo/10.6/ubuntu focal/main amd64 mariadb-common all 1:10.6.7+maria~focal [4,044 B]
+Get:4 https://mirrors.bkns.vn/mariadb/repo/10.6/ubuntu focal/main amd64 galera-4 amd64 26.4.11-focal [12.7 MB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 socat amd64 1.7.3.3-2 [323 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 libcgi-pm-perl all 4.46-1 [186 kB]
+Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 libcgi-fast-perl all 1:2.15-1 [10.5 kB]
+Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libmysqlclient21 amd64 8.0.28-0ubuntu0.20.04.3 [1,292 kB]
+Get:9 http://archive.ubuntu.com/ubuntu focal/universe amd64 libdbd-mariadb-perl amd64 1.11-3ubuntu2 [105 kB]
+Get:10 http://archive.ubuntu.com/ubuntu focal/main amd64 libhtml-template-perl all 2.97-1 [59.0 kB]
+Get:11 http://archive.ubuntu.com/ubuntu focal/main amd64 libterm-readkey-perl amd64 2.38-1build1 [24.6 kB]
+Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-mysqldb amd64 1.4.4-2build1 [44.9 kB]
+Get:13 https://mirrors.bkns.vn/mariadb/repo/10.6/ubuntu focal/main amd64 libmariadb3 amd64 1:10.6.7+maria~focal [148 kB]
+Get:14 https://mirrors.bkns.vn/mariadb/repo/10.6/ubuntu focal/main amd64 mariadb-client-core-10.6 amd64 1:10.6.7+maria~focal [831 kB]
+Get:15 https://mirrors.bkns.vn/mariadb/repo/10.6/ubuntu focal/main amd64 mariadb-client-10.6 amd64 1:10.6.7+maria~focal [2,398 kB]
+Get:16 https://mirrors.bkns.vn/mariadb/repo/10.6/ubuntu focal/main amd64 mariadb-server-core-10.6 amd64 1:10.6.7+maria~focal [7,109 kB]
+Get:17 https://mirrors.bkns.vn/mariadb/repo/10.6/ubuntu focal/main amd64 mariadb-server-10.6 amd64 1:10.6.7+maria~focal [3,423 kB]
+Get:18 https://mirrors.bkns.vn/mariadb/repo/10.6/ubuntu focal/main amd64 mariadb-server all 1:10.6.7+maria~focal [2,832 B]
+Fetched 29.4 MB in 37s (793 kB/s)
+Download complete and in download only mode
+apt_download: mariadb-server rabbitmq-server
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  erlang-asn1 erlang-base erlang-crypto erlang-eldap erlang-ftp erlang-inets
+  erlang-mnesia erlang-os-mon erlang-parsetools erlang-public-key
+  erlang-runtime-tools erlang-snmp erlang-ssl erlang-syntax-tools erlang-tftp
+  erlang-tools erlang-xmerl galera-4 libcgi-fast-perl libcgi-pm-perl
+  libdbd-mariadb-perl libdbi-perl libhtml-template-perl libmariadb3
+  libmysqlclient21 libsctp1 libterm-readkey-perl locales-all
+  mariadb-client-10.6 mariadb-client-core-10.6 mariadb-common
+  mariadb-server-10.6 mariadb-server-core-10.6 mysql-common socat
+Suggested packages:
+  erlang erlang-manpages erlang-doc libclone-perl libmldbm-perl
+  libnet-daemon-perl libsql-statement-perl libipc-sharedcache-perl
+  lksctp-tools mailx mariadb-test
+The following NEW packages will be installed:
+  erlang-asn1 erlang-base erlang-crypto erlang-eldap erlang-ftp erlang-inets
+  erlang-mnesia erlang-os-mon erlang-parsetools erlang-public-key
+  erlang-runtime-tools erlang-snmp erlang-ssl erlang-syntax-tools erlang-tftp
+  erlang-tools erlang-xmerl galera-4 libcgi-fast-perl libcgi-pm-perl
+  libdbd-mariadb-perl libdbi-perl libhtml-template-perl libmariadb3
+  libmysqlclient21 libsctp1 libterm-readkey-perl locales-all
+  mariadb-client-10.6 mariadb-client-core-10.6 mariadb-common mariadb-server
+  mariadb-server-10.6 mariadb-server-core-10.6 mysql-common rabbitmq-server
+  socat
+0 upgraded, 37 newly installed, 0 to remove and 0 not upgraded.
+Need to get 38.1 MB/67.4 MB of archives.
+After this operation, 507 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-base amd64 1:22.2.7+dfsg-1 [8,063 kB]
+Err:2 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-asn1 amd64 1:22.2.7+dfsg-1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-crypto amd64 1:22.2.7+dfsg-1 [137 kB]
+Err:4 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-public-key amd64 1:22.2.7+dfsg-1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-mnesia amd64 1:22.2.7+dfsg-1 [716 kB]
+Err:6 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-runtime-tools amd64 1:22.2.7+dfsg-1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-ssl amd64 1:22.2.7+dfsg-1 [1,103 kB]
+Err:8 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-eldap amd64 1:22.2.7+dfsg-1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-ftp amd64 1:22.2.7+dfsg-1 [68.8 kB]
+Err:10 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-tftp amd64 1:22.2.7+dfsg-1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:11 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-inets amd64 1:22.2.7+dfsg-1 [577 kB]
+Err:12 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-snmp amd64 1:22.2.7+dfsg-1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:13 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-os-mon amd64 1:22.2.7+dfsg-1 [81.2 kB]
+Get:14 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-parsetools amd64 1:22.2.7+dfsg-1 [151 kB]
+Get:15 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-syntax-tools amd64 1:22.2.7+dfsg-1 [344 kB]
+Get:16 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-tools amd64 1:22.2.7+dfsg-1 [499 kB]
+Get:17 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-xmerl amd64 1:22.2.7+dfsg-1 [1,113 kB]
+Get:18 http://archive.ubuntu.com/ubuntu focal/main amd64 libsctp1 amd64 1.0.18+dfsg-1 [7,876 B]
+Get:19 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 locales-all amd64 2.31-0ubuntu9.7 [10.6 MB]
+Get:20 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 rabbitmq-server all 3.8.2-0ubuntu1.3 [11.5 MB]
+Fetched 34.9 MB in 1min 33s (373 kB/s)
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/e/erlang/erlang-asn1_22.2.7+dfsg-1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/e/erlang/erlang-public-key_22.2.7+dfsg-1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/e/erlang/erlang-runtime-tools_22.2.7+dfsg-1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/e/erlang/erlang-eldap_22.2.7+dfsg-1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/e/erlang/erlang-tftp_22.2.7+dfsg-1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/e/erlang/erlang-snmp_22.2.7+dfsg-1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Some files failed to download

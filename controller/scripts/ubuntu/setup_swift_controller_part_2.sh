@@ -18,10 +18,12 @@ indicate_current_auto
 
 if [ -d "/etc/swift/" ]
 then
+   sudo chmod 777 /etc/swift/
    sudo curl -o /etc/swift/swift.conf \
    https://opendev.org/openstack/swift/raw/branch/master/etc/swift.conf-sample
 else
     sudo mkdir /etc/swift/
+    sudo chmod -R 777 /etc/swift/
     sudo curl -o /etc/swift/swift.conf \
     https://opendev.org/openstack/swift/raw/branch/master/etc/swift.conf-sample
 fi
@@ -121,30 +123,30 @@ sudo scp swift.conf storage:/etc/swift/
 node_ssh compute sudo chown -R root:swift /etc/swift
 node_ssh storage sudo chown -R root:swift /etc/swift
 
-sudo systemctl enable openstack-swift-proxy.service memcached.service
-sudo systemctl start openstack-swift-proxy.service memcached.service 
+sudo systemctl enable swift-proxy.service memcached.service
+sudo systemctl start swift-proxy.service memcached.service 
 
 for ringtype in account container object; do 
-   node_ssh compute sudo systemctl start openstack-swift-$ringtype
-   node_ssh compute  sudo systemctl enable openstack-swift-$ringtype
+   node_ssh compute sudo systemctl start swift-$ringtype
+   node_ssh compute  sudo systemctl enable swift-$ringtype
     for service in replicator updater auditor; do
         if [ $ringtype != 'account' ] || [ $service != 'updater' ]; then
-          node_ssh compute sudo systemctl start openstack-swift-$ringtype-$service
-          node_ssh compute sudo systemctl enable openstack-swift-$ringtype-$service
+          node_ssh compute sudo systemctl start swift-$ringtype-$service
+          node_ssh compute sudo systemctl enable swift-$ringtype-$service
         fi
     done
 done
 
 for ringtype in account container object; do 
-    node_ssh storage sudo systemctl start openstack-swift-$ringtype
-    node_ssh storage sudo systemctl enable openstack-swift-$ringtype
+    node_ssh storage sudo systemctl start swift-$ringtype
+    node_ssh storage sudo systemctl enable swift-$ringtype
     for service in replicator updater auditor; do
         if [ $ringtype != 'account' ] || [ $service != 'updater' ]; then
-           node_ssh storage sudo systemctl start openstack-swift-$ringtype-$service
-           node_ssh storage sudo systemctl enable openstack-swift-$ringtype-$service
+           node_ssh storage sudo systemctl start swift-$ringtype-$service
+           node_ssh storage sudo systemctl enable swift-$ringtype-$service
         fi
     done
 done
 
-sudo systemctl restart httpd
+sudo systemctl restart apache2
 

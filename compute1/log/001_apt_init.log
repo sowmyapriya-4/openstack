@@ -1,0 +1,247 @@
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://in.archive.ubuntu.com/ubuntu focal InRelease
+Hit:2 http://in.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:3 http://in.archive.ubuntu.com/ubuntu focal-backports InRelease
+Hit:4 http://in.archive.ubuntu.com/ubuntu focal-security InRelease
+Hit:5 https://mirrors.bkns.vn/mariadb/repo/10.6/ubuntu focal InRelease
+Hit:6 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Installing packages needed for add-apt-repository.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+software-properties-common is already the newest version (0.99.9.8).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Adding cloud repo: cloud-archive:wallaby
+ Ubuntu Cloud Archive for OpenStack Wallaby
+ More info: https://wiki.ubuntu.com/OpenStack/CloudArchive
+Press [ENTER] to continue or Ctrl-c to cancel adding it.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ubuntu-cloud-keyring is already the newest version (2020.02.11.4).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Hit:1 http://in.archive.ubuntu.com/ubuntu focal InRelease
+Hit:2 http://in.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:3 http://in.archive.ubuntu.com/ubuntu focal-backports InRelease
+Hit:4 http://in.archive.ubuntu.com/ubuntu focal-security InRelease
+Hit:5 https://mirrors.bkns.vn/mariadb/repo/10.6/ubuntu focal InRelease
+Hit:6 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby InRelease
+Reading package lists...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+# Repo Created by Ram N Sangwan
+deb [arch=amd64,arm64,ppc64el] https://mirrors.bkns.vn/mariadb/repo/10.6/ubuntu focal main
+Warning: apt-key output should not be parsed (stdout is not a terminal)
+Executing: /tmp/apt-key-gpghome.Zi8pZ6rZcd/gpg.1.sh --fetch-keys https://mariadb.org/mariadb_release_signing_key.asc
+gpg: requesting key from 'https://mariadb.org/mariadb_release_signing_key.asc'
+gpg: key F1656F24C74CD1D8: "MariaDB Signing Key <signing-key@mariadb.org>" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 https://mirrors.bkns.vn/mariadb/repo/10.6/ubuntu focal InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ieee-data is already the newest version (20180805.1).
+libpaper-utils is already the newest version (1.1.28).
+python3-cmd2 is already the newest version (0.8.5-2.1).
+python3-wcwidth is already the newest version (0.1.8+dfsg1-3).
+xml-core is already the newest version (0.18+nmu1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  python3-lxml python3-soupsieve python3-tz python3-webencodings
+Suggested packages:
+  python3-genshi python3-lxml-dbg python-lxml-doc python3-beaker
+  python-mako-doc ipython3 python-netaddr-docs python-os-service-types-doc
+The following NEW packages will be installed:
+  python-babel-localedata python3-appdirs python3-babel python3-bs4
+  python3-crypto python3-decorator python3-html5lib python3-lxml python3-mako
+  python3-monotonic python3-netaddr python3-os-service-types python3-roman
+  python3-soupsieve python3-tz python3-webencodings
+0 upgraded, 16 newly installed, 0 to remove and 0 not upgraded.
+Need to get 266 kB/7,330 kB of archives.
+After this operation, 36.9 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Get:1 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-soupsieve all 1.9.5+dfsg-1 [29.1 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-crypto amd64 2.6.1-13ubuntu2 [237 kB]
+Fetched 266 kB in 0s (3,214 kB/s)
+Selecting previously unselected package python-babel-localedata.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 108152 files and directories currently installed.)
+Preparing to unpack .../00-python-babel-localedata_2.8.0+dfsg.1-6ubuntu0.1~cloud0_all.deb ...
+Unpacking python-babel-localedata (2.8.0+dfsg.1-6ubuntu0.1~cloud0) ...
+Selecting previously unselected package python3-appdirs.
+Preparing to unpack .../01-python3-appdirs_1.4.3-2.1_all.deb ...
+Unpacking python3-appdirs (1.4.3-2.1) ...
+Selecting previously unselected package python3-tz.
+Preparing to unpack .../02-python3-tz_2021.1-1~cloud0_all.deb ...
+Unpacking python3-tz (2021.1-1~cloud0) ...
+Selecting previously unselected package python3-babel.
+Preparing to unpack .../03-python3-babel_2.8.0+dfsg.1-6ubuntu0.1~cloud0_all.deb ...
+Unpacking python3-babel (2.8.0+dfsg.1-6ubuntu0.1~cloud0) ...
+Selecting previously unselected package python3-soupsieve.
+Preparing to unpack .../04-python3-soupsieve_1.9.5+dfsg-1_all.deb ...
+Unpacking python3-soupsieve (1.9.5+dfsg-1) ...
+Selecting previously unselected package python3-bs4.
+Preparing to unpack .../05-python3-bs4_4.8.2-1_all.deb ...
+Unpacking python3-bs4 (4.8.2-1) ...
+Selecting previously unselected package python3-crypto.
+Preparing to unpack .../06-python3-crypto_2.6.1-13ubuntu2_amd64.deb ...
+Unpacking python3-crypto (2.6.1-13ubuntu2) ...
+Selecting previously unselected package python3-decorator.
+Preparing to unpack .../07-python3-decorator_4.4.2-0ubuntu1_all.deb ...
+Unpacking python3-decorator (4.4.2-0ubuntu1) ...
+Selecting previously unselected package python3-webencodings.
+Preparing to unpack .../08-python3-webencodings_0.5.1-1ubuntu1_all.deb ...
+Unpacking python3-webencodings (0.5.1-1ubuntu1) ...
+Selecting previously unselected package python3-html5lib.
+Preparing to unpack .../09-python3-html5lib_1.0.1-2_all.deb ...
+Unpacking python3-html5lib (1.0.1-2) ...
+Selecting previously unselected package python3-lxml:amd64.
+Preparing to unpack .../10-python3-lxml_4.6.3-1~cloud0_amd64.deb ...
+Unpacking python3-lxml:amd64 (4.6.3-1~cloud0) ...
+Selecting previously unselected package python3-mako.
+Preparing to unpack .../11-python3-mako_1.1.0+ds1-1ubuntu2_all.deb ...
+Unpacking python3-mako (1.1.0+ds1-1ubuntu2) ...
+Selecting previously unselected package python3-monotonic.
+Preparing to unpack .../12-python3-monotonic_1.5-0ubuntu2_all.deb ...
+Unpacking python3-monotonic (1.5-0ubuntu2) ...
+Selecting previously unselected package python3-netaddr.
+Preparing to unpack .../13-python3-netaddr_0.7.19-3ubuntu1_all.deb ...
+Unpacking python3-netaddr (0.7.19-3ubuntu1) ...
+Selecting previously unselected package python3-os-service-types.
+Preparing to unpack .../14-python3-os-service-types_1.7.0-0ubuntu1_all.deb ...
+Unpacking python3-os-service-types (1.7.0-0ubuntu1) ...
+Selecting previously unselected package python3-roman.
+Preparing to unpack .../15-python3-roman_2.0.0-3build1_all.deb ...
+Unpacking python3-roman (2.0.0-3build1) ...
+Setting up python3-webencodings (0.5.1-1ubuntu1) ...
+Setting up python3-tz (2021.1-1~cloud0) ...
+Setting up python-babel-localedata (2.8.0+dfsg.1-6ubuntu0.1~cloud0) ...
+Setting up python3-monotonic (1.5-0ubuntu2) ...
+Setting up python3-roman (2.0.0-3build1) ...
+Setting up python3-decorator (4.4.2-0ubuntu1) ...
+Setting up python3-html5lib (1.0.1-2) ...
+Setting up python3-netaddr (0.7.19-3ubuntu1) ...
+Setting up python3-lxml:amd64 (4.6.3-1~cloud0) ...
+Setting up python3-os-service-types (1.7.0-0ubuntu1) ...
+Setting up python3-crypto (2.6.1-13ubuntu2) ...
+Setting up python3-appdirs (1.4.3-2.1) ...
+Setting up python3-soupsieve (1.9.5+dfsg-1) ...
+Setting up python3-mako (1.1.0+ds1-1ubuntu2) ...
+Setting up python3-babel (2.8.0+dfsg.1-6ubuntu0.1~cloud0) ...
+update-alternatives: using /usr/bin/pybabel-python3 to provide /usr/bin/pybabel (pybabel) in auto mode
+Setting up python3-bs4 (4.8.2-1) ...
+Processing triggers for man-db (2.9.1-1) ...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  docutils-common libimagequant0 libjpeg-turbo8 liblcms2-2 libtiff5 libwebp6
+  libwebpdemux2 libwebpmux3 python3-dateutil python3-debtcollector
+  python3-iso8601 python3-msgpack python3-olefile python3-oslo.config
+  python3-oslo.i18n python3-packaging python3-pil python3-prettytable
+  python3-pygments python3-pyinotify python3-rfc3986 python3-stevedore
+Suggested packages:
+  liblcms2-utils python-cliff-doc python-debtcollector-doc docutils-doc
+  fonts-linuxlibertine | ttf-linux-libertine texlive-lang-french
+  texlive-latex-base texlive-latex-recommended python-keystoneauth1-doc
+  python3-requests-kerberos python-oslo.log-doc python-pil-doc python3-pil-dbg
+  python-pygments-doc ttf-bitstream-vera python-pyinotify-doc
+The following NEW packages will be installed:
+  docutils-common libimagequant0 libjbig0 libjpeg-turbo8 libjpeg8 liblcms2-2
+  libtiff5 libwebp6 libwebpdemux2 libwebpmux3 python3-cliff python3-dateutil
+  python3-debtcollector python3-deprecation python3-docutils
+  python3-dogpile.cache python3-iso8601 python3-keystoneauth1 python3-msgpack
+  python3-olefile python3-oslo.config python3-oslo.context python3-oslo.i18n
+  python3-oslo.log python3-oslo.serialization python3-oslo.utils
+  python3-packaging python3-pil python3-prettytable python3-pygments
+  python3-pyinotify python3-rfc3986 python3-stevedore python3-wrapt
+0 upgraded, 34 newly installed, 0 to remove and 0 not upgraded.
+Need to get 3,072 kB of archives.
+After this operation, 14.8 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Get:1 http://in.archive.ubuntu.com/ubuntu focal/main amd64 docutils-common all 0.16+dfsg-2 [116 kB]
+Err:2 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libimagequant0 amd64 2.12.2-1.1
+  400  Bad Request [IP: 43.255.166.254 80]
+Get:3 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 libjpeg-turbo8 amd64 2.0.3-0ubuntu1.20.04.1 [117 kB]
+Err:4 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libjpeg8 amd64 8c-2ubuntu8
+  400  Bad Request [IP: 43.255.166.254 80]
+Get:5 http://in.archive.ubuntu.com/ubuntu focal/main amd64 liblcms2-2 amd64 2.9-4 [140 kB]
+Err:6 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libjbig0 amd64 2.1-3.1build1
+  400  Bad Request [IP: 43.255.166.254 80]
+Get:7 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 libwebp6 amd64 0.6.1-2ubuntu0.20.04.1 [185 kB]
+Get:8 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-stevedore all 1:3.3.0-0ubuntu2~cloud0 [23.6 kB]
+Ign:9 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 libtiff5 amd64 4.1.0+git191117-2ubuntu0.20.04.2
+Get:10 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 libwebpdemux2 amd64 0.6.1-2ubuntu0.20.04.1 [9,576 B]
+Ign:11 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 libwebpmux3 amd64 0.6.1-2ubuntu0.20.04.1
+Get:12 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-docutils all 0.16+dfsg-2 [368 kB]
+Err:13 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-prettytable all 0.7.2-5
+  400  Bad Request [IP: 43.255.166.254 80]
+Get:14 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-dateutil all 2.7.3-3ubuntu1 [63.3 kB]
+Err:15 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-wrapt amd64 1.11.2-2build1
+  400  Bad Request [IP: 43.255.166.254 80]
+Get:16 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-deprecation all 2.0.7-1 [8,512 B]
+Get:17 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-iso8601 all 0.1.12-1 [10.5 kB]
+Get:18 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-olefile all 0.46-2 [33.7 kB]
+Get:19 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-pyinotify all 0.9.6-1.2ubuntu1 [24.8 kB]
+Get:20 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-rfc3986 all 1.3.2-0ubuntu2 [21.9 kB]
+Get:21 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-pil amd64 7.0.0-4ubuntu0.5 [363 kB]
+Get:9 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 libtiff5 amd64 4.1.0+git191117-2ubuntu0.20.04.2 [162 kB]
+Get:11 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 libwebpmux3 amd64 0.6.1-2ubuntu0.20.04.1 [19.5 kB]
+Err:22 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-cliff all 3.6.0-0ubuntu1~cloud0
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:23 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-debtcollector all 2.2.0-0ubuntu1~cloud0 [14.0 kB]
+Err:24 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-packaging all 20.9-2~cloud0
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:25 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-dogpile.cache all 1.1.2-1~cloud0 [40.4 kB]
+Err:26 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-keystoneauth1 all 4.3.1-0ubuntu1~cloud0
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:27 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-msgpack amd64 1.0.0-6build1~cloud0 [73.7 kB]
+Get:28 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-oslo.i18n all 5.0.1-0ubuntu1~cloud0 [23.6 kB]
+Get:29 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-oslo.context all 1:3.2.0-0ubuntu1~cloud0 [15.1 kB]
+Get:30 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-oslo.utils all 4.8.0-0ubuntu1~cloud0 [64.3 kB]
+Get:31 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-oslo.serialization all 4.1.0-0ubuntu1~cloud0 [17.5 kB]
+Get:32 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-oslo.log all 4.4.0-0ubuntu1~cloud0 [45.6 kB]
+Get:33 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-oslo.config all 1:8.5.0-0ubuntu1~cloud0 [109 kB]
+Get:34 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-pygments all 2.7.1+dfsg-2ubuntu1~cloud0 [656 kB]
+Fetched 2,727 kB in 3s (857 kB/s)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libi/libimagequant/libimagequant0_2.12.2-1.1_amd64.deb  400  Bad Request [IP: 43.255.166.254 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg8-empty/libjpeg8_8c-2ubuntu8_amd64.deb  400  Bad Request [IP: 43.255.166.254 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/j/jbigkit/libjbig0_2.1-3.1build1_amd64.deb  400  Bad Request [IP: 43.255.166.254 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/p/prettytable/python3-prettytable_0.7.2-5_all.deb  400  Bad Request [IP: 43.255.166.254 80]
+E: Failed to fetch http://ubuntu-cloud.archive.canonical.com/ubuntu/pool/main/p/python-cliff/python3-cliff_3.6.0-0ubuntu1~cloud0_all.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/p/python-wrapt/python3-wrapt_1.11.2-2build1_amd64.deb  400  Bad Request [IP: 43.255.166.254 80]
+E: Failed to fetch http://ubuntu-cloud.archive.canonical.com/ubuntu/pool/main/p/python-packaging/python3-packaging_20.9-2~cloud0_all.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://ubuntu-cloud.archive.canonical.com/ubuntu/pool/main/p/python-keystoneauth1/python3-keystoneauth1_4.3.1-0ubuntu1~cloud0_all.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?

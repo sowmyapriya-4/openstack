@@ -28,50 +28,33 @@ echo "IP address of this node's interface in management network: $MY_MGMT_IP."
 swift_dev1=sdb
 swift_dev2=sdc
 
-# sudo mkfs.xfs -f /dev/$swift_dev1
-# sudo mkfs.xfs -f /dev/$swift_dev2
+sudo mkfs.xfs -f /dev/$swift_dev1
+sudo mkfs.xfs -f /dev/$swift_dev2
 
-# sudo mkdir -p /srv/node/$swift_dev1
-# sudo mkdir -p /srv/node/$swift_dev2
+sudo mkdir -p /srv/node/$swift_dev1
+sudo mkdir -p /srv/node/$swift_dev2
 
 # echo "Making Entries into /ets/fstab to make the devices available on reboot"
 
-# conf=/etc/fstab
+conf=/etc/fstab
 
-# cat << FSTAB | sudo tee -a $conf
-# /dev/sdb /srv/node/sdb xfs noatime 0 2
-# /dev/sdc /srv/node/sdc xfs noatime 0 2
-# FSTAB
+cat << FSTAB | sudo tee -a $conf
+/dev/sdb /srv/node/sdb xfs noatime 0 2
+/dev/sdc /srv/node/sdc xfs noatime 0 2
+FSTAB
 
-# sudo mount /dev/$swift_dev1 /srv/node/$swift_dev1
-# sudo mount /dev/$swift_dev2 /srv/node/$swift_dev2
+sudo mount /dev/$swift_dev1 /srv/node/$swift_dev1
+sudo mount /dev/$swift_dev2 /srv/node/$swift_dev2
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Create or edit the /etc/rsyncd.conf file
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# conf=/etc/rsyncd.conf
+conf=/etc/rsyncd.conf
 
-# iniset_sudo_no_section $conf uid swift
-# iniset_sudo_no_section $conf gid swift
-# iniset_sudo_no_section $conf log\ file /var/log/rsyncd.log
-# iniset_sudo_no_section $conf pid\ file /var/run/rsyncd.pid
-# iniset_sudo_no_section $conf address $MY_MGMT_IP
-
-# iniset_sudo $conf account max\ connections 2
-# iniset_sudo $conf account path /srv/node/
-# iniset_sudo $conf account read\ only False
-# iniset_sudo $conf account lock\ file /var/lock/account.lock
-
-# iniset_sudo $conf container max\ connections 2
-# iniset_sudo $conf container path  /srv/node/
-# iniset_sudo $conf container read\ only False
-# iniset_sudo $conf container lock\ file /var/lock/container.lock
-
-# iniset_sudo $conf object max\ connections 2
-# iniset_sudo $conf object path /srv/node/
-# iniset_sudo $conf object read\ only False
-# iniset_sudo $conf object lock\ file /var/lock/object.lock
+iniset_sudo_no_section $conf uid swift
+iniset_sudo_no_section $conf gid swift
+iniset_sudo_no_section $conf address $MY_MGMT_IP
 
 # sudo touch /etc/default/rsync
 

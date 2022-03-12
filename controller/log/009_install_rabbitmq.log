@@ -1,0 +1,56 @@
+Installing RabbitMQ.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  erlang-asn1 erlang-base erlang-crypto erlang-eldap erlang-ftp erlang-inets
+  erlang-mnesia erlang-os-mon erlang-parsetools erlang-public-key
+  erlang-runtime-tools erlang-snmp erlang-ssl erlang-syntax-tools erlang-tftp
+  erlang-tools erlang-xmerl libsctp1 locales-all
+Suggested packages:
+  erlang erlang-manpages erlang-doc lksctp-tools
+The following NEW packages will be installed:
+  erlang-asn1 erlang-base erlang-crypto erlang-eldap erlang-ftp erlang-inets
+  erlang-mnesia erlang-os-mon erlang-parsetools erlang-public-key
+  erlang-runtime-tools erlang-snmp erlang-ssl erlang-syntax-tools erlang-tftp
+  erlang-tools erlang-xmerl libsctp1 locales-all rabbitmq-server
+0 upgraded, 20 newly installed, 0 to remove and 0 not upgraded.
+Need to get 38.1 MB of archives.
+After this operation, 276 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-base amd64 1:22.2.7+dfsg-1 [8,063 kB]
+Err:2 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-asn1 amd64 1:22.2.7+dfsg-1
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-crypto amd64 1:22.2.7+dfsg-1 [137 kB]
+Err:4 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-public-key amd64 1:22.2.7+dfsg-1
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-mnesia amd64 1:22.2.7+dfsg-1 [716 kB]
+Err:6 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-runtime-tools amd64 1:22.2.7+dfsg-1
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-ssl amd64 1:22.2.7+dfsg-1 [1,103 kB]
+Err:8 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-eldap amd64 1:22.2.7+dfsg-1
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-ftp amd64 1:22.2.7+dfsg-1 [68.8 kB]
+Err:10 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-tftp amd64 1:22.2.7+dfsg-1
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:11 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-inets amd64 1:22.2.7+dfsg-1 [577 kB]
+Err:12 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-snmp amd64 1:22.2.7+dfsg-1
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:13 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-os-mon amd64 1:22.2.7+dfsg-1 [81.2 kB]
+Get:14 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-parsetools amd64 1:22.2.7+dfsg-1 [151 kB]
+Get:15 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-syntax-tools amd64 1:22.2.7+dfsg-1 [344 kB]
+Get:16 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-tools amd64 1:22.2.7+dfsg-1 [499 kB]
+Get:17 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-xmerl amd64 1:22.2.7+dfsg-1 [1,113 kB]
+Get:18 http://archive.ubuntu.com/ubuntu focal/main amd64 libsctp1 amd64 1.0.18+dfsg-1 [7,876 B]
+Get:19 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 locales-all amd64 2.31-0ubuntu9.7 [10.6 MB]
+Get:20 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 rabbitmq-server all 3.8.2-0ubuntu1.3 [11.5 MB]
+Fetched 34.9 MB in 1min 36s (365 kB/s)
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/e/erlang/erlang-asn1_22.2.7+dfsg-1_amd64.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/e/erlang/erlang-public-key_22.2.7+dfsg-1_amd64.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/e/erlang/erlang-runtime-tools_22.2.7+dfsg-1_amd64.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/e/erlang/erlang-eldap_22.2.7+dfsg-1_amd64.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/e/erlang/erlang-tftp_22.2.7+dfsg-1_amd64.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/e/erlang/erlang-snmp_22.2.7+dfsg-1_amd64.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?

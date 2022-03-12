@@ -65,7 +65,7 @@ openstack endpoint create \
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 echo "Installing swift."
-sudo apt install -y openstack-swift-proxy python3-swift python3-swiftclient \
+sudo apt install -y swift swift-account swift-container swift-object xfsprogs python3-swift python3-swiftclient \
        python3-keystoneclient python3-keystonemiddleware
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

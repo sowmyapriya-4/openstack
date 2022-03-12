@@ -124,7 +124,6 @@ node_ssh controller "sudo nova-manage cell_v2 discover_hosts --verbose"
 
 #------------------------------------------------------------------------------
 # Verify operation
-# https://docs.openstack.org/nova/train/install/verify.html
 #------------------------------------------------------------------------------
 
 echo "Verifying operation of the Compute service."

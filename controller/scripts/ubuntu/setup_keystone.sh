@@ -15,8 +15,14 @@ indicate_current_auto
 
 #------------------------------------------------------------------------------
 # Set up keystone for controller node
-# https://docs.openstack.org/keystone/train/install/keystone-install-ubuntu.html
 #------------------------------------------------------------------------------
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Install and configure components
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+echo "Installing keystone."
+sudo apt install -y keystone apache2
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Prerequisites
@@ -25,20 +31,12 @@ indicate_current_auto
 echo "Setting up database for keystone."
 setup_database keystone "$KEYSTONE_DB_USER" "$KEYSTONE_DBPASS"
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Not in install-guide:
 echo "Sanity check: local auth should work."
 mysql -u keystone -p"$KEYSTONE_DBPASS" keystone -e quit
 
 echo "Sanity check: remote auth should work."
 mysql -u keystone -p"$KEYSTONE_DBPASS" keystone -h controller -e quit
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Install and configure components
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-echo "Installing keystone."
-sudo apt install -y keystone
 
 conf=/etc/keystone/keystone.conf
 echo "Editing $conf."
@@ -95,8 +93,8 @@ else
 fi
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Reduce memory usage (not in install-guide)
-sudo sed -i --follow-symlinks '/WSGIDaemonProcess/ s/processes=[0-9]*/processes=1/' $conf
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+sudo sed -i --follow-symlinks '/WSGIDaemonProcess/ s/processes=[0-9]*/processes=1/' $conf
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Finalize the installation

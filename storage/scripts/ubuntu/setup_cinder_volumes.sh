@@ -22,7 +22,7 @@ MY_MGMT_IP=$(get_node_ip_in_network "$(hostname)" "mgmt")
 echo "IP address of this node's interface in management network: $MY_MGMT_IP."
 
 echo "Installing qemu support package for non-raw image types."
-sudo apt install -y qemu
+sudo apt install -y qemu python3-rtslib-fb targetcli-fb
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Prerequisites
@@ -33,19 +33,10 @@ sudo apt install -y lvm2 thin-provisioning-tools
 
 echo "Configuring LVM physical and logical volumes."
 
-cinder_dev=sdb
+cinder_dev=sdd
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Not in install-guide
-# Avoid error due to service not running
-# XXX Alternatively, in /etc/lvm/lvm.conf, set use_lvmetad = 0
-sudo systemctl enable lvm2-lvmetad.service
-sudo systemctl enable lvm2-lvmetad.socket
-sudo systemctl start lvm2-lvmetad.service
-sudo systemctl start lvm2-lvmetad.socket
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-sudo pvcreate /dev/$cinder_dev
+sudo pvcreate -ff /dev/$cinder_dev
 sudo vgcreate cinder-volumes /dev/$cinder_dev
 
 conf=/etc/lvm/lvm.conf
@@ -112,12 +103,10 @@ iniset_sudo $conf oslo_concurrency lock_path /var/lib/cinder/tmp
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 echo "Restarting cinder service."
-sudo service tgt restart
-sudo service cinder-volume restart
+sudo systemctl restart cinder-volume
 
 #------------------------------------------------------------------------------
 # Verify Cinder operation
-# https://docs.openstack.org/cinder/train/install/cinder-verify.html
 #------------------------------------------------------------------------------
 
 echo "Verifying Block Storage installation on controller node."
@@ -179,8 +168,6 @@ check_cinder_services
 
 #------------------------------------------------------------------------------
 # Verify the Block Storage installation
-# https://docs.openstack.org/install-guide/launch-instance-cinder.html
-# (partial implementation without instance)
 #------------------------------------------------------------------------------
 
 echo "Sourcing the demo credentials."

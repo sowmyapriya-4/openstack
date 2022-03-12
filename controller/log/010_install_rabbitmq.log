@@ -1,0 +1,664 @@
+Installing RabbitMQ.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  erlang-asn1 erlang-base erlang-crypto erlang-eldap erlang-ftp erlang-inets
+  erlang-mnesia erlang-os-mon erlang-parsetools erlang-public-key
+  erlang-runtime-tools erlang-snmp erlang-ssl erlang-syntax-tools erlang-tftp
+  erlang-tools erlang-xmerl libsctp1 locales-all
+Suggested packages:
+  erlang erlang-manpages erlang-doc lksctp-tools
+The following NEW packages will be installed:
+  erlang-asn1 erlang-base erlang-crypto erlang-eldap erlang-ftp erlang-inets
+  erlang-mnesia erlang-os-mon erlang-parsetools erlang-public-key
+  erlang-runtime-tools erlang-snmp erlang-ssl erlang-syntax-tools erlang-tftp
+  erlang-tools erlang-xmerl libsctp1 locales-all rabbitmq-server
+0 upgraded, 20 newly installed, 0 to remove and 0 not upgraded.
+Need to get 3,184 kB/38.1 MB of archives.
+After this operation, 276 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-asn1 amd64 1:22.2.7+dfsg-1 [712 kB]
+Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-public-key amd64 1:22.2.7+dfsg-1 [567 kB]
+Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-runtime-tools amd64 1:22.2.7+dfsg-1 [182 kB]
+Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-eldap amd64 1:22.2.7+dfsg-1 [99.7 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-tftp amd64 1:22.2.7+dfsg-1 [84.6 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 erlang-snmp amd64 1:22.2.7+dfsg-1 [1,538 kB]
+Fetched 3,184 kB in 11s (292 kB/s)
+Selecting previously unselected package erlang-base.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 120774 files and directories currently installed.)
+Preparing to unpack .../00-erlang-base_1%3a22.2.7+dfsg-1_amd64.deb ...
+Unpacking erlang-base (1:22.2.7+dfsg-1) ...
+Selecting previously unselected package erlang-asn1.
+Preparing to unpack .../01-erlang-asn1_1%3a22.2.7+dfsg-1_amd64.deb ...
+Unpacking erlang-asn1 (1:22.2.7+dfsg-1) ...
+Selecting previously unselected package erlang-crypto.
+Preparing to unpack .../02-erlang-crypto_1%3a22.2.7+dfsg-1_amd64.deb ...
+Unpacking erlang-crypto (1:22.2.7+dfsg-1) ...
+Selecting previously unselected package erlang-public-key.
+Preparing to unpack .../03-erlang-public-key_1%3a22.2.7+dfsg-1_amd64.deb ...
+Unpacking erlang-public-key (1:22.2.7+dfsg-1) ...
+Selecting previously unselected package erlang-mnesia.
+Preparing to unpack .../04-erlang-mnesia_1%3a22.2.7+dfsg-1_amd64.deb ...
+Unpacking erlang-mnesia (1:22.2.7+dfsg-1) ...
+Selecting previously unselected package erlang-runtime-tools.
+Preparing to unpack .../05-erlang-runtime-tools_1%3a22.2.7+dfsg-1_amd64.deb ...
+Unpacking erlang-runtime-tools (1:22.2.7+dfsg-1) ...
+Selecting previously unselected package erlang-ssl.
+Preparing to unpack .../06-erlang-ssl_1%3a22.2.7+dfsg-1_amd64.deb ...
+Unpacking erlang-ssl (1:22.2.7+dfsg-1) ...
+Selecting previously unselected package erlang-eldap.
+Preparing to unpack .../07-erlang-eldap_1%3a22.2.7+dfsg-1_amd64.deb ...
+Unpacking erlang-eldap (1:22.2.7+dfsg-1) ...
+Selecting previously unselected package erlang-ftp.
+Preparing to unpack .../08-erlang-ftp_1%3a22.2.7+dfsg-1_amd64.deb ...
+Unpacking erlang-ftp (1:22.2.7+dfsg-1) ...
+Selecting previously unselected package erlang-tftp.
+Preparing to unpack .../09-erlang-tftp_1%3a22.2.7+dfsg-1_amd64.deb ...
+Unpacking erlang-tftp (1:22.2.7+dfsg-1) ...
+Selecting previously unselected package erlang-inets.
+Preparing to unpack .../10-erlang-inets_1%3a22.2.7+dfsg-1_amd64.deb ...
+Unpacking erlang-inets (1:22.2.7+dfsg-1) ...
+Selecting previously unselected package erlang-snmp.
+Preparing to unpack .../11-erlang-snmp_1%3a22.2.7+dfsg-1_amd64.deb ...
+Unpacking erlang-snmp (1:22.2.7+dfsg-1) ...
+Selecting previously unselected package erlang-os-mon.
+Preparing to unpack .../12-erlang-os-mon_1%3a22.2.7+dfsg-1_amd64.deb ...
+Unpacking erlang-os-mon (1:22.2.7+dfsg-1) ...
+Selecting previously unselected package erlang-parsetools.
+Preparing to unpack .../13-erlang-parsetools_1%3a22.2.7+dfsg-1_amd64.deb ...
+Unpacking erlang-parsetools (1:22.2.7+dfsg-1) ...
+Selecting previously unselected package erlang-syntax-tools.
+Preparing to unpack .../14-erlang-syntax-tools_1%3a22.2.7+dfsg-1_amd64.deb ...
+Unpacking erlang-syntax-tools (1:22.2.7+dfsg-1) ...
+Selecting previously unselected package erlang-tools.
+Preparing to unpack .../15-erlang-tools_1%3a22.2.7+dfsg-1_amd64.deb ...
+Unpacking erlang-tools (1:22.2.7+dfsg-1) ...
+Selecting previously unselected package erlang-xmerl.
+Preparing to unpack .../16-erlang-xmerl_1%3a22.2.7+dfsg-1_amd64.deb ...
+Unpacking erlang-xmerl (1:22.2.7+dfsg-1) ...
+Selecting previously unselected package libsctp1:amd64.
+Preparing to unpack .../17-libsctp1_1.0.18+dfsg-1_amd64.deb ...
+Unpacking libsctp1:amd64 (1.0.18+dfsg-1) ...
+Selecting previously unselected package locales-all.
+Preparing to unpack .../18-locales-all_2.31-0ubuntu9.7_amd64.deb ...
+Unpacking locales-all (2.31-0ubuntu9.7) ...
+Selecting previously unselected package rabbitmq-server.
+Preparing to unpack .../19-rabbitmq-server_3.8.2-0ubuntu1.3_all.deb ...
+Unpacking rabbitmq-server (3.8.2-0ubuntu1.3) ...
+Setting up erlang-base (1:22.2.7+dfsg-1) ...
+Searching for services which depend on erlang and should be started... none found.
+Setting up erlang-xmerl (1:22.2.7+dfsg-1) ...
+Setting up erlang-syntax-tools (1:22.2.7+dfsg-1) ...
+Setting up locales-all (2.31-0ubuntu9.7) ...
+Setting up erlang-parsetools (1:22.2.7+dfsg-1) ...
+Setting up erlang-asn1 (1:22.2.7+dfsg-1) ...
+Setting up erlang-tftp (1:22.2.7+dfsg-1) ...
+Setting up libsctp1:amd64 (1.0.18+dfsg-1) ...
+Setting up erlang-mnesia (1:22.2.7+dfsg-1) ...
+Setting up erlang-crypto (1:22.2.7+dfsg-1) ...
+Setting up erlang-runtime-tools (1:22.2.7+dfsg-1) ...
+Setting up erlang-tools (1:22.2.7+dfsg-1) ...
+Setting up erlang-snmp (1:22.2.7+dfsg-1) ...
+Setting up erlang-public-key (1:22.2.7+dfsg-1) ...
+Setting up erlang-ssl (1:22.2.7+dfsg-1) ...
+Setting up erlang-os-mon (1:22.2.7+dfsg-1) ...
+Setting up erlang-eldap (1:22.2.7+dfsg-1) ...
+Setting up erlang-ftp (1:22.2.7+dfsg-1) ...
+Setting up erlang-inets (1:22.2.7+dfsg-1) ...
+Setting up rabbitmq-server (3.8.2-0ubuntu1.3) ...
+Processing triggers for systemd (245.4-4ubuntu3.15) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.7) ...
+Waiting for RabbitMQ to start.
+---------------------------------------------------------------
+sudo rabbitmqctl status
+Status of node rabbit@controller ...
+[1mRuntime[0m
+
+OS PID: 38071
+OS: Linux
+Uptime (seconds): 5
+RabbitMQ version: 3.8.2
+Node name: rabbit@controller
+Erlang configuration: Erlang/OTP 22 [erts-10.6.4] [source] [64-bit] [smp:3:3] [ds:3:3:10] [async-threads:64]
+Erlang processes: 259 used, 1048576 limit
+Scheduler run queue: 1
+Cluster heartbeat timeout (net_ticktime): 60
+
+[1mPlugins[0m
+
+Enabled plugin file: /etc/rabbitmq/enabled_plugins
+Enabled plugins:
+
+
+[1mData directory[0m
+
+Node data directory: /var/lib/rabbitmq/mnesia/rabbit@controller
+
+[1mConfig files[0m
+
+
+[1mLog file(s)[0m
+
+ * /var/log/rabbitmq/rabbit@controller.log
+ * /var/log/rabbitmq/rabbit@controller_upgrade.log
+
+[1mAlarms[0m
+
+(none)
+
+[1mMemory[0m
+
+Calculation strategy: rss
+Memory high watermark setting: 0.4 of available memory, computed to: 2.5311 gb
+code: 0.0268 gb (28.32 %)
+other_proc: 0.0257 gb (27.18 %)
+allocated_unused: 0.0164 gb (17.38 %)
+other_system: 0.0121 gb (12.84 %)
+reserved_unallocated: 0.0089 gb (9.43 %)
+other_ets: 0.0027 gb (2.84 %)
+atom: 0.0014 gb (1.52 %)
+metrics: 0.0002 gb (0.21 %)
+binary: 0.0001 gb (0.13 %)
+mnesia: 0.0001 gb (0.08 %)
+quorum_ets: 0.0 gb (0.04 %)
+msg_index: 0.0 gb (0.03 %)
+plugins: 0.0 gb (0.01 %)
+connection_channels: 0.0 gb (0.0 %)
+connection_other: 0.0 gb (0.0 %)
+connection_readers: 0.0 gb (0.0 %)
+connection_writers: 0.0 gb (0.0 %)
+mgmt_db: 0.0 gb (0.0 %)
+queue_procs: 0.0 gb (0.0 %)
+queue_slave_procs: 0.0 gb (0.0 %)
+quorum_queue_procs: 0.0 gb (0.0 %)
+
+[1mFile Descriptors[0m
+
+Total: 2, limit: 65439
+Sockets: 0, limit: 58893
+
+[1mFree Disk Space[0m
+
+Low free disk space watermark: 0.05 gb
+Free disk space: 5.6301 gb
+
+[1mTotals[0m
+
+Connection count: 0
+Queue count: 0
+Virtual host count: 1
+
+[1mListeners[0m
+
+Interface: [::], port: 25672, protocol: clustering, purpose: inter-node and CLI tool communication
+Interface: 0.0.0.0, port: 5672, protocol: amqp, purpose: AMQP 0-9-1 and AMQP 1.0
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+sudo rabbitmqctl report
+Reporting server status of node rabbit@controller ...
+
+Status of node rabbit@controller ...
+[1mRuntime[0m
+
+OS PID: 38071
+OS: Linux
+Uptime (seconds): 5
+RabbitMQ version: 3.8.2
+Node name: rabbit@controller
+Erlang configuration: Erlang/OTP 22 [erts-10.6.4] [source] [64-bit] [smp:3:3] [ds:3:3:10] [async-threads:64]
+Erlang processes: 259 used, 1048576 limit
+Scheduler run queue: 1
+Cluster heartbeat timeout (net_ticktime): 60
+
+[1mPlugins[0m
+
+Enabled plugin file: /etc/rabbitmq/enabled_plugins
+Enabled plugins:
+
+
+[1mData directory[0m
+
+Node data directory: /var/lib/rabbitmq/mnesia/rabbit@controller
+
+[1mConfig files[0m
+
+
+[1mLog file(s)[0m
+
+ * /var/log/rabbitmq/rabbit@controller.log
+ * /var/log/rabbitmq/rabbit@controller_upgrade.log
+
+[1mAlarms[0m
+
+(none)
+
+[1mMemory[0m
+
+Calculation strategy: rss
+Memory high watermark setting: 0.4 of available memory, computed to: 2.5311 gb
+code: 0.0268 gb (27.17 %)
+other_proc: 0.0257 gb (26.11 %)
+allocated_unused: 0.0164 gb (16.63 %)
+reserved_unallocated: 0.0129 gb (13.13 %)
+other_system: 0.0121 gb (12.32 %)
+other_ets: 0.0027 gb (2.72 %)
+atom: 0.0014 gb (1.46 %)
+metrics: 0.0002 gb (0.2 %)
+binary: 0.0001 gb (0.12 %)
+mnesia: 0.0001 gb (0.08 %)
+quorum_ets: 0.0 gb (0.04 %)
+msg_index: 0.0 gb (0.03 %)
+plugins: 0.0 gb (0.01 %)
+connection_channels: 0.0 gb (0.0 %)
+connection_other: 0.0 gb (0.0 %)
+connection_readers: 0.0 gb (0.0 %)
+connection_writers: 0.0 gb (0.0 %)
+mgmt_db: 0.0 gb (0.0 %)
+queue_procs: 0.0 gb (0.0 %)
+queue_slave_procs: 0.0 gb (0.0 %)
+quorum_queue_procs: 0.0 gb (0.0 %)
+
+[1mFile Descriptors[0m
+
+Total: 2, limit: 65439
+Sockets: 0, limit: 58893
+
+[1mFree Disk Space[0m
+
+Low free disk space watermark: 0.05 gb
+Free disk space: 5.6301 gb
+
+[1mTotals[0m
+
+Connection count: 0
+Queue count: 0
+Virtual host count: 1
+
+[1mListeners[0m
+
+Interface: [::], port: 25672, protocol: clustering, purpose: inter-node and CLI tool communication
+Interface: 0.0.0.0, port: 5672, protocol: amqp, purpose: AMQP 0-9-1 and AMQP 1.0
+
+Cluster status of node rabbit@controller ...
+[1mBasics[0m
+
+Cluster name: rabbit@controller
+
+[1mDisk Nodes[0m
+
+rabbit@controller
+
+[1mRunning Nodes[0m
+
+rabbit@controller
+
+[1mVersions[0m
+
+rabbit@controller: RabbitMQ 3.8.2 on Erlang 22.2.7
+
+[1mAlarms[0m
+
+(none)
+
+[1mNetwork Partitions[0m
+
+(none)
+
+[1mListeners[0m
+
+Node: rabbit@controller, interface: [::], port: 25672, protocol: clustering, purpose: inter-node and CLI tool communication
+Node: rabbit@controller, interface: 0.0.0.0, port: 5672, protocol: amqp, purpose: AMQP 0-9-1 and AMQP 1.0
+
+[1mFeature flags[0m
+
+Flag: implicit_default_bindings, state: enabled
+Flag: quorum_queue, state: enabled
+Flag: virtual_host_metadata, state: enabled
+
+Application environment of node rabbit@controller ...
+[{asn1,[]},
+ {aten,
+     [{detection_threshold,0.99},
+      {heartbeat_interval,100},
+      {poll_interval,1000}]},
+ {compiler,[]},
+ {credentials_obfuscation,
+     [{enabled,true},{ets_table_name,credentials_obfuscation}]},
+ {crypto,[{fips_mode,false},{rand_cache_size,896}]},
+ {gen_batch_server,[]},
+ {goldrush,[]},
+ {inets,[]},
+ {jsx,[]},
+ {kernel,
+     [{inet_default_connect_options,[{nodelay,true}]},
+      {inet_dist_listen_max,25672},
+      {inet_dist_listen_min,25672},
+      {logger,
+          [{handler,default,logger_std_h,
+               #{config => #{type => standard_io},
+                 formatter =>
+                     {logger_formatter,
+                         #{legacy_header => true,single_line => false}}}}]},
+      {logger_level,notice},
+      {logger_sasl_compatible,false}]},
+ {lager,
+     [{async_threshold,20},
+      {async_threshold_window,5},
+      {colored,false},
+      {colors,
+          [{debug,"\e[0;38m"},
+           {info,"\e[1;37m"},
+           {notice,"\e[1;36m"},
+           {warning,"\e[1;33m"},
+           {error,"\e[1;31m"},
+           {critical,"\e[1;35m"},
+           {alert,"\e[1;44m"},
+           {emergency,"\e[1;41m"}]},
+      {crash_log,"log/crash.log"},
+      {crash_log_count,5},
+      {crash_log_date,"$D0"},
+      {crash_log_msg_size,65536},
+      {crash_log_rotator,lager_rotator_default},
+      {crash_log_size,10485760},
+      {error_logger_format_raw,true},
+      {error_logger_hwm,50},
+      {error_logger_hwm_original,50},
+      {error_logger_redirect,true},
+      {extra_sinks,
+          [{error_logger_lager_event,
+               [{handlers,[{lager_forwarder_backend,[lager_event,inherit]}]},
+                {rabbit_handlers,
+                    [{lager_forwarder_backend,[lager_event,inherit]}]}]},
+           {rabbit_log_lager_event,
+               [{handlers,[{lager_forwarder_backend,[lager_event,inherit]}]},
+                {rabbit_handlers,
+                    [{lager_forwarder_backend,[lager_event,inherit]}]}]},
+           {rabbit_log_channel_lager_event,
+               [{handlers,[{lager_forwarder_backend,[lager_event,inherit]}]},
+                {rabbit_handlers,
+                    [{lager_forwarder_backend,[lager_event,inherit]}]}]},
+           {rabbit_log_connection_lager_event,
+               [{handlers,[{lager_forwarder_backend,[lager_event,inherit]}]},
+                {rabbit_handlers,
+                    [{lager_forwarder_backend,[lager_event,inherit]}]}]},
+           {rabbit_log_ldap_lager_event,
+               [{handlers,[{lager_forwarder_backend,[lager_event,inherit]}]},
+                {rabbit_handlers,
+                    [{lager_forwarder_backend,[lager_event,inherit]}]}]},
+           {rabbit_log_mirroring_lager_event,
+               [{handlers,[{lager_forwarder_backend,[lager_event,inherit]}]},
+                {rabbit_handlers,
+                    [{lager_forwarder_backend,[lager_event,inherit]}]}]},
+           {rabbit_log_queue_lager_event,
+               [{handlers,[{lager_forwarder_backend,[lager_event,inherit]}]},
+                {rabbit_handlers,
+                    [{lager_forwarder_backend,[lager_event,inherit]}]}]},
+           {rabbit_log_ra_lager_event,
+               [{handlers,[{lager_forwarder_backend,[lager_event,inherit]}]},
+                {rabbit_handlers,
+                    [{lager_forwarder_backend,[lager_event,inherit]}]}]},
+           {rabbit_log_federation_lager_event,
+               [{handlers,[{lager_forwarder_backend,[lager_event,inherit]}]},
+                {rabbit_handlers,
+                    [{lager_forwarder_backend,[lager_event,inherit]}]}]},
+           {rabbit_log_shovel_lager_event,
+               [{handlers,[{lager_forwarder_backend,[lager_event,inherit]}]},
+                {rabbit_handlers,
+                    [{lager_forwarder_backend,[lager_event,inherit]}]}]},
+           {rabbit_log_upgrade_lager_event,
+               [{handlers,
+                    [{lager_file_backend,
+                         [{date,[]},
+                          {file,
+                              "/var/log/rabbitmq/rabbit@controller_upgrade.log"},
+                          {formatter_config,
+                              [date," ",time," ",color,"[",severity,"] ",
+                               {pid,[]},
+                               " ",message,"\n"]},
+                          {level,info},
+                          {size,0}]}]},
+                {rabbit_handlers,
+                    [{lager_file_backend,
+                         [{date,[]},
+                          {file,
+                              "/var/log/rabbitmq/rabbit@controller_upgrade.log"},
+                          {formatter_config,
+                              [date," ",time," ",color,"[",severity,"] ",
+                               {pid,[]},
+                               " ",message,"\n"]},
+                          {level,info},
+                          {size,0}]}]}]}]},
+      {handlers,
+          [{lager_file_backend,
+               [{date,[]},
+                {file,"/var/log/rabbitmq/rabbit@controller.log"},
+                {formatter_config,
+                    [date," ",time," ",color,"[",severity,"] ",
+                     {pid,[]},
+                     " ",message,"\n"]},
+                {level,info},
+                {size,0}]}]},
+      {log_root,"/var/log/rabbitmq"},
+      {rabbit_handlers,
+          [{lager_file_backend,
+               [{date,[]},
+                {file,"/var/log/rabbitmq/rabbit@controller.log"},
+                {formatter_config,
+                    [date," ",time," ",color,"[",severity,"] ",
+                     {pid,[]},
+                     " ",message,"\n"]},
+                {level,info},
+                {size,0}]}]}]},
+ {mnesia,[{dir,"/var/lib/rabbitmq/mnesia/rabbit@controller"}]},
+ {observer_cli,[{plugins,[]}]},
+ {os_mon,
+     [{start_cpu_sup,false},
+      {start_disksup,false},
+      {start_memsup,false},
+      {start_os_sup,false}]},
+ {public_key,[]},
+ {ra,[{data_dir,"/var/lib/rabbitmq/mnesia/rabbit@controller/quorum"},
+      {logger_module,rabbit_log_ra_shim},
+      {segment_max_entries,32768},
+      {wal_max_size_bytes,536870912}]},
+ {rabbit,
+     [{auth_backends,[rabbit_auth_backend_internal]},
+      {auth_mechanisms,['PLAIN','AMQPLAIN']},
+      {autocluster,
+          [{peer_discovery_backend,rabbit_peer_discovery_classic_config}]},
+      {background_gc_enabled,false},
+      {background_gc_target_interval,60000},
+      {backing_queue_module,rabbit_priority_queue},
+      {channel_max,2047},
+      {channel_operation_timeout,15000},
+      {channel_tick_interval,60000},
+      {cluster_keepalive_interval,10000},
+      {cluster_nodes,{[],disc}},
+      {cluster_partition_handling,ignore},
+      {collect_statistics,none},
+      {collect_statistics_interval,5000},
+      {config_entry_decoder,[{passphrase,undefined}]},
+      {connection_max,infinity},
+      {credit_flow_default_credit,{400,200}},
+      {default_consumer_prefetch,{false,0}},
+      {default_permissions,[<<".*">>,<<".*">>,<<".*">>]},
+      {default_user,<<"guest">>},
+      {default_user_tags,[administrator]},
+      {default_vhost,<<"/">>},
+      {delegate_count,16},
+      {disk_free_limit,50000000},
+      {disk_monitor_failure_retries,10},
+      {disk_monitor_failure_retry_interval,120000},
+      {enabled_plugins_file,"/etc/rabbitmq/enabled_plugins"},
+      {feature_flags_file,
+          "/var/lib/rabbitmq/mnesia/rabbit@controller-feature_flags"},
+      {fhc_read_buffering,false},
+      {fhc_write_buffering,true},
+      {frame_max,131072},
+      {halt_on_upgrade_failure,true},
+      {handshake_timeout,10000},
+      {heartbeat,60},
+      {hipe_compile,false},
+      {hipe_modules,
+          [rabbit_reader,rabbit_channel,gen_server2,rabbit_exchange,
+           rabbit_command_assembler,rabbit_framing_amqp_0_9_1,rabbit_basic,
+           rabbit_event,lists,queue,priority_queue,rabbit_router,rabbit_trace,
+           rabbit_misc,rabbit_binary_parser,rabbit_exchange_type_direct,
+           rabbit_guid,rabbit_net,rabbit_amqqueue_process,
+           rabbit_variable_queue,rabbit_binary_generator,rabbit_writer,
+           delegate,gb_sets,lqueue,sets,orddict,rabbit_amqqueue,
+           rabbit_limiter,gb_trees,rabbit_queue_index,
+           rabbit_exchange_decorator,gen,dict,ordsets,file_handle_cache,
+           rabbit_msg_store,array,rabbit_msg_store_ets_index,rabbit_msg_file,
+           rabbit_exchange_type_fanout,rabbit_exchange_type_topic,mnesia,
+           mnesia_lib,rpc,mnesia_tm,qlc,sofs,proplists,credit_flow,pmon,
+           ssl_connection,tls_connection,ssl_record,tls_record,gen_fsm,ssl]},
+      {lager_default_file,"/var/log/rabbitmq/rabbit@controller.log"},
+      {lager_extra_sinks,
+          [rabbit_log_lager_event,rabbit_log_channel_lager_event,
+           rabbit_log_connection_lager_event,rabbit_log_ldap_lager_event,
+           rabbit_log_mirroring_lager_event,rabbit_log_queue_lager_event,
+           rabbit_log_ra_lager_event,rabbit_log_federation_lager_event,
+           rabbit_log_shovel_lager_event,rabbit_log_upgrade_lager_event]},
+      {lager_log_root,"/var/log/rabbitmq"},
+      {lager_upgrade_file,"/var/log/rabbitmq/rabbit@controller_upgrade.log"},
+      {lazy_queue_explicit_gc_run_operation_threshold,1000},
+      {log,
+          [{file,[{file,"/var/log/rabbitmq/rabbit@controller.log"}]},
+           {categories,
+               [{upgrade,
+                    [{file,
+                         "/var/log/rabbitmq/rabbit@controller_upgrade.log"}]}]}]},
+      {loopback_users,[<<"guest">>]},
+      {max_message_size,134217728},
+      {memory_monitor_interval,2500},
+      {mirroring_flow_control,true},
+      {mirroring_sync_batch_size,4096},
+      {mnesia_table_loading_retry_limit,10},
+      {mnesia_table_loading_retry_timeout,30000},
+      {msg_store_credit_disc_bound,{4000,800}},
+      {msg_store_file_size_limit,16777216},
+      {msg_store_index_module,rabbit_msg_store_ets_index},
+      {msg_store_io_batch_size,4096},
+      {num_ssl_acceptors,10},
+      {num_tcp_acceptors,10},
+      {password_hashing_module,rabbit_password_hashing_sha256},
+      {plugins_dir,
+          "/usr/lib/rabbitmq/plugins:/usr/lib/rabbitmq/lib/rabbitmq_server-3.8.2/plugins"},
+      {plugins_expand_dir,
+          "/var/lib/rabbitmq/mnesia/rabbit@controller-plugins-expand"},
+      {proxy_protocol,false},
+      {queue_explicit_gc_run_operation_threshold,1000},
+      {queue_index_embed_msgs_below,4096},
+      {queue_index_max_journal_entries,32768},
+      {quorum_cluster_size,5},
+      {quorum_commands_soft_limit,256},
+      {reverse_dns_lookups,false},
+      {server_properties,[]},
+      {ssl_allow_poodle_attack,false},
+      {ssl_apps,[asn1,crypto,public_key,ssl]},
+      {ssl_cert_login_from,distinguished_name},
+      {ssl_handshake_timeout,5000},
+      {ssl_listeners,[]},
+      {ssl_options,[]},
+      {tcp_listen_options,
+          [{backlog,128},
+           {nodelay,true},
+           {linger,{true,0}},
+           {exit_on_close,false}]},
+      {tcp_listeners,[5672]},
+      {trace_vhosts,[]},
+      {vhost_restart_strategy,continue},
+      {vm_memory_calculation_strategy,rss},
+      {vm_memory_high_watermark,0.4},
+      {vm_memory_high_watermark_paging_ratio,0.5}]},
+ {rabbit_common,[]},
+ {ranch,[]},
+ {recon,[]},
+ {sasl,[{errlog_type,error},{sasl_error_logger,false}]},
+ {ssl,[]},
+ {stdlib,[]},
+ {stdout_formatter,[]},
+ {syntax_tools,[]},
+ {sysmon_handler,
+     [{busy_dist_port,true},
+      {busy_port,false},
+      {gc_ms_limit,0},
+      {heap_word_limit,0},
+      {port_limit,100},
+      {process_limit,100},
+      {schedule_ms_limit,0}]},
+ {tools,[{file_util_search_methods,[{[],[]},{"ebin","esrc"},{"ebin","src"}]}]},
+ {xmerl,[]}]
+
+Listing connections ...
+
+Listing channels ...
+
+Command line arguments of node rabbit@controller ...
+[{root,["/usr/lib/erlang"]},
+ {progname,["erl"]},
+ {home,["/var/lib/rabbitmq"]},
+ {pa,["/usr/lib/rabbitmq/lib/rabbitmq_server-3.8.2/ebin",[]]},
+ {noshell,[]},
+ {noinput,[]},
+ {sname,["rabbit@controller"]},
+ {boot,["start_sasl"]},
+ {kernel,["inet_default_connect_options","[{nodelay,true}]"]},
+ {sasl,["errlog_type","error"]},
+ {sasl,["sasl_error_logger","false"]},
+ {rabbit,["lager_log_root","\"/var/log/rabbitmq\""]},
+ {rabbit,["lager_default_file","\"/var/log/rabbitmq/rabbit@controller.log\""]},
+ {rabbit,["lager_upgrade_file",
+          "\"/var/log/rabbitmq/rabbit@controller_upgrade.log\""]},
+ {rabbit,["feature_flags_file",
+          "\"/var/lib/rabbitmq/mnesia/rabbit@controller-feature_flags\""]},
+ {rabbit,["enabled_plugins_file","\"/etc/rabbitmq/enabled_plugins\""]},
+ {rabbit,["plugins_dir",
+          "\"/usr/lib/rabbitmq/plugins:/usr/lib/rabbitmq/lib/rabbitmq_server-3.8.2/plugins\""]},
+ {rabbit,["plugins_expand_dir",
+          "\"/var/lib/rabbitmq/mnesia/rabbit@controller-plugins-expand\""]},
+ {os_mon,["start_cpu_sup","false"]},
+ {os_mon,["start_disksup","false"]},
+ {os_mon,["start_memsup","false"]},
+ {mnesia,["dir","\"/var/lib/rabbitmq/mnesia/rabbit@controller\""]},
+ {ra,["data_dir","\"/var/lib/rabbitmq/mnesia/rabbit@controller/quorum\""]},
+ {kernel,["inet_dist_listen_min","25672"]},
+ {kernel,["inet_dist_listen_max","25672"]}]
+
+Timeout: 60.0 seconds ...
+Listing queues for vhost / ...
+
+Listing exchanges for vhost / ...
+name	type	durable	auto_delete	internal	arguments	policy
+amq.match	headers	true	false	false	[]	
+amq.rabbitmq.trace	topic	true	false	true	[]	
+amq.topic	topic	true	false	false	[]	
+amq.fanout	fanout	true	false	false	[]	
+amq.headers	headers	true	false	false	[]	
+amq.direct	direct	true	false	false	[]	
+	direct	true	false	false	[]	
+
+Listing bindings for vhost /...
+
+Listing permissions for vhost "/" ...
+user	configure	write	read
+guest	.*	.*	.*
+
+Listing policies for vhost "/" ...
+
+
+Listing global runtime parameters ...
+name	value
+cluster_name	"rabbit@controller"
+
+Listing runtime parameters for vhost "/" ...
+
+---------------------------------------------------------------
+Adding openstack user to messaging service.
+Adding user "openstack" ...
+Permitting configuration, write and read access for the openstack user.
+Setting permissions for user "openstack" in vhost "/" ...
