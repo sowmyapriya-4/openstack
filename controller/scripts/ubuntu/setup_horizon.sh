@@ -96,19 +96,12 @@ iniset_sudo_no_section $conf "OPENSTACK_KEYSTONE_DEFAULT_ROLE" '"user"'
 
 # Here, we would disable layer-3 networking servies for networking option 1.
 
-echo "Setting timezone to UTC."
-iniset_sudo_no_section $conf "TIME_ZONE" '"UTC"'
+echo "Setting timezone to Asia/Kolkata."
+iniset_sudo_no_section $conf "TIME_ZONE" '"Asia/Kolkata"'
 
 conf=/etc/apache2/conf-available/openstack-dashboard.conf
 echo "Verifying presence of 'WSGIApplicationGroup %{GLOBAL}'."
 grep "WSGIApplicationGroup %{GLOBAL}" $conf
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Customize Horizon (not in install-guide)
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-echo "Removing default Ubuntu theme."
-sudo apt remove --auto-remove -y openstack-dashboard-ubuntu-theme
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Reduce memory usage (not in install-guide)
