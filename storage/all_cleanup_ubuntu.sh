@@ -17,6 +17,6 @@ sudo rm -rf /home/stack/log/* /etc/ceilometer /etc/barbican /etc/gnocchi /etc/he
 	   /var/log/neutron /var/log/nova /var/log/placement /var/log/rabbitmq  /var/log/cinder /var/log/ceilometer
 
 sudo rm -rf /var/lib/swift /var/lib/gnocchi /var/lib/heat /var/lib/ceilometer /var/lib/barbican /tmp/*  /etc/openstack-dashboard/ /etc/openvswitch/
-sudo rm -rf /var/log/*.lsl
+sudo rm -rf /var/log/*.lsl /etc/apache2 /etc/rsyncd.conf
 sudo sed -i "s/^net.*$//g" /etc/sysctl.conf
 sudo apt autoremove

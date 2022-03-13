@@ -67,6 +67,7 @@ openstack endpoint create \
 echo "Installing swift."
 sudo apt install -y swift swift-account swift-container swift-object xfsprogs python3-swift python3-swiftclient \
        python3-keystoneclient python3-keystonemiddleware
+sudo apt install -y swift-proxy python3-memcache
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Obtain the proxy service configuration file from the Object Storage repository

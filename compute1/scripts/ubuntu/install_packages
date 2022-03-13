@@ -1,0 +1,13 @@
+sudo apt update -y
+sudo apt install -y debconf-utils
+sudo apt install -y qemu python3-rtslib-fb
+sudo apt install -y lvm2 thin-provisioning-tools
+sudo apt install -y cinder-volume
+sudo apt install -y neutron-linuxbridge-agent
+sudo apt install -y nova-compute nova-compute-qemu
+sudo apt install -y swift swift-account swift-container swift-object xfsprogs python3-swift \
+sudo apt install -y git python-pip virtualenv
+sudo apt install -y libmysqlclient-dev
+sudo apt -y dist-upgrade
+sudo apt -y autoremove
+sudo apt -y clean

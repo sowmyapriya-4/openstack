@@ -14,12 +14,7 @@ indicate_current_auto
 
 #------------------------------------------------------------------------------
 # Install and configure controller node
-# https://docs.openstack.org/neutron/train/install/controller-install-ubuntu.html
 #------------------------------------------------------------------------------
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Prerequisites
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 echo "Setting up database for neutron."
 setup_database neutron "$NEUTRON_DB_USER" "$NEUTRON_DBPASS"

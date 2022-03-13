@@ -10,7 +10,6 @@ indicate_current_auto
 
 #------------------------------------------------------------------------------
 # Create the provier (external) network and a subnet on it
-# https://docs.openstack.org/install-guide/launch-instance-networks-provider.html
 #------------------------------------------------------------------------------
 
 echo "Sourcing the admin credentials."

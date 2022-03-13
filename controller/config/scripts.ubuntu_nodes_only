@@ -23,4 +23,4 @@ cmd snapshot_cycle -n compute1 compute1_node_init
 #==============================================================================
 # Both nodes are built, boot them
 cmd boot -n controller
-cmd boot -n compute1
+cmd boot -n compute

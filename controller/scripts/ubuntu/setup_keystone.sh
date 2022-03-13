@@ -94,6 +94,7 @@ fi
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Reduce memory usage (not in install-guide)
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 sudo sed -i --follow-symlinks '/WSGIDaemonProcess/ s/processes=[0-9]*/processes=1/' $conf
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -114,7 +115,6 @@ export OS_IDENTITY_API_VERSION=3
 
 #------------------------------------------------------------------------------
 # Create a domain, projects, users, and roles
-# https://docs.openstack.org/keystone/train/install/keystone-users-ubuntu.html
 #------------------------------------------------------------------------------
 
 # Wait for keystone to come up
@@ -151,7 +151,6 @@ openstack role add \
 
 #------------------------------------------------------------------------------
 # Verify operation
-# https://docs.openstack.org/keystone/train/install/keystone-verify-ubuntu.html
 #------------------------------------------------------------------------------
 
 echo "Verifying keystone installation."

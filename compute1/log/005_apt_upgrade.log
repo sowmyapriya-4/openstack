@@ -1,0 +1,74 @@
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following package was automatically installed and is no longer required:
+  libfwupdplugin1
+Use 'sudo apt autoremove' to remove it.
+The following NEW packages will be installed:
+  libfwupdplugin5 libmbim-glib4 libmbim-proxy libmm-glib0 libqmi-glib5
+  libqmi-proxy modemmanager usb-modeswitch usb-modeswitch-data
+The following packages will be upgraded:
+  alsa-ucm-conf fwupd fwupd-signed libfwupd2 libjcat1 open-vm-tools openssl
+  python3-openssl python3-urllib3 sosreport
+10 upgraded, 9 newly installed, 0 to remove and 0 not upgraded.
+Need to get 6,318 kB of archives.
+After this operation, 12.3 MB of additional disk space will be used.
+Get:1 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-openssl all 20.0.1-1~cloud0 [53.8 kB]
+Get:2 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-urllib3 all 1.26.2-1ubuntu1~cloud0 [114 kB]
+Err:3 http://in.archive.ubuntu.com/ubuntu focal-updates/universe amd64 open-vm-tools amd64 2:11.3.0-2ubuntu0~ubuntu20.04.2
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable) Could not connect to in.archive.ubuntu.com:80 (43.255.166.254), connection timed out
+Err:4 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 openssl amd64 1.1.1f-1ubuntu2.11
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:5 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 alsa-ucm-conf all 1.2.2-1ubuntu0.12
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:6 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 fwupd-signed amd64 1.27.1ubuntu7+1.2-2~20.04.1
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:7 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 libjcat1 amd64 0.1.4-0ubuntu0.20.04.1
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:8 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 libfwupd2 amd64 1.7.5-3~20.04.1
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:9 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 libfwupdplugin5 amd64 1.7.5-3~20.04.1
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:10 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 libmm-glib0 amd64 1.16.6-2~20.04.1
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:11 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 libmbim-glib4 amd64 1.24.8-1~20.04
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:12 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 libmbim-proxy amd64 1.24.8-1~20.04
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:13 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 libqmi-glib5 amd64 1.28.6-1~20.04.1
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:14 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 libqmi-proxy amd64 1.28.6-1~20.04.1
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:15 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 fwupd amd64 1.7.5-3~20.04.1
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:16 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 modemmanager amd64 1.16.6-2~20.04.1
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:17 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 sosreport amd64 4.3-1ubuntu0.20.04.1
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:18 http://in.archive.ubuntu.com/ubuntu focal/main amd64 usb-modeswitch-data all 20191128-3
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:19 http://in.archive.ubuntu.com/ubuntu focal/main amd64 usb-modeswitch amd64 2.5.2+repack0-2ubuntu3
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Fetched 167 kB in 30s (5,523 B/s)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/universe/o/open-vm-tools/open-vm-tools_11.3.0-2ubuntu0~ubuntu20.04.2_amd64.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable) Could not connect to in.archive.ubuntu.com:80 (43.255.166.254), connection timed out
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.11_amd64.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/a/alsa-ucm-conf/alsa-ucm-conf_1.2.2-1ubuntu0.12_all.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/f/fwupd-signed/fwupd-signed_1.27.1ubuntu7+1.2-2~20.04.1_amd64.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libj/libjcat/libjcat1_0.1.4-0ubuntu0.20.04.1_amd64.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/f/fwupd/libfwupd2_1.7.5-3~20.04.1_amd64.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/f/fwupd/libfwupdplugin5_1.7.5-3~20.04.1_amd64.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/m/modemmanager/libmm-glib0_1.16.6-2~20.04.1_amd64.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libm/libmbim/libmbim-glib4_1.24.8-1~20.04_amd64.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libm/libmbim/libmbim-proxy_1.24.8-1~20.04_amd64.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libq/libqmi/libqmi-glib5_1.28.6-1~20.04.1_amd64.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libq/libqmi/libqmi-proxy_1.28.6-1~20.04.1_amd64.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/f/fwupd/fwupd_1.7.5-3~20.04.1_amd64.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/m/modemmanager/modemmanager_1.16.6-2~20.04.1_amd64.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/s/sosreport/sosreport_4.3-1ubuntu0.20.04.1_amd64.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/u/usb-modeswitch-data/usb-modeswitch-data_20191128-3_all.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/u/usb-modeswitch/usb-modeswitch_2.5.2+repack0-2ubuntu3_amd64.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?

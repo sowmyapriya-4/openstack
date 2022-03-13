@@ -1,20 +1,19 @@
 
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
-Hit:1 http://in.archive.ubuntu.com/ubuntu focal InRelease
-Get:2 http://in.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
-Get:3 http://in.archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
-Get:4 http://in.archive.ubuntu.com/ubuntu focal-security InRelease [114 kB]
-Hit:5 https://mirrors.bkns.vn/mariadb/repo/10.6/ubuntu focal InRelease
-Get:6 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby InRelease [8,769 B]
+Get:1 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby InRelease [8,769 B]
+Hit:2 https://mirrors.bkns.vn/mariadb/repo/10.6/ubuntu focal InRelease
+Hit:3 http://in.archive.ubuntu.com/ubuntu focal InRelease
+Get:4 http://in.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:5 http://in.archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:6 http://in.archive.ubuntu.com/ubuntu focal-security InRelease [114 kB]
 Get:7 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1,641 kB]
 Get:8 http://in.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [909 kB]
-Get:9 http://in.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [23.8 kB]
-Fetched 2,919 kB in 2s (1,400 kB/s)
+Fetched 2,895 kB in 6s (474 kB/s)
 Reading package lists...
 Building dependency tree...
 Reading state information...
-All packages are up to date.
+10 packages can be upgraded. Run 'apt list --upgradable' to see them.
 Installing packages needed for add-apt-repository.
 
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
@@ -23,7 +22,7 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 software-properties-common is already the newest version (0.99.9.8).
-0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+0 upgraded, 0 newly installed, 0 to remove and 10 not upgraded.
 Adding cloud repo: cloud-archive:wallaby
  Ubuntu Cloud Archive for OpenStack Wallaby
  More info: https://wiki.ubuntu.com/OpenStack/CloudArchive
@@ -32,14 +31,23 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 ubuntu-cloud-keyring is already the newest version (2020.02.11.4).
-0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Hit:1 http://in.archive.ubuntu.com/ubuntu focal InRelease
-Hit:2 http://in.archive.ubuntu.com/ubuntu focal-updates InRelease
-Hit:3 http://in.archive.ubuntu.com/ubuntu focal-backports InRelease
-Hit:4 http://in.archive.ubuntu.com/ubuntu focal-security InRelease
-Hit:5 https://mirrors.bkns.vn/mariadb/repo/10.6/ubuntu focal InRelease
-Hit:6 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby InRelease
+0 upgraded, 0 newly installed, 0 to remove and 10 not upgraded.
+Hit:1 https://mirrors.bkns.vn/mariadb/repo/10.6/ubuntu focal InRelease
+Hit:2 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby InRelease
+Err:3 http://in.archive.ubuntu.com/ubuntu focal InRelease
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable) Could not connect to in.archive.ubuntu.com:80 (43.255.166.254), connection timed out
+Err:4 http://in.archive.ubuntu.com/ubuntu focal-updates InRelease
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:5 http://in.archive.ubuntu.com/ubuntu focal-backports InRelease
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:6 http://in.archive.ubuntu.com/ubuntu focal-security InRelease
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
 Reading package lists...
+W: Failed to fetch http://in.archive.ubuntu.com/ubuntu/dists/focal/InRelease  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable) Could not connect to in.archive.ubuntu.com:80 (43.255.166.254), connection timed out
+W: Failed to fetch http://in.archive.ubuntu.com/ubuntu/dists/focal-updates/InRelease  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+W: Failed to fetch http://in.archive.ubuntu.com/ubuntu/dists/focal-backports/InRelease  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+W: Failed to fetch http://in.archive.ubuntu.com/ubuntu/dists/focal-security/InRelease  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+W: Some index files failed to download. They have been ignored, or old ones used instead.
 
 WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
 
@@ -47,11 +55,11 @@ Hit:1 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby InR
 Reading package lists...
 Building dependency tree...
 Reading state information...
-All packages are up to date.
+2 packages can be upgraded. Run 'apt list --upgradable' to see them.
 # Repo Created by Ram N Sangwan
 deb [arch=amd64,arm64,ppc64el] https://mirrors.bkns.vn/mariadb/repo/10.6/ubuntu focal main
 Warning: apt-key output should not be parsed (stdout is not a terminal)
-Executing: /tmp/apt-key-gpghome.qUOl4T3xhW/gpg.1.sh --fetch-keys https://mariadb.org/mariadb_release_signing_key.asc
+Executing: /tmp/apt-key-gpghome.vA85jUzyZB/gpg.1.sh --fetch-keys https://mariadb.org/mariadb_release_signing_key.asc
 gpg: requesting key from 'https://mariadb.org/mariadb_release_signing_key.asc'
 gpg: key F1656F24C74CD1D8: "MariaDB Signing Key <signing-key@mariadb.org>" not changed
 gpg: Total number processed: 1
@@ -77,98 +85,33 @@ Suggested packages:
 The following NEW packages will be installed:
   ieee-data libpaper-utils libpaper1 python3-cmd2 python3-pyparsing
   python3-pyperclip python3-wcwidth sgml-base xml-core
-0 upgraded, 9 newly installed, 0 to remove and 0 not upgraded.
+0 upgraded, 9 newly installed, 0 to remove and 10 not upgraded.
 Need to get 1,786 kB of archives.
 After this operation, 11.3 MB of additional disk space will be used.
-Do you want to continue? [Y/n] Get:1 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-pyperclip all 1.7.0-1 [10.5 kB]
-Get:2 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-wcwidth all 0.1.8+dfsg1-3 [17.4 kB]
-Get:3 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-cmd2 all 0.8.5-2.1 [49.6 kB]
-Get:4 http://in.archive.ubuntu.com/ubuntu focal/main amd64 sgml-base all 1.29.1 [12.4 kB]
-Get:5 http://in.archive.ubuntu.com/ubuntu focal/main amd64 ieee-data all 20180805.1 [1,589 kB]
-Get:6 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libpaper1 amd64 1.1.28 [13.0 kB]
-Get:7 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libpaper-utils amd64 1.1.28 [8,400 B]
-Get:8 http://in.archive.ubuntu.com/ubuntu focal/main amd64 xml-core all 0.18+nmu1 [21.6 kB]
-Get:9 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-pyparsing all 2.4.7-1~cloud0 [64.6 kB]
-Preconfiguring packages ...
-Fetched 1,786 kB in 2s (996 kB/s)
-Selecting previously unselected package python3-pyparsing.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 108007 files and directories currently installed.)
-Preparing to unpack .../0-python3-pyparsing_2.4.7-1~cloud0_all.deb ...
-Unpacking python3-pyparsing (2.4.7-1~cloud0) ...
-Selecting previously unselected package python3-pyperclip.
-Preparing to unpack .../1-python3-pyperclip_1.7.0-1_all.deb ...
-Unpacking python3-pyperclip (1.7.0-1) ...
-Selecting previously unselected package python3-wcwidth.
-Preparing to unpack .../2-python3-wcwidth_0.1.8+dfsg1-3_all.deb ...
-Unpacking python3-wcwidth (0.1.8+dfsg1-3) ...
-Selecting previously unselected package python3-cmd2.
-Preparing to unpack .../3-python3-cmd2_0.8.5-2.1_all.deb ...
-Unpacking python3-cmd2 (0.8.5-2.1) ...
-Selecting previously unselected package sgml-base.
-Preparing to unpack .../4-sgml-base_1.29.1_all.deb ...
-Unpacking sgml-base (1.29.1) ...
-Selecting previously unselected package ieee-data.
-Preparing to unpack .../5-ieee-data_20180805.1_all.deb ...
-Unpacking ieee-data (20180805.1) ...
-Selecting previously unselected package libpaper1:amd64.
-Preparing to unpack .../6-libpaper1_1.1.28_amd64.deb ...
-Unpacking libpaper1:amd64 (1.1.28) ...
-Selecting previously unselected package libpaper-utils.
-Preparing to unpack .../7-libpaper-utils_1.1.28_amd64.deb ...
-Unpacking libpaper-utils (1.1.28) ...
-Selecting previously unselected package xml-core.
-Preparing to unpack .../8-xml-core_0.18+nmu1_all.deb ...
-Unpacking xml-core (0.18+nmu1) ...
-Setting up libpaper1:amd64 (1.1.28) ...
-Setting up python3-pyperclip (1.7.0-1) ...
-Setting up libpaper-utils (1.1.28) ...
-Setting up python3-wcwidth (0.1.8+dfsg1-3) ...
-Setting up python3-pyparsing (2.4.7-1~cloud0) ...
-Setting up python3-cmd2 (0.8.5-2.1) ...
-Setting up ieee-data (20180805.1) ...
-Setting up sgml-base (1.29.1) ...
-Setting up xml-core (0.18+nmu1) ...
-Processing triggers for man-db (2.9.1-1) ...
-Processing triggers for libc-bin (2.31-0ubuntu9.7) ...
-Processing triggers for sgml-base (1.29.1) ...
-
-WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
-
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following additional packages will be installed:
-  python3-lxml python3-soupsieve python3-tz python3-webencodings
-Suggested packages:
-  python3-genshi python3-lxml-dbg python-lxml-doc python3-beaker
-  python-mako-doc ipython3 python-netaddr-docs python-os-service-types-doc
-The following NEW packages will be installed:
-  python-babel-localedata python3-appdirs python3-babel python3-bs4
-  python3-crypto python3-decorator python3-html5lib python3-lxml python3-mako
-  python3-monotonic python3-netaddr python3-os-service-types python3-roman
-  python3-soupsieve python3-tz python3-webencodings
-0 upgraded, 16 newly installed, 0 to remove and 0 not upgraded.
-Need to get 7,330 kB of archives.
-After this operation, 36.9 MB of additional disk space will be used.
-Do you want to continue? [Y/n] Get:1 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-appdirs all 1.4.3-2.1 [10.8 kB]
-Err:2 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-soupsieve all 1.9.5+dfsg-1
-  400  Bad Request [IP: 43.255.166.254 80]
-Get:3 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-bs4 all 4.8.2-1 [83.0 kB]
-Err:4 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-crypto amd64 2.6.1-13ubuntu2
-  400  Bad Request [IP: 43.255.166.254 80]
-Get:5 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-decorator all 4.4.2-0ubuntu1 [10.3 kB]
-Get:6 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-webencodings all 0.5.1-1ubuntu1 [11.0 kB]
-Get:7 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-html5lib all 1.0.1-2 [84.3 kB]
-Get:8 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-mako all 1.1.0+ds1-1ubuntu2 [59.1 kB]
-Get:9 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-monotonic all 1.5-0ubuntu2 [5,660 B]
-Get:10 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-netaddr all 0.7.19-3ubuntu1 [236 kB]
-Get:11 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-os-service-types all 1.7.0-0ubuntu1 [13.1 kB]
-Get:12 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-roman all 2.0.0-3build1 [8,728 B]
-Get:13 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python-babel-localedata all 2.8.0+dfsg.1-6ubuntu0.1~cloud0 [4,988 kB]
-Get:14 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-tz all 2021.1-1~cloud0 [34.9 kB]
-Get:15 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-babel all 2.8.0+dfsg.1-6ubuntu0.1~cloud0 [90.0 kB]
-Get:16 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-lxml amd64 4.6.3-1~cloud0 [1,429 kB]
-Fetched 7,064 kB in 18s (386 kB/s)
-E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/s/soupsieve/python3-soupsieve_1.9.5+dfsg-1_all.deb  400  Bad Request [IP: 43.255.166.254 80]
-E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/p/python-crypto/python3-crypto_2.6.1-13ubuntu2_amd64.deb  400  Bad Request [IP: 43.255.166.254 80]
+Do you want to continue? [Y/n] Get:1 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-pyparsing all 2.4.7-1~cloud0 [64.6 kB]
+Err:2 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-pyperclip all 1.7.0-1
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable) Could not connect to in.archive.ubuntu.com:80 (43.255.166.254), connection timed out
+Err:3 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-wcwidth all 0.1.8+dfsg1-3
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:4 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-cmd2 all 0.8.5-2.1
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:5 http://in.archive.ubuntu.com/ubuntu focal/main amd64 sgml-base all 1.29.1
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:6 http://in.archive.ubuntu.com/ubuntu focal/main amd64 ieee-data all 20180805.1
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:7 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libpaper1 amd64 1.1.28
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:8 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libpaper-utils amd64 1.1.28
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:9 http://in.archive.ubuntu.com/ubuntu focal/main amd64 xml-core all 0.18+nmu1
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Fetched 64.6 kB in 30s (2,130 B/s)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/p/python-pyperclip/python3-pyperclip_1.7.0-1_all.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable) Could not connect to in.archive.ubuntu.com:80 (43.255.166.254), connection timed out
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/w/wcwidth/python3-wcwidth_0.1.8+dfsg1-3_all.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/c/cmd2/python3-cmd2_0.8.5-2.1_all.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/s/sgml-base/sgml-base_1.29.1_all.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/i/ieee-data/ieee-data_20180805.1_all.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libp/libpaper/libpaper1_1.1.28_amd64.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libp/libpaper/libpaper-utils_1.1.28_amd64.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/x/xml-core/xml-core_0.18+nmu1_all.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
 E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?

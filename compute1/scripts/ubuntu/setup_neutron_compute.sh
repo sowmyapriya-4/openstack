@@ -15,7 +15,6 @@ indicate_current_auto
 
 #------------------------------------------------------------------------------
 # Install and configure compute node
-# https://docs.openstack.org/neutron/train/install/compute-install-ubuntu.html
 #------------------------------------------------------------------------------
 
 echo "Installing networking components for compute node."

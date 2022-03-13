@@ -112,7 +112,6 @@ sudo service glance-api restart
 
 #------------------------------------------------------------------------------
 # Verify the Image Service installation
-# https://docs.openstack.org/glance/train/install/verify.html
 #------------------------------------------------------------------------------
 
 echo -n "Waiting for glance to start."

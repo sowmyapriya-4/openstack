@@ -15,14 +15,13 @@ indicate_current_auto
 
 #------------------------------------------------------------------------------
 # Install and configure a storage node
-# https://docs.openstack.org/cinder/train/install/cinder-storage-install-ubuntu.html
 #------------------------------------------------------------------------------
 
 MY_MGMT_IP=$(get_node_ip_in_network "$(hostname)" "mgmt")
 echo "IP address of this node's interface in management network: $MY_MGMT_IP."
 
 echo "Installing qemu support package for non-raw image types."
-sudo apt install -y qemu python3-rtslib-fb
+sudo apt install -y qemu
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Prerequisites
@@ -167,8 +166,6 @@ check_cinder_services
 
 #------------------------------------------------------------------------------
 # Verify the Block Storage installation
-# https://docs.openstack.org/install-guide/launch-instance-cinder.html
-# (partial implementation without instance)
 #------------------------------------------------------------------------------
 
 echo "Sourcing the demo credentials."

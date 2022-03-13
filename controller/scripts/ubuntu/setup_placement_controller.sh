@@ -14,7 +14,6 @@ indicate_current_auto
 
 #------------------------------------------------------------------------------
 # Install Placement services
-# https://docs.openstack.org/placement/train/install/install-ubuntu.html
 #------------------------------------------------------------------------------
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -108,7 +107,6 @@ sudo service apache2 restart
 
 #------------------------------------------------------------------------------
 # Verify the Placement controller installation
-# https://docs.openstack.org/placement/train/install/verify.html
 #------------------------------------------------------------------------------
 
 echo "Sourcing the admin credentials."
@@ -117,12 +115,13 @@ source "$CONFIG_DIR/admin-openstackrc.sh"
 # Wait for keystone to come up
 wait_for_keystone
 
-# XXX difference to install-guide: root privileges seem to be needed for the
-#     placement-status upgrade check
+# difference to install-guide: root privileges seem to be needed for the
+# placement-status upgrade check
 echo "Performing status check."
 sudo placement-status upgrade check
 
-# XXX not in the install-guide: install and use python3-pip (not python2)
+#  not in the install-guide: install and use python3-pip (not python2)
+
 echo "Installing python3-pip."
 sudo apt install -y python3-pip
 

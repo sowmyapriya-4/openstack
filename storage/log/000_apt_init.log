@@ -1,0 +1,114 @@
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Get:1 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby InRelease [8,769 B]
+Hit:2 https://mirrors.bkns.vn/mariadb/repo/10.6/ubuntu focal InRelease
+Err:3 http://in.archive.ubuntu.com/ubuntu focal InRelease
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable) Could not connect to in.archive.ubuntu.com:80 (43.255.166.254), connection timed out
+Err:4 http://in.archive.ubuntu.com/ubuntu focal-updates InRelease
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:5 http://in.archive.ubuntu.com/ubuntu focal-backports InRelease
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:6 http://in.archive.ubuntu.com/ubuntu focal-security InRelease
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Fetched 8,769 B in 30s (288 B/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+W: Failed to fetch http://in.archive.ubuntu.com/ubuntu/dists/focal/InRelease  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable) Could not connect to in.archive.ubuntu.com:80 (43.255.166.254), connection timed out
+W: Failed to fetch http://in.archive.ubuntu.com/ubuntu/dists/focal-updates/InRelease  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+W: Failed to fetch http://in.archive.ubuntu.com/ubuntu/dists/focal-backports/InRelease  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+W: Failed to fetch http://in.archive.ubuntu.com/ubuntu/dists/focal-security/InRelease  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+Installing packages needed for add-apt-repository.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+software-properties-common is already the newest version (0.99.9.8).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Adding cloud repo: cloud-archive:wallaby
+ Ubuntu Cloud Archive for OpenStack Wallaby
+ More info: https://wiki.ubuntu.com/OpenStack/CloudArchive
+Press [ENTER] to continue or Ctrl-c to cancel adding it.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ubuntu-cloud-keyring is already the newest version (2020.02.11.4).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Hit:1 https://mirrors.bkns.vn/mariadb/repo/10.6/ubuntu focal InRelease
+Hit:2 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby InRelease
+Hit:3 http://in.archive.ubuntu.com/ubuntu focal InRelease
+Get:4 http://in.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:5 http://in.archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:6 http://in.archive.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Fetched 336 kB in 27s (12.3 kB/s)
+Reading package lists...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+# Repo Created by Ram N Sangwan
+deb [arch=amd64,arm64,ppc64el] https://mirrors.bkns.vn/mariadb/repo/10.6/ubuntu focal main
+Warning: apt-key output should not be parsed (stdout is not a terminal)
+Executing: /tmp/apt-key-gpghome.qPFxK4xLlC/gpg.1.sh --fetch-keys https://mariadb.org/mariadb_release_signing_key.asc
+gpg: requesting key from 'https://mariadb.org/mariadb_release_signing_key.asc'
+gpg: key F1656F24C74CD1D8: "MariaDB Signing Key <signing-key@mariadb.org>" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 https://mirrors.bkns.vn/mariadb/repo/10.6/ubuntu focal InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libpaper1 python3-pyperclip sgml-base
+Suggested packages:
+  sgml-base-doc debhelper
+The following NEW packages will be installed:
+  ieee-data libpaper-utils libpaper1 python3-cmd2 python3-pyperclip
+  python3-wcwidth sgml-base xml-core
+0 upgraded, 8 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1,722 kB of archives.
+After this operation, 11.0 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Err:1 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-pyperclip all 1.7.0-1
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable) Could not connect to in.archive.ubuntu.com:80 (43.255.166.254), connection timed out
+Err:2 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-wcwidth all 0.1.8+dfsg1-3
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:3 http://in.archive.ubuntu.com/ubuntu focal/main amd64 python3-cmd2 all 0.8.5-2.1
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:4 http://in.archive.ubuntu.com/ubuntu focal/main amd64 sgml-base all 1.29.1
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:5 http://in.archive.ubuntu.com/ubuntu focal/main amd64 ieee-data all 20180805.1
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:6 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libpaper1 amd64 1.1.28
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:7 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libpaper-utils amd64 1.1.28
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+Err:8 http://in.archive.ubuntu.com/ubuntu focal/main amd64 xml-core all 0.18+nmu1
+  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/p/python-pyperclip/python3-pyperclip_1.7.0-1_all.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable) Could not connect to in.archive.ubuntu.com:80 (43.255.166.254), connection timed out
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/w/wcwidth/python3-wcwidth_0.1.8+dfsg1-3_all.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/c/cmd2/python3-cmd2_0.8.5-2.1_all.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/s/sgml-base/sgml-base_1.29.1_all.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/i/ieee-data/ieee-data_20180805.1_all.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libp/libpaper/libpaper1_1.1.28_amd64.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/libp/libpaper/libpaper-utils_1.1.28_amd64.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/x/xml-core/xml-core_0.18+nmu1_all.deb  Cannot initiate the connection to in.archive.ubuntu.com:80 (2403:8940:3:1::f). - connect (101: Network is unreachable)
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
