@@ -200,7 +200,7 @@ openstack help sfc
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 #/usr/local/bin/tacker-db-manage \
-/home/stack/tacker/venv/bin/tacker-db-manage \
+/home/osbash/tacker/venv/bin/tacker-db-manage \
     --config-file $tacker_conf \
     upgrade head
 
