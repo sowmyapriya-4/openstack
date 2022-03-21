@@ -7,7 +7,7 @@ TOP_DIR=$(cd $(cat "../TOP_DIR" 2>/dev/null||echo $(dirname "$0"))/.. && pwd)
 source "$TOP_DIR/config/paths"
 source "$CONFIG_DIR/credentials"
 source "$LIB_DIR/functions.guest.sh"
-source "$CONFIG_DIR/admin-openstackrc.sh"
+source "$CONFIG_DIR/admin-openrc.sh"
 
 exec_logfile
 
@@ -15,13 +15,8 @@ indicate_current_auto
 
 #------------------------------------------------------------------------------
 # Install and configure a compute node
-# https://docs.openstack.org/nova/train/install/compute-install-ubuntu.html
 #------------------------------------------------------------------------------
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# NOTE We deviate slightly from the install-guide here because inside our VMs,
-#      we cannot use KVM inside VirtualBox.
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 echo "Installing nova for compute node."
 sudo apt install -y nova-compute nova-compute-qemu
 
@@ -62,8 +57,9 @@ iniset_sudo $conf DEFAULT firewall_driver nova.virt.firewall.NoopFirewallDriver
 iniset_sudo $conf vnc enabled true
 iniset_sudo $conf vnc server_listen 0.0.0.0
 iniset_sudo $conf vnc server_proxyclient_address '$my_ip'
-# Using IP address because the host running the browser may not be able to
+
 # resolve the host name "controller"
+
 iniset_sudo $conf vnc novncproxy_base_url http://"$(hostname_to_ip controller)":6080/vnc_auto.html
 
 # Configure [glance] section.
@@ -87,7 +83,6 @@ iniset_sudo $conf placement password "$PLACEMENT_PASS"
 # Finalize installation
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# Configure nova-compute.conf
 conf=/etc/nova/nova-compute.conf
 echo -n "Hardware acceleration for virtualization: "
 if sudo egrep -q '(vmx|svm)' /proc/cpuinfo; then
@@ -100,7 +95,8 @@ fi
 echo "Config: $(sudo grep virt_type $conf)"
 
 echo "Restarting nova services."
-sudo service nova-compute restart
+sudo systemctl restart nova-compute.service
+sudo systemctl enable nova-compute.service
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Add the compute node to the cell database
@@ -108,9 +104,9 @@ sudo service nova-compute restart
 
 echo
 echo -n "Confirming that the compute host is in the database."
-AUTH="source $CONFIG_DIR/admin-openstackrc.sh"
+AUTH="source $CONFIG_DIR/admin-openrc.sh"
 node_ssh controller "$AUTH; openstack compute service list --service nova-compute"
-until node_ssh controller "$AUTH; openstack compute service list --service nova-compute | grep 'compute1.*up'" >/dev/null 2>&1; do
+until node_ssh controller "$AUTH; openstack compute service list --service nova-compute | grep 'compute.*up'" >/dev/null 2>&1; do
     sleep 2
     echo -n .
 done
@@ -118,13 +114,11 @@ node_ssh controller "$AUTH; openstack compute service list --service nova-comput
 
 echo
 echo "Discovering compute hosts."
-echo "Run this command on controller every time compute hosts are added to" \
-     "the cluster."
+echo "Run this command on controller every time compute hosts are added to the cluster."
 node_ssh controller "sudo nova-manage cell_v2 discover_hosts --verbose"
 
 #------------------------------------------------------------------------------
 # Verify operation
-# https://docs.openstack.org/nova/train/install/verify.html
 #------------------------------------------------------------------------------
 
 echo "Verifying operation of the Compute service."

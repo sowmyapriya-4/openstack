@@ -34,37 +34,26 @@ function set_apt_proxy {
 
 set_apt_proxy
 
-# Use repository redirection for faster repository access.
-# The mirror 'archive.ubuntu.com' points to the closest to your location
-# instead of the 'us.archive.ubuntu.com' ones in United States
-sudo sed  -i 's/us.archive.ubuntu.com/archive.ubuntu.com/g' /etc/apt/sources.list
+# sudo sed  -i 's/us.archive.ubuntu.com/archive.ubuntu.com/g' /etc/apt/sources.list
 
 # Get apt index files
 sudo apt update
 
 # ---------------------------------------------------------------------------
 # Enable the OpenStack repository
-# https://docs.openstack.org/install-guide/environment-packages-ubuntu.html
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# NOTE: Using pre-release staging ppa is not documented in install-guide
-# https://launchpad.net/~ubuntu-cloud-archive/+archive/ubuntu/train-staging
 #--------------------------------------------------------------------------
 
 echo "Installing packages needed for add-apt-repository."
 sudo apt -y install software-properties-common
 
 case "$OPENSTACK_RELEASE" in
-    train)
-        REPO=cloud-archive:train
-        SRC_FILE=cloudarchive-train.list
+    wallaby)
+        REPO=cloud-archive:wallaby
+        SRC_FILE=cloudarchive-wallaby.list
         ;;
-    train-proposed)
-        REPO=cloud-archive:train-proposed
-        SRC_FILE=cloudarchive-train-proposed.list
-        ;;
-    train-staging)
-        REPO=ppa:ubuntu-cloud-archive/train-staging
-        SRC_FILE=ubuntu-cloud-archive-ubuntu-train-staging-bionic.list
+    xena)
+        REPO=cloud-archive:xena
+        SRC_FILE=cloudarchive-xena.list
         ;;
     *)
         echo >&2 "Unknown OpenStack release: $OPENSTACK_RELEASE. Aborting."
@@ -89,28 +78,3 @@ fi
 sudo systemctl disable apt-daily.service
 sudo systemctl disable apt-daily.timer
 
-# ---------------------------------------------------------------------------
-# Not in install-guide:
-# Install mariadb-server from upstream repo (mariadb 10.1 shipping with
-# bionic breaks the neutron database upgrade process in OpenStack Train)
-# ---------------------------------------------------------------------------
-
-# Add mariadb repo
-cat << EOF | sudo tee /etc/apt/sources.list.d/mariadb.list
-# bionic mariadb 10.1 breaks neutron DB upgrade process in OpenStack Train
-deb http://downloads.mariadb.com/MariaDB/mariadb-10.3/repo/ubuntu bionic main
-EOF
-
-# Import key required for mariadb
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F1656F24C74CD1D8
-
-# Update apt database for mariadb repo
-sudo apt update \
-    -o Dir::Etc::sourcelist="sources.list.d/mariadb.list" \
-    -o Dir::Etc::sourceparts="-" -o APT::Get::List-Cleanup="0"
-
-# Pre-configure database root password in /var/cache/debconf/passwords.dat
-# (the upstream mariadb-server has socket_auth disabled)
-source "$CONFIG_DIR/credentials"
-echo "mysql-server mysql-server/root_password password $DATABASE_PASSWORD" | sudo debconf-set-selections
-echo "mysql-server mysql-server/root_password_again password $DATABASE_PASSWORD" | sudo debconf-set-selections

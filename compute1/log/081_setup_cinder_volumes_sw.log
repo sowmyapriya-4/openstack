@@ -1,0 +1,31 @@
+Success. Node compute in mgmt: 10.0.0.31.
+IP address of this node's interface in management network: 10.0.0.31.
+Installing qemu support package for non-raw image types.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+tgt is already the newest version (1:1.0.79-2ubuntu1).
+qemu is already the newest version (1:4.2-3ubuntu6.21).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Installing the supporting utility packages.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+lvm2 is already the newest version (2.03.07-1ubuntu1).
+thin-provisioning-tools is already the newest version (0.8.5-4build1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Installing cinder.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+cinder-volume is already the newest version (2:18.1.0-0ubuntu1~cloud0).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.

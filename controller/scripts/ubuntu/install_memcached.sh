@@ -14,11 +14,10 @@ indicate_current_auto
 
 #------------------------------------------------------------------------------
 # Memcached
-# https://docs.openstack.org/install-guide/environment-memcached-ubuntu.html
 #------------------------------------------------------------------------------
 
 echo "Installing memcache packages."
-sudo apt install -y memcached python-memcache
+sudo apt install -y memcached python3-memcache
 
 MGMT_IP=$(get_node_ip_in_network "$(hostname)" "mgmt")
 echo "Binding memcached server to $MGMT_IP."
@@ -26,5 +25,8 @@ echo "Binding memcached server to $MGMT_IP."
 conf=/etc/memcached.conf
 sudo sed -i "s/^-l 127.0.0.1/-l $MGMT_IP/" $conf
 
-echo "Restarting memcache service."
-sudo service memcached restart
+echo "Restarting memcache service and verify."
+sudo systemctl restart memcached
+sudo systemctl enable memcached
+sudo systemctl status memcached
+

@@ -1,0 +1,36 @@
+Installing networking components for compute node.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+neutron-linuxbridge-agent is already the newest version (2:18.1.1-0ubuntu2~cloud0).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Configuring neutron for compute node.
+Configuring /etc/neutron/neutron.conf.
+Configuring RabbitMQ message queue access.
+'/etc/neutron/neutron.conf' -> '/tmp/020_etc_neutron_neutron.conf.iniset'
+iniset /tmp/020_etc_neutron_neutron.conf.iniset DEFAULT transport_url rabbit://openstack:rabbitPass@controller
+'/etc/neutron/neutron.conf' -> '/tmp/021_etc_neutron_neutron.conf.iniset'
+iniset /tmp/021_etc_neutron_neutron.conf.iniset DEFAULT auth_strategy keystone
+'/etc/neutron/neutron.conf' -> '/tmp/022_etc_neutron_neutron.conf.iniset'
+iniset /tmp/022_etc_neutron_neutron.conf.iniset keystone_authtoken www_authenticate_uri http://controller:5000
+'/etc/neutron/neutron.conf' -> '/tmp/023_etc_neutron_neutron.conf.iniset'
+iniset /tmp/023_etc_neutron_neutron.conf.iniset keystone_authtoken auth_url http://controller:5000
+'/etc/neutron/neutron.conf' -> '/tmp/024_etc_neutron_neutron.conf.iniset'
+iniset /tmp/024_etc_neutron_neutron.conf.iniset keystone_authtoken memcached_servers controller:11211
+'/etc/neutron/neutron.conf' -> '/tmp/025_etc_neutron_neutron.conf.iniset'
+iniset /tmp/025_etc_neutron_neutron.conf.iniset keystone_authtoken auth_type password
+'/etc/neutron/neutron.conf' -> '/tmp/026_etc_neutron_neutron.conf.iniset'
+iniset /tmp/026_etc_neutron_neutron.conf.iniset keystone_authtoken project_domain_name default
+'/etc/neutron/neutron.conf' -> '/tmp/027_etc_neutron_neutron.conf.iniset'
+iniset /tmp/027_etc_neutron_neutron.conf.iniset keystone_authtoken user_domain_name default
+'/etc/neutron/neutron.conf' -> '/tmp/028_etc_neutron_neutron.conf.iniset'
+iniset /tmp/028_etc_neutron_neutron.conf.iniset keystone_authtoken project_name service
+'/etc/neutron/neutron.conf' -> '/tmp/029_etc_neutron_neutron.conf.iniset'
+iniset /tmp/029_etc_neutron_neutron.conf.iniset keystone_authtoken username neutron
+'/etc/neutron/neutron.conf' -> '/tmp/030_etc_neutron_neutron.conf.iniset'
+iniset /tmp/030_etc_neutron_neutron.conf.iniset keystone_authtoken password neutronPass
+'/etc/neutron/neutron.conf' -> '/tmp/031_etc_neutron_neutron.conf.iniset'
+iniset /tmp/031_etc_neutron_neutron.conf.iniset oslo_concurrency lock_path /var/lib/neutron/tmp

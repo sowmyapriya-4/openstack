@@ -14,7 +14,6 @@ indicate_current_auto
 
 #------------------------------------------------------------------------------
 # Install the Image Service (glance).
-# https://docs.openstack.org/glance/train/install/install-ubuntu.html
 #------------------------------------------------------------------------------
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -25,7 +24,7 @@ echo "Setting up database for glance."
 setup_database glance "$GLANCE_DB_USER" "$GLANCE_DBPASS"
 
 echo "Sourcing the admin credentials."
-source "$CONFIG_DIR/admin-openstackrc.sh"
+source "$CONFIG_DIR/admin-openrc.sh"
 
 glance_admin_user=glance
 
@@ -63,11 +62,8 @@ openstack endpoint create \
     image admin http://controller:9292
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Install and configure components
+# Configure components
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-echo "Installing glance."
-sudo apt install -y glance
 
 function get_database_url {
     local db_user=$GLANCE_DB_USER
@@ -108,11 +104,11 @@ echo "Creating the database tables for glance."
 sudo glance-manage db_sync
 
 echo "Restarting glance service."
-sudo service glance-api restart
+sudo systemctl restart glance-api
+sudo systemctl enable  glance-api
 
 #------------------------------------------------------------------------------
 # Verify the Image Service installation
-# https://docs.openstack.org/glance/train/install/verify.html
 #------------------------------------------------------------------------------
 
 echo -n "Waiting for glance to start."

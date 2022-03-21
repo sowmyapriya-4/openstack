@@ -21,7 +21,7 @@ echo
 
 echo -n "Waiting for first bridge to show up."
 # Bridge names are something like brq219ddb93-c9
-until [ "$(nmcli connection show | grep -c -o "^brq[a-z0-9-]*")" -gt 0 ]; do
+until [ "$(sudo brctl show | grep -c -o "^brq[a-z0-9-]*")" -gt 0 ]; do
     sleep 1
     echo -n .
 done
@@ -57,14 +57,14 @@ done
 echo
 
 echo -n "Waiting for second bridge."
-until [ "$(nmcli connection show | grep -c -o "^brq[a-z0-9-]*")" -gt 1 ]; do
+until [ "$(sudo brctl show | grep -c -o "^brq[a-z0-9-]*")" -gt 1 ]; do
     sleep 1
     echo -n .
 done
 echo
 
 echo "Bridges are:"
-nmcli connection show
+sudo brctl show
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Create a router
@@ -119,13 +119,16 @@ until ip netns | grep qrouter; do
     echo -n "."
     sleep 1
 done
-nsrouter=$(ip netns | grep qrouter)
+export nsrouter=$(ip netns | grep qrouter)
+echo "$nsrouter Router Found "
 
 echo -n "Waiting for interface qr-* in router namespace."
-until sudo ip netns exec "$nsrouter" ip addr|grep -Po "(?<=: )qr-.*(?=:)"; do
-    echo -n "."
-    sleep 1
-done
+# until sudo ip netns exec $nsrouter ip a|grep -Po "(?<=: )qr-.*(?=:)" ; do
+# sudo ip netns exec $nsrouter ip a|grep -Po "(?<=: )qr-.*(?=:)"
+
+#    echo -n "."
+#    sleep 1
+# done
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 (
 source "$CONFIG_DIR/demo-openstackrc.sh"
@@ -138,10 +141,11 @@ openstack router set router --external-gateway provider
 
 # The following test for qg-* is just for show.
 echo -n "Waiting for interface qg-* in router namespace."
-until sudo ip netns exec "$nsrouter" ip addr|grep -Po "(?<=: )qg-.*(?=:)"; do
-    echo -n "."
-sleep 1
-done
+# until sudo ip netns exec "$nsrouter" ip addr|grep -Po "(?<=: )qg-.*(?=:)"; do
+# sudo ip netns exec "$nsrouter" ip addr|grep -Po "(?<=: )qg-.*(?=:)"
+#    echo -n "."
+#sleep 1
+# done
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Verify operation

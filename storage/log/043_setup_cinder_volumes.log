@@ -1,0 +1,119 @@
+Success. Node storage in mgmt: 10.0.0.41.
+IP address of this node's interface in management network: 10.0.0.41.
+Configuring LVM physical and logical volumes.
+Setting LVM filter line in /etc/lvm/lvm.conf to only allow /dev/sdb.
+Verifying LVM filter.
+	filter = [ "a/sdb/", "r/.*/"]
+Configuring /etc/cinder/cinder.conf.
+Setting database connection: mysql+pymysql://cinder:cinderDBPass@controller/cinder.
+'/etc/cinder/cinder.conf' -> '/tmp/000_etc_cinder_cinder.conf.iniset'
+iniset /tmp/000_etc_cinder_cinder.conf.iniset database connection mysql+pymysql://cinder:cinderDBPass@controller/cinder
+Configuring RabbitMQ message queue access.
+'/etc/cinder/cinder.conf' -> '/tmp/001_etc_cinder_cinder.conf.iniset'
+iniset /tmp/001_etc_cinder_cinder.conf.iniset DEFAULT transport_url rabbit://openstack:rabbitPass@controller
+'/etc/cinder/cinder.conf' -> '/tmp/002_etc_cinder_cinder.conf.iniset'
+iniset /tmp/002_etc_cinder_cinder.conf.iniset DEFAULT auth_strategy keystone
+'/etc/cinder/cinder.conf' -> '/tmp/003_etc_cinder_cinder.conf.iniset'
+iniset /tmp/003_etc_cinder_cinder.conf.iniset keystone_authtoken www_authenticate_uri http://controller:5000
+'/etc/cinder/cinder.conf' -> '/tmp/004_etc_cinder_cinder.conf.iniset'
+iniset /tmp/004_etc_cinder_cinder.conf.iniset keystone_authtoken auth_url http://controller:5000
+'/etc/cinder/cinder.conf' -> '/tmp/005_etc_cinder_cinder.conf.iniset'
+iniset /tmp/005_etc_cinder_cinder.conf.iniset keystone_authtoken memcached_servers controller:11211
+'/etc/cinder/cinder.conf' -> '/tmp/006_etc_cinder_cinder.conf.iniset'
+iniset /tmp/006_etc_cinder_cinder.conf.iniset keystone_authtoken auth_type password
+'/etc/cinder/cinder.conf' -> '/tmp/007_etc_cinder_cinder.conf.iniset'
+iniset /tmp/007_etc_cinder_cinder.conf.iniset keystone_authtoken project_domain_id default
+'/etc/cinder/cinder.conf' -> '/tmp/008_etc_cinder_cinder.conf.iniset'
+iniset /tmp/008_etc_cinder_cinder.conf.iniset keystone_authtoken user_domain_id default
+'/etc/cinder/cinder.conf' -> '/tmp/009_etc_cinder_cinder.conf.iniset'
+iniset /tmp/009_etc_cinder_cinder.conf.iniset keystone_authtoken project_name service
+'/etc/cinder/cinder.conf' -> '/tmp/010_etc_cinder_cinder.conf.iniset'
+iniset /tmp/010_etc_cinder_cinder.conf.iniset keystone_authtoken username cinder
+'/etc/cinder/cinder.conf' -> '/tmp/011_etc_cinder_cinder.conf.iniset'
+iniset /tmp/011_etc_cinder_cinder.conf.iniset keystone_authtoken password cinderPass
+'/etc/cinder/cinder.conf' -> '/tmp/012_etc_cinder_cinder.conf.iniset'
+iniset /tmp/012_etc_cinder_cinder.conf.iniset DEFAULT my_ip 10.0.0.41
+'/etc/cinder/cinder.conf' -> '/tmp/013_etc_cinder_cinder.conf.iniset'
+iniset /tmp/013_etc_cinder_cinder.conf.iniset DEFAULT volume_driver cinder.volume.drivers.lvm.LVMVolumeDriver
+'/etc/cinder/cinder.conf' -> '/tmp/014_etc_cinder_cinder.conf.iniset'
+iniset /tmp/014_etc_cinder_cinder.conf.iniset DEFAULT volume_group cinder-volumes
+'/etc/cinder/cinder.conf' -> '/tmp/015_etc_cinder_cinder.conf.iniset'
+iniset /tmp/015_etc_cinder_cinder.conf.iniset DEFAULT iscsi_protocol iscsi
+'/etc/cinder/cinder.conf' -> '/tmp/016_etc_cinder_cinder.conf.iniset'
+iniset /tmp/016_etc_cinder_cinder.conf.iniset DEFAULT iscsi_helper tgtadm
+'/etc/cinder/cinder.conf' -> '/tmp/017_etc_cinder_cinder.conf.iniset'
+iniset /tmp/017_etc_cinder_cinder.conf.iniset DEFAULT enabled_backends lvm
+'/etc/cinder/cinder.conf' -> '/tmp/018_etc_cinder_cinder.conf.iniset'
+iniset /tmp/018_etc_cinder_cinder.conf.iniset DEFAULT glance_api_servers http://controller:9292
+'/etc/cinder/cinder.conf' -> '/tmp/019_etc_cinder_cinder.conf.iniset'
+iniset /tmp/019_etc_cinder_cinder.conf.iniset oslo_concurrency lock_path /var/lib/cinder/tmp
+Restarting cinder service.
+Synchronizing state of tgt.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable tgt
+Synchronizing state of cinder-volume.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable cinder-volume
+Created symlink /etc/systemd/system/multi-user.target.wants/cinder-volume.service → /lib/systemd/system/cinder-volume.service.
+Verifying Block Storage installation on controller node.
+Sourcing the admin credentials.
+Restarting restarting cinder-scheduler.
+ssh controller sudo systemctl restart cinder-scheduler.service
+Waiting for cinder to start.
+openstack volume service list is available:
+ssh controller source /home/stack/config/admin-openstackrc.sh; openstack volume service list
++------------------+-------------+------+---------+-------+----------------------------+
+| Binary           | Host        | Zone | Status  | State | Updated At                 |
++------------------+-------------+------+---------+-------+----------------------------+
+| cinder-volume    | compute@lvm | nova | enabled | up    | 2022-03-16T12:17:12.000000 |
+| cinder-scheduler | controller  | nova | enabled | up    | 2022-03-16T12:17:11.000000 |
+| cinder-volume    | storage@lvm | nova | enabled | up    | 2022-03-16T12:17:08.000000 |
++------------------+-------------+------+---------+-------+----------------------------+
+Waiting for all cinder services to start..
+All cinder services seem to be up and running.
+ssh controller source /home/stack/config/admin-openstackrc.sh; openstack volume service list
++------------------+-------------+------+---------+-------+----------------------------+
+| Binary           | Host        | Zone | Status  | State | Updated At                 |
++------------------+-------------+------+---------+-------+----------------------------+
+| cinder-volume    | compute@lvm | nova | enabled | up    | 2022-03-16T12:17:12.000000 |
+| cinder-scheduler | controller  | nova | enabled | up    | 2022-03-16T12:17:11.000000 |
+| cinder-volume    | storage@lvm | nova | enabled | up    | 2022-03-16T12:17:08.000000 |
++------------------+-------------+------+---------+-------+----------------------------+
+Sourcing the demo credentials.
+openstack volume create --size 1 volume1
+ssh controller source /home/stack/config/demo-openrc.sh; openstack volume create --size 1 volume1
++---------------------+--------------------------------------+
+| Field               | Value                                |
++---------------------+--------------------------------------+
+| attachments         | []                                   |
+| availability_zone   | nova                                 |
+| bootable            | false                                |
+| consistencygroup_id | None                                 |
+| created_at          | 2022-03-16T12:17:21.585502           |
+| description         | None                                 |
+| encrypted           | False                                |
+| id                  | cd692679-4d81-4ccb-b84f-6642993e3fa2 |
+| multiattach         | False                                |
+| name                | volume1                              |
+| properties          |                                      |
+| replication_status  | None                                 |
+| size                | 1                                    |
+| snapshot_id         | None                                 |
+| source_volid        | None                                 |
+| status              | creating                             |
+| type                | __DEFAULT__                          |
+| updated_at          | None                                 |
+| user_id             | ac97d92b0a03404095d1cf02e7686365     |
++---------------------+--------------------------------------+
+Waiting for cinder to list the new volume.
+Waiting for cinder volume to become available....................
+Volume successfully created:
+ssh controller source /home/stack/config/demo-openrc.sh; openstack volume list
++--------------------------------------+---------+-----------+------+-------------+
+| ID                                   | Name    | Status    | Size | Attached to |
++--------------------------------------+---------+-----------+------+-------------+
+| cd692679-4d81-4ccb-b84f-6642993e3fa2 | volume1 | available |    1 |             |
++--------------------------------------+---------+-----------+------+-------------+
+Deleting volume.
+ssh controller source /home/stack/config/demo-openrc.sh; openstack volume delete volume1
+openstack volume list
+ssh controller source /home/stack/config/demo-openrc.sh; openstack volume list
+

@@ -1,0 +1,16 @@
+Success. Node storage in mgmt: 10.0.0.41.
+IP address of this node's interface in management network: 10.0.0.41.
+Verifying Block Storage installation on controller node.
+Sourcing the admin credentials.
+Restarting restarting cinder-scheduler.
+ssh controller sudo systemctl restart cinder-scheduler.service
+Waiting for cinder to start.
+openstack volume service list is available:
+ssh controller source /home/stack/config/admin-openstackrc.sh; openstack volume service list
++------------------+-------------+------+---------+-------+----------------------------+
+| Binary           | Host        | Zone | Status  | State | Updated At                 |
++------------------+-------------+------+---------+-------+----------------------------+
+| cinder-scheduler | controller  | nova | enabled | up    | 2022-03-17T04:44:19.000000 |
+| cinder-volume    | storage@lvm | nova | enabled | down  | 2022-03-17T04:32:13.000000 |
++------------------+-------------+------+---------+-------+----------------------------+
+Waiting for all cinder services to start.................................

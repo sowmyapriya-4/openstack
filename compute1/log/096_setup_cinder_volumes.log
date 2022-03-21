@@ -1,0 +1,82 @@
+Success. Node compute in mgmt: 10.0.0.31.
+IP address of this node's interface in management network: 10.0.0.31.
+Configuring LVM physical and logical volumes.
+Setting LVM filter line in /etc/lvm/lvm.conf to only allow /dev/sdb.
+Verifying LVM filter.
+        filter = [ "a/sdb/", "r/.*/"]
+        filter = [ "a/sdb/", "r/.*/"]
+Configuring /etc/cinder/cinder.conf.
+Setting database connection: mysql+pymysql://cinder:cinderDBPass@controller/cinder.
+'/etc/cinder/cinder.conf' -> '/tmp/220_etc_cinder_cinder.conf.iniset'
+iniset /tmp/220_etc_cinder_cinder.conf.iniset database connection mysql+pymysql://cinder:cinderDBPass@controller/cinder
+Configuring RabbitMQ message queue access.
+'/etc/cinder/cinder.conf' -> '/tmp/221_etc_cinder_cinder.conf.iniset'
+iniset /tmp/221_etc_cinder_cinder.conf.iniset DEFAULT transport_url rabbit://openstack:rabbitPass@controller
+'/etc/cinder/cinder.conf' -> '/tmp/222_etc_cinder_cinder.conf.iniset'
+iniset /tmp/222_etc_cinder_cinder.conf.iniset DEFAULT auth_strategy keystone
+'/etc/cinder/cinder.conf' -> '/tmp/223_etc_cinder_cinder.conf.iniset'
+iniset /tmp/223_etc_cinder_cinder.conf.iniset keystone_authtoken www_authenticate_uri http://controller:5000
+'/etc/cinder/cinder.conf' -> '/tmp/224_etc_cinder_cinder.conf.iniset'
+iniset /tmp/224_etc_cinder_cinder.conf.iniset keystone_authtoken auth_url http://controller:5000
+'/etc/cinder/cinder.conf' -> '/tmp/225_etc_cinder_cinder.conf.iniset'
+iniset /tmp/225_etc_cinder_cinder.conf.iniset keystone_authtoken memcached_servers controller:11211
+'/etc/cinder/cinder.conf' -> '/tmp/226_etc_cinder_cinder.conf.iniset'
+iniset /tmp/226_etc_cinder_cinder.conf.iniset keystone_authtoken auth_type password
+'/etc/cinder/cinder.conf' -> '/tmp/227_etc_cinder_cinder.conf.iniset'
+iniset /tmp/227_etc_cinder_cinder.conf.iniset keystone_authtoken project_domain_id default
+'/etc/cinder/cinder.conf' -> '/tmp/228_etc_cinder_cinder.conf.iniset'
+iniset /tmp/228_etc_cinder_cinder.conf.iniset keystone_authtoken user_domain_id default
+'/etc/cinder/cinder.conf' -> '/tmp/229_etc_cinder_cinder.conf.iniset'
+iniset /tmp/229_etc_cinder_cinder.conf.iniset keystone_authtoken project_name service
+'/etc/cinder/cinder.conf' -> '/tmp/230_etc_cinder_cinder.conf.iniset'
+iniset /tmp/230_etc_cinder_cinder.conf.iniset keystone_authtoken username cinder
+'/etc/cinder/cinder.conf' -> '/tmp/231_etc_cinder_cinder.conf.iniset'
+iniset /tmp/231_etc_cinder_cinder.conf.iniset keystone_authtoken password cinderPass
+'/etc/cinder/cinder.conf' -> '/tmp/232_etc_cinder_cinder.conf.iniset'
+iniset /tmp/232_etc_cinder_cinder.conf.iniset DEFAULT my_ip 10.0.0.31
+'/etc/cinder/cinder.conf' -> '/tmp/233_etc_cinder_cinder.conf.iniset'
+iniset /tmp/233_etc_cinder_cinder.conf.iniset DEFAULT volume_driver cinder.volume.drivers.lvm.LVMVolumeDriver
+'/etc/cinder/cinder.conf' -> '/tmp/234_etc_cinder_cinder.conf.iniset'
+iniset /tmp/234_etc_cinder_cinder.conf.iniset DEFAULT volume_group cinder-volumes
+'/etc/cinder/cinder.conf' -> '/tmp/235_etc_cinder_cinder.conf.iniset'
+iniset /tmp/235_etc_cinder_cinder.conf.iniset DEFAULT iscsi_protocol iscsi
+'/etc/cinder/cinder.conf' -> '/tmp/236_etc_cinder_cinder.conf.iniset'
+iniset /tmp/236_etc_cinder_cinder.conf.iniset DEFAULT iscsi_helper tgtadm
+'/etc/cinder/cinder.conf' -> '/tmp/237_etc_cinder_cinder.conf.iniset'
+iniset /tmp/237_etc_cinder_cinder.conf.iniset DEFAULT enabled_backends lvm
+'/etc/cinder/cinder.conf' -> '/tmp/238_etc_cinder_cinder.conf.iniset'
+iniset /tmp/238_etc_cinder_cinder.conf.iniset DEFAULT glance_api_servers http://controller:9292
+'/etc/cinder/cinder.conf' -> '/tmp/239_etc_cinder_cinder.conf.iniset'
+iniset /tmp/239_etc_cinder_cinder.conf.iniset oslo_concurrency lock_path /var/lib/cinder/tmp
+Restarting cinder service.
+Synchronizing state of tgt.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable tgt
+Synchronizing state of cinder-volume.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable cinder-volume
+Verifying Block Storage installation on controller node.
+Sourcing the admin credentials.
+Restarting restarting cinder-scheduler.
+ssh controller sudo systemctl restart cinder-scheduler.service
+Waiting for cinder to start.
+openstack volume service list is available:
+ssh controller source /home/stack/config/admin-openstackrc.sh; openstack volume service list
++------------------+-------------+------+---------+-------+----------------------------+
+| Binary           | Host        | Zone | Status  | State | Updated At                 |
++------------------+-------------+------+---------+-------+----------------------------+
+| cinder-volume    | compute@lvm | nova | enabled | up    | 2022-03-16T11:09:15.000000 |
+| cinder-scheduler | controller  | nova | enabled | up    | 2022-03-16T11:09:20.000000 |
++------------------+-------------+------+---------+-------+----------------------------+
+Waiting for all cinder services to start..
+All cinder services seem to be up and running.
+ssh controller source /home/stack/config/admin-openstackrc.sh; openstack volume service list
++------------------+-------------+------+---------+-------+----------------------------+
+| Binary           | Host        | Zone | Status  | State | Updated At                 |
++------------------+-------------+------+---------+-------+----------------------------+
+| cinder-volume    | compute@lvm | nova | enabled | up    | 2022-03-16T11:09:15.000000 |
+| cinder-scheduler | controller  | nova | enabled | up    | 2022-03-16T11:09:20.000000 |
++------------------+-------------+------+---------+-------+----------------------------+
+Sourcing the demo credentials.
+openstack volume create --size 1 volume1
+ssh controller source /home/stack/config/demo-openrc.sh; openstack volume create --size 1 volume1
+bash: /home/stack/config/demo-openrc.sh: No such file or directory
+Missing value auth-url required for auth plugin password

@@ -1,0 +1,31 @@
+Configuring Compute to use Networking.
+'/etc/nova/nova.conf' -> '/tmp/038_etc_nova_nova.conf.iniset'
+iniset /tmp/038_etc_nova_nova.conf.iniset neutron auth_url http://controller:5000
+'/etc/nova/nova.conf' -> '/tmp/039_etc_nova_nova.conf.iniset'
+iniset /tmp/039_etc_nova_nova.conf.iniset neutron auth_type password
+'/etc/nova/nova.conf' -> '/tmp/040_etc_nova_nova.conf.iniset'
+iniset /tmp/040_etc_nova_nova.conf.iniset neutron project_domain_name default
+'/etc/nova/nova.conf' -> '/tmp/041_etc_nova_nova.conf.iniset'
+iniset /tmp/041_etc_nova_nova.conf.iniset neutron user_domain_name default
+'/etc/nova/nova.conf' -> '/tmp/042_etc_nova_nova.conf.iniset'
+iniset /tmp/042_etc_nova_nova.conf.iniset neutron region_name RegionOne
+'/etc/nova/nova.conf' -> '/tmp/043_etc_nova_nova.conf.iniset'
+iniset /tmp/043_etc_nova_nova.conf.iniset neutron project_name service
+'/etc/nova/nova.conf' -> '/tmp/044_etc_nova_nova.conf.iniset'
+iniset /tmp/044_etc_nova_nova.conf.iniset neutron username neutron
+'/etc/nova/nova.conf' -> '/tmp/045_etc_nova_nova.conf.iniset'
+iniset /tmp/045_etc_nova_nova.conf.iniset neutron password neutronPass
+Restarting the Compute service.
+Restarting neutron-linuxbridge-agent.
+Sourcing the admin credentials.
+Listing agents to verify successful launch of the neutron agents.
+openstack network agent list
++--------------------------------------+--------------------+------------+-------------------+-------+-------+---------------------------+
+| ID                                   | Agent Type         | Host       | Availability Zone | Alive | State | Binary                    |
++--------------------------------------+--------------------+------------+-------------------+-------+-------+---------------------------+
+| 19b110eb-940b-4a34-ba54-00dd510e8f65 | DHCP agent         | controller | nova              | :-)   | UP    | neutron-dhcp-agent        |
+| 7741ee84-b3d9-430a-bb38-f02f8274a4cd | Linux bridge agent | compute    | None              | :-)   | UP    | neutron-linuxbridge-agent |
+| 8b1a2c03-f77b-4331-b222-29e44a83e250 | Metadata agent     | controller | None              | :-)   | UP    | neutron-metadata-agent    |
+| d07f2827-34c4-42a5-8bdb-f23a0e5753f3 | L3 agent           | controller | nova              | :-)   | UP    | neutron-l3-agent          |
+| f6532c9f-0dad-4991-8f13-e374fee9e621 | Linux bridge agent | controller | None              | :-)   | UP    | neutron-linuxbridge-agent |
++--------------------------------------+--------------------+------------+-------------------+-------+-------+---------------------------+

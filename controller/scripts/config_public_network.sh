@@ -64,11 +64,11 @@ echo
 
 echo -n "Waiting for bridge to show up."
 # Bridge names are something like brq219ddb93-c9
-until [ "$(nmcli connection show | grep -c -o "^brq[a-z0-9-]*")" -gt 0 ]; do
+until [ "$(sudo brctl show | grep -c -o "^brq[a-z0-9-]*")" -gt 0 ]; do
     sleep 1
     echo -n .
 done
 echo
 
-sudo nmcli connection show
+sudo brctl show
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

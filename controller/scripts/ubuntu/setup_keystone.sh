@@ -15,7 +15,6 @@ indicate_current_auto
 
 #------------------------------------------------------------------------------
 # Set up keystone for controller node
-# https://docs.openstack.org/keystone/train/install/keystone-install-ubuntu.html
 #------------------------------------------------------------------------------
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -34,11 +33,8 @@ echo "Sanity check: remote auth should work."
 mysql -u keystone -p"$KEYSTONE_DBPASS" keystone -h controller -e quit
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Install and configure components
+# Configure components
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-echo "Installing keystone."
-sudo apt install -y keystone
 
 conf=/etc/keystone/keystone.conf
 echo "Editing $conf."
@@ -103,7 +99,8 @@ sudo sed -i --follow-symlinks '/WSGIDaemonProcess/ s/processes=[0-9]*/processes=
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 echo "Restarting apache."
-sudo service apache2 restart
+sudo systemctl restart  apache2
+sudo systemctl enable  apache2
 
 # Set environment variables for authentication
 export OS_USERNAME=$ADMIN_USER_NAME
@@ -116,15 +113,12 @@ export OS_IDENTITY_API_VERSION=3
 
 #------------------------------------------------------------------------------
 # Create a domain, projects, users, and roles
-# https://docs.openstack.org/keystone/train/install/keystone-users-ubuntu.html
 #------------------------------------------------------------------------------
 
 # Wait for keystone to come up
 wait_for_keystone
 
 # Not creating domain because default domain has already been created by
-# keystone-manage bootstrap
-# openstack domain create --description "An Example Domain" example
 
 echo "Creating service project."
 openstack project create --domain default \
@@ -153,7 +147,6 @@ openstack role add \
 
 #------------------------------------------------------------------------------
 # Verify operation
-# https://docs.openstack.org/keystone/train/install/keystone-verify-ubuntu.html
 #------------------------------------------------------------------------------
 
 echo "Verifying keystone installation."

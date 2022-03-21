@@ -1,0 +1,780 @@
+apt_download: python-argparse python3-dev python3-pip
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu build-essential cpp cpp-9
+  dpkg-dev fakeroot g++ g++-9 gcc gcc-9 gcc-9-base libalgorithm-diff-perl
+  libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan5 libatomic1
+  libbinutils libc-dev-bin libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0
+  libctf0 libdpkg-perl libexpat1-dev libfakeroot libfile-fcntllock-perl
+  libgcc-9-dev libgomp1 libisl22 libitm1 liblsan0 libmpc3 libpython2.7-minimal
+  libpython3-dev libpython3.8-dev libquadmath0 libstdc++-9-dev libtsan0
+  libubsan1 linux-libc-dev make manpages-dev python-pip-whl python3-wheel
+  python3.8-dev zlib1g-dev
+Suggested packages:
+  binutils-doc cpp-doc gcc-9-locales debian-keyring g++-multilib
+  g++-9-multilib gcc-9-doc gcc-multilib autoconf automake libtool flex bison
+  gdb gcc-doc gcc-9-multilib glibc-doc bzr libstdc++-9-doc make-doc
+The following NEW packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu build-essential cpp cpp-9
+  dpkg-dev fakeroot g++ g++-9 gcc gcc-9 gcc-9-base libalgorithm-diff-perl
+  libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan5 libatomic1
+  libbinutils libc-dev-bin libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0
+  libctf0 libdpkg-perl libexpat1-dev libfakeroot libfile-fcntllock-perl
+  libgcc-9-dev libgomp1 libisl22 libitm1 liblsan0 libmpc3 libpython2.7-minimal
+  libpython2.7-stdlib libpython3-dev libpython3.8-dev libquadmath0
+  libstdc++-9-dev libtsan0 libubsan1 linux-libc-dev make manpages-dev
+  python-pip-whl python3-dev python3-pip python3-wheel python3.8-dev
+  zlib1g-dev
+0 upgraded, 52 newly installed, 0 to remove and 20 not upgraded.
+Need to get 0 B/54.4 MB of archives.
+After this operation, 240 MB of additional disk space will be used.
+Download complete and in download only mode
+apt_download: keystone python3-openstackclient apache2 memcached python3-memcache
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  alembic apache2-bin apache2-data apache2-utils docutils-common ieee-data
+  javascript-common keystone-common libapache2-mod-wsgi-py3 libapr1
+  libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap libimagequant0
+  libjansson4 libjbig0 libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc
+  libjs-underscore liblcms2-2 liblua5.2-0 libpaper-utils libpaper1 libtiff5
+  libwebp6 libwebpdemux2 libwebpmux3 pycadf-common python-babel-localedata
+  python-pastedeploy-tpl python3-alembic python3-amqp python3-aniso8601
+  python3-anyjson python3-appdirs python3-babel python3-bcrypt python3-bs4
+  python3-cachetools python3-cinderclient python3-cliff python3-cmd2
+  python3-crypto python3-dateutil python3-debtcollector python3-decorator
+  python3-defusedxml python3-deprecation python3-dnspython python3-docutils
+  python3-dogpile.cache python3-eventlet python3-extras python3-fasteners
+  python3-fixtures python3-flask python3-flask-restful python3-futurist
+  python3-greenlet python3-html5lib python3-importlib-metadata python3-iso8601
+  python3-itsdangerous python3-jmespath python3-keystone python3-keystoneauth1
+  python3-keystoneclient python3-keystonemiddleware python3-kombu python3-ldap
+  python3-linecache2 python3-lxml python3-mako python3-migrate
+  python3-mimeparse python3-monotonic python3-msgpack python3-munch
+  python3-netaddr python3-novaclient python3-olefile python3-openstacksdk
+  python3-os-client-config python3-os-service-types python3-osc-lib
+  python3-oslo.cache python3-oslo.concurrency python3-oslo.config
+  python3-oslo.context python3-oslo.db python3-oslo.i18n python3-oslo.log
+  python3-oslo.messaging python3-oslo.middleware python3-oslo.policy
+  python3-oslo.serialization python3-oslo.service python3-oslo.upgradecheck
+  python3-oslo.utils python3-osprofiler python3-packaging python3-passlib
+  python3-paste python3-pastedeploy python3-pastescript python3-pbr
+  python3-pil python3-prettytable python3-pycadf python3-pygments
+  python3-pyinotify python3-pymysql python3-pyparsing python3-pyperclip
+  python3-pysaml2 python3-repoze.lru python3-requests
+  python3-requestsexceptions python3-rfc3986 python3-roman python3-routes
+  python3-scrypt python3-soupsieve python3-sqlalchemy python3-sqlalchemy-ext
+  python3-sqlparse python3-statsd python3-stevedore python3-tempita
+  python3-tenacity python3-testresources python3-testscenarios
+  python3-testtools python3-traceback2 python3-tz python3-unittest2
+  python3-vine python3-wcwidth python3-webencodings python3-webob
+  python3-werkzeug python3-wrapt sgml-base ssl-cert xml-core xmlsec1
+Suggested packages:
+  apache2-doc apache2-suexec-pristine | apache2-suexec-custom www-browser
+  liblcms2-utils libanyevent-perl libcache-memcached-perl libmemcached
+  libterm-readkey-perl libyaml-perl python-amqp-doc python-cliff-doc
+  python-debtcollector-doc docutils-doc fonts-linuxlibertine
+  | ttf-linux-libertine texlive-lang-french texlive-latex-base
+  texlive-latex-recommended python-eventlet-doc python-flask-doc
+  python-futurist-doc python-greenlet-doc python-greenlet-dev
+  python3-greenlet-dbg python3-genshi python3-ldappool
+  python-keystoneauth1-doc python3-requests-kerberos python-kombu-doc
+  python3-boto python3-django python3-pymongo python3-redis python3-lxml-dbg
+  python-lxml-doc python3-beaker python-mako-doc python-migrate-doc ipython3
+  python-netaddr-docs python-openstacksdk-doc python-os-client-config-doc
+  python-os-service-types-doc python-osc-lib-doc python-oslo.cache-doc
+  python-oslo.concurrency-doc python-oslo.log-doc python3-confluent-kafka
+  python3-zmq python-oslo.middleware-doc python-oslo.policy-doc
+  python-oslo.service-doc httpd-wsgi libapache2-mod-python libapache2-mod-scgi
+  libjs-mochikit python3-cherrypy3 python-pil-doc python3-pil-dbg
+  python-pygments-doc ttf-bitstream-vera python-pyinotify-doc
+  python-pymysql-doc python-pyparsing-doc python3-repoze.who python3-socks
+  python-requests-doc python-sqlalchemy-doc python3-fdb python3-pymssql
+  python3-mysqldb python3-psycopg2 python-sqlparse-doc python-tenacity-doc
+  python-testtools-doc python-webob-doc python-werkzeug-doc python3-termcolor
+  python3-watchdog sgml-base-doc openssl-blacklist debhelper
+The following NEW packages will be installed:
+  alembic apache2 apache2-bin apache2-data apache2-utils docutils-common
+  ieee-data javascript-common keystone keystone-common libapache2-mod-wsgi-py3
+  libapr1 libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap libimagequant0
+  libjansson4 libjbig0 libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc
+  libjs-underscore liblcms2-2 liblua5.2-0 libpaper-utils libpaper1 libtiff5
+  libwebp6 libwebpdemux2 libwebpmux3 memcached pycadf-common
+  python-babel-localedata python-pastedeploy-tpl python3-alembic python3-amqp
+  python3-aniso8601 python3-anyjson python3-appdirs python3-babel
+  python3-bcrypt python3-bs4 python3-cachetools python3-cinderclient
+  python3-cliff python3-cmd2 python3-crypto python3-dateutil
+  python3-debtcollector python3-decorator python3-defusedxml
+  python3-deprecation python3-dnspython python3-docutils python3-dogpile.cache
+  python3-eventlet python3-extras python3-fasteners python3-fixtures
+  python3-flask python3-flask-restful python3-futurist python3-greenlet
+  python3-html5lib python3-iso8601 python3-itsdangerous python3-jmespath
+  python3-keystone python3-keystoneauth1 python3-keystoneclient
+  python3-keystonemiddleware python3-kombu python3-ldap python3-linecache2
+  python3-lxml python3-mako python3-memcache python3-migrate python3-mimeparse
+  python3-monotonic python3-msgpack python3-munch python3-netaddr
+  python3-novaclient python3-olefile python3-openstackclient
+  python3-openstacksdk python3-os-client-config python3-os-service-types
+  python3-osc-lib python3-oslo.cache python3-oslo.concurrency
+  python3-oslo.config python3-oslo.context python3-oslo.db python3-oslo.i18n
+  python3-oslo.log python3-oslo.messaging python3-oslo.middleware
+  python3-oslo.policy python3-oslo.serialization python3-oslo.service
+  python3-oslo.upgradecheck python3-oslo.utils python3-osprofiler
+  python3-packaging python3-passlib python3-paste python3-pastedeploy
+  python3-pastescript python3-pbr python3-pil python3-prettytable
+  python3-pycadf python3-pygments python3-pyinotify python3-pymysql
+  python3-pyparsing python3-pyperclip python3-pysaml2 python3-repoze.lru
+  python3-requestsexceptions python3-rfc3986 python3-roman python3-routes
+  python3-scrypt python3-soupsieve python3-sqlalchemy python3-sqlalchemy-ext
+  python3-sqlparse python3-statsd python3-stevedore python3-tempita
+  python3-tenacity python3-testresources python3-testscenarios
+  python3-testtools python3-traceback2 python3-tz python3-unittest2
+  python3-vine python3-wcwidth python3-webencodings python3-webob
+  python3-werkzeug python3-wrapt sgml-base ssl-cert xml-core xmlsec1
+The following packages will be upgraded:
+  python3-importlib-metadata python3-requests
+2 upgraded, 151 newly installed, 0 to remove and 18 not upgraded.
+Need to get 0 B/22.4 MB of archives.
+After this operation, 125 MB of additional disk space will be used.
+Download complete and in download only mode
+apt_download: glance python3-glanceclient
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  alembic docutils-common glance-api glance-common ibverbs-providers ieee-data
+  javascript-common libblas3 libgfortran5 libibverbs1 libimagequant0 libiscsi7
+  libjbig0 libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc
+  libjs-underscore liblapack3 liblcms2-2 libnl-route-3-200 libpaper-utils
+  libpaper1 libpq5 libquadmath0 librados2 librbd1 librdmacm1 libtiff5 libwebp6
+  libwebpdemux2 libwebpmux3 os-brick-common pycadf-common
+  python-babel-localedata python-pastedeploy-tpl python3-alembic python3-amqp
+  python3-anyjson python3-arrow python3-automaton python3-babel
+  python3-barbicanclient python3-bs4 python3-cachetools python3-castellan
+  python3-cffi python3-cinderclient python3-cliff python3-cmd2 python3-cursive
+  python3-dateutil python3-ddt python3-debtcollector python3-decorator
+  python3-defusedxml python3-dnspython python3-docutils python3-dogpile.cache
+  python3-eventlet python3-extras python3-fasteners python3-fixtures
+  python3-futurist python3-glance python3-glance-store python3-greenlet
+  python3-html5lib python3-importlib-metadata python3-iso8601
+  python3-keystoneauth1 python3-keystoneclient python3-keystonemiddleware
+  python3-kombu python3-linecache2 python3-lxml python3-mako python3-memcache
+  python3-migrate python3-mimeparse python3-monotonic python3-msgpack
+  python3-netaddr python3-networkx python3-numpy python3-olefile
+  python3-os-brick python3-os-service-types python3-os-win python3-oslo.cache
+  python3-oslo.concurrency python3-oslo.config python3-oslo.context
+  python3-oslo.db python3-oslo.i18n python3-oslo.log python3-oslo.messaging
+  python3-oslo.middleware python3-oslo.policy python3-oslo.privsep
+  python3-oslo.reports python3-oslo.rootwrap python3-oslo.serialization
+  python3-oslo.service python3-oslo.upgradecheck python3-oslo.utils
+  python3-oslo.vmware python3-osprofiler python3-packaging python3-paste
+  python3-pastedeploy python3-pastescript python3-pbr python3-pil python3-ply
+  python3-prettytable python3-psutil python3-psycopg2 python3-pycadf
+  python3-pycparser python3-pygments python3-pyinotify python3-pymysql
+  python3-pyparsing python3-pyperclip python3-repoze.lru python3-requests
+  python3-retrying python3-rfc3986 python3-roman python3-routes
+  python3-semantic-version python3-simplegeneric python3-soupsieve
+  python3-sqlalchemy python3-sqlalchemy-ext python3-sqlalchemy-utils
+  python3-sqlparse python3-statsd python3-stevedore python3-suds
+  python3-swiftclient python3-taskflow python3-tempita python3-tenacity
+  python3-testresources python3-testscenarios python3-testtools
+  python3-traceback2 python3-tz python3-unittest2 python3-vine python3-warlock
+  python3-wcwidth python3-webencodings python3-webob python3-wrapt
+  python3-wsme qemu-block-extra qemu-utils sgml-base sharutils xml-core
+Suggested packages:
+  apache2 | lighttpd | httpd liblcms2-utils python-amqp-doc python-arrow-doc
+  python-automaton-doc python-castellan-doc python3-dev python-cliff-doc
+  python-cursive-doc python-debtcollector-doc docutils-doc
+  fonts-linuxlibertine | ttf-linux-libertine texlive-lang-french
+  texlive-latex-base texlive-latex-recommended python-eventlet-doc
+  python-futurist-doc python3-rados python3-rbd python-glanceclient-doc
+  python-greenlet-doc python-greenlet-dev python3-greenlet-dbg python3-genshi
+  python-keystoneauth1-doc python3-requests-kerberos python-kombu-doc
+  python3-boto python3-django python3-pymongo python3-redis python3-lxml-dbg
+  python-lxml-doc python3-beaker python-mako-doc memcached python-migrate-doc
+  ipython3 python-netaddr-docs python-networkx-doc python3-gdal
+  python3-matplotlib python3-pygraphviz | python3-pydot python3-scipy gcc
+  gfortran python-numpy-doc python3-pytest python3-numpy-dbg
+  python-os-brick-doc python-os-service-types-doc python-os-win-doc
+  python-oslo.cache-doc python-oslo.concurrency-doc python-oslo.log-doc
+  python3-confluent-kafka python3-zmq python-oslo.middleware-doc
+  python-oslo.policy-doc python-oslo.privsep-doc python-oslo.reports-doc
+  python-oslo.service-doc httpd-wsgi libapache2-mod-python libapache2-mod-scgi
+  libjs-mochikit python3-cherrypy3 python-pil-doc python3-pil-dbg
+  python-ply-doc python-psutil-doc python-psycopg2-doc cpp python-pygments-doc
+  ttf-bitstream-vera python-pyinotify-doc python-pymysql-doc
+  python-pyparsing-doc python3-socks python-requests-doc
+  python-semantic-version-doc python-sqlalchemy-doc python3-fdb
+  python3-pymssql python3-mysqldb python-sqlalchemy-utils-doc python3-infinity
+  python3-intervals python3-psycopg2cffi python-sqlparse-doc python3-kazoo
+  python3-pydot python3-pydotplus python-tenacity-doc python-testtools-doc
+  python-webob-doc debootstrap sgml-base-doc sharutils-doc bsd-mailx | mailx
+  debhelper
+The following NEW packages will be installed:
+  alembic docutils-common glance glance-api glance-common ibverbs-providers
+  ieee-data javascript-common libblas3 libgfortran5 libibverbs1 libimagequant0
+  libiscsi7 libjbig0 libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc
+  libjs-underscore liblapack3 liblcms2-2 libnl-route-3-200 libpaper-utils
+  libpaper1 libpq5 libquadmath0 librados2 librbd1 librdmacm1 libtiff5 libwebp6
+  libwebpdemux2 libwebpmux3 os-brick-common pycadf-common
+  python-babel-localedata python-pastedeploy-tpl python3-alembic python3-amqp
+  python3-anyjson python3-arrow python3-automaton python3-babel
+  python3-barbicanclient python3-bs4 python3-cachetools python3-castellan
+  python3-cffi python3-cinderclient python3-cliff python3-cmd2 python3-cursive
+  python3-dateutil python3-ddt python3-debtcollector python3-decorator
+  python3-defusedxml python3-dnspython python3-docutils python3-dogpile.cache
+  python3-eventlet python3-extras python3-fasteners python3-fixtures
+  python3-futurist python3-glance python3-glance-store python3-glanceclient
+  python3-greenlet python3-html5lib python3-iso8601 python3-keystoneauth1
+  python3-keystoneclient python3-keystonemiddleware python3-kombu
+  python3-linecache2 python3-lxml python3-mako python3-memcache
+  python3-migrate python3-mimeparse python3-monotonic python3-msgpack
+  python3-netaddr python3-networkx python3-numpy python3-olefile
+  python3-os-brick python3-os-service-types python3-os-win python3-oslo.cache
+  python3-oslo.concurrency python3-oslo.config python3-oslo.context
+  python3-oslo.db python3-oslo.i18n python3-oslo.log python3-oslo.messaging
+  python3-oslo.middleware python3-oslo.policy python3-oslo.privsep
+  python3-oslo.reports python3-oslo.rootwrap python3-oslo.serialization
+  python3-oslo.service python3-oslo.upgradecheck python3-oslo.utils
+  python3-oslo.vmware python3-osprofiler python3-packaging python3-paste
+  python3-pastedeploy python3-pastescript python3-pbr python3-pil python3-ply
+  python3-prettytable python3-psutil python3-psycopg2 python3-pycadf
+  python3-pycparser python3-pygments python3-pyinotify python3-pymysql
+  python3-pyparsing python3-pyperclip python3-repoze.lru python3-retrying
+  python3-rfc3986 python3-roman python3-routes python3-semantic-version
+  python3-simplegeneric python3-soupsieve python3-sqlalchemy
+  python3-sqlalchemy-ext python3-sqlalchemy-utils python3-sqlparse
+  python3-statsd python3-stevedore python3-suds python3-swiftclient
+  python3-taskflow python3-tempita python3-tenacity python3-testresources
+  python3-testscenarios python3-testtools python3-traceback2 python3-tz
+  python3-unittest2 python3-vine python3-warlock python3-wcwidth
+  python3-webencodings python3-webob python3-wrapt python3-wsme
+  qemu-block-extra qemu-utils sgml-base sharutils xml-core
+The following packages will be upgraded:
+  python3-importlib-metadata python3-requests
+2 upgraded, 163 newly installed, 0 to remove and 18 not upgraded.
+Need to get 5,899 kB/34.1 MB of archives.
+After this operation, 174 MB of additional disk space will be used.
+Get:1 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 librbd1 amd64 16.2.6-0ubuntu0.21.04.1~cloud0 [2,408 kB]
+Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 libibverbs1 amd64 28.0-1ubuntu1 [53.6 kB]
+Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 libblas3 amd64 3.9.0-1build1 [142 kB]
+Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 librdmacm1 amd64 28.0-1ubuntu1 [64.9 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 liblapack3 amd64 3.9.0-1build1 [2,154 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-arrow all 0.15.5-1 [36.8 kB]
+Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-pycparser all 2.19-1ubuntu1 [71.0 kB]
+Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-cursive all 0.2.2-2 [14.5 kB]
+Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-suds all 0.8.4-1 [135 kB]
+Get:10 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-automaton all 2.3.0-0ubuntu1~cloud0 [15.6 kB]
+Get:11 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-castellan all 3.7.1-0ubuntu1~cloud0 [43.0 kB]
+Get:12 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-os-win all 5.4.0-0ubuntu1~cloud0 [158 kB]
+Get:13 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-os-brick all 4.3.1-0ubuntu2~cloud0 [136 kB]
+Get:14 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-oslo.vmware all 3.8.0-0ubuntu1~cloud0 [172 kB]
+Get:15 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-glance-store all 2.5.0-0ubuntu2~cloud0 [113 kB]
+Get:16 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-psutil amd64 5.8.0-1~cloud0 [184 kB]
+Fetched 5,899 kB in 9s (693 kB/s)
+Download complete and in download only mode
+apt_download: nova-api nova-conductor nova-novncproxy nova-scheduler
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  acl adwaita-icon-theme alembic at-spi2-core cpu-checker docutils-common
+  fontconfig fontconfig-config fonts-dejavu-core gstreamer1.0-plugins-base
+  gstreamer1.0-plugins-good gstreamer1.0-x gtk-update-icon-cache
+  hicolor-icon-theme humanity-icon-theme ibverbs-providers ieee-data ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms javascript-common keystone-common libaa1
+  libasyncns0 libatk-bridge2.0-0 libatk1.0-0 libatk1.0-data libatspi2.0-0
+  libavahi-client3 libavahi-common-data libavahi-common3 libavc1394-0 libblas3
+  libbrlapi0.7 libcaca0 libcacard0 libcairo-gobject2 libcairo2 libcdparanoia0
+  libcolord2 libcups2 libdatrie1 libdv4 libepoxy0 libfdt1 libflac8
+  libfontconfig1 libgbm1 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-bin
+  libgdk-pixbuf2.0-common libgfortran5 libgraphite2-3
+  libgstreamer-plugins-base1.0-0 libgstreamer-plugins-good1.0-0 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libharfbuzz0b libibverbs1 libiec61883-0
+  libimagequant0 libiscsi7 libjack-jackd2-0 libjbig0 libjpeg-turbo8 libjpeg8
+  libjs-jquery libjs-sphinxdoc libjs-underscore liblapack3 liblcms2-2
+  libmp3lame0 libmpg123-0 libnl-route-3-200 libopus0 liborc-0.4-0
+  libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpaper-utils
+  libpaper1 libpciaccess0 libpcsclite1 libpixman-1-0 libpmem1 libpq5 libpulse0
+  libquadmath0 librados2 libraw1394-11 librbd1 librdmacm1 librest-0.7-0
+  librsvg2-2 librsvg2-common libsamplerate0 libshout3 libslirp0 libsndfile1
+  libsoup-gnome2.4-1 libspeex1 libspice-server1 libtag1v5 libtag1v5-vanilla
+  libthai-data libthai0 libtheora0 libtiff5 libtwolame0 libusbredirparser1
+  libv4l-0 libv4lconvert0 libvirglrenderer1 libvirt-daemon
+  libvirt-daemon-driver-qemu libvirt-daemon-driver-storage-rbd libvirt0
+  libvisual-0.4-0 libvorbisenc2 libvpx6 libvte-2.91-0 libvte-2.91-common
+  libwavpack1 libwayland-client0 libwayland-cursor0 libwayland-egl1
+  libwayland-server0 libwebp6 libwebpdemux2 libwebpmux3 libxcb-render0
+  libxcb-shm0 libxcomposite1 libxcursor1 libxdamage1 libxfixes3 libxi6
+  libxinerama1 libxkbcommon0 libxml2-utils libxrandr2 libxrender1 libxtst6
+  libxv1 libyajl2 msr-tools nova-common novnc os-brick-common ovmf
+  pycadf-common python-babel-localedata python-pastedeploy-tpl python3-alembic
+  python3-amqp python3-aniso8601 python3-anyjson python3-appdirs python3-arrow
+  python3-automaton python3-babel python3-barbicanclient python3-bcrypt
+  python3-bs4 python3-cachetools python3-castellan python3-cffi
+  python3-cinderclient python3-cliff python3-cmd2 python3-cursive
+  python3-dateutil python3-ddt python3-debtcollector python3-decorator
+  python3-defusedxml python3-deprecation python3-dnspython python3-docutils
+  python3-dogpile.cache python3-eventlet python3-extras python3-fasteners
+  python3-fixtures python3-flask python3-flask-restful python3-futurist
+  python3-glanceclient python3-greenlet python3-html5lib
+  python3-importlib-metadata python3-iso8601 python3-itsdangerous
+  python3-jmespath python3-keystone python3-keystoneauth1
+  python3-keystoneclient python3-keystonemiddleware python3-kombu python3-ldap
+  python3-libvirt python3-linecache2 python3-lxml python3-mako
+  python3-memcache python3-microversion-parse python3-migrate
+  python3-mimeparse python3-monotonic python3-msgpack python3-munch
+  python3-netaddr python3-networkx python3-neutronclient python3-nova
+  python3-novnc python3-numpy python3-olefile python3-openstacksdk
+  python3-openvswitch python3-os-brick python3-os-client-config
+  python3-os-resource-classes python3-os-service-types python3-os-traits
+  python3-os-vif python3-os-win python3-os-xenapi python3-osc-lib
+  python3-oslo.cache python3-oslo.concurrency python3-oslo.config
+  python3-oslo.context python3-oslo.db python3-oslo.i18n python3-oslo.log
+  python3-oslo.messaging python3-oslo.middleware python3-oslo.policy
+  python3-oslo.privsep python3-oslo.reports python3-oslo.rootwrap
+  python3-oslo.serialization python3-oslo.service python3-oslo.upgradecheck
+  python3-oslo.utils python3-oslo.versionedobjects python3-oslo.vmware
+  python3-osprofiler python3-ovsdbapp python3-packaging python3-paramiko
+  python3-passlib python3-paste python3-pastedeploy python3-pastescript
+  python3-pbr python3-pil python3-ply python3-prettytable python3-psutil
+  python3-psycopg2 python3-pycadf python3-pycparser python3-pygments
+  python3-pyinotify python3-pymemcache python3-pymysql python3-pyparsing
+  python3-pyperclip python3-pypowervm python3-pyroute2 python3-pysaml2
+  python3-redis python3-repoze.lru python3-requests python3-requestsexceptions
+  python3-retrying python3-rfc3986 python3-roman python3-routes python3-scrypt
+  python3-sortedcontainers python3-soupsieve python3-sqlalchemy
+  python3-sqlalchemy-ext python3-sqlalchemy-utils python3-sqlparse
+  python3-statsd python3-stevedore python3-suds python3-taskflow
+  python3-tempita python3-tenacity python3-testresources python3-testscenarios
+  python3-testtools python3-tooz python3-traceback2 python3-tz
+  python3-unittest2 python3-vine python3-voluptuous python3-warlock
+  python3-wcwidth python3-webencodings python3-webob python3-websockify
+  python3-werkzeug python3-wrapt python3-zvmcloudconnector qemu-block-extra
+  qemu-kvm qemu-system-common qemu-system-data qemu-system-gui qemu-system-x86
+  qemu-utils seabios sgml-base sharutils ubuntu-mono websockify x11-common
+  xml-core xmlsec1 zvmcloudconnector-common
+Suggested packages:
+  gvfs apache2 | lighttpd | httpd colord cups-common libdv-bin oss-compat
+  libvisual-0.4-plugins jackd2 liblcms2-utils opus-tools pcscd pulseaudio
+  libraw1394-doc librsvg2-bin speex gstreamer1.0-plugins-ugly
+  libvirt-daemon-driver-lxc libvirt-daemon-driver-vbox
+  libvirt-daemon-driver-xen libvirt-daemon-driver-storage-gluster
+  libvirt-daemon-driver-storage-zfs libvirt-daemon-system numad python-nova
+  python-amqp-doc python-arrow-doc python-automaton-doc python-castellan-doc
+  python3-dev python-cliff-doc python-cursive-doc python-debtcollector-doc
+  docutils-doc fonts-linuxlibertine | ttf-linux-libertine texlive-lang-french
+  texlive-latex-base texlive-latex-recommended python-eventlet-doc
+  python-flask-doc python-futurist-doc python-glanceclient-doc
+  python-greenlet-doc python-greenlet-dev python3-greenlet-dbg python3-genshi
+  python3-ldappool python-keystoneauth1-doc python3-requests-kerberos
+  python-kombu-doc python3-boto python3-django python3-pymongo
+  python3-lxml-dbg python-lxml-doc python3-beaker python-mako-doc memcached
+  python-microversion-parse-doc python-migrate-doc ipython3
+  python-netaddr-docs python-networkx-doc python3-gdal python3-matplotlib
+  python3-pygraphviz | python3-pydot python3-scipy gcc gfortran
+  python-numpy-doc python3-pytest python3-numpy-dbg python-openstacksdk-doc
+  python-os-brick-doc python-os-client-config-doc python-os-service-types-doc
+  python-os-traits-doc python-os-vif-doc python-os-win-doc
+  python-os-xenapi-doc python-osc-lib-doc python-oslo.cache-doc
+  python-oslo.concurrency-doc python-oslo.log-doc python3-confluent-kafka
+  python3-zmq python-oslo.middleware-doc python-oslo.policy-doc
+  python-oslo.privsep-doc python-oslo.reports-doc python-oslo.service-doc
+  python-oslo.versionedobjects-doc python-ovsdbapp-doc python3-gssapi
+  python3-invoke httpd-wsgi libapache2-mod-python libapache2-mod-scgi
+  libjs-mochikit python3-cherrypy3 python-pil-doc python3-pil-dbg
+  python-ply-doc python-psutil-doc python-psycopg2-doc cpp python-pygments-doc
+  ttf-bitstream-vera python-pyinotify-doc python-pymysql-doc
+  python-pyparsing-doc python-pyroute2-doc python3-repoze.who python3-hiredis
+  python3-socks python-requests-doc python-sortedcontainers-doc
+  python-sqlalchemy-doc python3-fdb python3-pymssql python3-mysqldb
+  python-sqlalchemy-utils-doc python3-infinity python3-intervals
+  python3-psycopg2cffi python-sqlparse-doc python3-kazoo python3-pydot
+  python3-pydotplus python-tenacity-doc python-testtools-doc python3-etcd3
+  python3-etcd3gw python3-sysv-ipc python3-zake python-webob-doc
+  python3-jwcrypto python-werkzeug-doc python3-termcolor python3-watchdog
+  samba vde2 debootstrap sgml-base-doc sharutils-doc bsd-mailx | mailx
+  debhelper
+The following NEW packages will be installed:
+  acl adwaita-icon-theme alembic at-spi2-core cpu-checker docutils-common
+  fontconfig fontconfig-config fonts-dejavu-core gstreamer1.0-plugins-base
+  gstreamer1.0-plugins-good gstreamer1.0-x gtk-update-icon-cache
+  hicolor-icon-theme humanity-icon-theme ibverbs-providers ieee-data ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms javascript-common keystone-common libaa1
+  libasyncns0 libatk-bridge2.0-0 libatk1.0-0 libatk1.0-data libatspi2.0-0
+  libavahi-client3 libavahi-common-data libavahi-common3 libavc1394-0 libblas3
+  libbrlapi0.7 libcaca0 libcacard0 libcairo-gobject2 libcairo2 libcdparanoia0
+  libcolord2 libcups2 libdatrie1 libdv4 libepoxy0 libfdt1 libflac8
+  libfontconfig1 libgbm1 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-bin
+  libgdk-pixbuf2.0-common libgfortran5 libgraphite2-3
+  libgstreamer-plugins-base1.0-0 libgstreamer-plugins-good1.0-0 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libharfbuzz0b libibverbs1 libiec61883-0
+  libimagequant0 libiscsi7 libjack-jackd2-0 libjbig0 libjpeg-turbo8 libjpeg8
+  libjs-jquery libjs-sphinxdoc libjs-underscore liblapack3 liblcms2-2
+  libmp3lame0 libmpg123-0 libnl-route-3-200 libopus0 liborc-0.4-0
+  libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpaper-utils
+  libpaper1 libpciaccess0 libpcsclite1 libpixman-1-0 libpmem1 libpq5 libpulse0
+  libquadmath0 librados2 libraw1394-11 librbd1 librdmacm1 librest-0.7-0
+  librsvg2-2 librsvg2-common libsamplerate0 libshout3 libslirp0 libsndfile1
+  libsoup-gnome2.4-1 libspeex1 libspice-server1 libtag1v5 libtag1v5-vanilla
+  libthai-data libthai0 libtheora0 libtiff5 libtwolame0 libusbredirparser1
+  libv4l-0 libv4lconvert0 libvirglrenderer1 libvirt-daemon
+  libvirt-daemon-driver-qemu libvirt-daemon-driver-storage-rbd libvirt0
+  libvisual-0.4-0 libvorbisenc2 libvpx6 libvte-2.91-0 libvte-2.91-common
+  libwavpack1 libwayland-client0 libwayland-cursor0 libwayland-egl1
+  libwayland-server0 libwebp6 libwebpdemux2 libwebpmux3 libxcb-render0
+  libxcb-shm0 libxcomposite1 libxcursor1 libxdamage1 libxfixes3 libxi6
+  libxinerama1 libxkbcommon0 libxml2-utils libxrandr2 libxrender1 libxtst6
+  libxv1 libyajl2 msr-tools nova-api nova-common nova-conductor
+  nova-novncproxy nova-scheduler novnc os-brick-common ovmf pycadf-common
+  python-babel-localedata python-pastedeploy-tpl python3-alembic python3-amqp
+  python3-aniso8601 python3-anyjson python3-appdirs python3-arrow
+  python3-automaton python3-babel python3-barbicanclient python3-bcrypt
+  python3-bs4 python3-cachetools python3-castellan python3-cffi
+  python3-cinderclient python3-cliff python3-cmd2 python3-cursive
+  python3-dateutil python3-ddt python3-debtcollector python3-decorator
+  python3-defusedxml python3-deprecation python3-dnspython python3-docutils
+  python3-dogpile.cache python3-eventlet python3-extras python3-fasteners
+  python3-fixtures python3-flask python3-flask-restful python3-futurist
+  python3-glanceclient python3-greenlet python3-html5lib python3-iso8601
+  python3-itsdangerous python3-jmespath python3-keystone python3-keystoneauth1
+  python3-keystoneclient python3-keystonemiddleware python3-kombu python3-ldap
+  python3-libvirt python3-linecache2 python3-lxml python3-mako
+  python3-memcache python3-microversion-parse python3-migrate
+  python3-mimeparse python3-monotonic python3-msgpack python3-munch
+  python3-netaddr python3-networkx python3-neutronclient python3-nova
+  python3-novnc python3-numpy python3-olefile python3-openstacksdk
+  python3-openvswitch python3-os-brick python3-os-client-config
+  python3-os-resource-classes python3-os-service-types python3-os-traits
+  python3-os-vif python3-os-win python3-os-xenapi python3-osc-lib
+  python3-oslo.cache python3-oslo.concurrency python3-oslo.config
+  python3-oslo.context python3-oslo.db python3-oslo.i18n python3-oslo.log
+  python3-oslo.messaging python3-oslo.middleware python3-oslo.policy
+  python3-oslo.privsep python3-oslo.reports python3-oslo.rootwrap
+  python3-oslo.serialization python3-oslo.service python3-oslo.upgradecheck
+  python3-oslo.utils python3-oslo.versionedobjects python3-oslo.vmware
+  python3-osprofiler python3-ovsdbapp python3-packaging python3-paramiko
+  python3-passlib python3-paste python3-pastedeploy python3-pastescript
+  python3-pbr python3-pil python3-ply python3-prettytable python3-psutil
+  python3-psycopg2 python3-pycadf python3-pycparser python3-pygments
+  python3-pyinotify python3-pymemcache python3-pymysql python3-pyparsing
+  python3-pyperclip python3-pypowervm python3-pyroute2 python3-pysaml2
+  python3-redis python3-repoze.lru python3-requestsexceptions python3-retrying
+  python3-rfc3986 python3-roman python3-routes python3-scrypt
+  python3-sortedcontainers python3-soupsieve python3-sqlalchemy
+  python3-sqlalchemy-ext python3-sqlalchemy-utils python3-sqlparse
+  python3-statsd python3-stevedore python3-suds python3-taskflow
+  python3-tempita python3-tenacity python3-testresources python3-testscenarios
+  python3-testtools python3-tooz python3-traceback2 python3-tz
+  python3-unittest2 python3-vine python3-voluptuous python3-warlock
+  python3-wcwidth python3-webencodings python3-webob python3-websockify
+  python3-werkzeug python3-wrapt python3-zvmcloudconnector qemu-block-extra
+  qemu-kvm qemu-system-common qemu-system-data qemu-system-gui qemu-system-x86
+  qemu-utils seabios sgml-base sharutils ubuntu-mono websockify x11-common
+  xml-core xmlsec1 zvmcloudconnector-common
+The following packages will be upgraded:
+  python3-importlib-metadata python3-requests
+2 upgraded, 329 newly installed, 0 to remove and 18 not upgraded.
+Need to get 44.6 MB/80.1 MB of archives.
+After this operation, 399 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 acl amd64 2.2.53-6 [37.8 kB]
+Get:2 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-neutronclient all 1:7.2.1-0ubuntu1~cloud0 [180 kB]
+Err:3 http://archive.ubuntu.com/ubuntu focal/main amd64 hicolor-icon-theme all 0.17-2
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgdk-pixbuf2.0-common all 2.40.0+dfsg-3ubuntu0.2 [4,652 B]
+Err:5 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-openvswitch all 2.15.0-0ubuntu3.1~cloud0
+  400  Bad Request [IP: 91.189.88.142 80]
+Ign:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgdk-pixbuf2.0-0 amd64 2.40.0+dfsg-3ubuntu0.2
+Get:7 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-os-traits all 2.5.0-0ubuntu1~cloud0 [15.4 kB]
+Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gtk-update-icon-cache amd64 3.24.20-0ubuntu1.1 [28.8 kB]
+Err:9 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-oslo.versionedobjects all 2.4.0-0ubuntu1~cloud0
+  400  Bad Request [IP: 91.189.88.142 80]
+Err:10 http://archive.ubuntu.com/ubuntu focal/main amd64 fonts-dejavu-core all 2.37-1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:11 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-ovsdbapp all 1.9.0-0ubuntu1~cloud0 [61.4 kB]
+Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 fontconfig-config all 2.13.1-2ubuntu3 [28.8 kB]
+Err:13 http://archive.ubuntu.com/ubuntu focal/main amd64 libfontconfig1 amd64 2.13.1-2ubuntu3
+  400  Bad Request [IP: 91.189.88.152 80]
+Err:14 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-pyroute2 all 0.5.14-0ubuntu1.1~cloud0
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:15 http://archive.ubuntu.com/ubuntu focal/main amd64 libpixman-1-0 amd64 0.38.4-0ubuntu1 [227 kB]
+Get:16 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-os-vif all 2.4.0-0ubuntu1~cloud0 [52.7 kB]
+Err:17 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-paramiko all 2.7.2-1ubuntu1~cloud0
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:18 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-tooz all 2.8.0-0ubuntu2~cloud0 [54.5 kB]
+Err:19 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-render0 amd64 1.14-2
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:20 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 nova-common all 3:23.1.0-0ubuntu1~cloud0 [93.9 kB]
+Get:21 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-nova all 3:23.1.0-0ubuntu1~cloud0 [2,972 kB]
+Get:22 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-shm0 amd64 1.14-2 [5,584 B]
+Err:23 http://archive.ubuntu.com/ubuntu focal/main amd64 libxrender1 amd64 1:0.9.10-1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:24 http://archive.ubuntu.com/ubuntu focal/main amd64 libcairo2 amd64 1.16.0-4ubuntu1 [583 kB]
+Err:25 http://archive.ubuntu.com/ubuntu focal/main amd64 libcairo-gobject2 amd64 1.16.0-4ubuntu1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:26 http://archive.ubuntu.com/ubuntu focal/main amd64 fontconfig amd64 2.13.1-2ubuntu3 [171 kB]
+Err:27 http://archive.ubuntu.com/ubuntu focal/main amd64 libgraphite2-3 amd64 1.3.13-11build1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:28 http://archive.ubuntu.com/ubuntu focal/main amd64 libharfbuzz0b amd64 2.6.4-1ubuntu4 [391 kB]
+Err:29 http://archive.ubuntu.com/ubuntu focal/main amd64 libthai-data all 0.1.28-3
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:30 http://archive.ubuntu.com/ubuntu focal/main amd64 libdatrie1 amd64 0.2.12-3 [18.7 kB]
+Err:31 http://archive.ubuntu.com/ubuntu focal/main amd64 libthai0 amd64 0.1.28-3
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:32 http://archive.ubuntu.com/ubuntu focal/main amd64 libpango-1.0-0 amd64 1.44.7-2ubuntu4 [162 kB]
+Get:33 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 nova-api all 3:23.1.0-0ubuntu1~cloud0 [39.3 kB]
+Get:34 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 nova-conductor all 3:23.1.0-0ubuntu1~cloud0 [39.3 kB]
+Get:35 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 nova-novncproxy all 3:23.1.0-0ubuntu1~cloud0 [39.3 kB]
+Get:36 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 nova-scheduler all 3:23.1.0-0ubuntu1~cloud0 [39.3 kB]
+Err:37 http://archive.ubuntu.com/ubuntu focal/main amd64 libpangoft2-1.0-0 amd64 1.44.7-2ubuntu4
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:38 http://archive.ubuntu.com/ubuntu focal/main amd64 libpangocairo-1.0-0 amd64 1.44.7-2ubuntu4 [24.8 kB]
+Err:39 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 librsvg2-2 amd64 2.48.9-1ubuntu0.20.04.1
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:40 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 librsvg2-common amd64 2.48.9-1ubuntu0.20.04.1 [9,212 B]
+Err:41 http://archive.ubuntu.com/ubuntu focal/main amd64 humanity-icon-theme all 0.6.15
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:42 http://archive.ubuntu.com/ubuntu focal/main amd64 ubuntu-mono all 19.04-0ubuntu3 [147 kB]
+Err:43 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 adwaita-icon-theme all 3.36.1-2ubuntu0.20.04.2
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:44 http://archive.ubuntu.com/ubuntu focal/main amd64 libatspi2.0-0 amd64 2.36.0-2 [64.2 kB]
+Err:45 http://archive.ubuntu.com/ubuntu focal/main amd64 x11-common all 1:7.7+19ubuntu14
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:46 http://archive.ubuntu.com/ubuntu focal/main amd64 libxtst6 amd64 2:1.2.3-1 [12.8 kB]
+Err:47 http://archive.ubuntu.com/ubuntu focal/main amd64 at-spi2-core amd64 2.36.0-2
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:48 http://archive.ubuntu.com/ubuntu focal/main amd64 msr-tools amd64 1.3-3 [10.0 kB]
+Err:49 http://archive.ubuntu.com/ubuntu focal/main amd64 cpu-checker amd64 0.7-1.1
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:50 http://archive.ubuntu.com/ubuntu focal/main amd64 libcdparanoia0 amd64 3.10.2+debian-13 [46.7 kB]
+Err:51 http://archive.ubuntu.com/ubuntu focal/main amd64 liborc-0.4-0 amd64 1:0.4.31-1
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:52 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgstreamer-plugins-base1.0-0 amd64 1.16.2-4ubuntu0.1 [735 kB]
+Err:53 http://archive.ubuntu.com/ubuntu focal/main amd64 libopus0 amd64 1.3.1-0ubuntu1
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:54 http://archive.ubuntu.com/ubuntu focal/main amd64 libtheora0 amd64 1.1.1+dfsg.1-15ubuntu2 [162 kB]
+Err:55 http://archive.ubuntu.com/ubuntu focal/main amd64 libvisual-0.4-0 amd64 0.4.0-17
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:56 http://archive.ubuntu.com/ubuntu focal/main amd64 libvorbisenc2 amd64 1.3.6-2ubuntu1 [70.7 kB]
+Ign:57 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gstreamer1.0-plugins-base amd64 1.16.2-4ubuntu0.1
+Get:58 http://archive.ubuntu.com/ubuntu focal/main amd64 libaa1 amd64 1.4p5-46 [47.3 kB]
+Err:59 http://archive.ubuntu.com/ubuntu focal/main amd64 libraw1394-11 amd64 2.1.2-1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:60 http://archive.ubuntu.com/ubuntu focal/main amd64 libavc1394-0 amd64 0.5.4-5 [16.2 kB]
+Ign:61 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcaca0 amd64 0.99.beta19-2.1ubuntu1.20.04.2
+Get:62 http://archive.ubuntu.com/ubuntu focal/main amd64 libdv4 amd64 1.0.0-12 [58.0 kB]
+Err:63 http://archive.ubuntu.com/ubuntu focal/main amd64 libflac8 amd64 1.3.3-1build1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:64 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgstreamer-plugins-good1.0-0 amd64 1.16.2-1ubuntu2.1 [63.7 kB]
+Err:65 http://archive.ubuntu.com/ubuntu focal/main amd64 libiec61883-0 amd64 1.2.0-3
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:66 http://archive.ubuntu.com/ubuntu focal/main amd64 libsamplerate0 amd64 0.1.9-2 [939 kB]
+Err:67 http://archive.ubuntu.com/ubuntu focal/main amd64 libjack-jackd2-0 amd64 1.9.12~dfsg-2ubuntu2
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:68 http://archive.ubuntu.com/ubuntu focal/main amd64 libmp3lame0 amd64 3.100-3 [133 kB]
+Err:69 http://archive.ubuntu.com/ubuntu focal/main amd64 libmpg123-0 amd64 1.25.13-1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:70 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libspeex1 amd64 1.2~rc1.2-1.1ubuntu1.20.04.1 [53.2 kB]
+Err:71 http://archive.ubuntu.com/ubuntu focal/main amd64 libshout3 amd64 2.4.3-1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:72 http://archive.ubuntu.com/ubuntu focal/main amd64 libtag1v5-vanilla amd64 1.11.1+dfsg.1-0.3ubuntu2 [280 kB]
+Err:73 http://archive.ubuntu.com/ubuntu focal/main amd64 libtag1v5 amd64 1.11.1+dfsg.1-0.3ubuntu2
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:74 http://archive.ubuntu.com/ubuntu focal/main amd64 libtwolame0 amd64 0.4.0-2 [47.6 kB]
+Err:75 http://archive.ubuntu.com/ubuntu focal/main amd64 libv4lconvert0 amd64 1.18.0-2build1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:76 http://archive.ubuntu.com/ubuntu focal/main amd64 libv4l-0 amd64 1.18.0-2build1 [41.9 kB]
+Err:77 http://archive.ubuntu.com/ubuntu focal/main amd64 libvpx6 amd64 1.8.2-1build1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:78 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libwavpack1 amd64 5.2.0-1ubuntu0.1 [77.3 kB]
+Err:79 http://archive.ubuntu.com/ubuntu focal/main amd64 libxdamage1 amd64 1:1.1.5-2
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:80 http://archive.ubuntu.com/ubuntu focal/main amd64 libxfixes3 amd64 1:5.0.3-2 [10.9 kB]
+Ign:81 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gstreamer1.0-plugins-good amd64 1.16.2-1ubuntu2.1
+Get:82 http://archive.ubuntu.com/ubuntu focal/main amd64 libxv1 amd64 2:1.0.11-1 [10.7 kB]
+Ign:83 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gstreamer1.0-x amd64 1.16.2-4ubuntu0.1
+Get:84 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 ipxe-qemu all 1.0.0+git-20190109.133f4c4-0ubuntu3.2 [930 kB]
+Err:85 http://archive.ubuntu.com/ubuntu focal/main amd64 ipxe-qemu-256k-compat-efi-roms all 1.0.0+git-20150424.a25a16d-0ubuntu4
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:86 http://archive.ubuntu.com/ubuntu focal/main amd64 libasyncns0 amd64 0.8-6 [12.1 kB]
+Err:87 http://archive.ubuntu.com/ubuntu focal/main amd64 libatk1.0-data all 2.35.1-1ubuntu2
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:88 http://archive.ubuntu.com/ubuntu focal/main amd64 libatk1.0-0 amd64 2.35.1-1ubuntu2 [45.5 kB]
+Err:89 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libatk-bridge2.0-0 amd64 2.34.2-0ubuntu2~20.04.1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:90 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libavahi-common-data amd64 0.7-4ubuntu7.1 [21.4 kB]
+Get:91 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libavahi-common3 amd64 0.7-4ubuntu7.1 [21.7 kB]
+Get:92 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libavahi-client3 amd64 0.7-4ubuntu7.1 [25.5 kB]
+Get:93 http://archive.ubuntu.com/ubuntu focal/main amd64 libbrlapi0.7 amd64 6.0+dfsg-4ubuntu6 [22.1 kB]
+Get:94 http://archive.ubuntu.com/ubuntu focal/main amd64 libpcsclite1 amd64 1.8.26-3 [22.0 kB]
+Get:95 http://archive.ubuntu.com/ubuntu focal/main amd64 libcacard0 amd64 1:2.6.1-1 [32.4 kB]
+Get:96 http://archive.ubuntu.com/ubuntu focal/main amd64 libcolord2 amd64 1.4.4-2 [133 kB]
+Get:97 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcups2 amd64 2.3.1-9ubuntu1.1 [233 kB]
+Get:98 http://archive.ubuntu.com/ubuntu focal/main amd64 libepoxy0 amd64 1.5.4-1 [191 kB]
+Err:99 http://archive.ubuntu.com/ubuntu focal/main amd64 libwayland-server0 amd64 1.18.0-1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:100 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgbm1 amd64 21.2.6-0ubuntu0.1~20.04.2 [29.2 kB]
+Ign:101 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgdk-pixbuf2.0-bin amd64 2.40.0+dfsg-3ubuntu0.2
+Get:102 http://archive.ubuntu.com/ubuntu focal/main amd64 libsoup-gnome2.4-1 amd64 2.70.0-1 [6,136 B]
+Err:103 http://archive.ubuntu.com/ubuntu focal/main amd64 librest-0.7-0 amd64 0.8.1-1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:104 http://archive.ubuntu.com/ubuntu focal/main amd64 libwayland-client0 amd64 1.18.0-1 [23.9 kB]
+Err:105 http://archive.ubuntu.com/ubuntu focal/main amd64 libwayland-cursor0 amd64 1.18.0-1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:106 http://archive.ubuntu.com/ubuntu focal/main amd64 libwayland-egl1 amd64 1.18.0-1 [5,692 B]
+Err:107 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcomposite1 amd64 1:0.4.5-1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:108 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcursor1 amd64 1:1.2.0-2 [20.1 kB]
+Err:109 http://archive.ubuntu.com/ubuntu focal/main amd64 libxi6 amd64 2:1.7.10-0ubuntu1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:110 http://archive.ubuntu.com/ubuntu focal/main amd64 libxinerama1 amd64 2:1.1.4-2 [6,904 B]
+Err:111 http://archive.ubuntu.com/ubuntu focal/main amd64 libxkbcommon0 amd64 0.10.0-1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:112 http://archive.ubuntu.com/ubuntu focal/main amd64 libxrandr2 amd64 2:1.5.2-0ubuntu1 [18.5 kB]
+Err:113 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgtk-3-common all 3.24.20-0ubuntu1.1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:114 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgtk-3-0 amd64 3.24.20-0ubuntu1.1 [2,620 kB]
+Err:115 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgtk-3-bin amd64 3.24.20-0ubuntu1.1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:116 http://archive.ubuntu.com/ubuntu focal/main amd64 libpciaccess0 amd64 0.16-0ubuntu1 [17.9 kB]
+Err:117 http://archive.ubuntu.com/ubuntu focal/main amd64 libpmem1 amd64 1.8-1ubuntu1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:118 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libsndfile1 amd64 1.0.28-7ubuntu0.1 [170 kB]
+Err:119 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpulse0 amd64 1:13.99.1-1ubuntu3.13
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:120 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libslirp0 amd64 4.1.0-2ubuntu2.2 [54.4 kB]
+Ign:121 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libspice-server1 amd64 0.14.2-4ubuntu3.1
+Get:122 http://archive.ubuntu.com/ubuntu focal/main amd64 libusbredirparser1 amd64 0.8.0-1 [14.1 kB]
+Ign:123 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libvirglrenderer1 amd64 0.8.2-1ubuntu1.1
+Get:124 http://archive.ubuntu.com/ubuntu focal/main amd64 libyajl2 amd64 2.1.0-3 [20.1 kB]
+Err:125 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libvirt0 amd64 6.0.0-0ubuntu8.15
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:126 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libvirt-daemon-driver-qemu amd64 6.0.0-0ubuntu8.15 [605 kB]
+Err:127 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libvirt-daemon amd64 6.0.0-0ubuntu8.15
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:128 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libvirt-daemon-driver-storage-rbd amd64 6.0.0-0ubuntu8.15 [28.3 kB]
+Err:129 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libvte-2.91-common amd64 0.60.3-0ubuntu1~20.04
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:130 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libvte-2.91-0 amd64 0.60.3-0ubuntu1~20.04 [195 kB]
+Ign:131 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxml2-utils amd64 2.9.10+dfsg-5ubuntu0.20.04.2
+Get:132 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-novnc all 1:1.0.0-2 [16.3 kB]
+Err:133 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-websockify amd64 0.9.0-0ubuntu2
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:134 http://archive.ubuntu.com/ubuntu focal/universe amd64 websockify amd64 0.9.0-0ubuntu2 [18.1 kB]
+Err:135 http://archive.ubuntu.com/ubuntu focal/universe amd64 novnc all 1:1.0.0-2
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:136 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-libvirt amd64 6.1.0-1 [136 kB]
+Err:137 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-microversion-parse all 1.0.0-0ubuntu1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:138 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-sortedcontainers all 2.1.0-2 [27.3 kB]
+Err:139 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-os-resource-classes all 1.0.0-0ubuntu1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:140 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-os-xenapi all 0.3.4-0ubuntu3 [74.9 kB]
+Err:141 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-pymemcache all 2.2.2-2
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:142 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-pypowervm all 1.1.24-0ubuntu1 [532 kB]
+Err:143 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-redis all 3.3.11-2
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:144 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-voluptuous all 0.11.1-1build1 [31.6 kB]
+Err:145 http://archive.ubuntu.com/ubuntu focal/main amd64 zvmcloudconnector-common all 2.0.0~b1~git2019062011.4fc9142.really.1.4.1-0ubuntu3
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:146 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-zvmcloudconnector all 2.0.0~b1~git2019062011.4fc9142.really.1.4.1-0ubuntu3 [173 kB]
+Err:147 http://archive.ubuntu.com/ubuntu focal/main amd64 libfdt1 amd64 1.5.1-1
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:148 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 qemu-system-common amd64 1:4.2-3ubuntu6.21 [1,056 kB]
+Ign:149 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 qemu-system-data all 1:4.2-3ubuntu6.21
+Get:150 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 seabios all 1.13.0-1ubuntu1.1 [138 kB]
+Ign:151 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 qemu-system-x86 amd64 1:4.2-3ubuntu6.21
+Get:152 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 qemu-kvm amd64 1:4.2-3ubuntu6.21 [13.1 kB]
+Ign:153 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 qemu-system-gui amd64 1:4.2-3ubuntu6.21
+Get:154 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 ovmf all 0~20191122.bd85bf54-2ubuntu3.3 [2,490 kB]
+Err:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgdk-pixbuf2.0-0 amd64 2.40.0+dfsg-3ubuntu0.2
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:57 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gstreamer1.0-plugins-base amd64 1.16.2-4ubuntu0.1 [620 kB]
+Err:61 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcaca0 amd64 0.99.beta19-2.1ubuntu1.20.04.2
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:81 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gstreamer1.0-plugins-good amd64 1.16.2-1ubuntu2.1 [1,739 kB]
+Get:83 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gstreamer1.0-x amd64 1.16.2-4ubuntu0.1 [74.9 kB]
+Get:101 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgdk-pixbuf2.0-bin amd64 2.40.0+dfsg-3ubuntu0.2 [14.1 kB]
+Get:121 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libspice-server1 amd64 0.14.2-4ubuntu3.1 [343 kB]
+Get:123 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libvirglrenderer1 amd64 0.8.2-1ubuntu1.1 [163 kB]
+Get:131 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxml2-utils amd64 2.9.10+dfsg-5ubuntu0.20.04.2 [37.1 kB]
+Get:149 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 qemu-system-data all 1:4.2-3ubuntu6.21 [563 kB]
+Get:151 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 qemu-system-x86 amd64 1:4.2-3ubuntu6.21 [6,726 kB]
+Get:153 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 qemu-system-gui amd64 1:4.2-3ubuntu6.21 [40.7 kB]
+Fetched 28.9 MB in 1min 46s (273 kB/s)
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.17-2_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/libgdk-pixbuf2.0-0_2.40.0+dfsg-3ubuntu0.2_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/f/fonts-dejavu/fonts-dejavu-core_2.37-1_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/libfontconfig1_2.13.1-2ubuntu3_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb-render0_1.14-2_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libx/libxrender/libxrender1_0.9.10-1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/libcairo-gobject2_1.16.0-4ubuntu1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/libgraphite2-3_1.3.13-11build1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libt/libthai/libthai-data_0.1.28-3_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libt/libthai/libthai0_0.1.28-3_amd64.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/libpangoft2-1.0-0_1.44.7-2ubuntu4_amd64.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg2-2_2.48.9-1ubuntu0.20.04.1_amd64.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/h/humanity-icon-theme/humanity-icon-theme_0.6.15_all.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_3.36.1-2ubuntu0.20.04.2_all.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/x/xorg/x11-common_7.7+19ubuntu14_all.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/a/at-spi2-core/at-spi2-core_2.36.0-2_amd64.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/c/cpu-checker/cpu-checker_0.7-1.1_amd64.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/o/orc/liborc-0.4-0_0.4.31-1_amd64.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/o/opus/libopus0_1.3.1-0ubuntu1_amd64.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libv/libvisual/libvisual-0.4-0_0.4.0-17_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw1394/libraw1394-11_2.1.2-1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libc/libcaca/libcaca0_0.99.beta19-2.1ubuntu1.20.04.2_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/f/flac/libflac8_1.3.3-1build1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libi/libiec61883/libiec61883-0_1.2.0-3_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/j/jackd2/libjack-jackd2-0_1.9.12~dfsg-2ubuntu2_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mpg123/libmpg123-0_1.25.13-1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libs/libshout/libshout3_2.4.3-1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/t/taglib/libtag1v5_1.11.1+dfsg.1-0.3ubuntu2_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/v/v4l-utils/libv4lconvert0_1.18.0-2build1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libv/libvpx/libvpx6_1.8.2-1build1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libx/libxdamage/libxdamage1_1.1.5-2_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/i/ipxe-qemu-256k-compat/ipxe-qemu-256k-compat-efi-roms_1.0.0+git-20150424.a25a16d-0ubuntu4_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/a/atk1.0/libatk1.0-data_2.35.1-1ubuntu2_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/a/at-spi2-atk/libatk-bridge2.0-0_2.34.2-0ubuntu2~20.04.1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/libwayland-server0_1.18.0-1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libr/librest/librest-0.7-0_0.8.1-1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/libwayland-cursor0_1.18.0-1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcomposite/libxcomposite1_0.4.5-1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libx/libxi/libxi6_1.7.10-0ubuntu1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libx/libxkbcommon/libxkbcommon0_0.10.0-1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/libgtk-3-common_3.24.20-0ubuntu1.1_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/libgtk-3-bin_3.24.20-0ubuntu1.1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/p/pmdk/libpmem1_1.8-1ubuntu1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/libpulse0_13.99.1-1ubuntu3.13_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libv/libvirt/libvirt0_6.0.0-0ubuntu8.15_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libv/libvirt/libvirt-daemon_6.0.0-0ubuntu8.15_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/v/vte2.91/libvte-2.91-common_0.60.3-0ubuntu1~20.04_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/w/websockify/python3-websockify_0.9.0-0ubuntu2_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/universe/n/novnc/novnc_1.0.0-2_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/p/python-microversion-parse/python3-microversion-parse_1.0.0-0ubuntu1_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://ubuntu-cloud.archive.canonical.com/ubuntu/pool/main/o/openvswitch/python3-openvswitch_2.15.0-0ubuntu3.1~cloud0_all.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/p/python-os-resource-classes/python3-os-resource-classes_1.0.0-0ubuntu1_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://ubuntu-cloud.archive.canonical.com/ubuntu/pool/main/p/python-oslo.versionedobjects/python3-oslo.versionedobjects_2.4.0-0ubuntu1~cloud0_all.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://ubuntu-cloud.archive.canonical.com/ubuntu/pool/main/p/pyroute2/python3-pyroute2_0.5.14-0ubuntu1.1~cloud0_all.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://ubuntu-cloud.archive.canonical.com/ubuntu/pool/main/p/paramiko/python3-paramiko_2.7.2-1ubuntu1~cloud0_all.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/p/python-pymemcache/python3-pymemcache_2.2.2-2_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/p/python-redis/python3-redis_3.3.11-2_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/z/zvmcloudconnector/zvmcloudconnector-common_2.0.0~b1~git2019062011.4fc9142.really.1.4.1-0ubuntu3_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/d/device-tree-compiler/libfdt1_1.5.1-1_amd64.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Some files failed to download

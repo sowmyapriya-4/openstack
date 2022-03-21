@@ -1,0 +1,84 @@
+Success. Node compute in mgmt: 10.0.0.31.
+IP address of this node's interface in management network: 10.0.0.31.
+Configuring LVM physical and logical volumes.
+Setting LVM filter line in /etc/lvm/lvm.conf to only allow /dev/sdb.
+Verifying LVM filter.
+	filter = [ "a/sdb/", "r/.*/"]
+	filter = [ "a/sdb/", "r/.*/"]
+	filter = [ "a/sdb/", "r/.*/"]
+Configuring /etc/cinder/cinder.conf.
+Setting database connection: mysql+pymysql://cinder:cinderDBPass@controller/cinder.
+'/etc/cinder/cinder.conf' -> '/tmp/040_etc_cinder_cinder.conf.iniset'
+iniset /tmp/040_etc_cinder_cinder.conf.iniset database connection mysql+pymysql://cinder:cinderDBPass@controller/cinder
+Configuring RabbitMQ message queue access.
+'/etc/cinder/cinder.conf' -> '/tmp/041_etc_cinder_cinder.conf.iniset'
+iniset /tmp/041_etc_cinder_cinder.conf.iniset DEFAULT transport_url rabbit://openstack:rabbitPass@controller
+'/etc/cinder/cinder.conf' -> '/tmp/042_etc_cinder_cinder.conf.iniset'
+iniset /tmp/042_etc_cinder_cinder.conf.iniset DEFAULT auth_strategy keystone
+'/etc/cinder/cinder.conf' -> '/tmp/043_etc_cinder_cinder.conf.iniset'
+iniset /tmp/043_etc_cinder_cinder.conf.iniset keystone_authtoken www_authenticate_uri http://controller:5000
+'/etc/cinder/cinder.conf' -> '/tmp/044_etc_cinder_cinder.conf.iniset'
+iniset /tmp/044_etc_cinder_cinder.conf.iniset keystone_authtoken auth_url http://controller:5000
+'/etc/cinder/cinder.conf' -> '/tmp/045_etc_cinder_cinder.conf.iniset'
+iniset /tmp/045_etc_cinder_cinder.conf.iniset keystone_authtoken memcached_servers controller:11211
+'/etc/cinder/cinder.conf' -> '/tmp/046_etc_cinder_cinder.conf.iniset'
+iniset /tmp/046_etc_cinder_cinder.conf.iniset keystone_authtoken auth_type password
+'/etc/cinder/cinder.conf' -> '/tmp/047_etc_cinder_cinder.conf.iniset'
+iniset /tmp/047_etc_cinder_cinder.conf.iniset keystone_authtoken project_domain_id default
+'/etc/cinder/cinder.conf' -> '/tmp/048_etc_cinder_cinder.conf.iniset'
+iniset /tmp/048_etc_cinder_cinder.conf.iniset keystone_authtoken user_domain_id default
+'/etc/cinder/cinder.conf' -> '/tmp/049_etc_cinder_cinder.conf.iniset'
+iniset /tmp/049_etc_cinder_cinder.conf.iniset keystone_authtoken project_name service
+'/etc/cinder/cinder.conf' -> '/tmp/050_etc_cinder_cinder.conf.iniset'
+iniset /tmp/050_etc_cinder_cinder.conf.iniset keystone_authtoken username cinder
+'/etc/cinder/cinder.conf' -> '/tmp/051_etc_cinder_cinder.conf.iniset'
+iniset /tmp/051_etc_cinder_cinder.conf.iniset keystone_authtoken password cinderPass
+'/etc/cinder/cinder.conf' -> '/tmp/052_etc_cinder_cinder.conf.iniset'
+iniset /tmp/052_etc_cinder_cinder.conf.iniset DEFAULT my_ip 10.0.0.31
+'/etc/cinder/cinder.conf' -> '/tmp/053_etc_cinder_cinder.conf.iniset'
+iniset /tmp/053_etc_cinder_cinder.conf.iniset DEFAULT volume_driver cinder.volume.drivers.lvm.LVMVolumeDriver
+'/etc/cinder/cinder.conf' -> '/tmp/054_etc_cinder_cinder.conf.iniset'
+iniset /tmp/054_etc_cinder_cinder.conf.iniset DEFAULT volume_group cinder-volumes
+'/etc/cinder/cinder.conf' -> '/tmp/055_etc_cinder_cinder.conf.iniset'
+iniset /tmp/055_etc_cinder_cinder.conf.iniset DEFAULT iscsi_protocol iscsi
+'/etc/cinder/cinder.conf' -> '/tmp/056_etc_cinder_cinder.conf.iniset'
+iniset /tmp/056_etc_cinder_cinder.conf.iniset DEFAULT iscsi_helper tgtadm
+'/etc/cinder/cinder.conf' -> '/tmp/057_etc_cinder_cinder.conf.iniset'
+iniset /tmp/057_etc_cinder_cinder.conf.iniset DEFAULT enabled_backends lvm
+'/etc/cinder/cinder.conf' -> '/tmp/058_etc_cinder_cinder.conf.iniset'
+iniset /tmp/058_etc_cinder_cinder.conf.iniset DEFAULT glance_api_servers http://controller:9292
+'/etc/cinder/cinder.conf' -> '/tmp/059_etc_cinder_cinder.conf.iniset'
+iniset /tmp/059_etc_cinder_cinder.conf.iniset oslo_concurrency lock_path /var/lib/cinder/tmp
+Restarting cinder service.
+Synchronizing state of tgt.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable tgt
+Synchronizing state of cinder-volume.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable cinder-volume
+Verifying Block Storage installation on controller node.
+Sourcing the admin credentials.
+Restarting restarting cinder-scheduler.
+ssh controller sudo service cinder-scheduler restart
+Waiting for cinder to start.
+openstack volume service list is available:
+ssh controller source /home/stack/config/admin-openstackrc.sh; openstack volume service list
++------------------+-------------+------+---------+-------+----------------------------+
+| Binary           | Host        | Zone | Status  | State | Updated At                 |
++------------------+-------------+------+---------+-------+----------------------------+
+| cinder-scheduler | controller  | nova | enabled | up    | 2022-03-16T10:25:52.000000 |
+| cinder-volume    | compute@lvm | nova | enabled | up    | 2022-03-16T10:25:51.000000 |
++------------------+-------------+------+---------+-------+----------------------------+
+Waiting for all cinder services to start..
+All cinder services seem to be up and running.
+ssh controller source /home/stack/config/admin-openstackrc.sh; openstack volume service list
++------------------+-------------+------+---------+-------+----------------------------+
+| Binary           | Host        | Zone | Status  | State | Updated At                 |
++------------------+-------------+------+---------+-------+----------------------------+
+| cinder-scheduler | controller  | nova | enabled | up    | 2022-03-16T10:25:52.000000 |
+| cinder-volume    | compute@lvm | nova | enabled | up    | 2022-03-16T10:25:51.000000 |
++------------------+-------------+------+---------+-------+----------------------------+
+Sourcing the demo credentials.
+openstack volume create --size 1 volume1
+ssh controller source /home/stack/config/demo-openstackrc.sh; openstack volume create --size 1 volume1
+Failed to contact the endpoint at http://controller:9292 for discovery. Fallback to using that endpoint as the base url.
+Failed to contact the endpoint at http://controller:9292 for discovery. Fallback to using that endpoint as the base url.
+The image service for : exists but does not have any supported versions.

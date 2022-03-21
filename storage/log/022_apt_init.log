@@ -1,0 +1,61 @@
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+Hit:2 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Hit:5 http://archive.ubuntu.com/ubuntu focal-security InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+17 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Installing packages needed for add-apt-repository.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+software-properties-common is already the newest version (0.99.9.8).
+0 upgraded, 0 newly installed, 0 to remove and 17 not upgraded.
+Adding cloud repo: cloud-archive:wallaby
+ Ubuntu Cloud Archive for OpenStack Wallaby
+ More info: https://wiki.ubuntu.com/OpenStack/CloudArchive
+Press [ENTER] to continue or Ctrl-c to cancel adding it.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ubuntu-cloud-keyring is already the newest version (2020.02.11.4).
+0 upgraded, 0 newly installed, 0 to remove and 17 not upgraded.
+Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:3 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Hit:5 http://archive.ubuntu.com/ubuntu focal-security InRelease
+Reading package lists...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+7 packages can be upgraded. Run 'apt list --upgradable' to see them.
+deb http://mariadb.mirror.globo.tech/repo/10.5/ubuntu focal main
+Warning: apt-key output should not be parsed (stdout is not a terminal)
+Executing: /tmp/apt-key-gpghome.JvrdSqWpmo/gpg.1.sh --fetch-keys https://mariadb.org/mariadb_release_signing_key.asc
+gpg: requesting key from 'https://mariadb.org/mariadb_release_signing_key.asc'
+gpg: key F1656F24C74CD1D8: public key "MariaDB Signing Key <signing-key@mariadb.org>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Get:1 http://mariadb.mirror.globo.tech/repo/10.5/ubuntu focal InRelease [7,767 B]
+Get:2 http://mariadb.mirror.globo.tech/repo/10.5/ubuntu focal/main amd64 Packages [17.3 kB]
+Fetched 25.1 kB in 1s (31.1 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.

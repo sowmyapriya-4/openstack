@@ -1,0 +1,14 @@
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:5 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Hit:6 http://archive.ubuntu.com/ubuntu focal-security InRelease
+Get:3 https://downloads.mariadb.com/MariaDB/mariadb-10.3/repo/ubuntu bionic InRelease [6,265 B]
+Err:3 https://downloads.mariadb.com/MariaDB/mariadb-10.3/repo/ubuntu bionic InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY F1656F24C74CD1D8
+Reading package lists...
+W: GPG error: https://downloads.mariadb.com/MariaDB/mariadb-10.3/repo/ubuntu bionic InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY F1656F24C74CD1D8
+E: The repository 'http://downloads.mariadb.com/MariaDB/mariadb-10.3/repo/ubuntu bionic InRelease' is not signed.

@@ -14,7 +14,6 @@ indicate_current_auto
 
 #------------------------------------------------------------------------------
 # Install and configure controller node
-# https://docs.openstack.org/neutron/train/install/controller-install-ubuntu.html
 #------------------------------------------------------------------------------
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -61,4 +60,4 @@ openstack endpoint create \
 openstack endpoint create \
     --region "$REGION" \
     network \
-    public http://controller:9696
+    admin http://controller:9696

@@ -1,0 +1,2 @@
+Configuring Compute to use Networking.
+cp: cannot stat '/etc/nova/nova.conf': No such file or directory

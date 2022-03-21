@@ -1,0 +1,189 @@
+Success. Node compute in mgmt: 10.0.0.31.
+IP address of this node's interface in management network: 10.0.0.31.
+Installing qemu support package for non-raw image types.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+qemu is already the newest version (1:4.2-3ubuntu6.21).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Installing the supporting utility packages.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+lvm2 is already the newest version (2.03.07-1ubuntu1).
+thin-provisioning-tools is already the newest version (0.8.5-4build1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Installing cinder.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  alembic cinder-common ibverbs-providers javascript-common libblas3
+  libgfortran5 libibverbs1 libiscsi7 libjs-jquery libjs-sphinxdoc
+  libjs-underscore liblapack3 libnl-route-3-200 libpq5 libquadmath0 librados2
+  librbd1 librdmacm1 os-brick-common pycadf-common python-pastedeploy-tpl
+  python3-alembic python3-amqp python3-anyjson python3-arrow python3-automaton
+  python3-barbicanclient python3-bcrypt python3-cachetools python3-castellan
+  python3-cffi python3-cinder python3-configshell-fb python3-cursive
+  python3-ddt python3-dnspython python3-eventlet python3-extras
+  python3-fasteners python3-fixtures python3-futurist python3-glanceclient
+  python3-greenlet python3-keystonemiddleware python3-kombu python3-linecache2
+  python3-memcache python3-migrate python3-mimeparse python3-networkx
+  python3-numpy python3-os-brick python3-os-win python3-oslo.cache
+  python3-oslo.concurrency python3-oslo.db python3-oslo.messaging
+  python3-oslo.middleware python3-oslo.policy python3-oslo.privsep
+  python3-oslo.reports python3-oslo.rootwrap python3-oslo.service
+  python3-oslo.upgradecheck python3-oslo.versionedobjects python3-oslo.vmware
+  python3-osprofiler python3-paramiko python3-paste python3-pastedeploy
+  python3-pastescript python3-ply python3-psutil python3-psycopg2
+  python3-pycadf python3-pycparser python3-pymemcache python3-pymysql
+  python3-pyudev python3-redis python3-repoze.lru python3-retrying
+  python3-routes python3-rtslib-fb python3-sqlalchemy python3-sqlalchemy-ext
+  python3-sqlalchemy-utils python3-sqlparse python3-statsd python3-suds
+  python3-swiftclient python3-tabulate python3-taskflow python3-tempita
+  python3-tenacity python3-testresources python3-testscenarios
+  python3-testtools python3-tooz python3-traceback2 python3-unittest2
+  python3-urwid python3-vine python3-voluptuous python3-warlock python3-webob
+  qemu-block-extra qemu-utils sharutils targetcli-fb
+Suggested packages:
+  apache2 | lighttpd | httpd python-amqp-doc python-arrow-doc
+  python-automaton-doc python-castellan-doc python3-dev python3-boto3
+  python3-botocore python3-googleapi python3-hp3parclient python3-oauth2client
+  python3-rados python3-rbd python3-zstd python-cursive-doc
+  python-eventlet-doc python-futurist-doc python-glanceclient-doc
+  python-greenlet-doc python-greenlet-dev python3-greenlet-dbg
+  python-kombu-doc python3-boto python3-django python3-pymongo memcached
+  python-migrate-doc python-networkx-doc python3-gdal python3-matplotlib
+  python3-pygraphviz | python3-pydot python3-scipy gcc gfortran
+  python-numpy-doc python3-pytest python3-numpy-dbg python-os-brick-doc
+  python-os-win-doc python-oslo.cache-doc python-oslo.concurrency-doc
+  python3-confluent-kafka python3-zmq python-oslo.middleware-doc
+  python-oslo.policy-doc python-oslo.privsep-doc python-oslo.reports-doc
+  python-oslo.service-doc python-oslo.versionedobjects-doc python3-gssapi
+  python3-invoke httpd-wsgi libapache2-mod-python libapache2-mod-scgi
+  libjs-mochikit python3-cherrypy3 python-ply-doc python-psutil-doc
+  python-psycopg2-doc cpp python-pymysql-doc python3-hiredis
+  python-sqlalchemy-doc python3-fdb python3-pymssql python3-mysqldb
+  python-sqlalchemy-utils-doc python3-infinity python3-intervals
+  python3-psycopg2cffi python-sqlparse-doc python3-kazoo python3-pydot
+  python3-pydotplus python-tenacity-doc python-testtools-doc python3-etcd3
+  python3-etcd3gw python3-sysv-ipc python3-zake python-urwid-doc
+  python-webob-doc debootstrap sharutils-doc bsd-mailx | mailx
+The following NEW packages will be installed:
+  alembic cinder-common cinder-volume ibverbs-providers javascript-common
+  libblas3 libgfortran5 libibverbs1 libiscsi7 libjs-jquery libjs-sphinxdoc
+  libjs-underscore liblapack3 libnl-route-3-200 libpq5 libquadmath0 librados2
+  librbd1 librdmacm1 os-brick-common pycadf-common python-pastedeploy-tpl
+  python3-alembic python3-amqp python3-anyjson python3-arrow python3-automaton
+  python3-barbicanclient python3-bcrypt python3-cachetools python3-castellan
+  python3-cffi python3-cinder python3-configshell-fb python3-cursive
+  python3-ddt python3-dnspython python3-eventlet python3-extras
+  python3-fasteners python3-fixtures python3-futurist python3-glanceclient
+  python3-greenlet python3-keystonemiddleware python3-kombu python3-linecache2
+  python3-memcache python3-migrate python3-mimeparse python3-networkx
+  python3-numpy python3-os-brick python3-os-win python3-oslo.cache
+  python3-oslo.concurrency python3-oslo.db python3-oslo.messaging
+  python3-oslo.middleware python3-oslo.policy python3-oslo.privsep
+  python3-oslo.reports python3-oslo.rootwrap python3-oslo.service
+  python3-oslo.upgradecheck python3-oslo.versionedobjects python3-oslo.vmware
+  python3-osprofiler python3-paramiko python3-paste python3-pastedeploy
+  python3-pastescript python3-ply python3-psutil python3-psycopg2
+  python3-pycadf python3-pycparser python3-pymemcache python3-pymysql
+  python3-pyudev python3-redis python3-repoze.lru python3-retrying
+  python3-routes python3-rtslib-fb python3-sqlalchemy python3-sqlalchemy-ext
+  python3-sqlalchemy-utils python3-sqlparse python3-statsd python3-suds
+  python3-swiftclient python3-tabulate python3-taskflow python3-tempita
+  python3-tenacity python3-testresources python3-testscenarios
+  python3-testtools python3-tooz python3-traceback2 python3-unittest2
+  python3-urwid python3-vine python3-voluptuous python3-warlock python3-webob
+  qemu-block-extra qemu-utils sharutils targetcli-fb
+0 upgraded, 111 newly installed, 0 to remove and 0 not upgraded.
+Need to get 8,215 kB/24.1 MB of archives.
+After this operation, 132 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 libibverbs1 amd64 28.0-1ubuntu1 [53.6 kB]
+Get:2 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-alembic all 1.4.3-1ubuntu1~cloud0 [116 kB]
+Err:3 http://archive.ubuntu.com/ubuntu focal/main amd64 javascript-common all 11
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 librdmacm1 amd64 28.0-1ubuntu1 [64.9 kB]
+Err:5 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 alembic all 1.4.3-1ubuntu1~cloud0
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:6 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 librbd1 amd64 16.2.6-0ubuntu0.21.04.1~cloud0 [2,408 kB]
+Err:7 http://archive.ubuntu.com/ubuntu focal/main amd64 liblapack3 amd64 3.9.0-1build1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 pycadf-common all 2.10.0-2 [4,932 B]
+Err:9 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-vine all 1.3.0+dfsg-1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:10 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-arrow all 0.15.5-1 [36.8 kB]
+Err:11 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-ply all 3.11-3ubuntu0.1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-cffi all 1.14.0-1build1 [70.3 kB]
+Err:13 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-configshell-fb all 1:1.1.27-0ubuntu1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:14 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-dnspython all 1.16.0-1build1 [89.1 kB]
+Err:15 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-fasteners all 0.14.1-2
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:16 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-mimeparse all 1.6.0-3build1 [7,152 B]
+Err:17 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-unittest2 all 1.1.0-6.1build1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:18 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-fixtures all 3.0.0-3build1 [32.6 kB]
+Err:19 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-warlock all 1.2.0-3
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:20 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-pycadf all 2.10.0-2 [17.3 kB]
+Get:21 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-tempita all 0.5.2-6 [14.8 kB]
+Get:22 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-networkx all 2.4-3ubuntu1 [855 kB]
+Err:23 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-amqp all 5.0.3-3~cloud0
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:24 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-barbicanclient all 5.0.1-0ubuntu1~cloud0 [45.8 kB]
+Err:25 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-ddt all 1.4.1-2~cloud0
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:26 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-eventlet all 0.30.0-0ubuntu1.1~cloud0 [175 kB]
+Get:27 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-pastedeploy all 2.1.0-1 [26.5 kB]
+Get:28 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-routes all 2.4.1-2 [88.1 kB]
+Get:29 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-testscenarios all 0.5.0-3build1 [13.7 kB]
+Get:30 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-suds all 0.8.4-1 [135 kB]
+Err:31 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-oslo.cache all 2.7.0-0ubuntu1~cloud0
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:32 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-pastescript all 2.0.2-4 [54.6 kB]
+Get:33 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-pymysql all 0.9.3-2ubuntu3 [38.9 kB]
+Get:34 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-keystonemiddleware all 9.2.0-0ubuntu1~cloud0 [67.3 kB]
+Err:35 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-oslo.concurrency all 4.4.0-0ubuntu1~cloud0
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:36 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-oslo.service all 2.5.0-0ubuntu1~cloud0 [51.2 kB]
+Err:37 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-oslo.privsep all 2.5.0-0ubuntu1~cloud0
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:38 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-os-brick all 4.3.1-0ubuntu2~cloud0 [136 kB]
+Err:39 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-oslo.db all 8.5.0+really.8.5.0-0ubuntu1~cloud0
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:40 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-oslo.messaging all 12.7.1-0ubuntu1~cloud0 [152 kB]
+Get:41 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-psutil amd64 5.8.0-1~cloud0 [184 kB]
+Get:42 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-oslo.rootwrap all 6.2.0-0ubuntu1~cloud0 [26.3 kB]
+Get:43 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-oslo.versionedobjects all 2.4.0-0ubuntu1~cloud0 [60.0 kB]
+Get:44 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-osprofiler all 3.4.0-0ubuntu1~cloud0 [49.0 kB]
+Get:45 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-psycopg2 amd64 2.8.6-2~cloud0 [120 kB]
+Get:46 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-sqlalchemy-ext amd64 1.3.22+ds1-1~cloud0 [20.1 kB]
+Fetched 5,214 kB in 16s (336 kB/s)
+E: Failed to fetch http://ubuntu-cloud.archive.canonical.com/ubuntu/pool/main/a/alembic/alembic_1.4.3-1ubuntu1~cloud0_all.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/j/javascript-common/javascript-common_11_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/l/lapack/liblapack3_3.9.0-1build1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/v/vine/python3-vine_1.3.0+dfsg-1_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://ubuntu-cloud.archive.canonical.com/ubuntu/pool/main/p/python-amqp/python3-amqp_5.0.3-3~cloud0_all.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/p/ply/python3-ply_3.11-3ubuntu0.1_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/universe/p/python-configshell-fb/python3-configshell-fb_1.1.27-0ubuntu1_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://ubuntu-cloud.archive.canonical.com/ubuntu/pool/main/p/python-ddt/python3-ddt_1.4.1-2~cloud0_all.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/p/python-fasteners/python3-fasteners_0.14.1-2_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/u/unittest2/python3-unittest2_1.1.0-6.1build1_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/p/python-warlock/python3-warlock_1.2.0-3_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://ubuntu-cloud.archive.canonical.com/ubuntu/pool/main/p/python-oslo.cache/python3-oslo.cache_2.7.0-0ubuntu1~cloud0_all.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://ubuntu-cloud.archive.canonical.com/ubuntu/pool/main/p/python-oslo.concurrency/python3-oslo.concurrency_4.4.0-0ubuntu1~cloud0_all.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://ubuntu-cloud.archive.canonical.com/ubuntu/pool/main/p/python-oslo.privsep/python3-oslo.privsep_2.5.0-0ubuntu1~cloud0_all.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://ubuntu-cloud.archive.canonical.com/ubuntu/pool/main/p/python-oslo.db/python3-oslo.db_8.5.0+really.8.5.0-0ubuntu1~cloud0_all.deb  400  Bad Request [IP: 91.189.88.142 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?

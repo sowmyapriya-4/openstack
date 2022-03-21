@@ -1,0 +1,342 @@
+Installing nova for compute node.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  acl adwaita-icon-theme at-spi2-core cpu-checker dns-root-data dnsmasq-base
+  fontconfig fontconfig-config fonts-dejavu-core genisoimage
+  gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-x
+  gtk-update-icon-cache hicolor-icon-theme humanity-icon-theme ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms keystone-common libaa1 libasyncns0
+  libatk-bridge2.0-0 libatk1.0-0 libatk1.0-data libatspi2.0-0 libavahi-client3
+  libavahi-common-data libavahi-common3 libavc1394-0 libbrlapi0.7 libcaca0
+  libcacard0 libcairo-gobject2 libcairo2 libcdparanoia0 libcolord2 libcups2
+  libdatrie1 libdv4 libepoxy0 libfdt1 libflac8 libfontconfig1 libgbm1
+  libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-bin libgdk-pixbuf2.0-common
+  libgraphite2-3 libgstreamer-plugins-base1.0-0 libgstreamer-plugins-good1.0-0
+  libgtk-3-0 libgtk-3-bin libgtk-3-common libharfbuzz0b libidn11 libiec61883-0
+  libjack-jackd2-0 libmp3lame0 libmpg123-0 libnss-mymachines libopus0
+  liborc-0.4-0 libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0
+  libpciaccess0 libpcsclite1 libpixman-1-0 libpmem1 libpulse0 libraw1394-11
+  librest-0.7-0 librsvg2-2 librsvg2-common libsamplerate0 libshout3 libslirp0
+  libsndfile1 libsoup-gnome2.4-1 libspeex1 libspice-server1 libtag1v5
+  libtag1v5-vanilla libthai-data libthai0 libtheora0 libtwolame0
+  libusbredirparser1 libv4l-0 libv4lconvert0 libvirglrenderer1 libvirt-clients
+  libvirt-daemon libvirt-daemon-driver-qemu libvirt-daemon-driver-storage-rbd
+  libvirt-daemon-system libvirt-daemon-system-systemd libvirt0 libvisual-0.4-0
+  libvorbisenc2 libvpx6 libvte-2.91-0 libvte-2.91-common libwavpack1
+  libwayland-client0 libwayland-cursor0 libwayland-egl1 libwayland-server0
+  libxcb-render0 libxcb-shm0 libxcomposite1 libxcursor1 libxdamage1 libxfixes3
+  libxi6 libxinerama1 libxkbcommon0 libxml2-utils libxrandr2 libxrender1
+  libxtst6 libxv1 libyajl2 msr-tools nova-common nova-compute-libvirt ovmf
+  python3-aniso8601 python3-defusedxml python3-flask python3-flask-restful
+  python3-itsdangerous python3-keystone python3-ldap python3-libvirt
+  python3-microversion-parse python3-nova python3-os-resource-classes
+  python3-passlib python3-pypowervm python3-pysaml2 python3-scrypt
+  python3-websockify python3-werkzeug python3-zvmcloudconnector
+  qemu-efi-aarch64 qemu-efi-arm qemu-slof qemu-system qemu-system-arm
+  qemu-system-common qemu-system-data qemu-system-gui qemu-system-mips
+  qemu-system-misc qemu-system-ppc qemu-system-s390x qemu-system-sparc
+  qemu-system-x86 seabios systemd-container ubuntu-mono x11-common xmlsec1
+  zvmcloudconnector-common
+Suggested packages:
+  wodim cdrkit-doc gvfs colord cups-common libdv-bin oss-compat
+  libvisual-0.4-plugins jackd2 opus-tools pcscd pulseaudio libraw1394-doc
+  librsvg2-bin speex gstreamer1.0-plugins-ugly libvirt-daemon-driver-lxc
+  libvirt-daemon-driver-vbox libvirt-daemon-driver-xen
+  libvirt-daemon-driver-storage-gluster libvirt-daemon-driver-storage-zfs
+  numad auditd nfs-common pm-utils radvd systemtap zfsutils guestmount
+  sysfsutils python-flask-doc python3-ldappool python-microversion-parse-doc
+  python3-repoze.who python3-jwcrypto ipython3 python-werkzeug-doc
+  python3-termcolor python3-watchdog samba vde2 openbios-ppc openhackware
+  openbios-sparc
+The following NEW packages will be installed:
+  acl adwaita-icon-theme at-spi2-core cpu-checker dns-root-data dnsmasq-base
+  fontconfig fontconfig-config fonts-dejavu-core genisoimage
+  gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-x
+  gtk-update-icon-cache hicolor-icon-theme humanity-icon-theme ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms keystone-common libaa1 libasyncns0
+  libatk-bridge2.0-0 libatk1.0-0 libatk1.0-data libatspi2.0-0 libavahi-client3
+  libavahi-common-data libavahi-common3 libavc1394-0 libbrlapi0.7 libcaca0
+  libcacard0 libcairo-gobject2 libcairo2 libcdparanoia0 libcolord2 libcups2
+  libdatrie1 libdv4 libepoxy0 libfdt1 libflac8 libfontconfig1 libgbm1
+  libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-bin libgdk-pixbuf2.0-common
+  libgraphite2-3 libgstreamer-plugins-base1.0-0 libgstreamer-plugins-good1.0-0
+  libgtk-3-0 libgtk-3-bin libgtk-3-common libharfbuzz0b libidn11 libiec61883-0
+  libjack-jackd2-0 libmp3lame0 libmpg123-0 libnss-mymachines libopus0
+  liborc-0.4-0 libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0
+  libpciaccess0 libpcsclite1 libpixman-1-0 libpmem1 libpulse0 libraw1394-11
+  librest-0.7-0 librsvg2-2 librsvg2-common libsamplerate0 libshout3 libslirp0
+  libsndfile1 libsoup-gnome2.4-1 libspeex1 libspice-server1 libtag1v5
+  libtag1v5-vanilla libthai-data libthai0 libtheora0 libtwolame0
+  libusbredirparser1 libv4l-0 libv4lconvert0 libvirglrenderer1 libvirt-clients
+  libvirt-daemon libvirt-daemon-driver-qemu libvirt-daemon-driver-storage-rbd
+  libvirt-daemon-system libvirt-daemon-system-systemd libvirt0 libvisual-0.4-0
+  libvorbisenc2 libvpx6 libvte-2.91-0 libvte-2.91-common libwavpack1
+  libwayland-client0 libwayland-cursor0 libwayland-egl1 libwayland-server0
+  libxcb-render0 libxcb-shm0 libxcomposite1 libxcursor1 libxdamage1 libxfixes3
+  libxi6 libxinerama1 libxkbcommon0 libxml2-utils libxrandr2 libxrender1
+  libxtst6 libxv1 libyajl2 msr-tools nova-common nova-compute
+  nova-compute-libvirt nova-compute-qemu ovmf python3-aniso8601
+  python3-defusedxml python3-flask python3-flask-restful python3-itsdangerous
+  python3-keystone python3-ldap python3-libvirt python3-microversion-parse
+  python3-nova python3-os-resource-classes python3-passlib python3-pypowervm
+  python3-pysaml2 python3-scrypt python3-websockify python3-werkzeug
+  python3-zvmcloudconnector qemu-efi-aarch64 qemu-efi-arm qemu-slof
+  qemu-system qemu-system-arm qemu-system-common qemu-system-data
+  qemu-system-gui qemu-system-mips qemu-system-misc qemu-system-ppc
+  qemu-system-s390x qemu-system-sparc qemu-system-x86 seabios
+  systemd-container ubuntu-mono x11-common xmlsec1 zvmcloudconnector-common
+0 upgraded, 167 newly installed, 0 to remove and 0 not upgraded.
+Need to get 128 MB of archives.
+After this operation, 860 MB of additional disk space will be used.
+Get:1 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-pysaml2 all 6.1.0-0ubuntu1.21.04.1~cloud0 [208 kB]
+Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 acl amd64 2.2.53-6 [37.8 kB]
+Err:3 http://archive.ubuntu.com/ubuntu focal/main amd64 hicolor-icon-theme all 0.17-2
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgdk-pixbuf2.0-common all 2.40.0+dfsg-3ubuntu0.2 [4,652 B]
+Ign:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgdk-pixbuf2.0-0 amd64 2.40.0+dfsg-3ubuntu0.2
+Get:6 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 keystone-common all 2:19.0.0-0ubuntu1~cloud0 [56.1 kB]
+Get:7 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 nova-common all 3:23.1.0-0ubuntu1~cloud0 [93.9 kB]
+Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gtk-update-icon-cache amd64 3.24.20-0ubuntu1.1 [28.8 kB]
+Get:9 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-keystone all 2:19.0.0-0ubuntu1~cloud0 [735 kB]
+Err:10 http://archive.ubuntu.com/ubuntu focal/main amd64 fonts-dejavu-core all 2.37-1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:11 http://archive.ubuntu.com/ubuntu focal/main amd64 fontconfig-config all 2.13.1-2ubuntu3 [28.8 kB]
+Err:12 http://archive.ubuntu.com/ubuntu focal/main amd64 libfontconfig1 amd64 2.13.1-2ubuntu3
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:13 http://archive.ubuntu.com/ubuntu focal/main amd64 libpixman-1-0 amd64 0.38.4-0ubuntu1 [227 kB]
+Get:14 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-nova all 3:23.1.0-0ubuntu1~cloud0 [2,972 kB]
+Err:15 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-render0 amd64 1.14-2
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:16 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb-shm0 amd64 1.14-2 [5,584 B]
+Err:17 http://archive.ubuntu.com/ubuntu focal/main amd64 libxrender1 amd64 1:0.9.10-1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:18 http://archive.ubuntu.com/ubuntu focal/main amd64 libcairo2 amd64 1.16.0-4ubuntu1 [583 kB]
+Err:19 http://archive.ubuntu.com/ubuntu focal/main amd64 libcairo-gobject2 amd64 1.16.0-4ubuntu1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:20 http://archive.ubuntu.com/ubuntu focal/main amd64 fontconfig amd64 2.13.1-2ubuntu3 [171 kB]
+Err:21 http://archive.ubuntu.com/ubuntu focal/main amd64 libgraphite2-3 amd64 1.3.13-11build1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:22 http://archive.ubuntu.com/ubuntu focal/main amd64 libharfbuzz0b amd64 2.6.4-1ubuntu4 [391 kB]
+Err:23 http://archive.ubuntu.com/ubuntu focal/main amd64 libthai-data all 0.1.28-3
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:24 http://archive.ubuntu.com/ubuntu focal/main amd64 libdatrie1 amd64 0.2.12-3 [18.7 kB]
+Err:25 http://archive.ubuntu.com/ubuntu focal/main amd64 libthai0 amd64 0.1.28-3
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:26 http://archive.ubuntu.com/ubuntu focal/main amd64 libpango-1.0-0 amd64 1.44.7-2ubuntu4 [162 kB]
+Get:27 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 nova-compute-libvirt all 3:23.1.0-0ubuntu1~cloud0 [35.6 kB]
+Get:28 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 nova-compute-qemu all 3:23.1.0-0ubuntu1~cloud0 [35.5 kB]
+Get:29 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 nova-compute all 3:23.1.0-0ubuntu1~cloud0 [39.5 kB]
+Err:30 http://archive.ubuntu.com/ubuntu focal/main amd64 libpangoft2-1.0-0 amd64 1.44.7-2ubuntu4
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:31 http://archive.ubuntu.com/ubuntu focal/main amd64 libpangocairo-1.0-0 amd64 1.44.7-2ubuntu4 [24.8 kB]
+Err:32 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 librsvg2-2 amd64 2.48.9-1ubuntu0.20.04.1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:33 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 librsvg2-common amd64 2.48.9-1ubuntu0.20.04.1 [9,212 B]
+Err:34 http://archive.ubuntu.com/ubuntu focal/main amd64 humanity-icon-theme all 0.6.15
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:35 http://archive.ubuntu.com/ubuntu focal/main amd64 ubuntu-mono all 19.04-0ubuntu3 [147 kB]
+Err:36 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 adwaita-icon-theme all 3.36.1-2ubuntu0.20.04.2
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:37 http://archive.ubuntu.com/ubuntu focal/main amd64 libatspi2.0-0 amd64 2.36.0-2 [64.2 kB]
+Err:38 http://archive.ubuntu.com/ubuntu focal/main amd64 x11-common all 1:7.7+19ubuntu14
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:39 http://archive.ubuntu.com/ubuntu focal/main amd64 libxtst6 amd64 2:1.2.3-1 [12.8 kB]
+Err:40 http://archive.ubuntu.com/ubuntu focal/main amd64 at-spi2-core amd64 2.36.0-2
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:41 http://archive.ubuntu.com/ubuntu focal/main amd64 msr-tools amd64 1.3-3 [10.0 kB]
+Err:42 http://archive.ubuntu.com/ubuntu focal/main amd64 cpu-checker amd64 0.7-1.1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:43 http://archive.ubuntu.com/ubuntu focal/main amd64 dns-root-data all 2019052802 [5,300 B]
+Err:44 http://archive.ubuntu.com/ubuntu focal/main amd64 libidn11 amd64 1.33-2.2ubuntu2
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:45 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 dnsmasq-base amd64 2.80-1.1ubuntu1.4 [315 kB]
+Err:46 http://archive.ubuntu.com/ubuntu focal/main amd64 genisoimage amd64 9:1.1.11-3.1ubuntu1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:47 http://archive.ubuntu.com/ubuntu focal/main amd64 libcdparanoia0 amd64 3.10.2+debian-13 [46.7 kB]
+Err:48 http://archive.ubuntu.com/ubuntu focal/main amd64 liborc-0.4-0 amd64 1:0.4.31-1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:49 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgstreamer-plugins-base1.0-0 amd64 1.16.2-4ubuntu0.1 [735 kB]
+Err:50 http://archive.ubuntu.com/ubuntu focal/main amd64 libopus0 amd64 1.3.1-0ubuntu1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:51 http://archive.ubuntu.com/ubuntu focal/main amd64 libtheora0 amd64 1.1.1+dfsg.1-15ubuntu2 [162 kB]
+Err:52 http://archive.ubuntu.com/ubuntu focal/main amd64 libvisual-0.4-0 amd64 0.4.0-17
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:53 http://archive.ubuntu.com/ubuntu focal/main amd64 libvorbisenc2 amd64 1.3.6-2ubuntu1 [70.7 kB]
+Ign:54 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gstreamer1.0-plugins-base amd64 1.16.2-4ubuntu0.1
+Get:55 http://archive.ubuntu.com/ubuntu focal/main amd64 libaa1 amd64 1.4p5-46 [47.3 kB]
+Err:56 http://archive.ubuntu.com/ubuntu focal/main amd64 libraw1394-11 amd64 2.1.2-1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:57 http://archive.ubuntu.com/ubuntu focal/main amd64 libavc1394-0 amd64 0.5.4-5 [16.2 kB]
+Ign:58 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcaca0 amd64 0.99.beta19-2.1ubuntu1.20.04.2
+Get:59 http://archive.ubuntu.com/ubuntu focal/main amd64 libdv4 amd64 1.0.0-12 [58.0 kB]
+Err:60 http://archive.ubuntu.com/ubuntu focal/main amd64 libflac8 amd64 1.3.3-1build1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:61 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgstreamer-plugins-good1.0-0 amd64 1.16.2-1ubuntu2.1 [63.7 kB]
+Err:62 http://archive.ubuntu.com/ubuntu focal/main amd64 libiec61883-0 amd64 1.2.0-3
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:63 http://archive.ubuntu.com/ubuntu focal/main amd64 libsamplerate0 amd64 0.1.9-2 [939 kB]
+Err:64 http://archive.ubuntu.com/ubuntu focal/main amd64 libjack-jackd2-0 amd64 1.9.12~dfsg-2ubuntu2
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:65 http://archive.ubuntu.com/ubuntu focal/main amd64 libmp3lame0 amd64 3.100-3 [133 kB]
+Err:66 http://archive.ubuntu.com/ubuntu focal/main amd64 libmpg123-0 amd64 1.25.13-1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:67 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libspeex1 amd64 1.2~rc1.2-1.1ubuntu1.20.04.1 [53.2 kB]
+Err:68 http://archive.ubuntu.com/ubuntu focal/main amd64 libshout3 amd64 2.4.3-1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:69 http://archive.ubuntu.com/ubuntu focal/main amd64 libtag1v5-vanilla amd64 1.11.1+dfsg.1-0.3ubuntu2 [280 kB]
+Err:70 http://archive.ubuntu.com/ubuntu focal/main amd64 libtag1v5 amd64 1.11.1+dfsg.1-0.3ubuntu2
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:71 http://archive.ubuntu.com/ubuntu focal/main amd64 libtwolame0 amd64 0.4.0-2 [47.6 kB]
+Err:72 http://archive.ubuntu.com/ubuntu focal/main amd64 libv4lconvert0 amd64 1.18.0-2build1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:73 http://archive.ubuntu.com/ubuntu focal/main amd64 libv4l-0 amd64 1.18.0-2build1 [41.9 kB]
+Err:74 http://archive.ubuntu.com/ubuntu focal/main amd64 libvpx6 amd64 1.8.2-1build1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:75 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libwavpack1 amd64 5.2.0-1ubuntu0.1 [77.3 kB]
+Err:76 http://archive.ubuntu.com/ubuntu focal/main amd64 libxdamage1 amd64 1:1.1.5-2
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:77 http://archive.ubuntu.com/ubuntu focal/main amd64 libxfixes3 amd64 1:5.0.3-2 [10.9 kB]
+Ign:78 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gstreamer1.0-plugins-good amd64 1.16.2-1ubuntu2.1
+Get:79 http://archive.ubuntu.com/ubuntu focal/main amd64 libxv1 amd64 2:1.0.11-1 [10.7 kB]
+Ign:80 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gstreamer1.0-x amd64 1.16.2-4ubuntu0.1
+Get:81 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 ipxe-qemu all 1.0.0+git-20190109.133f4c4-0ubuntu3.2 [930 kB]
+Err:82 http://archive.ubuntu.com/ubuntu focal/main amd64 ipxe-qemu-256k-compat-efi-roms all 1.0.0+git-20150424.a25a16d-0ubuntu4
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:83 http://archive.ubuntu.com/ubuntu focal/main amd64 libasyncns0 amd64 0.8-6 [12.1 kB]
+Err:84 http://archive.ubuntu.com/ubuntu focal/main amd64 libatk1.0-data all 2.35.1-1ubuntu2
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:85 http://archive.ubuntu.com/ubuntu focal/main amd64 libatk1.0-0 amd64 2.35.1-1ubuntu2 [45.5 kB]
+Err:86 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libatk-bridge2.0-0 amd64 2.34.2-0ubuntu2~20.04.1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:87 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libavahi-common-data amd64 0.7-4ubuntu7.1 [21.4 kB]
+Get:88 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libavahi-common3 amd64 0.7-4ubuntu7.1 [21.7 kB]
+Get:88 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libavahi-common3 amd64 0.7-4ubuntu7.1 [21.7 kB]
+Get:90 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libavahi-client3 amd64 0.7-4ubuntu7.1 [25.5 kB]
+Get:91 http://archive.ubuntu.com/ubuntu focal/main amd64 libbrlapi0.7 amd64 6.0+dfsg-4ubuntu6 [22.1 kB]
+Get:92 http://archive.ubuntu.com/ubuntu focal/main amd64 libpcsclite1 amd64 1.8.26-3 [22.0 kB]
+Get:93 http://archive.ubuntu.com/ubuntu focal/main amd64 libcacard0 amd64 1:2.6.1-1 [32.4 kB]
+Get:94 http://archive.ubuntu.com/ubuntu focal/main amd64 libcolord2 amd64 1.4.4-2 [133 kB]
+Get:95 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcups2 amd64 2.3.1-9ubuntu1.1 [233 kB]
+Get:96 http://archive.ubuntu.com/ubuntu focal/main amd64 libepoxy0 amd64 1.5.4-1 [191 kB]
+Err:97 http://archive.ubuntu.com/ubuntu focal/main amd64 libwayland-server0 amd64 1.18.0-1
+  408  Request Timeout [IP: 91.189.88.152 80]
+Get:98 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgdk-pixbuf2.0-bin amd64 2.40.0+dfsg-3ubuntu0.2 [14.1 kB]
+Get:99 http://archive.ubuntu.com/ubuntu focal/main amd64 libsoup-gnome2.4-1 amd64 2.70.0-1 [6,136 B]
+Get:100 http://archive.ubuntu.com/ubuntu focal/main amd64 librest-0.7-0 amd64 0.8.1-1 [32.2 kB]
+Get:101 http://archive.ubuntu.com/ubuntu focal/main amd64 libwayland-client0 amd64 1.18.0-1 [23.9 kB]
+Get:102 http://archive.ubuntu.com/ubuntu focal/main amd64 libwayland-cursor0 amd64 1.18.0-1 [10.3 kB]
+Get:103 http://archive.ubuntu.com/ubuntu focal/main amd64 libwayland-egl1 amd64 1.18.0-1 [5,692 B]
+Get:104 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcomposite1 amd64 1:0.4.5-1 [6,976 B]
+Get:105 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcursor1 amd64 1:1.2.0-2 [20.1 kB]
+Get:106 http://archive.ubuntu.com/ubuntu focal/main amd64 libxi6 amd64 2:1.7.10-0ubuntu1 [29.9 kB]
+Get:107 http://archive.ubuntu.com/ubuntu focal/main amd64 libxinerama1 amd64 2:1.1.4-2 [6,904 B]
+Get:108 http://archive.ubuntu.com/ubuntu focal/main amd64 libxkbcommon0 amd64 0.10.0-1 [98.4 kB]
+Get:109 http://archive.ubuntu.com/ubuntu focal/main amd64 libxrandr2 amd64 2:1.5.2-0ubuntu1 [18.5 kB]
+Get:110 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgtk-3-common all 3.24.20-0ubuntu1.1 [234 kB]
+Get:111 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgtk-3-0 amd64 3.24.20-0ubuntu1.1 [2,620 kB]
+Get:112 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgtk-3-bin amd64 3.24.20-0ubuntu1.1 [61.9 kB]
+Get:113 http://archive.ubuntu.com/ubuntu focal/main amd64 libpciaccess0 amd64 0.16-0ubuntu1 [17.9 kB]
+Get:114 http://archive.ubuntu.com/ubuntu focal/main amd64 libpmem1 amd64 1.8-1ubuntu1 [63.8 kB]
+Get:115 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libsndfile1 amd64 1.0.28-7ubuntu0.1 [170 kB]
+Get:116 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpulse0 amd64 1:13.99.1-1ubuntu3.13 [262 kB]
+Get:117 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libslirp0 amd64 4.1.0-2ubuntu2.2 [54.4 kB]
+Get:118 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libspice-server1 amd64 0.14.2-4ubuntu3.1 [343 kB]
+Get:119 http://archive.ubuntu.com/ubuntu focal/main amd64 libusbredirparser1 amd64 0.8.0-1 [14.1 kB]
+Get:120 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libvirglrenderer1 amd64 0.8.2-1ubuntu1.1 [163 kB]
+Get:121 http://archive.ubuntu.com/ubuntu focal/main amd64 libyajl2 amd64 2.1.0-3 [20.1 kB]
+Get:122 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libvirt0 amd64 6.0.0-0ubuntu8.15 [1,450 kB]
+Get:123 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libvirt-clients amd64 6.0.0-0ubuntu8.15 [344 kB]
+Get:124 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libvirt-daemon-driver-qemu amd64 6.0.0-0ubuntu8.15 [605 kB]
+Get:125 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libvirt-daemon amd64 6.0.0-0ubuntu8.15 [404 kB]
+Get:126 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libvirt-daemon-driver-storage-rbd amd64 6.0.0-0ubuntu8.15 [28.3 kB]
+Get:127 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 systemd-container amd64 245.4-4ubuntu3.15 [317 kB]
+Get:128 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libvirt-daemon-system-systemd amd64 6.0.0-0ubuntu8.15 [8,292 B]
+Get:129 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libvirt-daemon-system amd64 6.0.0-0ubuntu8.15 [67.8 kB]
+Get:130 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libvte-2.91-common amd64 0.60.3-0ubuntu1~20.04 [7,500 B]
+Get:131 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libvte-2.91-0 amd64 0.60.3-0ubuntu1~20.04 [195 kB]
+Get:132 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxml2-utils amd64 2.9.10+dfsg-5ubuntu0.20.04.2 [37.1 kB]
+Get:133 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-aniso8601 all 8.0.0-1 [33.0 kB]
+Get:134 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-defusedxml all 0.6.0-2 [37.0 kB]
+Get:135 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-itsdangerous all 1.1.0-1 [14.6 kB]
+Get:136 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-werkzeug all 0.16.1+dfsg1-2 [183 kB]
+Get:137 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-flask all 1.1.1-2 [80.3 kB]
+Get:138 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-flask-restful all 0.3.8-1 [22.3 kB]
+Get:139 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-ldap amd64 3.2.0-4ubuntu2 [90.2 kB]
+Get:140 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-libvirt amd64 6.1.0-1 [136 kB]
+Get:141 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-microversion-parse all 1.0.0-0ubuntu1 [11.0 kB]
+Get:142 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-os-resource-classes all 1.0.0-0ubuntu1 [6,384 B]
+Get:143 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-pypowervm all 1.1.24-0ubuntu1 [532 kB]
+Get:144 http://archive.ubuntu.com/ubuntu focal/main amd64 xmlsec1 amd64 1.2.28-2 [25.0 kB]
+Err:145 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-scrypt amd64 0.8.0-0.3ubuntu1
+  400  Bad Request [IP: 91.189.88.152 80]
+Get:146 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-websockify amd64 0.9.0-0ubuntu2 [37.8 kB]
+Get:147 http://archive.ubuntu.com/ubuntu focal/main amd64 zvmcloudconnector-common all 2.0.0~b1~git2019062011.4fc9142.really.1.4.1-0ubuntu3 [11.9 kB]
+Get:148 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-zvmcloudconnector all 2.0.0~b1~git2019062011.4fc9142.really.1.4.1-0ubuntu3 [173 kB]
+Get:149 http://archive.ubuntu.com/ubuntu focal/main amd64 libfdt1 amd64 1.5.1-1 [18.8 kB]
+Get:150 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 qemu-system-common amd64 1:4.2-3ubuntu6.21 [1,056 kB]
+Get:151 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 qemu-system-data all 1:4.2-3ubuntu6.21 [563 kB]
+Get:152 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 qemu-system-arm amd64 1:4.2-3ubuntu6.21 [7,726 kB]
+Get:153 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 qemu-system-mips amd64 1:4.2-3ubuntu6.21 [12.9 MB]
+Get:154 http://archive.ubuntu.com/ubuntu focal/main amd64 qemu-slof all 20191209+dfsg-1 [178 kB]
+Get:155 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 qemu-system-ppc amd64 1:4.2-3ubuntu6.21 [6,883 kB]
+Get:156 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 qemu-system-sparc amd64 1:4.2-3ubuntu6.21 [5,091 kB]
+Get:157 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 seabios all 1.13.0-1ubuntu1.1 [138 kB]
+Get:158 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 qemu-system-x86 amd64 1:4.2-3ubuntu6.21 [6,726 kB]
+Get:159 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 qemu-system-s390x amd64 1:4.2-3ubuntu6.21 [2,573 kB]
+Get:160 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 qemu-system-misc amd64 1:4.2-3ubuntu6.21 [43.5 MB]
+Get:161 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 qemu-system amd64 1:4.2-3ubuntu6.21 [12.3 kB]
+Get:162 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 qemu-system-gui amd64 1:4.2-3ubuntu6.21 [40.7 kB]
+Get:163 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libnss-mymachines amd64 245.4-4ubuntu3.15 [131 kB]
+Get:164 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-passlib all 1.7.2-1 [353 kB]
+Get:165 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 ovmf all 0~20191122.bd85bf54-2ubuntu3.3 [2,490 kB]
+Get:166 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 qemu-efi-aarch64 all 0~20191122.bd85bf54-2ubuntu3.3 [2,023 kB]
+Get:167 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 qemu-efi-arm all 0~20191122.bd85bf54-2ubuntu3.3 [1,031 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgdk-pixbuf2.0-0 amd64 2.40.0+dfsg-3ubuntu0.2 [168 kB]
+Get:54 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gstreamer1.0-plugins-base amd64 1.16.2-4ubuntu0.1 [620 kB]
+Get:58 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcaca0 amd64 0.99.beta19-2.1ubuntu1.20.04.2 [203 kB]
+Get:78 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gstreamer1.0-plugins-good amd64 1.16.2-1ubuntu2.1 [1,739 kB]
+Get:80 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gstreamer1.0-x amd64 1.16.2-4ubuntu0.1 [74.9 kB]
+Fetched 116 MB in 6min 38s (292 kB/s)
+W: http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/libavahi-common3_0.7-4ubuntu7.1_amd64.deb: Automatically disabled Acquire::http::Pipeline-Depth due to incorrect response from server/proxy. (man 5 apt.conf)
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.17-2_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/f/fonts-dejavu/fonts-dejavu-core_2.37-1_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/libfontconfig1_2.13.1-2ubuntu3_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb-render0_1.14-2_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libx/libxrender/libxrender1_0.9.10-1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/libcairo-gobject2_1.16.0-4ubuntu1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/libgraphite2-3_1.3.13-11build1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libt/libthai/libthai-data_0.1.28-3_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libt/libthai/libthai0_0.1.28-3_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/libpangoft2-1.0-0_1.44.7-2ubuntu4_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg2-2_2.48.9-1ubuntu0.20.04.1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/h/humanity-icon-theme/humanity-icon-theme_0.6.15_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_3.36.1-2ubuntu0.20.04.2_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/x/xorg/x11-common_7.7+19ubuntu14_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/a/at-spi2-core/at-spi2-core_2.36.0-2_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/c/cpu-checker/cpu-checker_0.7-1.1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn11_1.33-2.2ubuntu2_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/c/cdrkit/genisoimage_1.1.11-3.1ubuntu1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/o/orc/liborc-0.4-0_0.4.31-1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/o/opus/libopus0_1.3.1-0ubuntu1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libv/libvisual/libvisual-0.4-0_0.4.0-17_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libr/libraw1394/libraw1394-11_2.1.2-1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/f/flac/libflac8_1.3.3-1build1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libi/libiec61883/libiec61883-0_1.2.0-3_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/j/jackd2/libjack-jackd2-0_1.9.12~dfsg-2ubuntu2_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mpg123/libmpg123-0_1.25.13-1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libs/libshout/libshout3_2.4.3-1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/t/taglib/libtag1v5_1.11.1+dfsg.1-0.3ubuntu2_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/v/v4l-utils/libv4lconvert0_1.18.0-2build1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libv/libvpx/libvpx6_1.8.2-1build1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libx/libxdamage/libxdamage1_1.1.5-2_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/i/ipxe-qemu-256k-compat/ipxe-qemu-256k-compat-efi-roms_1.0.0+git-20150424.a25a16d-0ubuntu4_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/a/atk1.0/libatk1.0-data_2.35.1-1ubuntu2_all.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/a/at-spi2-atk/libatk-bridge2.0-0_2.34.2-0ubuntu2~20.04.1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/libwayland-server0_1.18.0-1_amd64.deb  408  Request Timeout [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/p/python-scrypt/python3-scrypt_0.8.0-0.3ubuntu1_amd64.deb  400  Bad Request [IP: 91.189.88.152 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?

@@ -1,0 +1,6 @@
+Success. Node compute in mgmt: 10.0.0.31.
+IP address of this node's interface in management network: 10.0.0.31.
+Configuring LVM physical and logical volumes.
+Really INITIALIZE physical volume "/dev/sdd" of volume group "cinder-volumes" [y/n]?   WARNING: Forcing physical volume creation on /dev/sdd of volume group "cinder-volumes"
+  Can't open /dev/sdd exclusively.  Mounted filesystem?
+  Can't open /dev/sdd exclusively.  Mounted filesystem?

@@ -1,0 +1,205 @@
+Installing nova for compute node.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+nova-compute is already the newest version (3:23.1.0-0ubuntu1~cloud0).
+nova-compute-qemu is already the newest version (3:23.1.0-0ubuntu1~cloud0).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Configuring nova for compute node.
+Configuring /etc/nova/nova.conf.
+Configuring RabbitMQ message queue access.
+'/etc/nova/nova.conf' -> '/tmp/424_etc_nova_nova.conf.iniset'
+iniset /tmp/424_etc_nova_nova.conf.iniset DEFAULT transport_url rabbit://openstack:rabbitPass@controller
+'/etc/nova/nova.conf' -> '/tmp/425_etc_nova_nova.conf.iniset'
+iniset /tmp/425_etc_nova_nova.conf.iniset api auth_strategy keystone
+Success. Node compute in mgmt: 10.0.0.31.
+'/etc/nova/nova.conf' -> '/tmp/426_etc_nova_nova.conf.iniset'
+iniset /tmp/426_etc_nova_nova.conf.iniset keystone_authtoken www_authenticate_uri http://controller:5000/
+'/etc/nova/nova.conf' -> '/tmp/427_etc_nova_nova.conf.iniset'
+iniset /tmp/427_etc_nova_nova.conf.iniset keystone_authtoken auth_url http://controller:5000/
+'/etc/nova/nova.conf' -> '/tmp/428_etc_nova_nova.conf.iniset'
+iniset /tmp/428_etc_nova_nova.conf.iniset keystone_authtoken memcached_servers controller:11211
+'/etc/nova/nova.conf' -> '/tmp/429_etc_nova_nova.conf.iniset'
+iniset /tmp/429_etc_nova_nova.conf.iniset keystone_authtoken auth_type password
+'/etc/nova/nova.conf' -> '/tmp/430_etc_nova_nova.conf.iniset'
+iniset /tmp/430_etc_nova_nova.conf.iniset keystone_authtoken project_domain_name Default
+'/etc/nova/nova.conf' -> '/tmp/431_etc_nova_nova.conf.iniset'
+iniset /tmp/431_etc_nova_nova.conf.iniset keystone_authtoken user_domain_name Default
+'/etc/nova/nova.conf' -> '/tmp/432_etc_nova_nova.conf.iniset'
+iniset /tmp/432_etc_nova_nova.conf.iniset keystone_authtoken project_name service
+'/etc/nova/nova.conf' -> '/tmp/433_etc_nova_nova.conf.iniset'
+iniset /tmp/433_etc_nova_nova.conf.iniset keystone_authtoken username nova
+'/etc/nova/nova.conf' -> '/tmp/434_etc_nova_nova.conf.iniset'
+iniset /tmp/434_etc_nova_nova.conf.iniset keystone_authtoken password novaPass
+'/etc/nova/nova.conf' -> '/tmp/435_etc_nova_nova.conf.iniset'
+iniset /tmp/435_etc_nova_nova.conf.iniset DEFAULT my_ip 10.0.0.31
+'/etc/nova/nova.conf' -> '/tmp/436_etc_nova_nova.conf.iniset'
+iniset /tmp/436_etc_nova_nova.conf.iniset DEFAULT use_neutron true
+'/etc/nova/nova.conf' -> '/tmp/437_etc_nova_nova.conf.iniset'
+iniset /tmp/437_etc_nova_nova.conf.iniset DEFAULT firewall_driver nova.virt.firewall.NoopFirewallDriver
+'/etc/nova/nova.conf' -> '/tmp/438_etc_nova_nova.conf.iniset'
+iniset /tmp/438_etc_nova_nova.conf.iniset vnc enabled true
+'/etc/nova/nova.conf' -> '/tmp/439_etc_nova_nova.conf.iniset'
+iniset /tmp/439_etc_nova_nova.conf.iniset vnc server_listen 0.0.0.0
+'/etc/nova/nova.conf' -> '/tmp/440_etc_nova_nova.conf.iniset'
+iniset /tmp/440_etc_nova_nova.conf.iniset vnc server_proxyclient_address $my_ip
+'/etc/nova/nova.conf' -> '/tmp/441_etc_nova_nova.conf.iniset'
+iniset /tmp/441_etc_nova_nova.conf.iniset vnc novncproxy_base_url http://10.0.0.11:6080/vnc_auto.html
+'/etc/nova/nova.conf' -> '/tmp/442_etc_nova_nova.conf.iniset'
+iniset /tmp/442_etc_nova_nova.conf.iniset glance api_servers http://controller:9292
+'/etc/nova/nova.conf' -> '/tmp/443_etc_nova_nova.conf.iniset'
+iniset /tmp/443_etc_nova_nova.conf.iniset oslo_concurrency lock_path /var/lib/nova/tmp
+Configuring Placement services.
+'/etc/nova/nova.conf' -> '/tmp/444_etc_nova_nova.conf.iniset'
+iniset /tmp/444_etc_nova_nova.conf.iniset placement region_name RegionOne
+'/etc/nova/nova.conf' -> '/tmp/445_etc_nova_nova.conf.iniset'
+iniset /tmp/445_etc_nova_nova.conf.iniset placement project_domain_name Default
+'/etc/nova/nova.conf' -> '/tmp/446_etc_nova_nova.conf.iniset'
+iniset /tmp/446_etc_nova_nova.conf.iniset placement project_name service
+'/etc/nova/nova.conf' -> '/tmp/447_etc_nova_nova.conf.iniset'
+iniset /tmp/447_etc_nova_nova.conf.iniset placement auth_type password
+'/etc/nova/nova.conf' -> '/tmp/448_etc_nova_nova.conf.iniset'
+iniset /tmp/448_etc_nova_nova.conf.iniset placement user_domain_name Default
+'/etc/nova/nova.conf' -> '/tmp/449_etc_nova_nova.conf.iniset'
+iniset /tmp/449_etc_nova_nova.conf.iniset placement auth_url http://controller:5000/v3
+'/etc/nova/nova.conf' -> '/tmp/450_etc_nova_nova.conf.iniset'
+iniset /tmp/450_etc_nova_nova.conf.iniset placement username placement
+'/etc/nova/nova.conf' -> '/tmp/451_etc_nova_nova.conf.iniset'
+iniset /tmp/451_etc_nova_nova.conf.iniset placement password placementPass
+Hardware acceleration for virtualization: not available.
+'/etc/nova/nova-compute.conf' -> '/tmp/452_etc_nova_nova-compute.conf.iniset'
+iniset /tmp/452_etc_nova_nova-compute.conf.iniset libvirt virt_type qemu
+Config: virt_type=qemu
+Restarting nova services.
+
+Confirming that the compute host is in the database.ssh controller source /home/stack/config/admin-openstackrc.sh; openstack compute service list --service nova-compute
++----+--------------+---------+------+---------+-------+----------------------------+
+| ID | Binary       | Host    | Zone | Status  | State | Updated At                 |
++----+--------------+---------+------+---------+-------+----------------------------+
+|  6 | nova-compute | compute | nova | enabled | up    | 2022-03-16T11:50:29.000000 |
++----+--------------+---------+------+---------+-------+----------------------------+
+ssh controller source /home/stack/config/admin-openstackrc.sh; openstack compute service list --service nova-compute
++----+--------------+---------+------+---------+-------+----------------------------+
+| ID | Binary       | Host    | Zone | Status  | State | Updated At                 |
++----+--------------+---------+------+---------+-------+----------------------------+
+|  6 | nova-compute | compute | nova | enabled | up    | 2022-03-16T11:50:29.000000 |
++----+--------------+---------+------+---------+-------+----------------------------+
+
+Discovering compute hosts.
+Run this command on controller every time compute hosts are added to the cluster.
+ssh controller sudo nova-manage cell_v2 discover_hosts --verbose
+Found 2 cell mappings.
+Skipping cell0 since it does not contain hosts.
+Getting computes from cell 'cell1': dafd6947-f94f-4f50-a24c-1c15d81e2bc9
+Checking host mapping for compute host 'compute': 669caf0b-b10d-4ab0-812c-6154ce5fd3fa
+Creating host mapping for compute host 'compute': 669caf0b-b10d-4ab0-812c-6154ce5fd3fa
+Found 1 unmapped computes in cell: dafd6947-f94f-4f50-a24c-1c15d81e2bc9
+Verifying operation of the Compute service.
+openstack compute service list
++----+----------------+------------+----------+---------+-------+----------------------------+
+| ID | Binary         | Host       | Zone     | Status  | State | Updated At                 |
++----+----------------+------------+----------+---------+-------+----------------------------+
+|  2 | nova-conductor | controller | internal | enabled | up    | 2022-03-16T11:50:37.000000 |
+|  5 | nova-scheduler | controller | internal | enabled | up    | 2022-03-16T11:50:38.000000 |
+|  6 | nova-compute   | compute    | nova     | enabled | up    | 2022-03-16T11:50:36.000000 |
++----+----------------+------------+----------+---------+-------+----------------------------+
+List API endpoints to verify connectivity with the Identity service.
+openstack catalog list
++-----------+-------------------+------------------------------------------------------------------------+
+| Name      | Type              | Endpoints                                                              |
++-----------+-------------------+------------------------------------------------------------------------+
+| test      | testorchestration |                                                                        |
+| neutron   | network           | RegionOne                                                              |
+|           |                   |   public: http://controller:9696                                       |
+|           |                   | RegionOne                                                              |
+|           |                   |   internal: http://controller:9696                                     |
+|           |                   | RegionOne                                                              |
+|           |                   |   public: http://controller:9696                                       |
+|           |                   |                                                                        |
+| cinderv2  | volumev2          | RegionOne                                                              |
+|           |                   |   public: http://controller:8776/v2/c4d83fced27643998b9355452798c8bc   |
+|           |                   | RegionOne                                                              |
+|           |                   |   internal: http://controller:8776/v2/c4d83fced27643998b9355452798c8bc |
+|           |                   | RegionOne                                                              |
+|           |                   |   admin: http://controller:8776/v2/c4d83fced27643998b9355452798c8bc    |
+|           |                   |                                                                        |
+| keystone  | identity          | RegionOne                                                              |
+|           |                   |   internal: http://controller:5000/v3/                                 |
+|           |                   | RegionOne                                                              |
+|           |                   |   public: http://controller:5000/v3/                                   |
+|           |                   | RegionOne                                                              |
+|           |                   |   admin: http://controller:5000/v3/                                    |
+|           |                   |                                                                        |
+| cinderv3  | volumev3          | RegionOne                                                              |
+|           |                   |   admin: http://controller:8776/v3/c4d83fced27643998b9355452798c8bc    |
+|           |                   | RegionOne                                                              |
+|           |                   |   public: http://controller:8776/v3/c4d83fced27643998b9355452798c8bc   |
+|           |                   | RegionOne                                                              |
+|           |                   |   internal: http://controller:8776/v3/c4d83fced27643998b9355452798c8bc |
+|           |                   |                                                                        |
+| glance    | image             | RegionOne                                                              |
+|           |                   |   internal: http://controller:9292                                     |
+|           |                   | RegionOne                                                              |
+|           |                   |   admin: http://controller:9292                                        |
+|           |                   | RegionOne                                                              |
+|           |                   |   public: http://controller:9292                                       |
+|           |                   |                                                                        |
+| nova      | compute           | RegionOne                                                              |
+|           |                   |   admin: http://controller:8774/v2.1                                   |
+|           |                   | RegionOne                                                              |
+|           |                   |   internal: http://controller:8774/v2.1                                |
+|           |                   | RegionOne                                                              |
+|           |                   |   public: http://controller:8774/v2.1                                  |
+|           |                   |                                                                        |
+| placement | placement         | RegionOne                                                              |
+|           |                   |   public: http://controller:8778                                       |
+|           |                   | RegionOne                                                              |
+|           |                   |   internal: http://controller:8778                                     |
+|           |                   | RegionOne                                                              |
+|           |                   |   admin: http://controller:8778                                        |
+|           |                   |                                                                        |
++-----------+-------------------+------------------------------------------------------------------------+
+Listing images to verify connectivity with the Image service.
+openstack image list
++--------------------------------------+--------+--------+
+| ID                                   | Name   | Status |
++--------------------------------------+--------+--------+
+| 467bef16-72a0-4ce2-9786-02c4119d1aff | cirros | active |
++--------------------------------------+--------+--------+
+Checking the cells and placement API are working successfully.
+on controller node: nova-status upgrade check
+ssh controller sudo nova-status upgrade check
++-------------------------------------------+
+| Upgrade Check Results                     |
++-------------------------------------------+
+| Check: Cells v2                           |
+| Result: Success                           |
+| Details: None                             |
++-------------------------------------------+
+| Check: Placement API                      |
+| Result: Success                           |
+| Details: None                             |
++-------------------------------------------+
+| Check: Cinder API                         |
+| Result: Success                           |
+| Details: None                             |
++-------------------------------------------+
+| Check: Policy Scope-based Defaults        |
+| Result: Success                           |
+| Details: None                             |
++-------------------------------------------+
+| Check: Policy File JSON to YAML Migration |
+| Result: Success                           |
+| Details: None                             |
++-------------------------------------------+
+| Check: Older than N-1 computes            |
+| Result: Success                           |
+| Details: None                             |
++-------------------------------------------+
+| Check: hw_machine_type unset              |
+| Result: Success                           |
+| Details: None                             |
++-------------------------------------------+

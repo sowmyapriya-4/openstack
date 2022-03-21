@@ -1,0 +1,66 @@
+Success. Node compute in mgmt: 10.0.0.31.
+IP address of this node's interface in management network: 10.0.0.31.
+Verifying Block Storage installation on controller node.
+Sourcing the admin credentials.
+Restarting restarting cinder-scheduler.
+ssh controller sudo systemctl restart cinder-scheduler.service
+Waiting for cinder to start.
+openstack volume service list is available:
+ssh controller source /home/stack/config/admin-openstackrc.sh; openstack volume service list
++------------------+-------------+------+---------+-------+----------------------------+
+| Binary           | Host        | Zone | Status  | State | Updated At                 |
++------------------+-------------+------+---------+-------+----------------------------+
+| cinder-scheduler | controller  | nova | enabled | up    | 2022-03-17T05:19:27.000000 |
+| cinder-volume    | storage@lvm | nova | enabled | up    | 2022-03-17T05:19:24.000000 |
+| cinder-volume    | compute@lvm | nova | enabled | up    | 2022-03-17T05:19:21.000000 |
++------------------+-------------+------+---------+-------+----------------------------+
+Waiting for all cinder services to start..
+All cinder services seem to be up and running.
+ssh controller source /home/stack/config/admin-openstackrc.sh; openstack volume service list
++------------------+-------------+------+---------+-------+----------------------------+
+| Binary           | Host        | Zone | Status  | State | Updated At                 |
++------------------+-------------+------+---------+-------+----------------------------+
+| cinder-scheduler | controller  | nova | enabled | up    | 2022-03-17T05:19:27.000000 |
+| cinder-volume    | storage@lvm | nova | enabled | up    | 2022-03-17T05:19:24.000000 |
+| cinder-volume    | compute@lvm | nova | enabled | up    | 2022-03-17T05:19:31.000000 |
++------------------+-------------+------+---------+-------+----------------------------+
+Sourcing the demo credentials.
+openstack volume create --size 1 volume2
+ssh controller source /home/stack/config/demo-openrc.sh; openstack volume create --size 1 volume2
++---------------------+--------------------------------------+
+| Field               | Value                                |
++---------------------+--------------------------------------+
+| attachments         | []                                   |
+| availability_zone   | nova                                 |
+| bootable            | false                                |
+| consistencygroup_id | None                                 |
+| created_at          | 2022-03-17T05:19:35.497217           |
+| description         | None                                 |
+| encrypted           | False                                |
+| id                  | 7e077bff-84ac-4b8e-83ad-00720987520a |
+| multiattach         | False                                |
+| name                | volume2                              |
+| properties          |                                      |
+| replication_status  | None                                 |
+| size                | 1                                    |
+| snapshot_id         | None                                 |
+| source_volid        | None                                 |
+| status              | creating                             |
+| type                | __DEFAULT__                          |
+| updated_at          | None                                 |
+| user_id             | ac97d92b0a03404095d1cf02e7686365     |
++---------------------+--------------------------------------+
+Waiting for cinder to list the new volume.
+Waiting for cinder volume to become available..
+Volume successfully created:
+ssh controller source /home/stack/config/demo-openrc.sh; openstack volume list
++--------------------------------------+---------+-----------+------+-------------+
+| ID                                   | Name    | Status    | Size | Attached to |
++--------------------------------------+---------+-----------+------+-------------+
+| 7e077bff-84ac-4b8e-83ad-00720987520a | volume2 | available |    1 |             |
+| 199bd9f7-c67d-459d-9c13-c7aa8a9f08e7 | volume2 | available |    1 |             |
++--------------------------------------+---------+-----------+------+-------------+
+Deleting volume.
+ssh controller source /home/stack/config/demo-openrc.sh; openstack volume delete volume2
+Failed to delete volume with name or ID 'volume2': More than one volume exists with the name 'volume2'.
+1 of 1 volumes failed to delete.

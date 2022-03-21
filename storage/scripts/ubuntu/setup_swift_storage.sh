@@ -57,6 +57,8 @@ iniset_sudo_no_section $conf uid swift
 iniset_sudo_no_section $conf gid swift
 iniset_sudo_no_section $conf address $MY_MGMT_IP
 
+iniset_sudo $conf object path /srv/node/
+
 sudo touch /etc/default/rsync
 
 conf=/etc/default/rsync

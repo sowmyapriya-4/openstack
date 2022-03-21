@@ -61,20 +61,8 @@ openstack endpoint create \
     object-store admin http://controller:8080/v1
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Install and configure components
+# Configure components
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-echo "Installing swift."
-sudo apt install -y swift swift-account swift-container swift-object xfsprogs python3-swift python3-swiftclient \
-       python3-keystoneclient python3-keystonemiddleware
-sudo apt install -y swift-proxy python3-memcache
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Obtain the proxy service configuration file from the Object Storage repository
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-sudo curl -o /etc/swift/proxy-server.conf \
-	https://opendev.org/openstack/swift/raw/branch/stable/victoria/etc/proxy-server.conf-sample
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Edit the /etc/swift/proxy-server.conf file:

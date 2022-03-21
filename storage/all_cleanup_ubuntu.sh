@@ -8,15 +8,17 @@ sudo apt remove -y git python-pip virtualenv libmysqlclient-dev python-networkin
 sudo apt remove -y placement-api python3-pip openstack-dashboard glance rabbitmq-server swift swift-account swift-container swift-object xfsprogs
 sudo apt remove -y python3-swift python3-swiftclient  keystone nova-api nova-conductor nova-novncproxy nova-scheduler
 
-sudo rm -rf /etc/cinder/ /etc/glance/ /etc/keystone/ /etc/neutron/ /etc/nova/ /var/lib/cinder/ \
-	  /var/lib/keystone/ /var/lib/mysql/ /var/lib/glance/ /var/lib/nova/ /var/lib/openstack-dashboard/ \
+sudo rm -rf /etc/cinder/ /etc/glance/ /etc/neutron/ /etc/nova/ /var/lib/cinder/ \
+	/var/lib/apache2/ /var/lib/mysql/ /var/lib/glance/ /var/lib/nova/ /var/lib/openstack-dashboard/ \
 	/var/lib/neutron/ /etc/placement/ /etc/rabbitmq/ /var/lib/openvswitch/ /var/lib/rabbitmq/ /etc/sysconfig/openstack-nova-novncproxy \
-	/etc/swift/ /var/log/swift/ /etc/sysconfig/memcached 
+	/etc/swift/ /var/log/swift/ /etc/sysconfig/memcached /home/stack/scripts/centos/*.{mod,pp,te}
 
 sudo rm -rf /home/stack/log/* /etc/ceilometer /etc/barbican /etc/gnocchi /etc/heat /var/log/glance /var/log/gnocchi /var/log/heat \
-	   /var/log/neutron /var/log/nova /var/log/placement /var/log/rabbitmq  /var/log/cinder /var/log/ceilometer
+	   /var/log/neutron /var/log/nova /var/log/placement /var/log/rabbitmq  /var/log/cinder /var/log/ceilometer /var/log/apache2 \
+	   /var/log/mariadb
 
 sudo rm -rf /var/lib/swift /var/lib/gnocchi /var/lib/heat /var/lib/ceilometer /var/lib/barbican /tmp/*  /etc/openstack-dashboard/ /etc/openvswitch/
 sudo rm -rf /var/log/*.lsl /etc/apache2 /etc/rsyncd.conf
-sudo sed -i "s/^net.*$//g" /etc/sysctl.conf
+sudo sed -i "s/^net.*$//g" /etc/sysctl.conf /etc/keystone/
 sudo apt autoremove
+

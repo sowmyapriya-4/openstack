@@ -1,0 +1,125 @@
+apt_download: python3-dev python3-pip
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu build-essential cpp cpp-9
+  dpkg-dev fakeroot g++ g++-9 gcc gcc-9 gcc-9-base libalgorithm-diff-perl
+  libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan5 libatomic1
+  libbinutils libc-dev-bin libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0
+  libctf0 libdpkg-perl libexpat1-dev libfakeroot libfile-fcntllock-perl
+  libgcc-9-dev libgomp1 libisl22 libitm1 liblsan0 libmpc3 libpython3-dev
+  libpython3.8-dev libstdc++-9-dev libtsan0 libubsan1 linux-libc-dev make
+  manpages-dev python-pip-whl python3-wheel python3.8-dev zlib1g-dev
+Suggested packages:
+  binutils-doc cpp-doc gcc-9-locales debian-keyring g++-multilib
+  g++-9-multilib gcc-9-doc gcc-multilib autoconf automake libtool flex bison
+  gdb gcc-doc gcc-9-multilib glibc-doc bzr libstdc++-9-doc make-doc
+The following NEW packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu build-essential cpp cpp-9
+  dpkg-dev fakeroot g++ g++-9 gcc gcc-9 gcc-9-base libalgorithm-diff-perl
+  libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan5 libatomic1
+  libbinutils libc-dev-bin libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0
+  libctf0 libdpkg-perl libexpat1-dev libfakeroot libfile-fcntllock-perl
+  libgcc-9-dev libgomp1 libisl22 libitm1 liblsan0 libmpc3 libpython3-dev
+  libpython3.8-dev libstdc++-9-dev libtsan0 libubsan1 linux-libc-dev make
+  manpages-dev python-pip-whl python3-dev python3-pip python3-wheel
+  python3.8-dev zlib1g-dev
+0 upgraded, 49 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/52.1 MB of archives.
+After this operation, 228 MB of additional disk space will be used.
+Download complete and in download only mode
+apt_download: lvm2 cinder-volume thin-provisioning-tools
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+lvm2 is already the newest version (2.03.07-1ubuntu1).
+thin-provisioning-tools is already the newest version (0.8.5-4build1).
+cinder-volume is already the newest version (2:18.1.0-0ubuntu1~cloud0).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+apt_download: nova-compute nova-compute-qemu qemu sysfsutils
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+qemu is already the newest version (1:4.2-3ubuntu6.21).
+nova-compute is already the newest version (3:23.1.0-0ubuntu1~cloud0).
+nova-compute-qemu is already the newest version (3:23.1.0-0ubuntu1~cloud0).
+The following additional packages will be installed:
+  libsysfs2
+The following NEW packages will be installed:
+  libsysfs2 sysfsutils
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/32.5 kB of archives.
+After this operation, 130 kB of additional disk space will be used.
+Download complete and in download only mode
+apt_download: neutron-linuxbridge-agent python3-neutron-fwaas
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+neutron-linuxbridge-agent is already the newest version (2:18.1.1-0ubuntu2~cloud0).
+Suggested packages:
+  python3-zmq
+The following NEW packages will be installed:
+  neutron-fwaas-common python3-neutron-fwaas
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0 B/127 kB of archives.
+After this operation, 1,137 kB of additional disk space will be used.
+Download complete and in download only mode
+apt_download: heat-api heat-api-cfn heat-engine python3-heatclient
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  heat-common python3-aodhclient python3-blazarclient python3-ceilometerclient
+  python3-croniter python3-gnocchiclient python3-heat python3-ironicclient
+  python3-magnumclient python3-manilaclient python3-mistralclient
+  python3-monascaclient python3-octaviaclient python3-saharaclient
+  python3-senlinclient python3-troveclient python3-yaql python3-zaqarclient
+Suggested packages:
+  python-aodhclient-doc python-ceilometerclient-doc python-gnocchiclient-doc
+  python3-vitrageclient python3-zunclient python-magnumclient-doc
+  python-octaviaclient-doc python-senlinclient-doc
+The following NEW packages will be installed:
+  heat-api heat-api-cfn heat-common heat-engine python3-aodhclient
+  python3-blazarclient python3-ceilometerclient python3-croniter
+  python3-gnocchiclient python3-heat python3-heatclient python3-ironicclient
+  python3-magnumclient python3-manilaclient python3-mistralclient
+  python3-monascaclient python3-octaviaclient python3-saharaclient
+  python3-senlinclient python3-troveclient python3-yaql python3-zaqarclient
+0 upgraded, 22 newly installed, 0 to remove and 0 not upgraded.
+Need to get 115 kB/2,500 kB of archives.
+After this operation, 22.9 MB of additional disk space will be used.
+Get:1 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-aodhclient all 2.1.1-0ubuntu1~cloud0 [28.1 kB]
+Get:2 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-gnocchiclient all 7.0.7-0ubuntu1~cloud0 [32.3 kB]
+Get:3 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-saharaclient all 3.3.0-0ubuntu1~cloud0 [54.6 kB]
+Fetched 115 kB in 1s (98.4 kB/s)
+Download complete and in download only mode
+apt_download: xfsprogs rsync swift swift-account swift-container swift-object
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+xfsprogs is already the newest version (5.3.0-1ubuntu2).
+rsync is already the newest version (3.1.3-8ubuntu0.2).
+swift is already the newest version (2.27.0-0ubuntu2~cloud0).
+swift-account is already the newest version (2.27.0-0ubuntu2~cloud0).
+swift-container is already the newest version (2.27.0-0ubuntu2~cloud0).
+swift-object is already the newest version (2.27.0-0ubuntu2~cloud0).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.

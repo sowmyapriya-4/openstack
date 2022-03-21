@@ -22,7 +22,6 @@ echo "Will bind MySQL server to $DB_IP."
 
 #------------------------------------------------------------------------------
 # Install and configure the database server
-# https://docs.openstack.org/install-guide/environment-sql-database-ubuntu.html
 #------------------------------------------------------------------------------
 
 echo "Sourced MySQL password from credentials: $DATABASE_PASSWORD"
@@ -31,15 +30,12 @@ echo "Sourced MySQL password from credentials: $DATABASE_PASSWORD"
 #sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password '$DATABASE_PASSWORD''
 
 echo "Installing MySQL (MariaDB)."
-sudo apt install -y mariadb-server python-mysqldb
+sudo apt install -y mariadb-server python3-mysqldb
 
 # Not in the install-guide
 echo "Sanity check: check if password login works for root."
 sudo mysql -u root -p"$DATABASE_PASSWORD" -e quit
 
-# Not in install-guide
-# To drop socket auth for root user and use root password:
-# sudo mysql -u "root" -e "use mysql; update user set plugin='' where user='root'; update user set password=PASSWORD('$DATABASE_PASSWORD') where user='root'; flush privileges;"
 
 conf=/etc/mysql/mariadb.conf.d/99-openstack.cnf
 
@@ -56,7 +52,8 @@ iniset_sudo $conf mysqld collation-server utf8_general_ci
 iniset_sudo $conf mysqld character-set-server utf8
 
 echo "Restarting MySQL service."
-# Close the file descriptor or the script will hang due to open ssh connection
-sudo service mysql restart 2>/dev/null
 
-# Difference to install-guide: not running mysql_secure_installation
+sudo systemctl restart  mysql
+sudo systemctl enable  mysql
+sudo systemctl status  mysql
+

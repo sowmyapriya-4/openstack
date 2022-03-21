@@ -14,7 +14,6 @@ indicate_current_auto
 
 #------------------------------------------------------------------------------
 # Set up Block Storage service controller (cinder controller node)
-# https://docs.openstack.org/cinder/train/install/cinder-controller-install-ubuntu.html
 #------------------------------------------------------------------------------
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -84,7 +83,7 @@ openstack endpoint create \
 
 echo "Installing cinder."
 sudo apt install -y cinder-api cinder-scheduler \
-    qemu-utils
+    qemu-utils tgt
 # Note: The package 'qemu-utils' is required for 'qemu-img' which allows cinder
 #       to convert additional image types to bootable volumes. By default only
 #       raw images can be converted.
@@ -148,22 +147,22 @@ sudo sed -i --follow-symlinks '/WSGIDaemonProcess/ s/processes=[0-9]*/processes=
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # not in install-guide: as of 2017-08-22, cinder wsgi processes can not
-# read /etc/cinder due to permission problem introduced with Pike packages
+# read /etddc/cinder due to permission problem introduced
 # (drwxr-x--- root cinder) vs. cinder:www-data
+
 if ls -ld /etc/cinder | grep "root cinder"; then
     echo "Setting owner for /etc/cinder."
     sudo chown -v cinder:cinder /etc/cinder
 else
-    echo "XXX Workaround for /etc/cinder owner no longer needed."
-    exit 2
+    echo "Workaround for /etc/cinder owner no longer needed."
 fi
 
 echo "Restarting the Compute API service."
-sudo service nova-api restart
+sudo systemctl restart nova-api
 
 echo "Restarting the Block Storage services."
-sudo service cinder-scheduler restart
-sudo service apache2 restart
+sudo systemctl restart cinder-scheduler
+sudo systemctl restart apache2
 
 AUTH="source $CONFIG_DIR/admin-openstackrc.sh"
 echo -n "Waiting for cinder to start."

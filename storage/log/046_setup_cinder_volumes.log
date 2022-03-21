@@ -1,0 +1,4 @@
+Success. Node storage in mgmt: 10.0.0.41.
+IP address of this node's interface in management network: 10.0.0.41.
+Configuring LVM physical and logical volumes.
+  Device /dev/sdd excluded by a filter.

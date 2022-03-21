@@ -43,7 +43,6 @@ sudo apt update
 
 # ---------------------------------------------------------------------------
 # Enable the OpenStack repository
-# https://docs.openstack.org/install-guide/environment-packages-ubuntu.html
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 #--------------------------------------------------------------------------
 
@@ -78,24 +77,21 @@ else
     exit 1
 fi
 
-# Disable automatic updates (they compete with our scripts for the dpkg lock)
+# Disable automatic updates
 sudo systemctl disable apt-daily.service
 sudo systemctl disable apt-daily.timer
 
 # ---------------------------------------------------------------------------
-# Not in install-guide:
-# Install mariadb-server from upstream repo (mariadb 10.1 shipping with
-# bionic breaks the neutron database upgrade process in OpenStack Train)
+# Install mariadb-server from upstream repo (mariadb 10.5 shipping)
 # ---------------------------------------------------------------------------
 
 # Add mariadb repo
 cat << EOF | sudo tee /etc/apt/sources.list.d/mariadb.list
-# bionic mariadb 10.1 breaks neutron DB upgrade process in OpenStack Train
-deb http://downloads.mariadb.com/MariaDB/mariadb-10.3/repo/ubuntu bionic main
+deb http://mariadb.mirror.globo.tech/repo/10.5/ubuntu focal main 
 EOF
 
 # Import key required for mariadb
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F1656F24C74CD1D8
+sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc' 
 
 # Update apt database for mariadb repo
 sudo apt update \
@@ -103,7 +99,7 @@ sudo apt update \
     -o Dir::Etc::sourceparts="-" -o APT::Get::List-Cleanup="0"
 
 # Pre-configure database root password in /var/cache/debconf/passwords.dat
-# (the upstream mariadb-server has socket_auth disabled)
+
 source "$CONFIG_DIR/credentials"
 echo "mysql-server mysql-server/root_password password $DATABASE_PASSWORD" | sudo debconf-set-selections
 echo "mysql-server mysql-server/root_password_again password $DATABASE_PASSWORD" | sudo debconf-set-selections

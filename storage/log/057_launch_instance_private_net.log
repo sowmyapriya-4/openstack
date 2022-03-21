@@ -1,0 +1,5 @@
+SUM --- BEGIN
+./launch_instance_private_net.sh: line 59: neutron: command not found
+Running on host: storage
+Checking network connection to compute1 node.
+ping: compute1: Temporary failure in name resolution

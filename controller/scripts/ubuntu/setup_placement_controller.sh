@@ -14,7 +14,6 @@ indicate_current_auto
 
 #------------------------------------------------------------------------------
 # Install Placement services
-# https://docs.openstack.org/placement/train/install/install-ubuntu.html
 #------------------------------------------------------------------------------
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -25,7 +24,7 @@ echo "Setting up placement database."
 setup_database placement "$PLACEMENT_DB_USER" "$PLACEMENT_DBPASS"
 
 echo "Sourcing the admin credentials."
-source "$CONFIG_DIR/admin-openstackrc.sh"
+source "$CONFIG_DIR/admin-openrc.sh"
 
 placement_admin_user=placement
 
@@ -64,11 +63,8 @@ openstack endpoint create \
     placement admin http://controller:8778
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Install and configure components
+# Configure components
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-echo "Installing placement-api for controller node."
-sudo apt install -y placement-api
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Reduce memory usage (not in install-guide)
@@ -104,30 +100,22 @@ sudo placement-manage db sync
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 echo "Restarting apache2."
-sudo service apache2 restart
+sudo systemctl restart apache2
 
 #------------------------------------------------------------------------------
 # Verify the Placement controller installation
-# https://docs.openstack.org/placement/train/install/verify.html
 #------------------------------------------------------------------------------
 
 echo "Sourcing the admin credentials."
-source "$CONFIG_DIR/admin-openstackrc.sh"
+source "$CONFIG_DIR/admin-opensrc.sh"
 
 # Wait for keystone to come up
 wait_for_keystone
 
-# XXX difference to install-guide: root privileges seem to be needed for the
-#     placement-status upgrade check
+# placement-status upgrade check
+
 echo "Performing status check."
 sudo placement-status upgrade check
-
-# XXX not in the install-guide: install and use python3-pip (not python2)
-echo "Installing python3-pip."
-sudo apt install -y python3-pip
-
-echo "Installing the placement client."
-sudo pip3 install osc-placement
 
 echo "Listing available resource classes and traits."
 openstack --os-placement-api-version 1.2 resource class list --sort-column name

@@ -14,12 +14,7 @@ indicate_current_auto
 
 #------------------------------------------------------------------------------
 # Install Compute controller services
-# https://docs.openstack.org/nova/train/install/controller-install-ubuntu.html
 #------------------------------------------------------------------------------
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Prerequisites
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 echo "Setting up database nova."
 setup_database nova "$NOVA_DB_USER" "$NOVA_DBPASS"
@@ -28,12 +23,13 @@ echo "Setting up database nova_api."
 setup_database nova_api "$NOVA_DB_USER" "$NOVA_DBPASS"
 
 echo "Setting up first cell database."
+
 # nova_cell0 is default name for first cell database
-# https://docs.openstack.org/developer/nova/cells.html#fresh-install
+
 setup_database nova_cell0 "$NOVA_DB_USER" "$NOVA_DBPASS"
 
 echo "Sourcing the admin credentials."
-source "$CONFIG_DIR/admin-openstackrc.sh"
+source "$CONFIG_DIR/admin-openrc.sh"
 
 nova_admin_user=nova
 placement_admin_user=placement
@@ -72,11 +68,8 @@ openstack endpoint create \
     compute admin http://controller:8774/v2.1
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Install and configure components
+# Configure components
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-echo "Installing nova for controller node."
-sudo apt install -y nova-api nova-conductor nova-novncproxy nova-scheduler
 
 conf=/etc/nova/nova.conf
 
@@ -159,7 +152,7 @@ sudo nova-manage cell_v2 list_cells
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 echo "Sourcing the admin credentials."
-source "$CONFIG_DIR/admin-openstackrc.sh"
+source "$CONFIG_DIR/admin-openrc.sh"
 
 # Wait for keystone to come up
 wait_for_keystone
@@ -174,7 +167,8 @@ declare -a nova_services=(nova-api nova-scheduler nova-conductor \
 
 for nova_service in "${nova_services[@]}"; do
     echo "Restarting $nova_service."
-    sudo service "$nova_service" restart
+    sudo systemctl restart "$nova_service"
+    sudo systemctl enable "$nova_service"
 done
 
 # Not in install-guide:

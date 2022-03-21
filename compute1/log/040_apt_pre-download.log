@@ -1,0 +1,1701 @@
+apt_download: python-argparse python3-dev python3-pip
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu build-essential cpp cpp-9
+  dpkg-dev fakeroot g++ g++-9 gcc gcc-9 gcc-9-base libalgorithm-diff-perl
+  libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan5 libatomic1
+  libbinutils libc-dev-bin libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0
+  libctf0 libdpkg-perl libexpat1-dev libfakeroot libfile-fcntllock-perl
+  libgcc-9-dev libgomp1 libisl22 libitm1 liblsan0 libmpc3 libpython2.7-minimal
+  libpython3-dev libpython3.8-dev libquadmath0 libstdc++-9-dev libtsan0
+  libubsan1 linux-libc-dev make manpages-dev python-pip-whl python3-wheel
+  python3.8-dev zlib1g-dev
+Suggested packages:
+  binutils-doc cpp-doc gcc-9-locales debian-keyring g++-multilib
+  g++-9-multilib gcc-9-doc gcc-multilib autoconf automake libtool flex bison
+  gdb gcc-doc gcc-9-multilib glibc-doc bzr libstdc++-9-doc make-doc
+The following NEW packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu build-essential cpp cpp-9
+  dpkg-dev fakeroot g++ g++-9 gcc gcc-9 gcc-9-base libalgorithm-diff-perl
+  libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan5 libatomic1
+  libbinutils libc-dev-bin libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0
+  libctf0 libdpkg-perl libexpat1-dev libfakeroot libfile-fcntllock-perl
+  libgcc-9-dev libgomp1 libisl22 libitm1 liblsan0 libmpc3 libpython2.7-minimal
+  libpython2.7-stdlib libpython3-dev libpython3.8-dev libquadmath0
+  libstdc++-9-dev libtsan0 libubsan1 linux-libc-dev make manpages-dev
+  python-pip-whl python3-dev python3-pip python3-wheel python3.8-dev
+  zlib1g-dev
+0 upgraded, 52 newly installed, 0 to remove and 19 not upgraded.
+Need to get 0 B/54.4 MB of archives.
+After this operation, 240 MB of additional disk space will be used.
+Download complete and in download only mode
+apt_download: keystone python3-openstackclient apache2 memcached python3-memcache
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  alembic apache2-bin apache2-data apache2-utils docutils-common ieee-data
+  javascript-common keystone-common libapache2-mod-wsgi-py3 libapr1
+  libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap libimagequant0
+  libjansson4 libjbig0 libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc
+  libjs-underscore liblcms2-2 liblua5.2-0 libpaper-utils libpaper1 libtiff5
+  libwebp6 libwebpdemux2 libwebpmux3 pycadf-common python-babel-localedata
+  python-pastedeploy-tpl python3-alembic python3-amqp python3-aniso8601
+  python3-anyjson python3-appdirs python3-babel python3-bcrypt python3-bs4
+  python3-cachetools python3-cinderclient python3-cliff python3-cmd2
+  python3-crypto python3-dateutil python3-debtcollector python3-decorator
+  python3-defusedxml python3-deprecation python3-dnspython python3-docutils
+  python3-dogpile.cache python3-eventlet python3-extras python3-fasteners
+  python3-fixtures python3-flask python3-flask-restful python3-futurist
+  python3-greenlet python3-html5lib python3-importlib-metadata python3-iso8601
+  python3-itsdangerous python3-jmespath python3-keystone python3-keystoneauth1
+  python3-keystoneclient python3-keystonemiddleware python3-kombu python3-ldap
+  python3-linecache2 python3-lxml python3-mako python3-migrate
+  python3-mimeparse python3-monotonic python3-msgpack python3-munch
+  python3-netaddr python3-novaclient python3-olefile python3-openstacksdk
+  python3-os-client-config python3-os-service-types python3-osc-lib
+  python3-oslo.cache python3-oslo.concurrency python3-oslo.config
+  python3-oslo.context python3-oslo.db python3-oslo.i18n python3-oslo.log
+  python3-oslo.messaging python3-oslo.middleware python3-oslo.policy
+  python3-oslo.serialization python3-oslo.service python3-oslo.upgradecheck
+  python3-oslo.utils python3-osprofiler python3-packaging python3-passlib
+  python3-paste python3-pastedeploy python3-pastescript python3-pbr
+  python3-pil python3-prettytable python3-pycadf python3-pygments
+  python3-pyinotify python3-pymysql python3-pyparsing python3-pyperclip
+  python3-pysaml2 python3-repoze.lru python3-requests
+  python3-requestsexceptions python3-rfc3986 python3-roman python3-routes
+  python3-scrypt python3-soupsieve python3-sqlalchemy python3-sqlalchemy-ext
+  python3-sqlparse python3-statsd python3-stevedore python3-tempita
+  python3-tenacity python3-testresources python3-testscenarios
+  python3-testtools python3-traceback2 python3-tz python3-unittest2
+  python3-vine python3-wcwidth python3-webencodings python3-webob
+  python3-werkzeug python3-wrapt sgml-base ssl-cert xml-core xmlsec1
+Suggested packages:
+  apache2-doc apache2-suexec-pristine | apache2-suexec-custom www-browser
+  liblcms2-utils libanyevent-perl libcache-memcached-perl libmemcached
+  libterm-readkey-perl libyaml-perl python-amqp-doc python-cliff-doc
+  python-debtcollector-doc docutils-doc fonts-linuxlibertine
+  | ttf-linux-libertine texlive-lang-french texlive-latex-base
+  texlive-latex-recommended python-eventlet-doc python-flask-doc
+  python-futurist-doc python-greenlet-doc python-greenlet-dev
+  python3-greenlet-dbg python3-genshi python3-ldappool
+  python-keystoneauth1-doc python3-requests-kerberos python-kombu-doc
+  python3-boto python3-django python3-pymongo python3-redis python3-lxml-dbg
+  python-lxml-doc python3-beaker python-mako-doc python-migrate-doc ipython3
+  python-netaddr-docs python-openstacksdk-doc python-os-client-config-doc
+  python-os-service-types-doc python-osc-lib-doc python-oslo.cache-doc
+  python-oslo.concurrency-doc python-oslo.log-doc python3-confluent-kafka
+  python3-zmq python-oslo.middleware-doc python-oslo.policy-doc
+  python-oslo.service-doc httpd-wsgi libapache2-mod-python libapache2-mod-scgi
+  libjs-mochikit python3-cherrypy3 python-pil-doc python3-pil-dbg
+  python-pygments-doc ttf-bitstream-vera python-pyinotify-doc
+  python-pymysql-doc python-pyparsing-doc python3-repoze.who python3-socks
+  python-requests-doc python-sqlalchemy-doc python3-fdb python3-pymssql
+  python3-mysqldb python3-psycopg2 python-sqlparse-doc python-tenacity-doc
+  python-testtools-doc python-webob-doc python-werkzeug-doc python3-termcolor
+  python3-watchdog sgml-base-doc openssl-blacklist debhelper
+The following NEW packages will be installed:
+  alembic apache2 apache2-bin apache2-data apache2-utils docutils-common
+  ieee-data javascript-common keystone keystone-common libapache2-mod-wsgi-py3
+  libapr1 libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap libimagequant0
+  libjansson4 libjbig0 libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc
+  libjs-underscore liblcms2-2 liblua5.2-0 libpaper-utils libpaper1 libtiff5
+  libwebp6 libwebpdemux2 libwebpmux3 memcached pycadf-common
+  python-babel-localedata python-pastedeploy-tpl python3-alembic python3-amqp
+  python3-aniso8601 python3-anyjson python3-appdirs python3-babel
+  python3-bcrypt python3-bs4 python3-cachetools python3-cinderclient
+  python3-cliff python3-cmd2 python3-crypto python3-dateutil
+  python3-debtcollector python3-decorator python3-defusedxml
+  python3-deprecation python3-dnspython python3-docutils python3-dogpile.cache
+  python3-eventlet python3-extras python3-fasteners python3-fixtures
+  python3-flask python3-flask-restful python3-futurist python3-greenlet
+  python3-html5lib python3-iso8601 python3-itsdangerous python3-jmespath
+  python3-keystone python3-keystoneauth1 python3-keystoneclient
+  python3-keystonemiddleware python3-kombu python3-ldap python3-linecache2
+  python3-lxml python3-mako python3-memcache python3-migrate python3-mimeparse
+  python3-monotonic python3-msgpack python3-munch python3-netaddr
+  python3-novaclient python3-olefile python3-openstackclient
+  python3-openstacksdk python3-os-client-config python3-os-service-types
+  python3-osc-lib python3-oslo.cache python3-oslo.concurrency
+  python3-oslo.config python3-oslo.context python3-oslo.db python3-oslo.i18n
+  python3-oslo.log python3-oslo.messaging python3-oslo.middleware
+  python3-oslo.policy python3-oslo.serialization python3-oslo.service
+  python3-oslo.upgradecheck python3-oslo.utils python3-osprofiler
+  python3-packaging python3-passlib python3-paste python3-pastedeploy
+  python3-pastescript python3-pbr python3-pil python3-prettytable
+  python3-pycadf python3-pygments python3-pyinotify python3-pymysql
+  python3-pyparsing python3-pyperclip python3-pysaml2 python3-repoze.lru
+  python3-requestsexceptions python3-rfc3986 python3-roman python3-routes
+  python3-scrypt python3-soupsieve python3-sqlalchemy python3-sqlalchemy-ext
+  python3-sqlparse python3-statsd python3-stevedore python3-tempita
+  python3-tenacity python3-testresources python3-testscenarios
+  python3-testtools python3-traceback2 python3-tz python3-unittest2
+  python3-vine python3-wcwidth python3-webencodings python3-webob
+  python3-werkzeug python3-wrapt sgml-base ssl-cert xml-core xmlsec1
+The following packages will be upgraded:
+  python3-importlib-metadata python3-requests
+2 upgraded, 151 newly installed, 0 to remove and 17 not upgraded.
+Need to get 0 B/22.4 MB of archives.
+After this operation, 125 MB of additional disk space will be used.
+Download complete and in download only mode
+apt_download: glance python3-glanceclient
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  alembic docutils-common glance-api glance-common ibverbs-providers ieee-data
+  javascript-common libblas3 libgfortran5 libibverbs1 libimagequant0 libiscsi7
+  libjbig0 libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc
+  libjs-underscore liblapack3 liblcms2-2 libnl-route-3-200 libpaper-utils
+  libpaper1 libpq5 libquadmath0 librados2 librbd1 librdmacm1 libtiff5 libwebp6
+  libwebpdemux2 libwebpmux3 os-brick-common pycadf-common
+  python-babel-localedata python-pastedeploy-tpl python3-alembic python3-amqp
+  python3-anyjson python3-arrow python3-automaton python3-babel
+  python3-barbicanclient python3-bs4 python3-cachetools python3-castellan
+  python3-cffi python3-cinderclient python3-cliff python3-cmd2 python3-cursive
+  python3-dateutil python3-ddt python3-debtcollector python3-decorator
+  python3-defusedxml python3-dnspython python3-docutils python3-dogpile.cache
+  python3-eventlet python3-extras python3-fasteners python3-fixtures
+  python3-futurist python3-glance python3-glance-store python3-greenlet
+  python3-html5lib python3-importlib-metadata python3-iso8601
+  python3-keystoneauth1 python3-keystoneclient python3-keystonemiddleware
+  python3-kombu python3-linecache2 python3-lxml python3-mako python3-memcache
+  python3-migrate python3-mimeparse python3-monotonic python3-msgpack
+  python3-netaddr python3-networkx python3-numpy python3-olefile
+  python3-os-brick python3-os-service-types python3-os-win python3-oslo.cache
+  python3-oslo.concurrency python3-oslo.config python3-oslo.context
+  python3-oslo.db python3-oslo.i18n python3-oslo.log python3-oslo.messaging
+  python3-oslo.middleware python3-oslo.policy python3-oslo.privsep
+  python3-oslo.reports python3-oslo.rootwrap python3-oslo.serialization
+  python3-oslo.service python3-oslo.upgradecheck python3-oslo.utils
+  python3-oslo.vmware python3-osprofiler python3-packaging python3-paste
+  python3-pastedeploy python3-pastescript python3-pbr python3-pil python3-ply
+  python3-prettytable python3-psutil python3-psycopg2 python3-pycadf
+  python3-pycparser python3-pygments python3-pyinotify python3-pymysql
+  python3-pyparsing python3-pyperclip python3-repoze.lru python3-requests
+  python3-retrying python3-rfc3986 python3-roman python3-routes
+  python3-semantic-version python3-simplegeneric python3-soupsieve
+  python3-sqlalchemy python3-sqlalchemy-ext python3-sqlalchemy-utils
+  python3-sqlparse python3-statsd python3-stevedore python3-suds
+  python3-swiftclient python3-taskflow python3-tempita python3-tenacity
+  python3-testresources python3-testscenarios python3-testtools
+  python3-traceback2 python3-tz python3-unittest2 python3-vine python3-warlock
+  python3-wcwidth python3-webencodings python3-webob python3-wrapt
+  python3-wsme qemu-block-extra qemu-utils sgml-base sharutils xml-core
+Suggested packages:
+  apache2 | lighttpd | httpd liblcms2-utils python-amqp-doc python-arrow-doc
+  python-automaton-doc python-castellan-doc python3-dev python-cliff-doc
+  python-cursive-doc python-debtcollector-doc docutils-doc
+  fonts-linuxlibertine | ttf-linux-libertine texlive-lang-french
+  texlive-latex-base texlive-latex-recommended python-eventlet-doc
+  python-futurist-doc python3-rados python3-rbd python-glanceclient-doc
+  python-greenlet-doc python-greenlet-dev python3-greenlet-dbg python3-genshi
+  python-keystoneauth1-doc python3-requests-kerberos python-kombu-doc
+  python3-boto python3-django python3-pymongo python3-redis python3-lxml-dbg
+  python-lxml-doc python3-beaker python-mako-doc memcached python-migrate-doc
+  ipython3 python-netaddr-docs python-networkx-doc python3-gdal
+  python3-matplotlib python3-pygraphviz | python3-pydot python3-scipy gcc
+  gfortran python-numpy-doc python3-pytest python3-numpy-dbg
+  python-os-brick-doc python-os-service-types-doc python-os-win-doc
+  python-oslo.cache-doc python-oslo.concurrency-doc python-oslo.log-doc
+  python3-confluent-kafka python3-zmq python-oslo.middleware-doc
+  python-oslo.policy-doc python-oslo.privsep-doc python-oslo.reports-doc
+  python-oslo.service-doc httpd-wsgi libapache2-mod-python libapache2-mod-scgi
+  libjs-mochikit python3-cherrypy3 python-pil-doc python3-pil-dbg
+  python-ply-doc python-psutil-doc python-psycopg2-doc cpp python-pygments-doc
+  ttf-bitstream-vera python-pyinotify-doc python-pymysql-doc
+  python-pyparsing-doc python3-socks python-requests-doc
+  python-semantic-version-doc python-sqlalchemy-doc python3-fdb
+  python3-pymssql python3-mysqldb python-sqlalchemy-utils-doc python3-infinity
+  python3-intervals python3-psycopg2cffi python-sqlparse-doc python3-kazoo
+  python3-pydot python3-pydotplus python-tenacity-doc python-testtools-doc
+  python-webob-doc debootstrap sgml-base-doc sharutils-doc bsd-mailx | mailx
+  debhelper
+The following NEW packages will be installed:
+  alembic docutils-common glance glance-api glance-common ibverbs-providers
+  ieee-data javascript-common libblas3 libgfortran5 libibverbs1 libimagequant0
+  libiscsi7 libjbig0 libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc
+  libjs-underscore liblapack3 liblcms2-2 libnl-route-3-200 libpaper-utils
+  libpaper1 libpq5 libquadmath0 librados2 librbd1 librdmacm1 libtiff5 libwebp6
+  libwebpdemux2 libwebpmux3 os-brick-common pycadf-common
+  python-babel-localedata python-pastedeploy-tpl python3-alembic python3-amqp
+  python3-anyjson python3-arrow python3-automaton python3-babel
+  python3-barbicanclient python3-bs4 python3-cachetools python3-castellan
+  python3-cffi python3-cinderclient python3-cliff python3-cmd2 python3-cursive
+  python3-dateutil python3-ddt python3-debtcollector python3-decorator
+  python3-defusedxml python3-dnspython python3-docutils python3-dogpile.cache
+  python3-eventlet python3-extras python3-fasteners python3-fixtures
+  python3-futurist python3-glance python3-glance-store python3-glanceclient
+  python3-greenlet python3-html5lib python3-iso8601 python3-keystoneauth1
+  python3-keystoneclient python3-keystonemiddleware python3-kombu
+  python3-linecache2 python3-lxml python3-mako python3-memcache
+  python3-migrate python3-mimeparse python3-monotonic python3-msgpack
+  python3-netaddr python3-networkx python3-numpy python3-olefile
+  python3-os-brick python3-os-service-types python3-os-win python3-oslo.cache
+  python3-oslo.concurrency python3-oslo.config python3-oslo.context
+  python3-oslo.db python3-oslo.i18n python3-oslo.log python3-oslo.messaging
+  python3-oslo.middleware python3-oslo.policy python3-oslo.privsep
+  python3-oslo.reports python3-oslo.rootwrap python3-oslo.serialization
+  python3-oslo.service python3-oslo.upgradecheck python3-oslo.utils
+  python3-oslo.vmware python3-osprofiler python3-packaging python3-paste
+  python3-pastedeploy python3-pastescript python3-pbr python3-pil python3-ply
+  python3-prettytable python3-psutil python3-psycopg2 python3-pycadf
+  python3-pycparser python3-pygments python3-pyinotify python3-pymysql
+  python3-pyparsing python3-pyperclip python3-repoze.lru python3-retrying
+  python3-rfc3986 python3-roman python3-routes python3-semantic-version
+  python3-simplegeneric python3-soupsieve python3-sqlalchemy
+  python3-sqlalchemy-ext python3-sqlalchemy-utils python3-sqlparse
+  python3-statsd python3-stevedore python3-suds python3-swiftclient
+  python3-taskflow python3-tempita python3-tenacity python3-testresources
+  python3-testscenarios python3-testtools python3-traceback2 python3-tz
+  python3-unittest2 python3-vine python3-warlock python3-wcwidth
+  python3-webencodings python3-webob python3-wrapt python3-wsme
+  qemu-block-extra qemu-utils sgml-base sharutils xml-core
+The following packages will be upgraded:
+  python3-importlib-metadata python3-requests
+2 upgraded, 163 newly installed, 0 to remove and 17 not upgraded.
+Need to get 0 B/34.1 MB of archives.
+After this operation, 174 MB of additional disk space will be used.
+Download complete and in download only mode
+apt_download: nova-api nova-conductor nova-novncproxy nova-scheduler
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  acl adwaita-icon-theme alembic at-spi2-core cpu-checker docutils-common
+  fontconfig fontconfig-config fonts-dejavu-core gstreamer1.0-plugins-base
+  gstreamer1.0-plugins-good gstreamer1.0-x gtk-update-icon-cache
+  hicolor-icon-theme humanity-icon-theme ibverbs-providers ieee-data ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms javascript-common keystone-common libaa1
+  libasyncns0 libatk-bridge2.0-0 libatk1.0-0 libatk1.0-data libatspi2.0-0
+  libavahi-client3 libavahi-common-data libavahi-common3 libavc1394-0 libblas3
+  libbrlapi0.7 libcaca0 libcacard0 libcairo-gobject2 libcairo2 libcdparanoia0
+  libcolord2 libcups2 libdatrie1 libdv4 libepoxy0 libfdt1 libflac8
+  libfontconfig1 libgbm1 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-bin
+  libgdk-pixbuf2.0-common libgfortran5 libgraphite2-3
+  libgstreamer-plugins-base1.0-0 libgstreamer-plugins-good1.0-0 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libharfbuzz0b libibverbs1 libiec61883-0
+  libimagequant0 libiscsi7 libjack-jackd2-0 libjbig0 libjpeg-turbo8 libjpeg8
+  libjs-jquery libjs-sphinxdoc libjs-underscore liblapack3 liblcms2-2
+  libmp3lame0 libmpg123-0 libnl-route-3-200 libopus0 liborc-0.4-0
+  libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpaper-utils
+  libpaper1 libpciaccess0 libpcsclite1 libpixman-1-0 libpmem1 libpq5 libpulse0
+  libquadmath0 librados2 libraw1394-11 librbd1 librdmacm1 librest-0.7-0
+  librsvg2-2 librsvg2-common libsamplerate0 libshout3 libslirp0 libsndfile1
+  libsoup-gnome2.4-1 libspeex1 libspice-server1 libtag1v5 libtag1v5-vanilla
+  libthai-data libthai0 libtheora0 libtiff5 libtwolame0 libusbredirparser1
+  libv4l-0 libv4lconvert0 libvirglrenderer1 libvirt-daemon
+  libvirt-daemon-driver-qemu libvirt-daemon-driver-storage-rbd libvirt0
+  libvisual-0.4-0 libvorbisenc2 libvpx6 libvte-2.91-0 libvte-2.91-common
+  libwavpack1 libwayland-client0 libwayland-cursor0 libwayland-egl1
+  libwayland-server0 libwebp6 libwebpdemux2 libwebpmux3 libxcb-render0
+  libxcb-shm0 libxcomposite1 libxcursor1 libxdamage1 libxfixes3 libxi6
+  libxinerama1 libxkbcommon0 libxml2-utils libxrandr2 libxrender1 libxtst6
+  libxv1 libyajl2 msr-tools nova-common novnc os-brick-common ovmf
+  pycadf-common python-babel-localedata python-pastedeploy-tpl python3-alembic
+  python3-amqp python3-aniso8601 python3-anyjson python3-appdirs python3-arrow
+  python3-automaton python3-babel python3-barbicanclient python3-bcrypt
+  python3-bs4 python3-cachetools python3-castellan python3-cffi
+  python3-cinderclient python3-cliff python3-cmd2 python3-cursive
+  python3-dateutil python3-ddt python3-debtcollector python3-decorator
+  python3-defusedxml python3-deprecation python3-dnspython python3-docutils
+  python3-dogpile.cache python3-eventlet python3-extras python3-fasteners
+  python3-fixtures python3-flask python3-flask-restful python3-futurist
+  python3-glanceclient python3-greenlet python3-html5lib
+  python3-importlib-metadata python3-iso8601 python3-itsdangerous
+  python3-jmespath python3-keystone python3-keystoneauth1
+  python3-keystoneclient python3-keystonemiddleware python3-kombu python3-ldap
+  python3-libvirt python3-linecache2 python3-lxml python3-mako
+  python3-memcache python3-microversion-parse python3-migrate
+  python3-mimeparse python3-monotonic python3-msgpack python3-munch
+  python3-netaddr python3-networkx python3-neutronclient python3-nova
+  python3-novnc python3-numpy python3-olefile python3-openstacksdk
+  python3-openvswitch python3-os-brick python3-os-client-config
+  python3-os-resource-classes python3-os-service-types python3-os-traits
+  python3-os-vif python3-os-win python3-os-xenapi python3-osc-lib
+  python3-oslo.cache python3-oslo.concurrency python3-oslo.config
+  python3-oslo.context python3-oslo.db python3-oslo.i18n python3-oslo.log
+  python3-oslo.messaging python3-oslo.middleware python3-oslo.policy
+  python3-oslo.privsep python3-oslo.reports python3-oslo.rootwrap
+  python3-oslo.serialization python3-oslo.service python3-oslo.upgradecheck
+  python3-oslo.utils python3-oslo.versionedobjects python3-oslo.vmware
+  python3-osprofiler python3-ovsdbapp python3-packaging python3-paramiko
+  python3-passlib python3-paste python3-pastedeploy python3-pastescript
+  python3-pbr python3-pil python3-ply python3-prettytable python3-psutil
+  python3-psycopg2 python3-pycadf python3-pycparser python3-pygments
+  python3-pyinotify python3-pymemcache python3-pymysql python3-pyparsing
+  python3-pyperclip python3-pypowervm python3-pyroute2 python3-pysaml2
+  python3-redis python3-repoze.lru python3-requests python3-requestsexceptions
+  python3-retrying python3-rfc3986 python3-roman python3-routes python3-scrypt
+  python3-sortedcontainers python3-soupsieve python3-sqlalchemy
+  python3-sqlalchemy-ext python3-sqlalchemy-utils python3-sqlparse
+  python3-statsd python3-stevedore python3-suds python3-taskflow
+  python3-tempita python3-tenacity python3-testresources python3-testscenarios
+  python3-testtools python3-tooz python3-traceback2 python3-tz
+  python3-unittest2 python3-vine python3-voluptuous python3-warlock
+  python3-wcwidth python3-webencodings python3-webob python3-websockify
+  python3-werkzeug python3-wrapt python3-zvmcloudconnector qemu-block-extra
+  qemu-kvm qemu-system-common qemu-system-data qemu-system-gui qemu-system-x86
+  qemu-utils seabios sgml-base sharutils ubuntu-mono websockify x11-common
+  xml-core xmlsec1 zvmcloudconnector-common
+Suggested packages:
+  gvfs apache2 | lighttpd | httpd colord cups-common libdv-bin oss-compat
+  libvisual-0.4-plugins jackd2 liblcms2-utils opus-tools pcscd pulseaudio
+  libraw1394-doc librsvg2-bin speex gstreamer1.0-plugins-ugly
+  libvirt-daemon-driver-lxc libvirt-daemon-driver-vbox
+  libvirt-daemon-driver-xen libvirt-daemon-driver-storage-gluster
+  libvirt-daemon-driver-storage-zfs libvirt-daemon-system numad python-nova
+  python-amqp-doc python-arrow-doc python-automaton-doc python-castellan-doc
+  python3-dev python-cliff-doc python-cursive-doc python-debtcollector-doc
+  docutils-doc fonts-linuxlibertine | ttf-linux-libertine texlive-lang-french
+  texlive-latex-base texlive-latex-recommended python-eventlet-doc
+  python-flask-doc python-futurist-doc python-glanceclient-doc
+  python-greenlet-doc python-greenlet-dev python3-greenlet-dbg python3-genshi
+  python3-ldappool python-keystoneauth1-doc python3-requests-kerberos
+  python-kombu-doc python3-boto python3-django python3-pymongo
+  python3-lxml-dbg python-lxml-doc python3-beaker python-mako-doc memcached
+  python-microversion-parse-doc python-migrate-doc ipython3
+  python-netaddr-docs python-networkx-doc python3-gdal python3-matplotlib
+  python3-pygraphviz | python3-pydot python3-scipy gcc gfortran
+  python-numpy-doc python3-pytest python3-numpy-dbg python-openstacksdk-doc
+  python-os-brick-doc python-os-client-config-doc python-os-service-types-doc
+  python-os-traits-doc python-os-vif-doc python-os-win-doc
+  python-os-xenapi-doc python-osc-lib-doc python-oslo.cache-doc
+  python-oslo.concurrency-doc python-oslo.log-doc python3-confluent-kafka
+  python3-zmq python-oslo.middleware-doc python-oslo.policy-doc
+  python-oslo.privsep-doc python-oslo.reports-doc python-oslo.service-doc
+  python-oslo.versionedobjects-doc python-ovsdbapp-doc python3-gssapi
+  python3-invoke httpd-wsgi libapache2-mod-python libapache2-mod-scgi
+  libjs-mochikit python3-cherrypy3 python-pil-doc python3-pil-dbg
+  python-ply-doc python-psutil-doc python-psycopg2-doc cpp python-pygments-doc
+  ttf-bitstream-vera python-pyinotify-doc python-pymysql-doc
+  python-pyparsing-doc python-pyroute2-doc python3-repoze.who python3-hiredis
+  python3-socks python-requests-doc python-sortedcontainers-doc
+  python-sqlalchemy-doc python3-fdb python3-pymssql python3-mysqldb
+  python-sqlalchemy-utils-doc python3-infinity python3-intervals
+  python3-psycopg2cffi python-sqlparse-doc python3-kazoo python3-pydot
+  python3-pydotplus python-tenacity-doc python-testtools-doc python3-etcd3
+  python3-etcd3gw python3-sysv-ipc python3-zake python-webob-doc
+  python3-jwcrypto python-werkzeug-doc python3-termcolor python3-watchdog
+  samba vde2 debootstrap sgml-base-doc sharutils-doc bsd-mailx | mailx
+  debhelper
+The following NEW packages will be installed:
+  acl adwaita-icon-theme alembic at-spi2-core cpu-checker docutils-common
+  fontconfig fontconfig-config fonts-dejavu-core gstreamer1.0-plugins-base
+  gstreamer1.0-plugins-good gstreamer1.0-x gtk-update-icon-cache
+  hicolor-icon-theme humanity-icon-theme ibverbs-providers ieee-data ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms javascript-common keystone-common libaa1
+  libasyncns0 libatk-bridge2.0-0 libatk1.0-0 libatk1.0-data libatspi2.0-0
+  libavahi-client3 libavahi-common-data libavahi-common3 libavc1394-0 libblas3
+  libbrlapi0.7 libcaca0 libcacard0 libcairo-gobject2 libcairo2 libcdparanoia0
+  libcolord2 libcups2 libdatrie1 libdv4 libepoxy0 libfdt1 libflac8
+  libfontconfig1 libgbm1 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-bin
+  libgdk-pixbuf2.0-common libgfortran5 libgraphite2-3
+  libgstreamer-plugins-base1.0-0 libgstreamer-plugins-good1.0-0 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libharfbuzz0b libibverbs1 libiec61883-0
+  libimagequant0 libiscsi7 libjack-jackd2-0 libjbig0 libjpeg-turbo8 libjpeg8
+  libjs-jquery libjs-sphinxdoc libjs-underscore liblapack3 liblcms2-2
+  libmp3lame0 libmpg123-0 libnl-route-3-200 libopus0 liborc-0.4-0
+  libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpaper-utils
+  libpaper1 libpciaccess0 libpcsclite1 libpixman-1-0 libpmem1 libpq5 libpulse0
+  libquadmath0 librados2 libraw1394-11 librbd1 librdmacm1 librest-0.7-0
+  librsvg2-2 librsvg2-common libsamplerate0 libshout3 libslirp0 libsndfile1
+  libsoup-gnome2.4-1 libspeex1 libspice-server1 libtag1v5 libtag1v5-vanilla
+  libthai-data libthai0 libtheora0 libtiff5 libtwolame0 libusbredirparser1
+  libv4l-0 libv4lconvert0 libvirglrenderer1 libvirt-daemon
+  libvirt-daemon-driver-qemu libvirt-daemon-driver-storage-rbd libvirt0
+  libvisual-0.4-0 libvorbisenc2 libvpx6 libvte-2.91-0 libvte-2.91-common
+  libwavpack1 libwayland-client0 libwayland-cursor0 libwayland-egl1
+  libwayland-server0 libwebp6 libwebpdemux2 libwebpmux3 libxcb-render0
+  libxcb-shm0 libxcomposite1 libxcursor1 libxdamage1 libxfixes3 libxi6
+  libxinerama1 libxkbcommon0 libxml2-utils libxrandr2 libxrender1 libxtst6
+  libxv1 libyajl2 msr-tools nova-api nova-common nova-conductor
+  nova-novncproxy nova-scheduler novnc os-brick-common ovmf pycadf-common
+  python-babel-localedata python-pastedeploy-tpl python3-alembic python3-amqp
+  python3-aniso8601 python3-anyjson python3-appdirs python3-arrow
+  python3-automaton python3-babel python3-barbicanclient python3-bcrypt
+  python3-bs4 python3-cachetools python3-castellan python3-cffi
+  python3-cinderclient python3-cliff python3-cmd2 python3-cursive
+  python3-dateutil python3-ddt python3-debtcollector python3-decorator
+  python3-defusedxml python3-deprecation python3-dnspython python3-docutils
+  python3-dogpile.cache python3-eventlet python3-extras python3-fasteners
+  python3-fixtures python3-flask python3-flask-restful python3-futurist
+  python3-glanceclient python3-greenlet python3-html5lib python3-iso8601
+  python3-itsdangerous python3-jmespath python3-keystone python3-keystoneauth1
+  python3-keystoneclient python3-keystonemiddleware python3-kombu python3-ldap
+  python3-libvirt python3-linecache2 python3-lxml python3-mako
+  python3-memcache python3-microversion-parse python3-migrate
+  python3-mimeparse python3-monotonic python3-msgpack python3-munch
+  python3-netaddr python3-networkx python3-neutronclient python3-nova
+  python3-novnc python3-numpy python3-olefile python3-openstacksdk
+  python3-openvswitch python3-os-brick python3-os-client-config
+  python3-os-resource-classes python3-os-service-types python3-os-traits
+  python3-os-vif python3-os-win python3-os-xenapi python3-osc-lib
+  python3-oslo.cache python3-oslo.concurrency python3-oslo.config
+  python3-oslo.context python3-oslo.db python3-oslo.i18n python3-oslo.log
+  python3-oslo.messaging python3-oslo.middleware python3-oslo.policy
+  python3-oslo.privsep python3-oslo.reports python3-oslo.rootwrap
+  python3-oslo.serialization python3-oslo.service python3-oslo.upgradecheck
+  python3-oslo.utils python3-oslo.versionedobjects python3-oslo.vmware
+  python3-osprofiler python3-ovsdbapp python3-packaging python3-paramiko
+  python3-passlib python3-paste python3-pastedeploy python3-pastescript
+  python3-pbr python3-pil python3-ply python3-prettytable python3-psutil
+  python3-psycopg2 python3-pycadf python3-pycparser python3-pygments
+  python3-pyinotify python3-pymemcache python3-pymysql python3-pyparsing
+  python3-pyperclip python3-pypowervm python3-pyroute2 python3-pysaml2
+  python3-redis python3-repoze.lru python3-requestsexceptions python3-retrying
+  python3-rfc3986 python3-roman python3-routes python3-scrypt
+  python3-sortedcontainers python3-soupsieve python3-sqlalchemy
+  python3-sqlalchemy-ext python3-sqlalchemy-utils python3-sqlparse
+  python3-statsd python3-stevedore python3-suds python3-taskflow
+  python3-tempita python3-tenacity python3-testresources python3-testscenarios
+  python3-testtools python3-tooz python3-traceback2 python3-tz
+  python3-unittest2 python3-vine python3-voluptuous python3-warlock
+  python3-wcwidth python3-webencodings python3-webob python3-websockify
+  python3-werkzeug python3-wrapt python3-zvmcloudconnector qemu-block-extra
+  qemu-kvm qemu-system-common qemu-system-data qemu-system-gui qemu-system-x86
+  qemu-utils seabios sgml-base sharutils ubuntu-mono websockify x11-common
+  xml-core xmlsec1 zvmcloudconnector-common
+The following packages will be upgraded:
+  python3-importlib-metadata python3-requests
+2 upgraded, 329 newly installed, 0 to remove and 17 not upgraded.
+Need to get 0 B/80.1 MB of archives.
+After this operation, 399 MB of additional disk space will be used.
+Download complete and in download only mode
+apt_download: placement-api
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  alembic apache2 apache2-bin apache2-data apache2-utils docutils-common
+  ieee-data javascript-common libapache2-mod-wsgi-py3 libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap libimagequant0 libjansson4 libjbig0
+  libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc libjs-underscore
+  liblcms2-2 liblua5.2-0 libpaper-utils libpaper1 libtiff5 libwebp6
+  libwebpdemux2 libwebpmux3 placement-common pycadf-common
+  python-babel-localedata python-pastedeploy-tpl python3-alembic python3-amqp
+  python3-anyjson python3-babel python3-bs4 python3-cachetools
+  python3-dateutil python3-debtcollector python3-decorator python3-dnspython
+  python3-docutils python3-dogpile.cache python3-eventlet python3-extras
+  python3-fasteners python3-fixtures python3-futurist python3-greenlet
+  python3-html5lib python3-importlib-metadata python3-iso8601
+  python3-keystoneauth1 python3-keystoneclient python3-keystonemiddleware
+  python3-kombu python3-linecache2 python3-lxml python3-mako python3-memcache
+  python3-microversion-parse python3-migrate python3-mimeparse
+  python3-monotonic python3-msgpack python3-netaddr python3-olefile
+  python3-os-resource-classes python3-os-service-types python3-os-traits
+  python3-oslo.cache python3-oslo.concurrency python3-oslo.config
+  python3-oslo.context python3-oslo.db python3-oslo.i18n python3-oslo.log
+  python3-oslo.messaging python3-oslo.middleware python3-oslo.policy
+  python3-oslo.serialization python3-oslo.service python3-oslo.upgradecheck
+  python3-oslo.utils python3-oslo.versionedobjects python3-packaging
+  python3-paste python3-pastedeploy python3-pastescript python3-pbr
+  python3-pil python3-placement python3-prettytable python3-pycadf
+  python3-pygments python3-pyinotify python3-pyparsing python3-repoze.lru
+  python3-requests python3-rfc3986 python3-roman python3-routes
+  python3-soupsieve python3-sqlalchemy python3-sqlalchemy-ext python3-sqlparse
+  python3-statsd python3-stevedore python3-tempita python3-tenacity
+  python3-testresources python3-testscenarios python3-testtools
+  python3-traceback2 python3-tz python3-unittest2 python3-vine
+  python3-webencodings python3-webob python3-wrapt sgml-base ssl-cert xml-core
+Suggested packages:
+  apache2-doc apache2-suexec-pristine | apache2-suexec-custom www-browser
+  liblcms2-utils python-amqp-doc python-debtcollector-doc docutils-doc
+  fonts-linuxlibertine | ttf-linux-libertine texlive-lang-french
+  texlive-latex-base texlive-latex-recommended python-eventlet-doc
+  python-futurist-doc python-greenlet-doc python-greenlet-dev
+  python3-greenlet-dbg python3-genshi python-keystoneauth1-doc
+  python3-requests-kerberos python-kombu-doc python3-boto python3-django
+  python3-pymongo python3-redis python3-lxml-dbg python-lxml-doc
+  python3-beaker python-mako-doc memcached python-microversion-parse-doc
+  python-migrate-doc ipython3 python-netaddr-docs python-os-service-types-doc
+  python-os-traits-doc python-oslo.cache-doc python-oslo.concurrency-doc
+  python-oslo.log-doc python3-confluent-kafka python3-zmq
+  python-oslo.middleware-doc python-oslo.policy-doc python-oslo.service-doc
+  python-oslo.versionedobjects-doc httpd-wsgi libapache2-mod-python
+  libapache2-mod-scgi libjs-mochikit python3-cherrypy3 python-pil-doc
+  python3-pil-dbg python-pygments-doc ttf-bitstream-vera python-pyinotify-doc
+  python-pyparsing-doc python3-socks python-requests-doc python-sqlalchemy-doc
+  python3-fdb python3-pymssql python3-mysqldb python3-psycopg2
+  python-sqlparse-doc python-tenacity-doc python-testtools-doc
+  python-webob-doc sgml-base-doc openssl-blacklist debhelper
+The following NEW packages will be installed:
+  alembic apache2 apache2-bin apache2-data apache2-utils docutils-common
+  ieee-data javascript-common libapache2-mod-wsgi-py3 libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap libimagequant0 libjansson4 libjbig0
+  libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc libjs-underscore
+  liblcms2-2 liblua5.2-0 libpaper-utils libpaper1 libtiff5 libwebp6
+  libwebpdemux2 libwebpmux3 placement-api placement-common pycadf-common
+  python-babel-localedata python-pastedeploy-tpl python3-alembic python3-amqp
+  python3-anyjson python3-babel python3-bs4 python3-cachetools
+  python3-dateutil python3-debtcollector python3-decorator python3-dnspython
+  python3-docutils python3-dogpile.cache python3-eventlet python3-extras
+  python3-fasteners python3-fixtures python3-futurist python3-greenlet
+  python3-html5lib python3-iso8601 python3-keystoneauth1
+  python3-keystoneclient python3-keystonemiddleware python3-kombu
+  python3-linecache2 python3-lxml python3-mako python3-memcache
+  python3-microversion-parse python3-migrate python3-mimeparse
+  python3-monotonic python3-msgpack python3-netaddr python3-olefile
+  python3-os-resource-classes python3-os-service-types python3-os-traits
+  python3-oslo.cache python3-oslo.concurrency python3-oslo.config
+  python3-oslo.context python3-oslo.db python3-oslo.i18n python3-oslo.log
+  python3-oslo.messaging python3-oslo.middleware python3-oslo.policy
+  python3-oslo.serialization python3-oslo.service python3-oslo.upgradecheck
+  python3-oslo.utils python3-oslo.versionedobjects python3-packaging
+  python3-paste python3-pastedeploy python3-pastescript python3-pbr
+  python3-pil python3-placement python3-prettytable python3-pycadf
+  python3-pygments python3-pyinotify python3-pyparsing python3-repoze.lru
+  python3-rfc3986 python3-roman python3-routes python3-soupsieve
+  python3-sqlalchemy python3-sqlalchemy-ext python3-sqlparse python3-statsd
+  python3-stevedore python3-tempita python3-tenacity python3-testresources
+  python3-testscenarios python3-testtools python3-traceback2 python3-tz
+  python3-unittest2 python3-vine python3-webencodings python3-webob
+  python3-wrapt sgml-base ssl-cert xml-core
+The following packages will be upgraded:
+  python3-importlib-metadata python3-requests
+2 upgraded, 124 newly installed, 0 to remove and 17 not upgraded.
+Need to get 0 B/18.7 MB of archives.
+After this operation, 94.9 MB of additional disk space will be used.
+Download complete and in download only mode
+apt_download: neutron-server neutron-plugin-ml2 neutron-linuxbridge-agent neutron-dhcp-agent neutron-metadata-agent neutron-l3-agent python3-neutronclient conntrack
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  alembic bridge-utils dns-root-data dnsmasq-base dnsmasq-utils
+  docutils-common ebtables haproxy ieee-data ipset iputils-arping ipvsadm
+  javascript-common keepalived libidn11 libimagequant0 libipset13 libjbig0
+  libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc libjs-underscore
+  liblcms2-2 liblua5.3-0 libmysqlclient21 libpaper-utils libpaper1
+  libsensors-config libsensors5 libsnmp-base libsnmp35 libtiff5 libwebp6
+  libwebpdemux2 libwebpmux3 mysql-common net-tools neutron-common
+  pycadf-common python-babel-localedata python-pastedeploy-tpl python3-alembic
+  python3-amqp python3-anyjson python3-appdirs python3-babel python3-bcrypt
+  python3-bs4 python3-cachetools python3-cffi python3-cliff python3-cmd2
+  python3-dateutil python3-debtcollector python3-decorator python3-deprecation
+  python3-designateclient python3-dnspython python3-docutils
+  python3-dogpile.cache python3-eventlet python3-extras python3-fasteners
+  python3-fixtures python3-futurist python3-greenlet python3-html5lib
+  python3-importlib-metadata python3-iso8601 python3-jmespath
+  python3-keystoneauth1 python3-keystoneclient python3-keystonemiddleware
+  python3-kombu python3-linecache2 python3-logutils python3-lxml python3-mako
+  python3-memcache python3-migrate python3-mimeparse python3-monotonic
+  python3-msgpack python3-munch python3-netaddr python3-neutron
+  python3-neutron-lib python3-novaclient python3-olefile python3-openstacksdk
+  python3-openvswitch python3-os-client-config python3-os-ken
+  python3-os-service-types python3-os-traits python3-os-vif python3-os-xenapi
+  python3-osc-lib python3-oslo.cache python3-oslo.concurrency
+  python3-oslo.config python3-oslo.context python3-oslo.db python3-oslo.i18n
+  python3-oslo.log python3-oslo.messaging python3-oslo.middleware
+  python3-oslo.policy python3-oslo.privsep python3-oslo.reports
+  python3-oslo.rootwrap python3-oslo.serialization python3-oslo.service
+  python3-oslo.upgradecheck python3-oslo.utils python3-oslo.versionedobjects
+  python3-osprofiler python3-ovsdbapp python3-packaging python3-paramiko
+  python3-paste python3-pastedeploy python3-pastescript python3-pbr
+  python3-pecan python3-pil python3-ply python3-prettytable python3-psutil
+  python3-pycadf python3-pycparser python3-pygments python3-pyinotify
+  python3-pymemcache python3-pymysql python3-pyparsing python3-pyperclip
+  python3-pyroute2 python3-redis python3-repoze.lru python3-requestsexceptions
+  python3-rfc3986 python3-roman python3-routes python3-setproctitle
+  python3-simplegeneric python3-singledispatch python3-sortedcontainers
+  python3-soupsieve python3-sqlalchemy python3-sqlalchemy-ext python3-sqlparse
+  python3-statsd python3-stevedore python3-tempita python3-tenacity
+  python3-testresources python3-testscenarios python3-testtools
+  python3-tinyrpc python3-tooz python3-traceback2 python3-tz python3-unittest2
+  python3-vine python3-voluptuous python3-waitress python3-wcwidth
+  python3-webencodings python3-webob python3-webtest python3-wrapt radvd
+  sgml-base xml-core
+Suggested packages:
+  nftables vim-haproxy haproxy-doc heartbeat ldirectord apache2 | lighttpd
+  | httpd liblcms2-utils lm-sensors snmp-mibs-downloader python-amqp-doc
+  python3-dev python-cliff-doc python-debtcollector-doc docutils-doc
+  fonts-linuxlibertine | ttf-linux-libertine texlive-lang-french
+  texlive-latex-base texlive-latex-recommended python-eventlet-doc
+  python-futurist-doc python-greenlet-doc python-greenlet-dev
+  python3-greenlet-dbg python3-genshi python-keystoneauth1-doc
+  python3-requests-kerberos python-kombu-doc python3-boto python3-django
+  python3-pymongo python3-lxml-dbg python-lxml-doc python3-beaker
+  python-mako-doc memcached python-migrate-doc ipython3 python-netaddr-docs
+  python-neutron-lib-doc python-openstacksdk-doc python-os-client-config-doc
+  python-os-service-types-doc python-os-traits-doc python-os-vif-doc
+  python-os-xenapi-doc python-osc-lib-doc python-oslo.cache-doc
+  python-oslo.concurrency-doc python-oslo.log-doc python3-confluent-kafka
+  python3-zmq python-oslo.middleware-doc python-oslo.policy-doc
+  python-oslo.privsep-doc python-oslo.reports-doc python-oslo.service-doc
+  python-oslo.versionedobjects-doc python-ovsdbapp-doc python3-gssapi
+  python3-invoke httpd-wsgi libapache2-mod-python libapache2-mod-scgi
+  libjs-mochikit python3-cherrypy3 python-pecan-doc python-pil-doc
+  python3-pil-dbg python-ply-doc python-psutil-doc cpp python-pygments-doc
+  ttf-bitstream-vera python-pyinotify-doc python-pymysql-doc
+  python-pyparsing-doc python-pyroute2-doc python3-hiredis
+  python-sortedcontainers-doc python-sqlalchemy-doc python3-fdb
+  python3-pymssql python3-mysqldb python3-psycopg2 python-sqlparse-doc
+  python-tenacity-doc python-testtools-doc python-tinyrpc-doc python3-etcd3
+  python3-etcd3gw python3-kazoo python3-sysv-ipc python3-zake
+  python-waitress-doc python-webob-doc python-webtest-doc sgml-base-doc
+  debhelper
+The following NEW packages will be installed:
+  alembic bridge-utils conntrack dns-root-data dnsmasq-base dnsmasq-utils
+  docutils-common ebtables haproxy ieee-data ipset iputils-arping ipvsadm
+  javascript-common keepalived libidn11 libimagequant0 libipset13 libjbig0
+  libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc libjs-underscore
+  liblcms2-2 liblua5.3-0 libmysqlclient21 libpaper-utils libpaper1
+  libsensors-config libsensors5 libsnmp-base libsnmp35 libtiff5 libwebp6
+  libwebpdemux2 libwebpmux3 mysql-common net-tools neutron-common
+  neutron-dhcp-agent neutron-l3-agent neutron-linuxbridge-agent
+  neutron-metadata-agent neutron-plugin-ml2 neutron-server pycadf-common
+  python-babel-localedata python-pastedeploy-tpl python3-alembic python3-amqp
+  python3-anyjson python3-appdirs python3-babel python3-bcrypt python3-bs4
+  python3-cachetools python3-cffi python3-cliff python3-cmd2 python3-dateutil
+  python3-debtcollector python3-decorator python3-deprecation
+  python3-designateclient python3-dnspython python3-docutils
+  python3-dogpile.cache python3-eventlet python3-extras python3-fasteners
+  python3-fixtures python3-futurist python3-greenlet python3-html5lib
+  python3-iso8601 python3-jmespath python3-keystoneauth1
+  python3-keystoneclient python3-keystonemiddleware python3-kombu
+  python3-linecache2 python3-logutils python3-lxml python3-mako
+  python3-memcache python3-migrate python3-mimeparse python3-monotonic
+  python3-msgpack python3-munch python3-netaddr python3-neutron
+  python3-neutron-lib python3-neutronclient python3-novaclient python3-olefile
+  python3-openstacksdk python3-openvswitch python3-os-client-config
+  python3-os-ken python3-os-service-types python3-os-traits python3-os-vif
+  python3-os-xenapi python3-osc-lib python3-oslo.cache
+  python3-oslo.concurrency python3-oslo.config python3-oslo.context
+  python3-oslo.db python3-oslo.i18n python3-oslo.log python3-oslo.messaging
+  python3-oslo.middleware python3-oslo.policy python3-oslo.privsep
+  python3-oslo.reports python3-oslo.rootwrap python3-oslo.serialization
+  python3-oslo.service python3-oslo.upgradecheck python3-oslo.utils
+  python3-oslo.versionedobjects python3-osprofiler python3-ovsdbapp
+  python3-packaging python3-paramiko python3-paste python3-pastedeploy
+  python3-pastescript python3-pbr python3-pecan python3-pil python3-ply
+  python3-prettytable python3-psutil python3-pycadf python3-pycparser
+  python3-pygments python3-pyinotify python3-pymemcache python3-pymysql
+  python3-pyparsing python3-pyperclip python3-pyroute2 python3-redis
+  python3-repoze.lru python3-requestsexceptions python3-rfc3986 python3-roman
+  python3-routes python3-setproctitle python3-simplegeneric
+  python3-singledispatch python3-sortedcontainers python3-soupsieve
+  python3-sqlalchemy python3-sqlalchemy-ext python3-sqlparse python3-statsd
+  python3-stevedore python3-tempita python3-tenacity python3-testresources
+  python3-testscenarios python3-testtools python3-tinyrpc python3-tooz
+  python3-traceback2 python3-tz python3-unittest2 python3-vine
+  python3-voluptuous python3-waitress python3-wcwidth python3-webencodings
+  python3-webob python3-webtest python3-wrapt radvd sgml-base xml-core
+The following packages will be upgraded:
+  python3-importlib-metadata
+1 upgraded, 183 newly installed, 0 to remove and 18 not upgraded.
+Need to get 0 B/28.0 MB of archives.
+After this operation, 163 MB of additional disk space will be used.
+Download complete and in download only mode
+apt_download: cinder-api cinder-scheduler python3-cinderclient
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  alembic apache2 apache2-bin apache2-data apache2-utils cinder-common
+  docutils-common ieee-data javascript-common libapache2-mod-wsgi-py3 libapr1
+  libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap libblas3 libgfortran5
+  libimagequant0 libjansson4 libjbig0 libjpeg-turbo8 libjpeg8 libjs-jquery
+  libjs-sphinxdoc libjs-underscore liblapack3 liblcms2-2 liblua5.2-0
+  libpaper-utils libpaper1 libpq5 libquadmath0 libtiff5 libwebp6 libwebpdemux2
+  libwebpmux3 os-brick-common pycadf-common python-babel-localedata
+  python-pastedeploy-tpl python3-alembic python3-amqp python3-anyjson
+  python3-arrow python3-automaton python3-babel python3-barbicanclient
+  python3-bcrypt python3-bs4 python3-cachetools python3-castellan python3-cffi
+  python3-cinder python3-cliff python3-cmd2 python3-cursive python3-dateutil
+  python3-ddt python3-debtcollector python3-decorator python3-dnspython
+  python3-docutils python3-dogpile.cache python3-eventlet python3-extras
+  python3-fasteners python3-fixtures python3-futurist python3-glanceclient
+  python3-greenlet python3-html5lib python3-httplib2
+  python3-importlib-metadata python3-iso8601 python3-keystoneauth1
+  python3-keystoneclient python3-keystonemiddleware python3-kombu
+  python3-linecache2 python3-lxml python3-mako python3-memcache
+  python3-migrate python3-mimeparse python3-monotonic python3-msgpack
+  python3-netaddr python3-networkx python3-novaclient python3-numpy
+  python3-olefile python3-os-brick python3-os-service-types python3-os-win
+  python3-oslo.cache python3-oslo.concurrency python3-oslo.config
+  python3-oslo.context python3-oslo.db python3-oslo.i18n python3-oslo.log
+  python3-oslo.messaging python3-oslo.middleware python3-oslo.policy
+  python3-oslo.privsep python3-oslo.reports python3-oslo.rootwrap
+  python3-oslo.serialization python3-oslo.service python3-oslo.upgradecheck
+  python3-oslo.utils python3-oslo.versionedobjects python3-oslo.vmware
+  python3-osprofiler python3-packaging python3-paramiko python3-paste
+  python3-pastedeploy python3-pastescript python3-pbr python3-pil python3-ply
+  python3-prettytable python3-psutil python3-psycopg2 python3-pycadf
+  python3-pycparser python3-pygments python3-pyinotify python3-pymemcache
+  python3-pymysql python3-pyparsing python3-pyperclip python3-pyudev
+  python3-redis python3-repoze.lru python3-requests python3-retrying
+  python3-rfc3986 python3-roman python3-routes python3-rtslib-fb python3-six
+  python3-soupsieve python3-sqlalchemy python3-sqlalchemy-ext
+  python3-sqlalchemy-utils python3-sqlparse python3-statsd python3-stevedore
+  python3-suds python3-swiftclient python3-tabulate python3-taskflow
+  python3-tempita python3-tenacity python3-testresources python3-testscenarios
+  python3-testtools python3-tooz python3-traceback2 python3-tz
+  python3-unittest2 python3-vine python3-voluptuous python3-warlock
+  python3-wcwidth python3-webencodings python3-webob python3-wrapt sgml-base
+  ssl-cert xml-core
+Suggested packages:
+  apache2-doc apache2-suexec-pristine | apache2-suexec-custom www-browser
+  liblcms2-utils python-amqp-doc python-arrow-doc python-automaton-doc
+  python-castellan-doc python3-dev python3-boto3 python3-botocore
+  python3-googleapi python3-hp3parclient python3-oauth2client python3-rados
+  python3-rbd python3-zstd python-cliff-doc python-cursive-doc
+  python-debtcollector-doc docutils-doc fonts-linuxlibertine
+  | ttf-linux-libertine texlive-lang-french texlive-latex-base
+  texlive-latex-recommended python-eventlet-doc python-futurist-doc
+  python-glanceclient-doc python-greenlet-doc python-greenlet-dev
+  python3-greenlet-dbg python3-genshi python-keystoneauth1-doc
+  python3-requests-kerberos python-kombu-doc python3-boto python3-django
+  python3-pymongo python3-lxml-dbg python-lxml-doc python3-beaker
+  python-mako-doc memcached python-migrate-doc ipython3 python-netaddr-docs
+  python-networkx-doc python3-gdal python3-matplotlib python3-pygraphviz
+  | python3-pydot python3-scipy gcc gfortran python-numpy-doc python3-pytest
+  python3-numpy-dbg python-os-brick-doc python-os-service-types-doc
+  python-os-win-doc python-oslo.cache-doc python-oslo.concurrency-doc
+  python-oslo.log-doc python3-confluent-kafka python3-zmq
+  python-oslo.middleware-doc python-oslo.policy-doc python-oslo.privsep-doc
+  python-oslo.reports-doc python-oslo.service-doc
+  python-oslo.versionedobjects-doc python3-gssapi python3-invoke httpd-wsgi
+  libapache2-mod-python libapache2-mod-scgi libjs-mochikit python3-cherrypy3
+  python-pil-doc python3-pil-dbg python-ply-doc python-psutil-doc
+  python-psycopg2-doc cpp python-pygments-doc ttf-bitstream-vera
+  python-pyinotify-doc python-pymysql-doc python-pyparsing-doc python3-hiredis
+  python3-socks python-requests-doc python-sqlalchemy-doc python3-fdb
+  python3-pymssql python3-mysqldb python-sqlalchemy-utils-doc python3-infinity
+  python3-intervals python3-psycopg2cffi python-sqlparse-doc python3-kazoo
+  python3-pydot python3-pydotplus python-tenacity-doc python-testtools-doc
+  python3-etcd3 python3-etcd3gw python3-sysv-ipc python3-zake python-webob-doc
+  sgml-base-doc openssl-blacklist debhelper
+The following NEW packages will be installed:
+  alembic apache2 apache2-bin apache2-data apache2-utils cinder-api
+  cinder-common cinder-scheduler docutils-common ieee-data javascript-common
+  libapache2-mod-wsgi-py3 libapr1 libaprutil1 libaprutil1-dbd-sqlite3
+  libaprutil1-ldap libblas3 libgfortran5 libimagequant0 libjansson4 libjbig0
+  libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc libjs-underscore
+  liblapack3 liblcms2-2 liblua5.2-0 libpaper-utils libpaper1 libpq5
+  libquadmath0 libtiff5 libwebp6 libwebpdemux2 libwebpmux3 os-brick-common
+  pycadf-common python-babel-localedata python-pastedeploy-tpl python3-alembic
+  python3-amqp python3-anyjson python3-arrow python3-automaton python3-babel
+  python3-barbicanclient python3-bcrypt python3-bs4 python3-cachetools
+  python3-castellan python3-cffi python3-cinder python3-cinderclient
+  python3-cliff python3-cmd2 python3-cursive python3-dateutil python3-ddt
+  python3-debtcollector python3-decorator python3-dnspython python3-docutils
+  python3-dogpile.cache python3-eventlet python3-extras python3-fasteners
+  python3-fixtures python3-futurist python3-glanceclient python3-greenlet
+  python3-html5lib python3-iso8601 python3-keystoneauth1
+  python3-keystoneclient python3-keystonemiddleware python3-kombu
+  python3-linecache2 python3-lxml python3-mako python3-memcache
+  python3-migrate python3-mimeparse python3-monotonic python3-msgpack
+  python3-netaddr python3-networkx python3-novaclient python3-numpy
+  python3-olefile python3-os-brick python3-os-service-types python3-os-win
+  python3-oslo.cache python3-oslo.concurrency python3-oslo.config
+  python3-oslo.context python3-oslo.db python3-oslo.i18n python3-oslo.log
+  python3-oslo.messaging python3-oslo.middleware python3-oslo.policy
+  python3-oslo.privsep python3-oslo.reports python3-oslo.rootwrap
+  python3-oslo.serialization python3-oslo.service python3-oslo.upgradecheck
+  python3-oslo.utils python3-oslo.versionedobjects python3-oslo.vmware
+  python3-osprofiler python3-packaging python3-paramiko python3-paste
+  python3-pastedeploy python3-pastescript python3-pbr python3-pil python3-ply
+  python3-prettytable python3-psutil python3-psycopg2 python3-pycadf
+  python3-pycparser python3-pygments python3-pyinotify python3-pymemcache
+  python3-pymysql python3-pyparsing python3-pyperclip python3-pyudev
+  python3-redis python3-repoze.lru python3-retrying python3-rfc3986
+  python3-roman python3-routes python3-rtslib-fb python3-soupsieve
+  python3-sqlalchemy python3-sqlalchemy-ext python3-sqlalchemy-utils
+  python3-sqlparse python3-statsd python3-stevedore python3-suds
+  python3-swiftclient python3-tabulate python3-taskflow python3-tempita
+  python3-tenacity python3-testresources python3-testscenarios
+  python3-testtools python3-tooz python3-traceback2 python3-tz
+  python3-unittest2 python3-vine python3-voluptuous python3-warlock
+  python3-wcwidth python3-webencodings python3-webob python3-wrapt sgml-base
+  ssl-cert xml-core
+The following packages will be upgraded:
+  python3-httplib2 python3-importlib-metadata python3-requests python3-six
+4 upgraded, 171 newly installed, 0 to remove and 15 not upgraded.
+Need to get 0 B/31.0 MB of archives.
+After this operation, 172 MB of additional disk space will be used.
+Download complete and in download only mode
+apt_download: openstack-dashboard
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  apache2 apache2-bin apache2-data apache2-utils docutils-common ieee-data
+  javascript-common libapache2-mod-wsgi-py3 libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap libimagequant0 libjansson4 libjbig0
+  libjpeg-turbo8 libjpeg8 libjs-jquery liblcms2-2 liblua5.2-0 libpaper-utils
+  libpaper1 libtiff5 libwebp6 libwebpdemux2 libwebpmux3 memcached
+  openstack-dashboard-common python-babel-localedata python3-appdirs
+  python3-babel python3-bs4 python3-bson python3-bson-ext python3-cinderclient
+  python3-cliff python3-cmd2 python3-csscompressor python3-dateutil
+  python3-debtcollector python3-decorator python3-deprecation python3-django
+  python3-django-appconf python3-django-compressor python3-django-debreach
+  python3-django-horizon python3-django-openstack-auth python3-django-pyscss
+  python3-dnspython python3-docutils python3-dogpile.cache python3-eventlet
+  python3-extras python3-fasteners python3-fixtures python3-futurist
+  python3-glanceclient python3-greenlet python3-gridfs python3-heatclient
+  python3-html5lib python3-importlib-metadata python3-iso8601 python3-jmespath
+  python3-keystoneauth1 python3-keystoneclient python3-linecache2 python3-lxml
+  python3-mako python3-memcache python3-mimeparse python3-monotonic
+  python3-msgpack python3-munch python3-netaddr python3-neutronclient
+  python3-novaclient python3-olefile python3-openstacksdk
+  python3-os-client-config python3-os-service-types python3-osc-lib
+  python3-oslo.concurrency python3-oslo.config python3-oslo.context
+  python3-oslo.i18n python3-oslo.log python3-oslo.policy
+  python3-oslo.serialization python3-oslo.upgradecheck python3-oslo.utils
+  python3-osprofiler python3-packaging python3-pbr python3-pil python3-pint
+  python3-prettytable python3-pygments python3-pyinotify python3-pymongo
+  python3-pymongo-ext python3-pyparsing python3-pyperclip python3-pyscss
+  python3-rcssmin python3-requests python3-requestsexceptions python3-rfc3986
+  python3-rjsmin python3-roman python3-semantic-version python3-soupsieve
+  python3-sqlparse python3-stevedore python3-swiftclient python3-testtools
+  python3-traceback2 python3-tz python3-unittest2 python3-warlock
+  python3-wcwidth python3-webencodings python3-webob python3-wrapt sgml-base
+  ssl-cert xml-core
+Suggested packages:
+  apache2-doc apache2-suexec-pristine | apache2-suexec-custom www-browser
+  liblcms2-utils libanyevent-perl libcache-memcached-perl libmemcached
+  libterm-readkey-perl libyaml-perl python-cliff-doc python-debtcollector-doc
+  bpython3 geoip-database-contrib gettext ipython3 libgdal20
+  libsqlite3-mod-spatialite python-django-doc python3-bcrypt python3-flup
+  python3-mysqldb python3-psycopg2 python3-selenium python3-sqlite
+  python-django-appconf-doc docutils-doc fonts-linuxlibertine
+  | ttf-linux-libertine texlive-lang-french texlive-latex-base
+  texlive-latex-recommended python-eventlet-doc python-futurist-doc
+  python-glanceclient-doc python-greenlet-doc python-greenlet-dev
+  python3-greenlet-dbg python3-genshi python-keystoneauth1-doc
+  python3-requests-kerberos python3-lxml-dbg python-lxml-doc python3-beaker
+  python-mako-doc python-netaddr-docs python-openstacksdk-doc
+  python-os-client-config-doc python-os-service-types-doc python-osc-lib-doc
+  python-oslo.concurrency-doc python-oslo.log-doc python-oslo.policy-doc
+  python-pil-doc python3-pil-dbg python-pygments-doc ttf-bitstream-vera
+  python-pyinotify-doc python-pymongo-doc python-pyparsing-doc python3-socks
+  python-requests-doc python-semantic-version-doc python-sqlparse-doc
+  python-testtools-doc python-webob-doc sgml-base-doc openssl-blacklist
+  debhelper
+The following NEW packages will be installed:
+  apache2 apache2-bin apache2-data apache2-utils docutils-common ieee-data
+  javascript-common libapache2-mod-wsgi-py3 libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap libimagequant0 libjansson4 libjbig0
+  libjpeg-turbo8 libjpeg8 libjs-jquery liblcms2-2 liblua5.2-0 libpaper-utils
+  libpaper1 libtiff5 libwebp6 libwebpdemux2 libwebpmux3 memcached
+  openstack-dashboard openstack-dashboard-common python-babel-localedata
+  python3-appdirs python3-babel python3-bs4 python3-bson python3-bson-ext
+  python3-cinderclient python3-cliff python3-cmd2 python3-csscompressor
+  python3-dateutil python3-debtcollector python3-decorator python3-deprecation
+  python3-django python3-django-appconf python3-django-compressor
+  python3-django-debreach python3-django-horizon python3-django-openstack-auth
+  python3-django-pyscss python3-dnspython python3-docutils
+  python3-dogpile.cache python3-eventlet python3-extras python3-fasteners
+  python3-fixtures python3-futurist python3-glanceclient python3-greenlet
+  python3-gridfs python3-heatclient python3-html5lib python3-iso8601
+  python3-jmespath python3-keystoneauth1 python3-keystoneclient
+  python3-linecache2 python3-lxml python3-mako python3-memcache
+  python3-mimeparse python3-monotonic python3-msgpack python3-munch
+  python3-netaddr python3-neutronclient python3-novaclient python3-olefile
+  python3-openstacksdk python3-os-client-config python3-os-service-types
+  python3-osc-lib python3-oslo.concurrency python3-oslo.config
+  python3-oslo.context python3-oslo.i18n python3-oslo.log python3-oslo.policy
+  python3-oslo.serialization python3-oslo.upgradecheck python3-oslo.utils
+  python3-osprofiler python3-packaging python3-pbr python3-pil python3-pint
+  python3-prettytable python3-pygments python3-pyinotify python3-pymongo
+  python3-pymongo-ext python3-pyparsing python3-pyperclip python3-pyscss
+  python3-rcssmin python3-requestsexceptions python3-rfc3986 python3-rjsmin
+  python3-roman python3-semantic-version python3-soupsieve python3-sqlparse
+  python3-stevedore python3-swiftclient python3-testtools python3-traceback2
+  python3-tz python3-unittest2 python3-warlock python3-wcwidth
+  python3-webencodings python3-webob python3-wrapt sgml-base ssl-cert xml-core
+The following packages will be upgraded:
+  python3-importlib-metadata python3-requests
+2 upgraded, 127 newly installed, 0 to remove and 17 not upgraded.
+Need to get 0 B/31.0 MB of archives.
+After this operation, 185 MB of additional disk space will be used.
+Download complete and in download only mode
+apt_download: lvm2 cinder-volume thin-provisioning-tools
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+lvm2 is already the newest version (2.03.07-1ubuntu1).
+thin-provisioning-tools is already the newest version (0.8.5-4build1).
+The following additional packages will be installed:
+  alembic cinder-common docutils-common ibverbs-providers ieee-data
+  javascript-common libblas3 libgfortran5 libibverbs1 libimagequant0 libiscsi7
+  libjbig0 libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc
+  libjs-underscore liblapack3 liblcms2-2 libnl-route-3-200 libpaper-utils
+  libpaper1 libpq5 libquadmath0 librados2 librbd1 librdmacm1 libtiff5 libwebp6
+  libwebpdemux2 libwebpmux3 os-brick-common pycadf-common
+  python-babel-localedata python-pastedeploy-tpl python3-alembic python3-amqp
+  python3-anyjson python3-arrow python3-automaton python3-babel
+  python3-barbicanclient python3-bcrypt python3-bs4 python3-cachetools
+  python3-castellan python3-cffi python3-cinder python3-cliff python3-cmd2
+  python3-configshell-fb python3-cursive python3-dateutil python3-ddt
+  python3-debtcollector python3-decorator python3-dnspython python3-docutils
+  python3-dogpile.cache python3-eventlet python3-extras python3-fasteners
+  python3-fixtures python3-futurist python3-glanceclient python3-greenlet
+  python3-html5lib python3-httplib2 python3-importlib-metadata python3-iso8601
+  python3-keystoneauth1 python3-keystoneclient python3-keystonemiddleware
+  python3-kombu python3-linecache2 python3-lxml python3-mako python3-memcache
+  python3-migrate python3-mimeparse python3-monotonic python3-msgpack
+  python3-netaddr python3-networkx python3-novaclient python3-numpy
+  python3-olefile python3-os-brick python3-os-service-types python3-os-win
+  python3-oslo.cache python3-oslo.concurrency python3-oslo.config
+  python3-oslo.context python3-oslo.db python3-oslo.i18n python3-oslo.log
+  python3-oslo.messaging python3-oslo.middleware python3-oslo.policy
+  python3-oslo.privsep python3-oslo.reports python3-oslo.rootwrap
+  python3-oslo.serialization python3-oslo.service python3-oslo.upgradecheck
+  python3-oslo.utils python3-oslo.versionedobjects python3-oslo.vmware
+  python3-osprofiler python3-packaging python3-paramiko python3-paste
+  python3-pastedeploy python3-pastescript python3-pbr python3-pil python3-ply
+  python3-prettytable python3-psutil python3-psycopg2 python3-pycadf
+  python3-pycparser python3-pygments python3-pyinotify python3-pymemcache
+  python3-pymysql python3-pyparsing python3-pyperclip python3-pyudev
+  python3-redis python3-repoze.lru python3-requests python3-retrying
+  python3-rfc3986 python3-roman python3-routes python3-rtslib-fb python3-six
+  python3-soupsieve python3-sqlalchemy python3-sqlalchemy-ext
+  python3-sqlalchemy-utils python3-sqlparse python3-statsd python3-stevedore
+  python3-suds python3-swiftclient python3-tabulate python3-taskflow
+  python3-tempita python3-tenacity python3-testresources python3-testscenarios
+  python3-testtools python3-tooz python3-traceback2 python3-tz
+  python3-unittest2 python3-urwid python3-vine python3-voluptuous
+  python3-warlock python3-wcwidth python3-webencodings python3-webob
+  python3-wrapt qemu-block-extra qemu-utils sgml-base sharutils targetcli-fb
+  xml-core
+Suggested packages:
+  apache2 | lighttpd | httpd liblcms2-utils python-amqp-doc python-arrow-doc
+  python-automaton-doc python-castellan-doc python3-dev python3-boto3
+  python3-botocore python3-googleapi python3-hp3parclient python3-oauth2client
+  python3-rados python3-rbd python3-zstd python-cliff-doc python-cursive-doc
+  python-debtcollector-doc docutils-doc fonts-linuxlibertine
+  | ttf-linux-libertine texlive-lang-french texlive-latex-base
+  texlive-latex-recommended python-eventlet-doc python-futurist-doc
+  python-glanceclient-doc python-greenlet-doc python-greenlet-dev
+  python3-greenlet-dbg python3-genshi python-keystoneauth1-doc
+  python3-requests-kerberos python-kombu-doc python3-boto python3-django
+  python3-pymongo python3-lxml-dbg python-lxml-doc python3-beaker
+  python-mako-doc memcached python-migrate-doc ipython3 python-netaddr-docs
+  python-networkx-doc python3-gdal python3-matplotlib python3-pygraphviz
+  | python3-pydot python3-scipy gcc gfortran python-numpy-doc python3-pytest
+  python3-numpy-dbg python-os-brick-doc python-os-service-types-doc
+  python-os-win-doc python-oslo.cache-doc python-oslo.concurrency-doc
+  python-oslo.log-doc python3-confluent-kafka python3-zmq
+  python-oslo.middleware-doc python-oslo.policy-doc python-oslo.privsep-doc
+  python-oslo.reports-doc python-oslo.service-doc
+  python-oslo.versionedobjects-doc python3-gssapi python3-invoke httpd-wsgi
+  libapache2-mod-python libapache2-mod-scgi libjs-mochikit python3-cherrypy3
+  python-pil-doc python3-pil-dbg python-ply-doc python-psutil-doc
+  python-psycopg2-doc cpp python-pygments-doc ttf-bitstream-vera
+  python-pyinotify-doc python-pymysql-doc python-pyparsing-doc python3-hiredis
+  python3-socks python-requests-doc python-sqlalchemy-doc python3-fdb
+  python3-pymssql python3-mysqldb python-sqlalchemy-utils-doc python3-infinity
+  python3-intervals python3-psycopg2cffi python-sqlparse-doc python3-kazoo
+  python3-pydot python3-pydotplus python-tenacity-doc python-testtools-doc
+  python3-etcd3 python3-etcd3gw python3-sysv-ipc python3-zake python-urwid-doc
+  python-webob-doc debootstrap sgml-base-doc sharutils-doc bsd-mailx | mailx
+  debhelper
+The following NEW packages will be installed:
+  alembic cinder-common cinder-volume docutils-common ibverbs-providers
+  ieee-data javascript-common libblas3 libgfortran5 libibverbs1 libimagequant0
+  libiscsi7 libjbig0 libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc
+  libjs-underscore liblapack3 liblcms2-2 libnl-route-3-200 libpaper-utils
+  libpaper1 libpq5 libquadmath0 librados2 librbd1 librdmacm1 libtiff5 libwebp6
+  libwebpdemux2 libwebpmux3 os-brick-common pycadf-common
+  python-babel-localedata python-pastedeploy-tpl python3-alembic python3-amqp
+  python3-anyjson python3-arrow python3-automaton python3-babel
+  python3-barbicanclient python3-bcrypt python3-bs4 python3-cachetools
+  python3-castellan python3-cffi python3-cinder python3-cliff python3-cmd2
+  python3-configshell-fb python3-cursive python3-dateutil python3-ddt
+  python3-debtcollector python3-decorator python3-dnspython python3-docutils
+  python3-dogpile.cache python3-eventlet python3-extras python3-fasteners
+  python3-fixtures python3-futurist python3-glanceclient python3-greenlet
+  python3-html5lib python3-iso8601 python3-keystoneauth1
+  python3-keystoneclient python3-keystonemiddleware python3-kombu
+  python3-linecache2 python3-lxml python3-mako python3-memcache
+  python3-migrate python3-mimeparse python3-monotonic python3-msgpack
+  python3-netaddr python3-networkx python3-novaclient python3-numpy
+  python3-olefile python3-os-brick python3-os-service-types python3-os-win
+  python3-oslo.cache python3-oslo.concurrency python3-oslo.config
+  python3-oslo.context python3-oslo.db python3-oslo.i18n python3-oslo.log
+  python3-oslo.messaging python3-oslo.middleware python3-oslo.policy
+  python3-oslo.privsep python3-oslo.reports python3-oslo.rootwrap
+  python3-oslo.serialization python3-oslo.service python3-oslo.upgradecheck
+  python3-oslo.utils python3-oslo.versionedobjects python3-oslo.vmware
+  python3-osprofiler python3-packaging python3-paramiko python3-paste
+  python3-pastedeploy python3-pastescript python3-pbr python3-pil python3-ply
+  python3-prettytable python3-psutil python3-psycopg2 python3-pycadf
+  python3-pycparser python3-pygments python3-pyinotify python3-pymemcache
+  python3-pymysql python3-pyparsing python3-pyperclip python3-pyudev
+  python3-redis python3-repoze.lru python3-retrying python3-rfc3986
+  python3-roman python3-routes python3-rtslib-fb python3-soupsieve
+  python3-sqlalchemy python3-sqlalchemy-ext python3-sqlalchemy-utils
+  python3-sqlparse python3-statsd python3-stevedore python3-suds
+  python3-swiftclient python3-tabulate python3-taskflow python3-tempita
+  python3-tenacity python3-testresources python3-testscenarios
+  python3-testtools python3-tooz python3-traceback2 python3-tz
+  python3-unittest2 python3-urwid python3-vine python3-voluptuous
+  python3-warlock python3-wcwidth python3-webencodings python3-webob
+  python3-wrapt qemu-block-extra qemu-utils sgml-base sharutils targetcli-fb
+  xml-core
+The following packages will be upgraded:
+  python3-httplib2 python3-importlib-metadata python3-requests python3-six
+4 upgraded, 170 newly installed, 0 to remove and 15 not upgraded.
+Need to get 0 B/36.6 MB of archives.
+After this operation, 197 MB of additional disk space will be used.
+Download complete and in download only mode
+apt_download: nova-compute nova-compute-qemu qemu sysfsutils
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  acl adwaita-icon-theme alembic at-spi2-core bridge-utils cpu-checker
+  dns-root-data dnsmasq-base docutils-common ebtables fontconfig
+  fontconfig-config fonts-dejavu-core genisoimage gstreamer1.0-plugins-base
+  gstreamer1.0-plugins-good gstreamer1.0-x gtk-update-icon-cache
+  hicolor-icon-theme humanity-icon-theme ibverbs-providers ieee-data ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms javascript-common keystone-common libaa1
+  libasyncns0 libatk-bridge2.0-0 libatk1.0-0 libatk1.0-data libatspi2.0-0
+  libavahi-client3 libavahi-common-data libavahi-common3 libavc1394-0 libblas3
+  libbrlapi0.7 libcaca0 libcacard0 libcairo-gobject2 libcairo2 libcdparanoia0
+  libcolord2 libcups2 libdatrie1 libdv4 libepoxy0 libfdt1 libflac8
+  libfontconfig1 libgbm1 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-bin
+  libgdk-pixbuf2.0-common libgfortran5 libgraphite2-3
+  libgstreamer-plugins-base1.0-0 libgstreamer-plugins-good1.0-0 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libharfbuzz0b libibverbs1 libidn11
+  libiec61883-0 libimagequant0 libiscsi7 libjack-jackd2-0 libjbig0
+  libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc libjs-underscore
+  liblapack3 liblcms2-2 libmp3lame0 libmpg123-0 libnl-route-3-200
+  libnss-mymachines libopus0 liborc-0.4-0 libpango-1.0-0 libpangocairo-1.0-0
+  libpangoft2-1.0-0 libpaper-utils libpaper1 libpciaccess0 libpcsclite1
+  libpixman-1-0 libpmem1 libpq5 libpulse0 libquadmath0 librados2 libraw1394-11
+  librbd1 librdmacm1 librest-0.7-0 librsvg2-2 librsvg2-common libsamplerate0
+  libshout3 libslirp0 libsndfile1 libsoup-gnome2.4-1 libspeex1
+  libspice-server1 libsysfs2 libtag1v5 libtag1v5-vanilla libthai-data libthai0
+  libtheora0 libtiff5 libtwolame0 libusbredirparser1 libv4l-0 libv4lconvert0
+  libvirglrenderer1 libvirt-clients libvirt-daemon libvirt-daemon-driver-qemu
+  libvirt-daemon-driver-storage-rbd libvirt-daemon-system
+  libvirt-daemon-system-systemd libvirt0 libvisual-0.4-0 libvorbisenc2 libvpx6
+  libvte-2.91-0 libvte-2.91-common libwavpack1 libwayland-client0
+  libwayland-cursor0 libwayland-egl1 libwayland-server0 libwebp6 libwebpdemux2
+  libwebpmux3 libxcb-render0 libxcb-shm0 libxcomposite1 libxcursor1
+  libxdamage1 libxfixes3 libxi6 libxinerama1 libxkbcommon0 libxml2-utils
+  libxrandr2 libxrender1 libxtst6 libxv1 libyajl2 msr-tools nova-common
+  nova-compute-libvirt os-brick-common ovmf pycadf-common
+  python-babel-localedata python-pastedeploy-tpl python3-alembic python3-amqp
+  python3-aniso8601 python3-anyjson python3-appdirs python3-arrow
+  python3-automaton python3-babel python3-barbicanclient python3-bcrypt
+  python3-bs4 python3-cachetools python3-castellan python3-cffi
+  python3-cinderclient python3-cliff python3-cmd2 python3-cursive
+  python3-dateutil python3-ddt python3-debtcollector python3-decorator
+  python3-defusedxml python3-deprecation python3-dnspython python3-docutils
+  python3-dogpile.cache python3-eventlet python3-extras python3-fasteners
+  python3-fixtures python3-flask python3-flask-restful python3-futurist
+  python3-glanceclient python3-greenlet python3-html5lib
+  python3-importlib-metadata python3-iso8601 python3-itsdangerous
+  python3-jmespath python3-keystone python3-keystoneauth1
+  python3-keystoneclient python3-keystonemiddleware python3-kombu python3-ldap
+  python3-libvirt python3-linecache2 python3-lxml python3-mako
+  python3-memcache python3-microversion-parse python3-migrate
+  python3-mimeparse python3-monotonic python3-msgpack python3-munch
+  python3-netaddr python3-networkx python3-neutronclient python3-nova
+  python3-numpy python3-olefile python3-openstacksdk python3-openvswitch
+  python3-os-brick python3-os-client-config python3-os-resource-classes
+  python3-os-service-types python3-os-traits python3-os-vif python3-os-win
+  python3-os-xenapi python3-osc-lib python3-oslo.cache
+  python3-oslo.concurrency python3-oslo.config python3-oslo.context
+  python3-oslo.db python3-oslo.i18n python3-oslo.log python3-oslo.messaging
+  python3-oslo.middleware python3-oslo.policy python3-oslo.privsep
+  python3-oslo.reports python3-oslo.rootwrap python3-oslo.serialization
+  python3-oslo.service python3-oslo.upgradecheck python3-oslo.utils
+  python3-oslo.versionedobjects python3-oslo.vmware python3-osprofiler
+  python3-ovsdbapp python3-packaging python3-paramiko python3-passlib
+  python3-paste python3-pastedeploy python3-pastescript python3-pbr
+  python3-pil python3-ply python3-prettytable python3-psutil python3-psycopg2
+  python3-pycadf python3-pycparser python3-pygments python3-pyinotify
+  python3-pymemcache python3-pymysql python3-pyparsing python3-pyperclip
+  python3-pypowervm python3-pyroute2 python3-pysaml2 python3-redis
+  python3-repoze.lru python3-requests python3-requestsexceptions
+  python3-retrying python3-rfc3986 python3-roman python3-routes python3-scrypt
+  python3-sortedcontainers python3-soupsieve python3-sqlalchemy
+  python3-sqlalchemy-ext python3-sqlalchemy-utils python3-sqlparse
+  python3-statsd python3-stevedore python3-suds python3-taskflow
+  python3-tempita python3-tenacity python3-testresources python3-testscenarios
+  python3-testtools python3-tooz python3-traceback2 python3-tz
+  python3-unittest2 python3-vine python3-voluptuous python3-warlock
+  python3-wcwidth python3-webencodings python3-webob python3-websockify
+  python3-werkzeug python3-wrapt python3-zvmcloudconnector qemu-block-extra
+  qemu-efi-aarch64 qemu-efi-arm qemu-slof qemu-system qemu-system-arm
+  qemu-system-common qemu-system-data qemu-system-gui qemu-system-mips
+  qemu-system-misc qemu-system-ppc qemu-system-s390x qemu-system-sparc
+  qemu-system-x86 qemu-utils seabios sgml-base sharutils systemd-container
+  ubuntu-mono x11-common xml-core xmlsec1 zvmcloudconnector-common
+Suggested packages:
+  wodim cdrkit-doc gvfs apache2 | lighttpd | httpd colord cups-common
+  libdv-bin oss-compat libvisual-0.4-plugins jackd2 liblcms2-utils opus-tools
+  pcscd pulseaudio libraw1394-doc librsvg2-bin speex gstreamer1.0-plugins-ugly
+  libvirt-daemon-driver-lxc libvirt-daemon-driver-vbox
+  libvirt-daemon-driver-xen libvirt-daemon-driver-storage-gluster
+  libvirt-daemon-driver-storage-zfs numad auditd nfs-common pm-utils radvd
+  systemtap zfsutils guestmount python-amqp-doc python-arrow-doc
+  python-automaton-doc python-castellan-doc python3-dev python-cliff-doc
+  python-cursive-doc python-debtcollector-doc docutils-doc
+  fonts-linuxlibertine | ttf-linux-libertine texlive-lang-french
+  texlive-latex-base texlive-latex-recommended python-eventlet-doc
+  python-flask-doc python-futurist-doc python-glanceclient-doc
+  python-greenlet-doc python-greenlet-dev python3-greenlet-dbg python3-genshi
+  python3-ldappool python-keystoneauth1-doc python3-requests-kerberos
+  python-kombu-doc python3-boto python3-django python3-pymongo
+  python3-lxml-dbg python-lxml-doc python3-beaker python-mako-doc memcached
+  python-microversion-parse-doc python-migrate-doc ipython3
+  python-netaddr-docs python-networkx-doc python3-gdal python3-matplotlib
+  python3-pygraphviz | python3-pydot python3-scipy gcc gfortran
+  python-numpy-doc python3-pytest python3-numpy-dbg python-openstacksdk-doc
+  python-os-brick-doc python-os-client-config-doc python-os-service-types-doc
+  python-os-traits-doc python-os-vif-doc python-os-win-doc
+  python-os-xenapi-doc python-osc-lib-doc python-oslo.cache-doc
+  python-oslo.concurrency-doc python-oslo.log-doc python3-confluent-kafka
+  python3-zmq python-oslo.middleware-doc python-oslo.policy-doc
+  python-oslo.privsep-doc python-oslo.reports-doc python-oslo.service-doc
+  python-oslo.versionedobjects-doc python-ovsdbapp-doc python3-gssapi
+  python3-invoke httpd-wsgi libapache2-mod-python libapache2-mod-scgi
+  libjs-mochikit python3-cherrypy3 python-pil-doc python3-pil-dbg
+  python-ply-doc python-psutil-doc python-psycopg2-doc cpp python-pygments-doc
+  ttf-bitstream-vera python-pyinotify-doc python-pymysql-doc
+  python-pyparsing-doc python-pyroute2-doc python3-repoze.who python3-hiredis
+  python3-socks python-requests-doc python-sortedcontainers-doc
+  python-sqlalchemy-doc python3-fdb python3-pymssql python3-mysqldb
+  python-sqlalchemy-utils-doc python3-infinity python3-intervals
+  python3-psycopg2cffi python-sqlparse-doc python3-kazoo python3-pydot
+  python3-pydotplus python-tenacity-doc python-testtools-doc python3-etcd3
+  python3-etcd3gw python3-sysv-ipc python3-zake python-webob-doc
+  python3-jwcrypto python-werkzeug-doc python3-termcolor python3-watchdog
+  samba vde2 openbios-ppc openhackware openbios-sparc debootstrap
+  sgml-base-doc sharutils-doc bsd-mailx | mailx debhelper
+The following NEW packages will be installed:
+  acl adwaita-icon-theme alembic at-spi2-core bridge-utils cpu-checker
+  dns-root-data dnsmasq-base docutils-common ebtables fontconfig
+  fontconfig-config fonts-dejavu-core genisoimage gstreamer1.0-plugins-base
+  gstreamer1.0-plugins-good gstreamer1.0-x gtk-update-icon-cache
+  hicolor-icon-theme humanity-icon-theme ibverbs-providers ieee-data ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms javascript-common keystone-common libaa1
+  libasyncns0 libatk-bridge2.0-0 libatk1.0-0 libatk1.0-data libatspi2.0-0
+  libavahi-client3 libavahi-common-data libavahi-common3 libavc1394-0 libblas3
+  libbrlapi0.7 libcaca0 libcacard0 libcairo-gobject2 libcairo2 libcdparanoia0
+  libcolord2 libcups2 libdatrie1 libdv4 libepoxy0 libfdt1 libflac8
+  libfontconfig1 libgbm1 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-bin
+  libgdk-pixbuf2.0-common libgfortran5 libgraphite2-3
+  libgstreamer-plugins-base1.0-0 libgstreamer-plugins-good1.0-0 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libharfbuzz0b libibverbs1 libidn11
+  libiec61883-0 libimagequant0 libiscsi7 libjack-jackd2-0 libjbig0
+  libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc libjs-underscore
+  liblapack3 liblcms2-2 libmp3lame0 libmpg123-0 libnl-route-3-200
+  libnss-mymachines libopus0 liborc-0.4-0 libpango-1.0-0 libpangocairo-1.0-0
+  libpangoft2-1.0-0 libpaper-utils libpaper1 libpciaccess0 libpcsclite1
+  libpixman-1-0 libpmem1 libpq5 libpulse0 libquadmath0 librados2 libraw1394-11
+  librbd1 librdmacm1 librest-0.7-0 librsvg2-2 librsvg2-common libsamplerate0
+  libshout3 libslirp0 libsndfile1 libsoup-gnome2.4-1 libspeex1
+  libspice-server1 libsysfs2 libtag1v5 libtag1v5-vanilla libthai-data libthai0
+  libtheora0 libtiff5 libtwolame0 libusbredirparser1 libv4l-0 libv4lconvert0
+  libvirglrenderer1 libvirt-clients libvirt-daemon libvirt-daemon-driver-qemu
+  libvirt-daemon-driver-storage-rbd libvirt-daemon-system
+  libvirt-daemon-system-systemd libvirt0 libvisual-0.4-0 libvorbisenc2 libvpx6
+  libvte-2.91-0 libvte-2.91-common libwavpack1 libwayland-client0
+  libwayland-cursor0 libwayland-egl1 libwayland-server0 libwebp6 libwebpdemux2
+  libwebpmux3 libxcb-render0 libxcb-shm0 libxcomposite1 libxcursor1
+  libxdamage1 libxfixes3 libxi6 libxinerama1 libxkbcommon0 libxml2-utils
+  libxrandr2 libxrender1 libxtst6 libxv1 libyajl2 msr-tools nova-common
+  nova-compute nova-compute-libvirt nova-compute-qemu os-brick-common ovmf
+  pycadf-common python-babel-localedata python-pastedeploy-tpl python3-alembic
+  python3-amqp python3-aniso8601 python3-anyjson python3-appdirs python3-arrow
+  python3-automaton python3-babel python3-barbicanclient python3-bcrypt
+  python3-bs4 python3-cachetools python3-castellan python3-cffi
+  python3-cinderclient python3-cliff python3-cmd2 python3-cursive
+  python3-dateutil python3-ddt python3-debtcollector python3-decorator
+  python3-defusedxml python3-deprecation python3-dnspython python3-docutils
+  python3-dogpile.cache python3-eventlet python3-extras python3-fasteners
+  python3-fixtures python3-flask python3-flask-restful python3-futurist
+  python3-glanceclient python3-greenlet python3-html5lib python3-iso8601
+  python3-itsdangerous python3-jmespath python3-keystone python3-keystoneauth1
+  python3-keystoneclient python3-keystonemiddleware python3-kombu python3-ldap
+  python3-libvirt python3-linecache2 python3-lxml python3-mako
+  python3-memcache python3-microversion-parse python3-migrate
+  python3-mimeparse python3-monotonic python3-msgpack python3-munch
+  python3-netaddr python3-networkx python3-neutronclient python3-nova
+  python3-numpy python3-olefile python3-openstacksdk python3-openvswitch
+  python3-os-brick python3-os-client-config python3-os-resource-classes
+  python3-os-service-types python3-os-traits python3-os-vif python3-os-win
+  python3-os-xenapi python3-osc-lib python3-oslo.cache
+  python3-oslo.concurrency python3-oslo.config python3-oslo.context
+  python3-oslo.db python3-oslo.i18n python3-oslo.log python3-oslo.messaging
+  python3-oslo.middleware python3-oslo.policy python3-oslo.privsep
+  python3-oslo.reports python3-oslo.rootwrap python3-oslo.serialization
+  python3-oslo.service python3-oslo.upgradecheck python3-oslo.utils
+  python3-oslo.versionedobjects python3-oslo.vmware python3-osprofiler
+  python3-ovsdbapp python3-packaging python3-paramiko python3-passlib
+  python3-paste python3-pastedeploy python3-pastescript python3-pbr
+  python3-pil python3-ply python3-prettytable python3-psutil python3-psycopg2
+  python3-pycadf python3-pycparser python3-pygments python3-pyinotify
+  python3-pymemcache python3-pymysql python3-pyparsing python3-pyperclip
+  python3-pypowervm python3-pyroute2 python3-pysaml2 python3-redis
+  python3-repoze.lru python3-requestsexceptions python3-retrying
+  python3-rfc3986 python3-roman python3-routes python3-scrypt
+  python3-sortedcontainers python3-soupsieve python3-sqlalchemy
+  python3-sqlalchemy-ext python3-sqlalchemy-utils python3-sqlparse
+  python3-statsd python3-stevedore python3-suds python3-taskflow
+  python3-tempita python3-tenacity python3-testresources python3-testscenarios
+  python3-testtools python3-tooz python3-traceback2 python3-tz
+  python3-unittest2 python3-vine python3-voluptuous python3-warlock
+  python3-wcwidth python3-webencodings python3-webob python3-websockify
+  python3-werkzeug python3-wrapt python3-zvmcloudconnector qemu
+  qemu-block-extra qemu-efi-aarch64 qemu-efi-arm qemu-slof qemu-system
+  qemu-system-arm qemu-system-common qemu-system-data qemu-system-gui
+  qemu-system-mips qemu-system-misc qemu-system-ppc qemu-system-s390x
+  qemu-system-sparc qemu-system-x86 qemu-utils seabios sgml-base sharutils
+  sysfsutils systemd-container ubuntu-mono x11-common xml-core xmlsec1
+  zvmcloudconnector-common
+The following packages will be upgraded:
+  python3-importlib-metadata python3-requests
+2 upgraded, 348 newly installed, 0 to remove and 17 not upgraded.
+Need to get 0 B/163 MB of archives.
+After this operation, 1,041 MB of additional disk space will be used.
+Download complete and in download only mode
+apt_download: neutron-linuxbridge-agent
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  alembic bridge-utils conntrack docutils-common ebtables ieee-data ipset
+  javascript-common libimagequant0 libipset13 libjbig0 libjpeg-turbo8 libjpeg8
+  libjs-jquery libjs-sphinxdoc libjs-underscore liblcms2-2 libpaper-utils
+  libpaper1 libtiff5 libwebp6 libwebpdemux2 libwebpmux3 net-tools
+  neutron-common pycadf-common python-babel-localedata python-pastedeploy-tpl
+  python3-alembic python3-amqp python3-anyjson python3-appdirs python3-babel
+  python3-bcrypt python3-bs4 python3-cachetools python3-cffi python3-cliff
+  python3-cmd2 python3-dateutil python3-debtcollector python3-decorator
+  python3-deprecation python3-designateclient python3-dnspython
+  python3-docutils python3-dogpile.cache python3-eventlet python3-extras
+  python3-fasteners python3-fixtures python3-futurist python3-greenlet
+  python3-html5lib python3-importlib-metadata python3-iso8601 python3-jmespath
+  python3-keystoneauth1 python3-keystoneclient python3-keystonemiddleware
+  python3-kombu python3-linecache2 python3-logutils python3-lxml python3-mako
+  python3-memcache python3-migrate python3-mimeparse python3-monotonic
+  python3-msgpack python3-munch python3-netaddr python3-neutron
+  python3-neutron-lib python3-neutronclient python3-novaclient python3-olefile
+  python3-openstacksdk python3-openvswitch python3-os-client-config
+  python3-os-ken python3-os-service-types python3-os-traits python3-os-vif
+  python3-os-xenapi python3-osc-lib python3-oslo.cache
+  python3-oslo.concurrency python3-oslo.config python3-oslo.context
+  python3-oslo.db python3-oslo.i18n python3-oslo.log python3-oslo.messaging
+  python3-oslo.middleware python3-oslo.policy python3-oslo.privsep
+  python3-oslo.reports python3-oslo.rootwrap python3-oslo.serialization
+  python3-oslo.service python3-oslo.upgradecheck python3-oslo.utils
+  python3-oslo.versionedobjects python3-osprofiler python3-ovsdbapp
+  python3-packaging python3-paramiko python3-paste python3-pastedeploy
+  python3-pastescript python3-pbr python3-pecan python3-pil python3-ply
+  python3-prettytable python3-psutil python3-pycadf python3-pycparser
+  python3-pygments python3-pyinotify python3-pymemcache python3-pymysql
+  python3-pyparsing python3-pyperclip python3-pyroute2 python3-redis
+  python3-repoze.lru python3-requestsexceptions python3-rfc3986 python3-roman
+  python3-routes python3-setproctitle python3-simplegeneric
+  python3-singledispatch python3-sortedcontainers python3-soupsieve
+  python3-sqlalchemy python3-sqlalchemy-ext python3-sqlparse python3-statsd
+  python3-stevedore python3-tempita python3-tenacity python3-testresources
+  python3-testscenarios python3-testtools python3-tinyrpc python3-tooz
+  python3-traceback2 python3-tz python3-unittest2 python3-vine
+  python3-voluptuous python3-waitress python3-wcwidth python3-webencodings
+  python3-webob python3-webtest python3-wrapt sgml-base xml-core
+Suggested packages:
+  nftables apache2 | lighttpd | httpd liblcms2-utils python-amqp-doc
+  python3-dev python-cliff-doc python-debtcollector-doc docutils-doc
+  fonts-linuxlibertine | ttf-linux-libertine texlive-lang-french
+  texlive-latex-base texlive-latex-recommended python-eventlet-doc
+  python-futurist-doc python-greenlet-doc python-greenlet-dev
+  python3-greenlet-dbg python3-genshi python-keystoneauth1-doc
+  python3-requests-kerberos python-kombu-doc python3-boto python3-django
+  python3-pymongo python3-lxml-dbg python-lxml-doc python3-beaker
+  python-mako-doc memcached python-migrate-doc ipython3 python-netaddr-docs
+  python-neutron-lib-doc python-openstacksdk-doc python-os-client-config-doc
+  python-os-service-types-doc python-os-traits-doc python-os-vif-doc
+  python-os-xenapi-doc python-osc-lib-doc python-oslo.cache-doc
+  python-oslo.concurrency-doc python-oslo.log-doc python3-confluent-kafka
+  python3-zmq python-oslo.middleware-doc python-oslo.policy-doc
+  python-oslo.privsep-doc python-oslo.reports-doc python-oslo.service-doc
+  python-oslo.versionedobjects-doc python-ovsdbapp-doc python3-gssapi
+  python3-invoke httpd-wsgi libapache2-mod-python libapache2-mod-scgi
+  libjs-mochikit python3-cherrypy3 python-pecan-doc python-pil-doc
+  python3-pil-dbg python-ply-doc python-psutil-doc cpp python-pygments-doc
+  ttf-bitstream-vera python-pyinotify-doc python-pymysql-doc
+  python-pyparsing-doc python-pyroute2-doc python3-hiredis
+  python-sortedcontainers-doc python-sqlalchemy-doc python3-fdb
+  python3-pymssql python3-mysqldb python3-psycopg2 python-sqlparse-doc
+  python-tenacity-doc python-testtools-doc python-tinyrpc-doc python3-etcd3
+  python3-etcd3gw python3-kazoo python3-sysv-ipc python3-zake
+  python-waitress-doc python-webob-doc python-webtest-doc sgml-base-doc
+  debhelper
+The following NEW packages will be installed:
+  alembic bridge-utils conntrack docutils-common ebtables ieee-data ipset
+  javascript-common libimagequant0 libipset13 libjbig0 libjpeg-turbo8 libjpeg8
+  libjs-jquery libjs-sphinxdoc libjs-underscore liblcms2-2 libpaper-utils
+  libpaper1 libtiff5 libwebp6 libwebpdemux2 libwebpmux3 net-tools
+  neutron-common neutron-linuxbridge-agent pycadf-common
+  python-babel-localedata python-pastedeploy-tpl python3-alembic python3-amqp
+  python3-anyjson python3-appdirs python3-babel python3-bcrypt python3-bs4
+  python3-cachetools python3-cffi python3-cliff python3-cmd2 python3-dateutil
+  python3-debtcollector python3-decorator python3-deprecation
+  python3-designateclient python3-dnspython python3-docutils
+  python3-dogpile.cache python3-eventlet python3-extras python3-fasteners
+  python3-fixtures python3-futurist python3-greenlet python3-html5lib
+  python3-iso8601 python3-jmespath python3-keystoneauth1
+  python3-keystoneclient python3-keystonemiddleware python3-kombu
+  python3-linecache2 python3-logutils python3-lxml python3-mako
+  python3-memcache python3-migrate python3-mimeparse python3-monotonic
+  python3-msgpack python3-munch python3-netaddr python3-neutron
+  python3-neutron-lib python3-neutronclient python3-novaclient python3-olefile
+  python3-openstacksdk python3-openvswitch python3-os-client-config
+  python3-os-ken python3-os-service-types python3-os-traits python3-os-vif
+  python3-os-xenapi python3-osc-lib python3-oslo.cache
+  python3-oslo.concurrency python3-oslo.config python3-oslo.context
+  python3-oslo.db python3-oslo.i18n python3-oslo.log python3-oslo.messaging
+  python3-oslo.middleware python3-oslo.policy python3-oslo.privsep
+  python3-oslo.reports python3-oslo.rootwrap python3-oslo.serialization
+  python3-oslo.service python3-oslo.upgradecheck python3-oslo.utils
+  python3-oslo.versionedobjects python3-osprofiler python3-ovsdbapp
+  python3-packaging python3-paramiko python3-paste python3-pastedeploy
+  python3-pastescript python3-pbr python3-pecan python3-pil python3-ply
+  python3-prettytable python3-psutil python3-pycadf python3-pycparser
+  python3-pygments python3-pyinotify python3-pymemcache python3-pymysql
+  python3-pyparsing python3-pyperclip python3-pyroute2 python3-redis
+  python3-repoze.lru python3-requestsexceptions python3-rfc3986 python3-roman
+  python3-routes python3-setproctitle python3-simplegeneric
+  python3-singledispatch python3-sortedcontainers python3-soupsieve
+  python3-sqlalchemy python3-sqlalchemy-ext python3-sqlparse python3-statsd
+  python3-stevedore python3-tempita python3-tenacity python3-testresources
+  python3-testscenarios python3-testtools python3-tinyrpc python3-tooz
+  python3-traceback2 python3-tz python3-unittest2 python3-vine
+  python3-voluptuous python3-waitress python3-wcwidth python3-webencodings
+  python3-webob python3-webtest python3-wrapt sgml-base xml-core
+The following packages will be upgraded:
+  python3-importlib-metadata
+1 upgraded, 162 newly installed, 0 to remove and 18 not upgraded.
+Need to get 0 B/22.8 MB of archives.
+After this operation, 144 MB of additional disk space will be used.
+Download complete and in download only mode
+apt_download: heat-api heat-api-cfn heat-engine python3-heatclient
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  alembic docutils-common heat-common ieee-data javascript-common
+  libimagequant0 libjbig0 libjpeg-turbo8 libjpeg8 libjs-jquery libjs-sphinxdoc
+  libjs-underscore liblcms2-2 libpaper-utils libpaper1 libtiff5 libwebp6
+  libwebpdemux2 libwebpmux3 pycadf-common python-babel-localedata
+  python-pastedeploy-tpl python3-alembic python3-amqp python3-anyjson
+  python3-aodhclient python3-appdirs python3-babel python3-barbicanclient
+  python3-blazarclient python3-bs4 python3-cachetools python3-ceilometerclient
+  python3-cinderclient python3-cliff python3-cmd2 python3-croniter
+  python3-crypto python3-dateutil python3-ddt python3-debtcollector
+  python3-decorator python3-deprecation python3-designateclient
+  python3-dnspython python3-docutils python3-dogpile.cache python3-eventlet
+  python3-extras python3-fasteners python3-fixtures python3-futurist
+  python3-glanceclient python3-gnocchiclient python3-greenlet python3-heat
+  python3-html5lib python3-importlib-metadata python3-ironicclient
+  python3-iso8601 python3-jmespath python3-keystoneauth1
+  python3-keystoneclient python3-keystonemiddleware python3-kombu
+  python3-linecache2 python3-logutils python3-lxml python3-magnumclient
+  python3-mako python3-manilaclient python3-memcache python3-migrate
+  python3-mimeparse python3-mistralclient python3-monascaclient
+  python3-monotonic python3-msgpack python3-munch python3-netaddr
+  python3-neutron-lib python3-neutronclient python3-novaclient
+  python3-octaviaclient python3-olefile python3-openstackclient
+  python3-openstacksdk python3-openvswitch python3-os-client-config
+  python3-os-ken python3-os-service-types python3-os-traits python3-osc-lib
+  python3-oslo.cache python3-oslo.concurrency python3-oslo.config
+  python3-oslo.context python3-oslo.db python3-oslo.i18n python3-oslo.log
+  python3-oslo.messaging python3-oslo.middleware python3-oslo.policy
+  python3-oslo.reports python3-oslo.serialization python3-oslo.service
+  python3-oslo.upgradecheck python3-oslo.utils python3-oslo.versionedobjects
+  python3-osprofiler python3-packaging python3-paste python3-pastedeploy
+  python3-pastescript python3-pbr python3-pecan python3-pil python3-ply
+  python3-prettytable python3-psutil python3-pycadf python3-pygments
+  python3-pyinotify python3-pymysql python3-pyparsing python3-pyperclip
+  python3-repoze.lru python3-requests python3-requestsexceptions
+  python3-rfc3986 python3-roman python3-routes python3-saharaclient
+  python3-senlinclient python3-setproctitle python3-simplegeneric
+  python3-singledispatch python3-sortedcontainers python3-soupsieve
+  python3-sqlalchemy python3-sqlalchemy-ext python3-sqlparse python3-statsd
+  python3-stevedore python3-swiftclient python3-tempita python3-tenacity
+  python3-testresources python3-testscenarios python3-testtools
+  python3-tinyrpc python3-traceback2 python3-troveclient python3-tz
+  python3-unittest2 python3-vine python3-waitress python3-warlock
+  python3-wcwidth python3-webencodings python3-webob python3-webtest
+  python3-wrapt python3-yaql python3-zaqarclient sgml-base xml-core
+Suggested packages:
+  apache2 | lighttpd | httpd liblcms2-utils python-amqp-doc
+  python-aodhclient-doc python-ceilometerclient-doc python-cliff-doc
+  python-debtcollector-doc docutils-doc fonts-linuxlibertine
+  | ttf-linux-libertine texlive-lang-french texlive-latex-base
+  texlive-latex-recommended python-eventlet-doc python-futurist-doc
+  python-glanceclient-doc python-gnocchiclient-doc python-greenlet-doc
+  python-greenlet-dev python3-greenlet-dbg python3-vitrageclient
+  python3-zunclient python3-genshi python-keystoneauth1-doc
+  python3-requests-kerberos python-kombu-doc python3-boto python3-django
+  python3-pymongo python3-redis python3-lxml-dbg python-lxml-doc
+  python-magnumclient-doc python3-beaker python-mako-doc memcached
+  python-migrate-doc ipython3 python-netaddr-docs python-neutron-lib-doc
+  python-octaviaclient-doc python-openstacksdk-doc python-os-client-config-doc
+  python-os-service-types-doc python-os-traits-doc python-osc-lib-doc
+  python-oslo.cache-doc python-oslo.concurrency-doc python-oslo.log-doc
+  python3-confluent-kafka python3-zmq python-oslo.middleware-doc
+  python-oslo.policy-doc python-oslo.reports-doc python-oslo.service-doc
+  python-oslo.versionedobjects-doc httpd-wsgi libapache2-mod-python
+  libapache2-mod-scgi libjs-mochikit python3-cherrypy3 python-pecan-doc
+  python-pil-doc python3-pil-dbg python-ply-doc python-psutil-doc
+  python-pygments-doc ttf-bitstream-vera python-pyinotify-doc
+  python-pymysql-doc python-pyparsing-doc python3-socks python-requests-doc
+  python-senlinclient-doc python-sortedcontainers-doc python-sqlalchemy-doc
+  python3-fdb python3-pymssql python3-mysqldb python3-psycopg2
+  python-sqlparse-doc python-tenacity-doc python-testtools-doc
+  python-tinyrpc-doc python-waitress-doc python-webob-doc python-webtest-doc
+  sgml-base-doc debhelper
+The following NEW packages will be installed:
+  alembic docutils-common heat-api heat-api-cfn heat-common heat-engine
+  ieee-data javascript-common libimagequant0 libjbig0 libjpeg-turbo8 libjpeg8
+  libjs-jquery libjs-sphinxdoc libjs-underscore liblcms2-2 libpaper-utils
+  libpaper1 libtiff5 libwebp6 libwebpdemux2 libwebpmux3 pycadf-common
+  python-babel-localedata python-pastedeploy-tpl python3-alembic python3-amqp
+  python3-anyjson python3-aodhclient python3-appdirs python3-babel
+  python3-barbicanclient python3-blazarclient python3-bs4 python3-cachetools
+  python3-ceilometerclient python3-cinderclient python3-cliff python3-cmd2
+  python3-croniter python3-crypto python3-dateutil python3-ddt
+  python3-debtcollector python3-decorator python3-deprecation
+  python3-designateclient python3-dnspython python3-docutils
+  python3-dogpile.cache python3-eventlet python3-extras python3-fasteners
+  python3-fixtures python3-futurist python3-glanceclient python3-gnocchiclient
+  python3-greenlet python3-heat python3-heatclient python3-html5lib
+  python3-ironicclient python3-iso8601 python3-jmespath python3-keystoneauth1
+  python3-keystoneclient python3-keystonemiddleware python3-kombu
+  python3-linecache2 python3-logutils python3-lxml python3-magnumclient
+  python3-mako python3-manilaclient python3-memcache python3-migrate
+  python3-mimeparse python3-mistralclient python3-monascaclient
+  python3-monotonic python3-msgpack python3-munch python3-netaddr
+  python3-neutron-lib python3-neutronclient python3-novaclient
+  python3-octaviaclient python3-olefile python3-openstackclient
+  python3-openstacksdk python3-openvswitch python3-os-client-config
+  python3-os-ken python3-os-service-types python3-os-traits python3-osc-lib
+  python3-oslo.cache python3-oslo.concurrency python3-oslo.config
+  python3-oslo.context python3-oslo.db python3-oslo.i18n python3-oslo.log
+  python3-oslo.messaging python3-oslo.middleware python3-oslo.policy
+  python3-oslo.reports python3-oslo.serialization python3-oslo.service
+  python3-oslo.upgradecheck python3-oslo.utils python3-oslo.versionedobjects
+  python3-osprofiler python3-packaging python3-paste python3-pastedeploy
+  python3-pastescript python3-pbr python3-pecan python3-pil python3-ply
+  python3-prettytable python3-psutil python3-pycadf python3-pygments
+  python3-pyinotify python3-pymysql python3-pyparsing python3-pyperclip
+  python3-repoze.lru python3-requestsexceptions python3-rfc3986 python3-roman
+  python3-routes python3-saharaclient python3-senlinclient
+  python3-setproctitle python3-simplegeneric python3-singledispatch
+  python3-sortedcontainers python3-soupsieve python3-sqlalchemy
+  python3-sqlalchemy-ext python3-sqlparse python3-statsd python3-stevedore
+  python3-swiftclient python3-tempita python3-tenacity python3-testresources
+  python3-testscenarios python3-testtools python3-tinyrpc python3-traceback2
+  python3-troveclient python3-tz python3-unittest2 python3-vine
+  python3-waitress python3-warlock python3-wcwidth python3-webencodings
+  python3-webob python3-webtest python3-wrapt python3-yaql python3-zaqarclient
+  sgml-base xml-core
+The following packages will be upgraded:
+  python3-importlib-metadata python3-requests
+2 upgraded, 169 newly installed, 0 to remove and 17 not upgraded.
+Need to get 0 B/23.1 MB of archives.
+After this operation, 152 MB of additional disk space will be used.
+Download complete and in download only mode
+apt_download: swift swift-proxy python3-swiftclient python3-keystoneclient python3-keystonemiddleware memcached
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  docutils-common ieee-data liberasurecode1 libgf-complete1 libimagequant0
+  libjbig0 libjerasure2 libjpeg-turbo8 libjpeg8 liblcms2-2 libpaper-utils
+  libpaper1 libtiff5 libwebp6 libwebpdemux2 libwebpmux3 pycadf-common
+  python-babel-localedata python-pastedeploy-tpl python3-babel python3-bs4
+  python3-dateutil python3-debtcollector python3-decorator python3-dnspython
+  python3-docutils python3-dogpile.cache python3-eventlet python3-greenlet
+  python3-html5lib python3-importlib-metadata python3-iso8601
+  python3-keystoneauth1 python3-lxml python3-mako python3-memcache
+  python3-monotonic python3-msgpack python3-netaddr python3-olefile
+  python3-os-service-types python3-oslo.cache python3-oslo.config
+  python3-oslo.context python3-oslo.i18n python3-oslo.log
+  python3-oslo.serialization python3-oslo.utils python3-packaging
+  python3-paste python3-pastedeploy python3-pastescript python3-pbr
+  python3-pil python3-pycadf python3-pyeclib python3-pygments
+  python3-pyinotify python3-pyparsing python3-rfc3986 python3-roman
+  python3-soupsieve python3-stevedore python3-swift python3-tempita python3-tz
+  python3-webencodings python3-webob python3-wrapt python3-xattr sgml-base
+  xml-core
+Suggested packages:
+  libisal2 liblcms2-utils libanyevent-perl libcache-memcached-perl
+  libmemcached libterm-readkey-perl libyaml-perl python-debtcollector-doc
+  docutils-doc fonts-linuxlibertine | ttf-linux-libertine texlive-lang-french
+  texlive-latex-base texlive-latex-recommended python-eventlet-doc
+  python-greenlet-doc python-greenlet-dev python3-greenlet-dbg python3-genshi
+  python-keystoneauth1-doc python3-requests-kerberos python3-lxml-dbg
+  python-lxml-doc python3-beaker python-mako-doc ipython3 python-netaddr-docs
+  python-os-service-types-doc python-oslo.cache-doc python-oslo.log-doc
+  httpd-wsgi libapache2-mod-python libapache2-mod-scgi libjs-mochikit
+  python3-cherrypy3 python-pil-doc python3-pil-dbg python-pygments-doc
+  ttf-bitstream-vera python-pyinotify-doc python-pyparsing-doc
+  python-webob-doc sgml-base-doc swift-bench debhelper
+The following NEW packages will be installed:
+  docutils-common ieee-data liberasurecode1 libgf-complete1 libimagequant0
+  libjbig0 libjerasure2 libjpeg-turbo8 libjpeg8 liblcms2-2 libpaper-utils
+  libpaper1 libtiff5 libwebp6 libwebpdemux2 libwebpmux3 memcached
+  pycadf-common python-babel-localedata python-pastedeploy-tpl python3-babel
+  python3-bs4 python3-dateutil python3-debtcollector python3-decorator
+  python3-dnspython python3-docutils python3-dogpile.cache python3-eventlet
+  python3-greenlet python3-html5lib python3-iso8601 python3-keystoneauth1
+  python3-keystoneclient python3-keystonemiddleware python3-lxml python3-mako
+  python3-memcache python3-monotonic python3-msgpack python3-netaddr
+  python3-olefile python3-os-service-types python3-oslo.cache
+  python3-oslo.config python3-oslo.context python3-oslo.i18n python3-oslo.log
+  python3-oslo.serialization python3-oslo.utils python3-packaging
+  python3-paste python3-pastedeploy python3-pastescript python3-pbr
+  python3-pil python3-pycadf python3-pyeclib python3-pygments
+  python3-pyinotify python3-pyparsing python3-rfc3986 python3-roman
+  python3-soupsieve python3-stevedore python3-swift python3-swiftclient
+  python3-tempita python3-tz python3-webencodings python3-webob python3-wrapt
+  python3-xattr sgml-base swift swift-proxy xml-core
+The following packages will be upgraded:
+  python3-importlib-metadata
+1 upgraded, 77 newly installed, 0 to remove and 18 not upgraded.
+Need to get 0 B/14.3 MB of archives.
+After this operation, 73.1 MB of additional disk space will be used.
+Download complete and in download only mode
+apt_download: xfsprogs rsync swift swift-account swift-container swift-object
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+xfsprogs is already the newest version (5.3.0-1ubuntu2).
+The following additional packages will be installed:
+  docutils-common ieee-data liberasurecode1 libgf-complete1 libimagequant0
+  libjbig0 libjerasure2 libjpeg-turbo8 libjpeg8 liblcms2-2 libpaper-utils
+  libpaper1 libtiff5 libwebp6 libwebpdemux2 libwebpmux3 pycadf-common
+  python-babel-localedata python-pastedeploy-tpl python3-babel python3-bs4
+  python3-dateutil python3-debtcollector python3-decorator python3-dnspython
+  python3-docutils python3-dogpile.cache python3-eventlet python3-greenlet
+  python3-html5lib python3-importlib-metadata python3-iso8601
+  python3-keystoneauth1 python3-keystoneclient python3-keystonemiddleware
+  python3-lxml python3-mako python3-memcache python3-monotonic python3-msgpack
+  python3-netaddr python3-olefile python3-os-service-types python3-oslo.cache
+  python3-oslo.config python3-oslo.context python3-oslo.i18n python3-oslo.log
+  python3-oslo.serialization python3-oslo.utils python3-packaging
+  python3-paste python3-pastedeploy python3-pastescript python3-pbr
+  python3-pil python3-pycadf python3-pyeclib python3-pygments
+  python3-pyinotify python3-pyparsing python3-rfc3986 python3-roman
+  python3-soupsieve python3-stevedore python3-swift python3-tempita python3-tz
+  python3-webencodings python3-webob python3-wrapt python3-xattr sgml-base
+  xml-core
+Suggested packages:
+  libisal2 liblcms2-utils python-debtcollector-doc docutils-doc
+  fonts-linuxlibertine | ttf-linux-libertine texlive-lang-french
+  texlive-latex-base texlive-latex-recommended python-eventlet-doc
+  python-greenlet-doc python-greenlet-dev python3-greenlet-dbg python3-genshi
+  python-keystoneauth1-doc python3-requests-kerberos python3-lxml-dbg
+  python-lxml-doc python3-beaker python-mako-doc memcached ipython3
+  python-netaddr-docs python-os-service-types-doc python-oslo.cache-doc
+  python-oslo.log-doc httpd-wsgi libapache2-mod-python libapache2-mod-scgi
+  libjs-mochikit python3-cherrypy3 python-pil-doc python3-pil-dbg
+  python-pygments-doc ttf-bitstream-vera python-pyinotify-doc
+  python-pyparsing-doc python-webob-doc sgml-base-doc swift-bench debhelper
+The following NEW packages will be installed:
+  docutils-common ieee-data liberasurecode1 libgf-complete1 libimagequant0
+  libjbig0 libjerasure2 libjpeg-turbo8 libjpeg8 liblcms2-2 libpaper-utils
+  libpaper1 libtiff5 libwebp6 libwebpdemux2 libwebpmux3 pycadf-common
+  python-babel-localedata python-pastedeploy-tpl python3-babel python3-bs4
+  python3-dateutil python3-debtcollector python3-decorator python3-dnspython
+  python3-docutils python3-dogpile.cache python3-eventlet python3-greenlet
+  python3-html5lib python3-iso8601 python3-keystoneauth1
+  python3-keystoneclient python3-keystonemiddleware python3-lxml python3-mako
+  python3-memcache python3-monotonic python3-msgpack python3-netaddr
+  python3-olefile python3-os-service-types python3-oslo.cache
+  python3-oslo.config python3-oslo.context python3-oslo.i18n python3-oslo.log
+  python3-oslo.serialization python3-oslo.utils python3-packaging
+  python3-paste python3-pastedeploy python3-pastescript python3-pbr
+  python3-pil python3-pycadf python3-pyeclib python3-pygments
+  python3-pyinotify python3-pyparsing python3-rfc3986 python3-roman
+  python3-soupsieve python3-stevedore python3-swift python3-tempita python3-tz
+  python3-webencodings python3-webob python3-wrapt python3-xattr sgml-base
+  swift swift-account swift-container swift-object xml-core
+The following packages will be upgraded:
+  python3-importlib-metadata rsync
+2 upgraded, 77 newly installed, 0 to remove and 17 not upgraded.
+Need to get 0 B/14.5 MB of archives.
+After this operation, 72.6 MB of additional disk space will be used.
+Download complete and in download only mode
+apt_download: bind9 isc-dhcp-server apache2 tftpd-hpa inetutils-inetd vlan iptables-persistent
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  apache2-bin apache2-data apache2-utils bind9-utils dns-root-data libapr1
+  libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap libirs-export161
+  libisccfg-export163 libjansson4 liblua5.2-0 netfilter-persistent python3-ply
+  ssl-cert tcpd update-inetd
+Suggested packages:
+  apache2-doc apache2-suexec-pristine | apache2-suexec-custom www-browser
+  bind-doc resolvconf isc-dhcp-server-ldap policycoreutils python-ply-doc
+  openssl-blacklist pxelinux
+The following NEW packages will be installed:
+  apache2 apache2-bin apache2-data apache2-utils bind9 bind9-utils
+  dns-root-data inetutils-inetd iptables-persistent isc-dhcp-server libapr1
+  libaprutil1 libaprutil1-dbd-sqlite3 libaprutil1-ldap libirs-export161
+  libisccfg-export163 libjansson4 liblua5.2-0 netfilter-persistent python3-ply
+  ssl-cert tcpd tftpd-hpa update-inetd vlan
+0 upgraded, 25 newly installed, 0 to remove and 19 not upgraded.
+Need to get 24.8 kB/2,998 kB of archives.
+After this operation, 12.7 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 update-inetd all 4.50 [24.8 kB]
+Fetched 24.8 kB in 2s (13.1 kB/s)
+Download complete and in download only mode

@@ -14,7 +14,6 @@ indicate_current_auto
 
 #------------------------------------------------------------------------------
 # Set up OpenStack Networking (neutron) for controller node.
-# https://docs.openstack.org/neutron/train/install/controller-install-ubuntu.html
 #------------------------------------------------------------------------------
 
 source "$CONFIG_DIR/admin-openstackrc.sh"
@@ -61,29 +60,28 @@ sudo neutron-db-manage \
     upgrade head
 
 echo "Restarting nova services."
-sudo service nova-api restart
+sudo systemctl restart nova-api
 
 echo "Restarting neutron-server."
-sudo service neutron-server restart
+sudo systemctl restart neutron-server
 
 echo "Restarting neutron-linuxbridge-agent."
-sudo service neutron-linuxbridge-agent restart
+sudo systemctl restart neutron-linuxbridge-agent
 
 echo "Restarting neutron-dhcp-agent."
-sudo service neutron-dhcp-agent restart
+sudo systemctl restart neutron-dhcp-agent
 
 echo "Restarting neutron-metadata-agent."
-sudo service neutron-metadata-agent restart
+sudo systemctl restart neutron-metadata-agent
 
 if type neutron-l3-agent; then
     # Installed only for networking option 2 of the install-guide.
     echo "Restarting neutron-l3-agent."
-    sudo service neutron-l3-agent restart
+    sudo systemctl restart neutron-l3-agent
 fi
 
 #------------------------------------------------------------------------------
 # Set up OpenStack Networking (neutron) for controller node.
-# https://docs.openstack.org/neutron/train/install/verify-option2.html
 #------------------------------------------------------------------------------
 
 echo -n "Verifying operation."

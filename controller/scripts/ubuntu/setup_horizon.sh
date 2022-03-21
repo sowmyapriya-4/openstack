@@ -13,19 +13,12 @@ indicate_current_auto
 
 #------------------------------------------------------------------------------
 # Set up OpenStack Dashboard (horizon)
-# https://docs.openstack.org/horizon/train/install/install-ubuntu.html
 #------------------------------------------------------------------------------
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Install and configure components
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# Note: Installing the dashboard here reloads the apache configuration.
-#       Below, we are also changing the configuration and reloading it once we
-#       are done. This race can result in a stopped apache (which also means
-#       stopped keystone services). We can either sleep for a second
-#       after the "apt install" call below or do a restart instead
-#       of a reload when we are done changing the configuration files.
 echo "Installing horizon."
 sudo apt install -y openstack-dashboard
 
@@ -97,21 +90,17 @@ iniset_sudo_no_section $conf "OPENSTACK_KEYSTONE_DEFAULT_ROLE" '"user"'
 # Here, we would disable layer-3 networking servies for networking option 1.
 
 echo "Setting timezone to UTC."
-iniset_sudo_no_section $conf "TIME_ZONE" '"UTC"'
+iniset_sudo_no_section $conf "TIME_ZONE" '"Asia/Kolkata"'
 
 conf=/etc/apache2/conf-available/openstack-dashboard.conf
 echo "Verifying presence of 'WSGIApplicationGroup %{GLOBAL}'."
 grep "WSGIApplicationGroup %{GLOBAL}" $conf
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Customize Horizon (not in install-guide)
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-echo "Removing default Ubuntu theme."
-sudo apt remove --auto-remove -y openstack-dashboard-ubuntu-theme
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Customize Horizon
 # Reduce memory usage (not in install-guide)
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 conf=/etc/apache2/conf-available/openstack-dashboard.conf
 sudo sed -i --follow-symlinks '/WSGIDaemonProcess/ s/processes=[0-9]*/processes=1/' $conf
 sudo sed -i --follow-symlinks '/WSGIDaemonProcess/ s/threads=[0-9]*/threads=2/' $conf
@@ -124,3 +113,5 @@ sudo sed -i --follow-symlinks '/WSGIDaemonProcess/ s/threads=[0-9]*/threads=2/' 
 echo "Reloading the web server configuration."
 # Restarting instead of reloading for reasons explained in comment above.
 sudo systemctl restart apache2.service
+sudo systemctl enable apache2.service
+sudo systemctl status apache2.service

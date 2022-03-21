@@ -28,7 +28,7 @@ echo "Configuring LVM physical and logical volumes."
 cinder_dev=sdd
 
 
-sudo pvcreate /dev/$cinder_dev
+sudo pvcreate -ff /dev/$cinder_dev
 sudo vgcreate cinder-volumes /dev/$cinder_dev
 
 conf=/etc/lvm/lvm.conf

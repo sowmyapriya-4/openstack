@@ -20,17 +20,14 @@ function apt_download {
 # Download packages for all nodes
 
 # MySQL, RabbitMQ
-apt_download mariadb-server python-mysqldb rabbitmq-server
-
-# NoSQL database (MongoDB)
-apt_download mongodb-server mongodb-clients python-pymongo
+apt_download mariadb-server python3-mysqldb rabbitmq-server
 
 # Other dependencies
-apt_download python-argparse python-dev python-pip
+apt_download python3-dev python3-pip
 
 # Keystone
 apt_download keystone python3-openstackclient apache2 \
-    memcached python-memcache
+    memcached python3-memcache
 
 # Glance
 apt_download glance python3-glanceclient
@@ -53,7 +50,7 @@ apt_download cinder-api cinder-scheduler python3-cinderclient
 apt_download openstack-dashboard
 
 # Cinder Volumes
-apt_download lvm2 cinder-volume thin-provisioning-tools
+apt_download lvm2 thin-provisioning-tools
 
 # Nova Compute
 apt_download nova-compute nova-compute-qemu qemu sysfsutils
@@ -66,13 +63,12 @@ apt_download heat-api heat-api-cfn heat-engine python3-heatclient
 
 # Swift Controller
 apt_download swift swift-proxy python3-swiftclient \
-    python3-keystoneclient python3-keystonemiddleware \
-    memcached
+    python3-keystoneclient python3-keystonemiddleware
 
 # Swift Storage
 apt_download xfsprogs rsync \
-    swift swift-account swift-container swift-object
+    swift-account swift-container swift-object
 
 # PXE server
-apt_download bind9 isc-dhcp-server apache2 tftpd-hpa inetutils-inetd vlan \
+apt_download bind9 isc-dhcp-server tftpd-hpa inetutils-inetd vlan \
     iptables-persistent

@@ -7,7 +7,7 @@ TOP_DIR=$(cd $(cat "../TOP_DIR" 2>/dev/null||echo $(dirname "$0"))/.. && pwd)
 source "$TOP_DIR/config/paths"
 source "$CONFIG_DIR/credentials"
 source "$LIB_DIR/functions.guest.sh"
-source "$CONFIG_DIR/admin-openstackrc.sh"
+source "$CONFIG_DIR/admin-openrc.sh"
 
 exec_logfile
 
@@ -15,29 +15,21 @@ indicate_current_auto
 
 #------------------------------------------------------------------------------
 # Install and configure a storage node
-# https://docs.openstack.org/cinder/train/install/cinder-storage-install-ubuntu.html
 #------------------------------------------------------------------------------
 
 MY_MGMT_IP=$(get_node_ip_in_network "$(hostname)" "mgmt")
 echo "IP address of this node's interface in management network: $MY_MGMT_IP."
 
-echo "Installing qemu support package for non-raw image types."
-sudo apt install -y qemu python3-rtslib-fb targetcli-fb
-
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Prerequisites
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-echo "Installing the supporting utility packages."
-sudo apt install -y lvm2 thin-provisioning-tools
 
 echo "Configuring LVM physical and logical volumes."
 
 cinder_dev=sdd
 
-
-sudo pvcreate -ff /dev/$cinder_dev
-sudo vgcreate cinder-volumes /dev/$cinder_dev
+sudo pvcreate /dev/$cinder_dev
+sudo vgcreate cinder-vol2 /dev/$cinder_dev
 
 conf=/etc/lvm/lvm.conf
 
@@ -48,11 +40,8 @@ echo "Verifying LVM filter."
 grep "^[[:space:]]\{1,\}filter" $conf
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Install and configure components
+# Configure components
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-echo "Installing cinder."
-sudo apt install -y cinder-volume
 
 conf=/etc/cinder/cinder.conf
 echo "Configuring $conf."
@@ -87,14 +76,14 @@ iniset_sudo $conf keystone_authtoken username "$cinder_admin_user"
 iniset_sudo $conf keystone_authtoken password "$CINDER_PASS"
 
 iniset_sudo $conf DEFAULT my_ip "$MY_MGMT_IP"
-
-iniset_sudo $conf DEFAULT volume_driver cinder.volume.drivers.lvm.LVMVolumeDriver
-iniset_sudo $conf DEFAULT volume_group cinder-volumes
 iniset_sudo $conf DEFAULT iscsi_protocol iscsi
 iniset_sudo $conf DEFAULT iscsi_helper tgtadm
-
 iniset_sudo $conf DEFAULT enabled_backends lvm
 iniset_sudo $conf DEFAULT glance_api_servers http://controller:9292
+
+# Configure [lvm] section.
+iniset_sudo $conf lvm volume_driver cinder.volume.drivers.lvm.LVMVolumeDriver
+iniset_sudo $conf lvm volume_group cinder-vol2
 
 iniset_sudo $conf oslo_concurrency lock_path /var/lib/cinder/tmp
 
@@ -103,119 +92,6 @@ iniset_sudo $conf oslo_concurrency lock_path /var/lib/cinder/tmp
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 echo "Restarting cinder service."
-sudo systemctl restart cinder-volume
+sudo systemctl restart tgt && sudo systemctl enable tgt
+sudo systemctl restart  cinder-volume && sudo systemctl enable  cinder-volume 
 
-#------------------------------------------------------------------------------
-# Verify Cinder operation
-#------------------------------------------------------------------------------
-
-echo "Verifying Block Storage installation on controller node."
-
-echo "Sourcing the admin credentials."
-AUTH="source $CONFIG_DIR/admin-openstackrc.sh"
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-echo "Restarting restarting cinder-scheduler."
-node_ssh controller "sudo service cinder-scheduler restart"
-
-echo -n "Waiting for cinder to start."
-until node_ssh controller "$AUTH; openstack volume service list" >/dev/null \
-        2>&1; do
-    echo -n .
-    sleep 1
-done
-echo
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-echo "openstack volume service list is available:"
-node_ssh controller "$AUTH; openstack volume service list"
-
-
-function check_cinder_services {
-
-    # It takes some time for cinder to detect its services and update its
-    # status. This method will wait for 60 seconds to get the status of the
-    # cinder services.
-    local i=0
-    while : ; do
-        # Check service-list every 5 seconds
-        if [ $(( i % 5 )) -ne 0 ]; then
-            if ! node_ssh controller "$AUTH; openstack volume service list" \
-                    2>&1 | grep -q down; then
-                echo
-                echo "All cinder services seem to be up and running."
-                node_ssh controller "$AUTH; openstack volume service list"
-                return 0
-            fi
-        fi
-        if [[ "$i" -eq "60" ]]; then
-            echo
-            echo "ERROR Cinder services are not working as expected."
-            node_ssh controller "$AUTH; openstack volume service list"
-            exit 1
-        fi
-        i=$((i + 1))
-        echo -n .
-        sleep 1
-    done
-}
-
-# To avoid race conditions which were causing Cinder Volumes script to fail,
-# check the status of the cinder services. Cinder takes a few seconds before it
-# is aware of the exact status of its services.
-echo -n "Waiting for all cinder services to start."
-check_cinder_services
-
-#------------------------------------------------------------------------------
-# Verify the Block Storage installation
-#------------------------------------------------------------------------------
-
-echo "Sourcing the demo credentials."
-AUTH="source $CONFIG_DIR/demo-openstackrc.sh"
-
-echo "openstack volume create --size 1 volume1"
-node_ssh controller "$AUTH; openstack volume create --size 1 volume1"
-
-echo -n "Waiting for cinder to list the new volume."
-until node_ssh controller "$AUTH; openstack volume list| grep volume1" > /dev/null 2>&1; do
-    echo -n .
-    sleep 1
-done
-echo
-
-function wait_for_cinder_volume {
-
-    echo -n 'Waiting for cinder volume to become available.'
-    local i=0
-    while : ; do
-        # Check list every 5 seconds
-        if [ $(( i % 5 )) -ne 0 ]; then
-            if node_ssh controller "$AUTH; openstack volume list" 2>&1 |
-                    grep -q "volume1 .*|.* available"; then
-                echo
-                return 0
-            fi
-        fi
-        if [ $i -eq 20 ]; then
-            echo
-            echo "ERROR Failed to create cinder volume."
-            node_ssh controller "$AUTH; openstack volume list"
-            exit 1
-        fi
-        i=$((i + 1))
-        echo -n .
-        sleep 1
-    done
-}
-
-# Wait for cinder volume to be created
-wait_for_cinder_volume
-
-echo "Volume successfully created:"
-node_ssh controller "$AUTH; openstack volume list"
-
-echo "Deleting volume."
-node_ssh controller "$AUTH; openstack volume delete volume1"
-
-echo "openstack volume list"
-node_ssh controller "$AUTH; openstack volume list"

@@ -32,7 +32,7 @@ echo "Setting up first cell database."
 setup_database nova_cell0 "$NOVA_DB_USER" "$NOVA_DBPASS"
 
 echo "Sourcing the admin credentials."
-source "$CONFIG_DIR/admin-openstackrc.sh"
+source "$CONFIG_DIR/admin-openrc.sh"
 
 nova_admin_user=nova
 placement_admin_user=placement
@@ -124,10 +124,6 @@ iniset_sudo $conf glance api_servers http://controller:9292
 # Configure [oslo_concurrency] section.
 iniset_sudo $conf oslo_concurrency lock_path /var/lib/nova/tmp
 
-# Delete log_dir line
-# According to the install-guide, "Due to a packaging bug, remove the log_dir
-# option from the [DEFAULT] section."
-# sudo grep "^log_dir" $conf
 sudo sed -i "/^log_dir/ d" $conf
 
 echo "Configuring access to the Placement service."
@@ -158,7 +154,7 @@ sudo nova-manage cell_v2 list_cells
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 echo "Sourcing the admin credentials."
-source "$CONFIG_DIR/admin-openstackrc.sh"
+source "$CONFIG_DIR/admin-openrc.sh"
 
 # Wait for keystone to come up
 wait_for_keystone

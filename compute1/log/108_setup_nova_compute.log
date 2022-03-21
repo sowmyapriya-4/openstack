@@ -1,0 +1,78 @@
+Installing nova for compute node.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+nova-compute is already the newest version (3:23.1.0-0ubuntu1~cloud0).
+nova-compute-qemu is already the newest version (3:23.1.0-0ubuntu1~cloud0).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Configuring nova for compute node.
+Configuring /etc/nova/nova.conf.
+Configuring RabbitMQ message queue access.
+'/etc/nova/nova.conf' -> '/tmp/395_etc_nova_nova.conf.iniset'
+iniset /tmp/395_etc_nova_nova.conf.iniset DEFAULT transport_url rabbit://openstack:rabbitPass@controller
+'/etc/nova/nova.conf' -> '/tmp/396_etc_nova_nova.conf.iniset'
+iniset /tmp/396_etc_nova_nova.conf.iniset api auth_strategy keystone
+Success. Node compute in mgmt: 10.0.0.31.
+'/etc/nova/nova.conf' -> '/tmp/397_etc_nova_nova.conf.iniset'
+iniset /tmp/397_etc_nova_nova.conf.iniset keystone_authtoken www_authenticate_uri http://controller:5000/
+'/etc/nova/nova.conf' -> '/tmp/398_etc_nova_nova.conf.iniset'
+iniset /tmp/398_etc_nova_nova.conf.iniset keystone_authtoken auth_url http://controller:5000/
+'/etc/nova/nova.conf' -> '/tmp/399_etc_nova_nova.conf.iniset'
+iniset /tmp/399_etc_nova_nova.conf.iniset keystone_authtoken memcached_servers controller:11211
+'/etc/nova/nova.conf' -> '/tmp/400_etc_nova_nova.conf.iniset'
+iniset /tmp/400_etc_nova_nova.conf.iniset keystone_authtoken auth_type password
+'/etc/nova/nova.conf' -> '/tmp/401_etc_nova_nova.conf.iniset'
+iniset /tmp/401_etc_nova_nova.conf.iniset keystone_authtoken project_domain_name Default
+'/etc/nova/nova.conf' -> '/tmp/402_etc_nova_nova.conf.iniset'
+iniset /tmp/402_etc_nova_nova.conf.iniset keystone_authtoken user_domain_name Default
+'/etc/nova/nova.conf' -> '/tmp/403_etc_nova_nova.conf.iniset'
+iniset /tmp/403_etc_nova_nova.conf.iniset keystone_authtoken project_name service
+'/etc/nova/nova.conf' -> '/tmp/404_etc_nova_nova.conf.iniset'
+iniset /tmp/404_etc_nova_nova.conf.iniset keystone_authtoken username nova
+'/etc/nova/nova.conf' -> '/tmp/405_etc_nova_nova.conf.iniset'
+iniset /tmp/405_etc_nova_nova.conf.iniset keystone_authtoken password novaPass
+'/etc/nova/nova.conf' -> '/tmp/406_etc_nova_nova.conf.iniset'
+iniset /tmp/406_etc_nova_nova.conf.iniset DEFAULT my_ip 10.0.0.31
+'/etc/nova/nova.conf' -> '/tmp/407_etc_nova_nova.conf.iniset'
+iniset /tmp/407_etc_nova_nova.conf.iniset DEFAULT use_neutron true
+'/etc/nova/nova.conf' -> '/tmp/408_etc_nova_nova.conf.iniset'
+iniset /tmp/408_etc_nova_nova.conf.iniset DEFAULT firewall_driver nova.virt.firewall.NoopFirewallDriver
+'/etc/nova/nova.conf' -> '/tmp/409_etc_nova_nova.conf.iniset'
+iniset /tmp/409_etc_nova_nova.conf.iniset vnc enabled true
+'/etc/nova/nova.conf' -> '/tmp/410_etc_nova_nova.conf.iniset'
+iniset /tmp/410_etc_nova_nova.conf.iniset vnc server_listen 0.0.0.0
+'/etc/nova/nova.conf' -> '/tmp/411_etc_nova_nova.conf.iniset'
+iniset /tmp/411_etc_nova_nova.conf.iniset vnc server_proxyclient_address $my_ip
+'/etc/nova/nova.conf' -> '/tmp/412_etc_nova_nova.conf.iniset'
+iniset /tmp/412_etc_nova_nova.conf.iniset vnc novncproxy_base_url http://10.0.0.11:6080/vnc_auto.html
+'/etc/nova/nova.conf' -> '/tmp/413_etc_nova_nova.conf.iniset'
+iniset /tmp/413_etc_nova_nova.conf.iniset glance api_servers http://controller:9292
+'/etc/nova/nova.conf' -> '/tmp/414_etc_nova_nova.conf.iniset'
+iniset /tmp/414_etc_nova_nova.conf.iniset oslo_concurrency lock_path /var/lib/nova/tmp
+Configuring Placement services.
+'/etc/nova/nova.conf' -> '/tmp/415_etc_nova_nova.conf.iniset'
+iniset /tmp/415_etc_nova_nova.conf.iniset placement region_name RegionOne
+'/etc/nova/nova.conf' -> '/tmp/416_etc_nova_nova.conf.iniset'
+iniset /tmp/416_etc_nova_nova.conf.iniset placement project_domain_name Default
+'/etc/nova/nova.conf' -> '/tmp/417_etc_nova_nova.conf.iniset'
+iniset /tmp/417_etc_nova_nova.conf.iniset placement project_name service
+'/etc/nova/nova.conf' -> '/tmp/418_etc_nova_nova.conf.iniset'
+iniset /tmp/418_etc_nova_nova.conf.iniset placement auth_type password
+'/etc/nova/nova.conf' -> '/tmp/419_etc_nova_nova.conf.iniset'
+iniset /tmp/419_etc_nova_nova.conf.iniset placement user_domain_name Default
+'/etc/nova/nova.conf' -> '/tmp/420_etc_nova_nova.conf.iniset'
+iniset /tmp/420_etc_nova_nova.conf.iniset placement auth_url http://controller:5000/v3
+'/etc/nova/nova.conf' -> '/tmp/421_etc_nova_nova.conf.iniset'
+iniset /tmp/421_etc_nova_nova.conf.iniset placement username placement
+'/etc/nova/nova.conf' -> '/tmp/422_etc_nova_nova.conf.iniset'
+iniset /tmp/422_etc_nova_nova.conf.iniset placement password placementPass
+Hardware acceleration for virtualization: not available.
+'/etc/nova/nova-compute.conf' -> '/tmp/423_etc_nova_nova-compute.conf.iniset'
+iniset /tmp/423_etc_nova_nova-compute.conf.iniset libvirt virt_type qemu
+Config: virt_type=qemu
+Restarting nova services.
+
+Confirming that the compute host is in the database.ssh controller source /home/stack/config/admin-openrc.sh; openstack compute service list --service nova-compute

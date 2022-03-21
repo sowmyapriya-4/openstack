@@ -1,0 +1,85 @@
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following packages were automatically installed and are no longer required:
+  python-chardet python-pkg-resources
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following packages were automatically installed and are no longer required:
+  python-chardet python-pkg-resources
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages will be REMOVED:
+  python-chardet python-pkg-resources
+0 upgraded, 0 newly installed, 2 to remove and 0 not upgraded.
+After this operation, 1,000 kB disk space will be freed.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 76122 files and directories currently installed.)
+Removing python-chardet (3.0.4-4build1) ...
+Removing python-pkg-resources (44.0.0-2) ...
+Processing triggers for man-db (2.9.1-1) ...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Installing OpenStack client.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  python3-cliff python3-crypto python3-jmespath python3-keystoneclient
+  python3-monotonic python3-munch python3-novaclient python3-openstacksdk
+  python3-os-client-config python3-osc-lib python3-oslo.config
+  python3-oslo.context python3-oslo.log python3-pyinotify
+  python3-requestsexceptions python3-rfc3986
+Suggested packages:
+  python-cliff-doc python-openstacksdk-doc python-os-client-config-doc
+  python-osc-lib-doc python-oslo.log-doc python-pyinotify-doc
+The following NEW packages will be installed:
+  python3-cliff python3-crypto python3-jmespath python3-keystoneclient
+  python3-monotonic python3-munch python3-novaclient python3-openstackclient
+  python3-openstacksdk python3-os-client-config python3-osc-lib
+  python3-oslo.config python3-oslo.context python3-oslo.log python3-pyinotify
+  python3-requestsexceptions python3-rfc3986
+0 upgraded, 17 newly installed, 0 to remove and 0 not upgraded.
+Need to get 2,087 kB of archives.
+After this operation, 18.3 MB of additional disk space will be used.
+Get:1 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-cliff all 3.6.0-0ubuntu1~cloud0 [43.9 kB]
+Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-crypto amd64 2.6.1-13ubuntu2 [237 kB]
+Err:3 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-oslo.context all 1:3.2.0-0ubuntu1~cloud0
+  400  Bad Request [IP: 91.189.91.39 80]
+Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-jmespath all 0.9.4-2ubuntu1 [21.5 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-monotonic all 1.5-0ubuntu2 [5,660 B]
+Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-pyinotify all 0.9.6-1.2ubuntu1 [24.8 kB]
+Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-rfc3986 all 1.3.2-0ubuntu2 [21.9 kB]
+Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-munch all 2.3.2-2 [7,984 B]
+Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-requestsexceptions all 1.4.0-3 [4,232 B]
+Get:10 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-oslo.log all 4.4.0-0ubuntu1~cloud0 [45.6 kB]
+Get:11 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-oslo.config all 1:8.5.0-0ubuntu1~cloud0 [109 kB]
+Get:12 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-keystoneclient all 1:4.2.0-0ubuntu1~cloud0 [208 kB]
+Get:13 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-novaclient all 2:17.4.0-0ubuntu1~cloud0 [251 kB]
+Get:14 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-openstacksdk all 0.55.0-0ubuntu1~cloud0 [560 kB]
+Get:15 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-os-client-config all 2.1.0-0ubuntu3~cloud0 [20.0 kB]
+Get:16 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-osc-lib all 2.3.1-0ubuntu1~cloud0 [53.5 kB]
+Get:17 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 python3-openstackclient all 5.5.0-0ubuntu1~cloud0 [458 kB]
+Fetched 2,072 kB in 10s (201 kB/s)
+E: Failed to fetch http://ubuntu-cloud.archive.canonical.com/ubuntu/pool/main/p/python-oslo.context/python3-oslo.context_3.2.0-0ubuntu1~cloud0_all.deb  400  Bad Request [IP: 91.189.91.39 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?

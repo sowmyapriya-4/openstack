@@ -1,2 +1,7 @@
-sudo apt install -y qemu python3-rtslib-fb targetcli-fb lvm2 thin-provisioning-tools
-sudo apt install -y cinder-volume swift swift-account swift-container swift-object xfsprogs python3-swift python3-swiftclient rsync
+sudo apt install -y --assume-no python3-openstackclient
+sudo apt install -y --assume-no ifupdown
+sudo apt install -y --assume-no curl tree
+sudo apt install -y --assume-no debconf-utils
+sudo apt install -y --assume-no python3-pip
+sudo apt install -y --assume-no libmysqlclient-dev
+sudo apt install -y lvm2 thin-provisioning-tools python3-swiftclient rsync

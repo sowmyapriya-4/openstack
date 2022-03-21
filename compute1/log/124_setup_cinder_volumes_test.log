@@ -1,0 +1,61 @@
+Success. Node compute in mgmt: 10.0.0.31.
+IP address of this node's interface in management network: 10.0.0.31.
+Verifying Block Storage installation on controller node.
+Sourcing the admin credentials.
+Restarting restarting cinder-scheduler.
+ssh controller sudo systemctl restart cinder-scheduler.service
+Waiting for cinder to start.
+openstack volume service list is available:
+ssh controller source /home/stack/config/admin-openstackrc.sh; openstack volume service list
++------------------+-------------+------+---------+-------+----------------------------+
+| Binary           | Host        | Zone | Status  | State | Updated At                 |
++------------------+-------------+------+---------+-------+----------------------------+
+| cinder-scheduler | controller  | nova | enabled | up    | 2022-03-17T05:15:15.000000 |
+| cinder-volume    | storage@lvm | nova | enabled | up    | 2022-03-17T05:15:14.000000 |
+| cinder-volume    | compute@lvm | nova | enabled | up    | 2022-03-17T05:15:11.000000 |
++------------------+-------------+------+---------+-------+----------------------------+
+Waiting for all cinder services to start..
+All cinder services seem to be up and running.
+ssh controller source /home/stack/config/admin-openstackrc.sh; openstack volume service list
++------------------+-------------+------+---------+-------+----------------------------+
+| Binary           | Host        | Zone | Status  | State | Updated At                 |
++------------------+-------------+------+---------+-------+----------------------------+
+| cinder-scheduler | controller  | nova | enabled | up    | 2022-03-17T05:15:15.000000 |
+| cinder-volume    | storage@lvm | nova | enabled | up    | 2022-03-17T05:15:14.000000 |
+| cinder-volume    | compute@lvm | nova | enabled | up    | 2022-03-17T05:15:11.000000 |
++------------------+-------------+------+---------+-------+----------------------------+
+Sourcing the demo credentials.
+openstack volume create --size 1 volume2
+ssh controller source /home/stack/config/demo-openrc.sh; openstack volume create --size 1 volume2
++---------------------+--------------------------------------+
+| Field               | Value                                |
++---------------------+--------------------------------------+
+| attachments         | []                                   |
+| availability_zone   | nova                                 |
+| bootable            | false                                |
+| consistencygroup_id | None                                 |
+| created_at          | 2022-03-17T05:15:22.808448           |
+| description         | None                                 |
+| encrypted           | False                                |
+| id                  | 199bd9f7-c67d-459d-9c13-c7aa8a9f08e7 |
+| multiattach         | False                                |
+| name                | volume2                              |
+| properties          |                                      |
+| replication_status  | None                                 |
+| size                | 1                                    |
+| snapshot_id         | None                                 |
+| source_volid        | None                                 |
+| status              | creating                             |
+| type                | __DEFAULT__                          |
+| updated_at          | None                                 |
+| user_id             | ac97d92b0a03404095d1cf02e7686365     |
++---------------------+--------------------------------------+
+Waiting for cinder to list the new volume.
+Waiting for cinder volume to become available.....................
+ERROR Failed to create cinder volume.
+ssh controller source /home/stack/config/demo-openrc.sh; openstack volume list
++--------------------------------------+---------+-----------+------+-------------+
+| ID                                   | Name    | Status    | Size | Attached to |
++--------------------------------------+---------+-----------+------+-------------+
+| 199bd9f7-c67d-459d-9c13-c7aa8a9f08e7 | volume2 | available |    1 |             |
++--------------------------------------+---------+-----------+------+-------------+

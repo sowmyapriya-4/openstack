@@ -1,7 +1,6 @@
 # This file contains bash functions that may be used by both guest and host
 # systems.
 
-# Non-recursive removal of all files except README.*
 function clean_dir {
     local target_dir=$1
     if [ ! -e "$target_dir" ]; then

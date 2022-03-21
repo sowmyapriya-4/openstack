@@ -4,7 +4,7 @@ TOP_DIR=$(cd $(cat "../TOP_DIR" 2>/dev/null||echo $(dirname "$0"))/.. && pwd)
 source "$TOP_DIR/config/paths"
 source "$CONFIG_DIR/credentials"
 source "$LIB_DIR/functions.guest.sh"
-source "$CONFIG_DIR/demo-openstackrc.sh"
+source "$CONFIG_DIR/demo-openrc.sh"
 
 exec_logfile
 

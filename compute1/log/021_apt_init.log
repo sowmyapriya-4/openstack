@@ -1,0 +1,102 @@
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Get:2 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
+Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:4 http://archive.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Ign:5 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages
+Get:24 http://archive.ubuntu.com/ubuntu focal/restricted Translation-en [6,212 B]
+Get:25 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+Get:25 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+Get:25 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+Get:25 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+Get:25 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+Get:25 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+Get:25 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+Get:25 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+Get:25 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+Ign:25 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata
+Get:35 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1,641 kB]
+Ign:36 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en
+Get:37 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [20.2 kB]
+Get:38 http://archive.ubuntu.com/ubuntu focal-security/main amd64 Packages [1,317 kB]
+Get:39 http://archive.ubuntu.com/ubuntu focal-security/restricted Translation-en [114 kB]
+Get:40 http://archive.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [14.0 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+Get:25 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+Get:36 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [122 kB]
+Fetched 4,962 kB in 15s (327 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+10 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Installing packages needed for add-apt-repository.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+software-properties-common is already the newest version (0.99.9.8).
+software-properties-common set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 10 not upgraded.
+Adding cloud repo: cloud-archive:wallaby
+ Ubuntu Cloud Archive for OpenStack Wallaby
+ More info: https://wiki.ubuntu.com/OpenStack/CloudArchive
+Press [ENTER] to continue or Ctrl-c to cancel adding it.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  ubuntu-cloud-keyring
+0 upgraded, 1 newly installed, 0 to remove and 10 not upgraded.
+Need to get 5,688 B of archives.
+After this operation, 22.5 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 ubuntu-cloud-keyring all 2020.02.11.4 [5,688 B]
+Fetched 5,688 B in 1s (9,006 B/s)
+Selecting previously unselected package ubuntu-cloud-keyring.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 71759 files and directories currently installed.)
+Preparing to unpack .../ubuntu-cloud-keyring_2020.02.11.4_all.deb ...
+Unpacking ubuntu-cloud-keyring (2020.02.11.4) ...
+Setting up ubuntu-cloud-keyring (2020.02.11.4) ...
+Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+Get:3 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby InRelease [8,769 B]
+Hit:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Hit:5 http://archive.ubuntu.com/ubuntu focal-security InRelease
+Get:6 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby/main amd64 Packages [155 kB]
+Fetched 164 kB in 2s (95.7 kB/s)
+Reading package lists...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://ubuntu-cloud.archive.canonical.com/ubuntu focal-updates/wallaby InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+7 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Removed /etc/systemd/system/timers.target.wants/apt-daily.timer.
+# bionic mariadb 10.1 breaks neutron DB upgrade process in OpenStack Train
+deb http://downloads.mariadb.com/MariaDB/mariadb-10.3/repo/ubuntu bionic main
+Warning: apt-key output should not be parsed (stdout is not a terminal)
+Executing: /tmp/apt-key-gpghome.tmaTQT63Ps/gpg.1.sh --keyserver keyserver.ubuntu.com --recv-keys F1656F24C74CD1D8
+gpg: keyserver receive failed: No data

@@ -1,0 +1,101 @@
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Get:1 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
+Get:2 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:3 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:4 http://archive.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Ign:5 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages
+Get:6 http://archive.ubuntu.com/ubuntu focal/main Translation-en [506 kB]
+Ign:7 http://archive.ubuntu.com/ubuntu focal/main amd64 c-n-f Metadata
+Get:8 http://archive.ubuntu.com/ubuntu focal/restricted amd64 Packages [22.0 kB]
+Ign:9 http://archive.ubuntu.com/ubuntu focal/restricted Translation-en
+Get:10 http://archive.ubuntu.com/ubuntu focal/restricted amd64 c-n-f Metadata [392 B]
+Ign:11 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages
+Get:12 http://archive.ubuntu.com/ubuntu focal/universe Translation-en [5,124 kB]
+Ign:13 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata
+Get:14 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [144 kB]
+Ign:15 http://archive.ubuntu.com/ubuntu focal/multiverse Translation-en
+Get:16 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 c-n-f Metadata [9,136 B]
+Ign:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages
+Get:18 http://archive.ubuntu.com/ubuntu focal-updates/main Translation-en [312 kB]
+Ign:19 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata
+Get:20 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [853 kB]
+Ign:21 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en
+Get:22 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [500 B]
+Ign:23 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages
+Get:24 http://archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [202 kB]
+Ign:25 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata
+Get:26 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [23.8 kB]
+Ign:27 http://archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en
+Get:28 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [580 B]
+Ign:29 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages
+Get:30 http://archive.ubuntu.com/ubuntu focal-backports/main Translation-en [10.1 kB]
+Ign:31 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata
+Get:32 http://archive.ubuntu.com/ubuntu focal-backports/restricted amd64 c-n-f Metadata [116 B]
+Ign:33 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages
+Get:34 http://archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [15.4 kB]
+Ign:35 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata
+Get:36 http://archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 c-n-f Metadata [116 B]
+Ign:37 http://archive.ubuntu.com/ubuntu focal-security/main amd64 Packages
+Get:38 http://archive.ubuntu.com/ubuntu focal-security/main Translation-en [230 kB]
+Ign:39 http://archive.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata
+Get:40 http://archive.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [799 kB]
+Ign:41 http://archive.ubuntu.com/ubuntu focal-security/restricted Translation-en
+Get:42 http://archive.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [504 B]
+Ign:43 http://archive.ubuntu.com/ubuntu focal-security/universe amd64 Packages
+Get:44 http://archive.ubuntu.com/ubuntu focal-security/universe Translation-en [121 kB]
+Ign:45 http://archive.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata
+Get:46 http://archive.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [20.7 kB]
+Ign:47 http://archive.ubuntu.com/ubuntu focal-security/multiverse Translation-en
+Get:48 http://archive.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [500 B]
+Ign:5 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages
+Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 c-n-f Metadata [29.5 kB]
+Ign:9 http://archive.ubuntu.com/ubuntu focal/restricted Translation-en
+Get:11 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [8,628 kB]
+Ign:13 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata
+Get:15 http://archive.ubuntu.com/ubuntu focal/multiverse Translation-en [104 kB]
+Ign:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages
+Get:19 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [14.8 kB]
+Ign:21 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en
+Get:23 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [910 kB]
+Ign:25 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata
+Get:27 http://archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [7,312 B]
+Ign:29 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages
+Get:31 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [864 B]
+Ign:33 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages
+Get:35 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [804 B]
+Ign:37 http://archive.ubuntu.com/ubuntu focal-security/main amd64 Packages
+Get:39 http://archive.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [9,792 B]
+Ign:41 http://archive.ubuntu.com/ubuntu focal-security/restricted Translation-en
+Get:43 http://archive.ubuntu.com/ubuntu focal-security/universe amd64 Packages [691 kB]
+Ign:45 http://archive.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata
+Get:47 http://archive.ubuntu.com/ubuntu focal-security/multiverse Translation-en [5,196 B]
+Ign:5 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages
+Get:9 http://archive.ubuntu.com/ubuntu focal/restricted Translation-en [6,851 B]
+Ign:13 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata
+Get:17 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [2,059 kB]
+Ign:21 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en
+Ign:25 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata
+Ign:29 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages
+Get:33 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [26.0 kB]
+Ign:37 http://archive.ubuntu.com/ubuntu focal-security/main amd64 Packages
+Get:41 http://archive.ubuntu.com/ubuntu focal-security/restricted Translation-en [146 kB]
+Ign:45 http://archive.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [1,275 kB]
+Err:13 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:21 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [156 kB]
+Err:25 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata
+  400  Bad Request [IP: 91.189.88.142 80]
+Get:29 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [51.2 kB]
+Get:37 http://archive.ubuntu.com/ubuntu focal-security/main amd64 Packages [1,645 kB]
+Err:45 http://archive.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata
+  400  Bad Request [IP: 91.189.88.142 80]
+Error: Timeout was reached
+Fetched 24.8 MB in 1min 33s (268 kB/s)
+Reading package lists...
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/focal/universe/cnf/Commands-amd64  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/focal-updates/universe/cnf/Commands-amd64  400  Bad Request [IP: 91.189.88.142 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/focal-security/universe/cnf/Commands-amd64  400  Bad Request [IP: 91.189.88.142 80]
+E: Some index files failed to download. They have been ignored, or old ones used instead.

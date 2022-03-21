@@ -15,7 +15,6 @@ indicate_current_auto
 
 #------------------------------------------------------------------------------
 # Install and configure compute node
-# https://docs.openstack.org/neutron/train/install/compute-install-ubuntu.html
 #------------------------------------------------------------------------------
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -40,14 +39,13 @@ iniset_sudo $conf neutron password "$NEUTRON_PASS"
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 echo "Restarting the Compute service."
-sudo service nova-compute restart
+sudo systemctl restart nova-compute.service
 
 echo "Restarting neutron-linuxbridge-agent."
-sudo service neutron-linuxbridge-agent restart
+sudo systemctl restart neutron-linuxbridge-agent.service
 
 #------------------------------------------------------------------------------
 # Networking Option 2: Self-service networks
-# https://docs.openstack.org/neutron/traitrain/install/verify-option2.html
 #------------------------------------------------------------------------------
 
 echo "Sourcing the admin credentials."
